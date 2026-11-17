@@ -32,13 +32,15 @@ El tema (`assets/theme.css`) **borra** la paleta, radios, sombras, familias y es
 ### Color
 | Token | Hex | Clases | Uso |
 |---|---|---|---|
-| `void-black` | #000000 | `bg-void-black`, `text-void-black` | Canvas, hero, tarjetas, footer; texto sobre el acento |
-| `carbon` | #1a1a1a | `bg-carbon` | Superficie elevada: inputs, announcement bar, badges |
-| `graphite-border` | #3c3c3c | `border-graphite-border` | Hairlines, divisores, borde de input |
-| `steel-mid` | #737373 | `text-steel-mid` | Placeholder, texto ≥18px secundario, decorativo |
-| `fog-light` | #bfbfbf | `text-fog-light`, `border-fog-light` | Texto secundario, extractos, metadatos pequeños, bordes de tarjeta |
+| `void-black` | #0c1829 (azul marino; el nombre se mantiene) | `bg-void-black`, `text-void-black` | Canvas, hero, tarjetas, footer; texto sobre el acento |
+| `carbon` | #13233a | `bg-carbon` | Superficie elevada: inputs, announcement bar, badges |
+| `graphite-border` | #2b3d58 | `border-graphite-border` | Hairlines, divisores, borde de input |
+| `steel-mid` | #7f8ca3 | `text-steel-mid` | Placeholder, texto ≥18px secundario, decorativo |
+| `fog-light` | #c2cad8 | `text-fog-light`, `border-fog-light` | Texto secundario, extractos, metadatos pequeños, bordes de tarjeta |
 | `bone-white` | #f5f5f5 | `text-bone-white`, `border-bone-white` | Texto principal, iconos, borde ghost |
 | `accent` | #00aff0 | `bg-accent`, `text-accent` | Cian Contextual: acción/ignición (ver reglas de racionamiento) |
+
+> **Fondo azul marino (decisión del cliente, 17/11/2026):** el canvas pasa de negro puro a `#0c1829` y los grises se tiñen de azul para casar con él. Sin degradados ni halos de fondo (se probó un halo tipo cqisense.com y se descartó). Contraste sobre el canvas: bone-white 16,4:1, fog-light 10,8:1, steel-mid 5,3:1, cian 7,1:1.
 
 ### Tipografía
 | Clase | Tamaño / LH / tracking | Familia y peso típicos |

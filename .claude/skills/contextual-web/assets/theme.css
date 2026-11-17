@@ -19,11 +19,11 @@
 
   /* Color */
   --color-accent: #00aff0; /* Cian Contextual (sustituye al naranja #ff4f2b de base/DESIGN.md) */
-  --color-void-black: #000000;
-  --color-carbon: #1a1a1a;
-  --color-graphite-border: #3c3c3c;
-  --color-steel-mid: #737373;
-  --color-fog-light: #bfbfbf;
+  --color-void-black: #0c1829; /* azul marino profundo (antes #000000) */
+  --color-carbon: #13233a;
+  --color-graphite-border: #2b3d58;
+  --color-steel-mid: #7f8ca3;
+  --color-fog-light: #c2cad8;
   --color-bone-white: #f5f5f5;
 
   /* Familias (papel → fuente) */

@@ -22,7 +22,7 @@ Si `base/DESIGN.md` y este skill discrepan, manda este skill (ya resuelve los co
 
 ## Identidad: Contextual sobre una base visual ajena
 
-`base/DESIGN.md` se extrajo de la web de otra empresa (Ori / "Radiant") como referencia de estilo. Adoptamos su gramática visual (fondo negro, geometría recta, tipografía ligera a gran tamaño, etiquetas mono, ritmo), con la identidad de **Contextual Intelligence Partners**:
+`base/DESIGN.md` se extrajo de la web de otra empresa (Ori / "Radiant") como referencia de estilo. Adoptamos su gramática visual (fondo oscuro —azul marino `#0c1829` en lugar de negro puro—, geometría recta, tipografía ligera a gran tamaño, etiquetas mono, ritmo), con la identidad de **Contextual Intelligence Partners**:
 
 - **Acento cian `#00aff0`** (token `accent`), el color de marca de Contextual, en lugar del naranja del original.
 - **Archivo** (titulares y texto) + **Chivo Mono** (etiquetas), ambas libres (Google Fonts). Archivo ya es la tipografía de la marca.
@@ -37,7 +37,7 @@ Si `base/DESIGN.md` y este skill discrepan, manda este skill (ya resuelve los co
 4. **Paleta binaria**: solo los 7 colores de marca. El tema borra la paleta por defecto de Tailwind, así que `text-gray-500` o `bg-white` no existen — usa `text-fog-light`, `bg-bone-white`, etc. Nada de colores arbitrarios (`bg-[#123456]`).
 5. **Tipografía en tres papeles fijos**: `font-display` (titulares, peso 300 en grande / 400 en secciones y tarjetas), `font-body` (párrafos), `font-mono` (etiquetas, nav, botones, metadatos — en mayúsculas, 14px). Nunca titulares completos en negrita.
 6. **Solo escala tipográfica del sistema** (`text-caption` … `text-display-lg`), no tamaños arbitrarios.
-7. **Accesibilidad no se negocia aunque DESIGN.md diga "sin anillo de foco"**: todo elemento interactivo tiene `:focus-visible` visible (rectangular). `steel-mid` (#737373, 4.4:1) solo para texto ≥ 18px o puramente decorativo; para metadatos pequeños usa `fog-light`.
+7. **Accesibilidad no se negocia aunque DESIGN.md diga "sin anillo de foco"**: todo elemento interactivo tiene `:focus-visible` visible (rectangular). `steel-mid` (#7f8ca3, 5,3:1 sobre el fondo marino) para texto secundario; en superficie `carbon` baja a 4,6:1; para metadatos pequeños usa `fog-light`.
 8. **Imágenes**: fotografía oscura de infraestructura/arquitectura, a sangre, sin radio. Sin personas, ilustraciones, 3D ni iconografía decorativa. Iconos solo de trazo fino monocromo.
 
 ## Flujo de trabajo
