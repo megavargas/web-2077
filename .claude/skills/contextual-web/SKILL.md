@@ -33,7 +33,7 @@ Si `base/DESIGN.md` y este skill discrepan, manda este skill (ya resuelve los co
 
 1. **Radio 0 en todo** — botones, tarjetas, inputs, badges, imágenes. La geometría rectangular *es* la marca (estética de infraestructura); un `rounded` de 2px ya la rompe. El tema elimina los radios de Tailwind para que no se cuelen.
 2. **Sin sombras, glows ni gradientes decorativos.** La profundidad se consigue con cambio de superficie (`void-black` → `carbon`) y hairlines de 1px (`graphite-border` o `fog-light`). Única excepción: un degradado oscuro sobre una foto para legibilidad del texto.
-3. **El cian (`accent`) se raciona**: CTAs rellenos, estado activo de navegación, foco de inputs, una palabra de énfasis en el hero, y **como máximo una banda full-bleed cian por página** (excepción: la home tiene dos, ver design-system.md). Si aparece en todas partes deja de significar "acción".
+3. **El cian (`accent`) se raciona**: CTAs rellenos, estado activo de navegación, foco de inputs, una palabra de énfasis en el hero, y **como máximo una banda full-bleed cian por página**. Si aparece en todas partes deja de significar "acción".
 4. **Paleta binaria**: solo los 7 colores de marca. El tema borra la paleta por defecto de Tailwind, así que `text-gray-500` o `bg-white` no existen — usa `text-fog-light`, `bg-bone-white`, etc. Nada de colores arbitrarios (`bg-[#123456]`).
 5. **Tipografía en tres papeles fijos**: `font-display` (titulares, peso 300 en grande / 400 en secciones y tarjetas), `font-body` (párrafos), `font-mono` (etiquetas, nav, botones, metadatos — en mayúsculas, 14px). Nunca titulares completos en negrita.
 6. **Solo escala tipográfica del sistema** (`text-caption` … `text-display-lg`), no tamaños arbitrarios.

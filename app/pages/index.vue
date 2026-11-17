@@ -61,8 +61,8 @@ useHead({
       :intro="data.home.sectors.intro"
       :sectors="site.sectors"
     />
-    <SectionStatement :statement="data.home.statement" />
     <SectionEcosystemTeaser
+      tone="light"
       :ecosystem="data.home.ecosystem"
       :partners="data.ecosystem.partners.items.map((p) => p.name)"
     />
