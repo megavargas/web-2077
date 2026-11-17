@@ -100,7 +100,10 @@ CTAs: flex flex-wrap gap-4 → UiButton filled + UiButton ghost
 ```
 (`min-h-[100svh]` y `max-w-[540px]` son de los pocos valores arbitrarios aceptables: no son colores, tipos ni radios.)
 
-### banda de acento full-bleed (máx. 1 por página)
+### Ilustración del hero (`HeroRacks`)
+Pasillo de racks generado por código (SVG con semilla fija, idéntico en SSR y cliente), en perspectiva y con LEDs que parpadean (`motion-safe:animate-blink`). Se funde a negro con overlays `bg-linear-to-b` y `bg-linear-to-r` (el uso permitido de gradientes). Es propia: no usar fotos de la web de referencia. Si se sustituye por una foto, mantener los mismos overlays. Pesa ~5 KB comprimido.
+
+### Banda de acento full-bleed (máx. 1 por página)
 `<section class="w-full bg-accent py-20 [&_:focus-visible]:outline-void-black">` → contenedor centrado → `<p>` `font-display font-normal text-heading-sm md:text-heading lg:text-heading-lg text-void-black text-center text-balance max-w-4xl mx-auto`. Una o dos frases, sin botones ni imágenes.
 
 ### Cabecera de sección
