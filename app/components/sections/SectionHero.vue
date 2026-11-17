@@ -5,7 +5,20 @@ defineProps<{ hero: HomeContent['hero'] }>()
 </script>
 
 <template>
-  <section class="bg-void-black py-20 md:py-40" aria-labelledby="hero-title">
+  <section
+    class="relative isolate overflow-hidden bg-void-black py-20 md:py-40"
+    aria-labelledby="hero-title"
+  >
+    <!-- Ilustración de racks con fundido a negro (izquierda, arriba y abajo) -->
+    <div
+      class="absolute inset-x-0 bottom-0 -z-10 h-3/5 opacity-50 lg:inset-y-0 lg:right-0 lg:left-auto lg:h-full lg:w-3/5 lg:opacity-100"
+    >
+      <HeroRacks class="h-full w-full" />
+      <div class="absolute inset-0 bg-linear-to-b from-void-black via-transparent to-void-black" />
+      <div
+        class="absolute inset-0 hidden bg-linear-to-r from-void-black via-void-black/40 to-transparent lg:block"
+      />
+    </div>
     <UiContainer class="flex flex-col gap-10">
       <p class="font-mono text-caption text-fog-light uppercase">{{ hero.eyebrow }}</p>
       <h1
