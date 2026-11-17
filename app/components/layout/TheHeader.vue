@@ -9,10 +9,24 @@ watch(
   () => route.fullPath,
   () => (open.value = false),
 )
+
+// Cabecera fija (decisión del cliente, se aparta de DESIGN.md): al hacer scroll
+// aparece un hairline inferior que la separa del contenido.
+const scrolled = ref(false)
+const onScroll = () => (scrolled.value = window.scrollY > 8)
+onMounted(() => {
+  onScroll()
+  window.addEventListener('scroll', onScroll, { passive: true })
+})
+onBeforeUnmount(() => window.removeEventListener('scroll', onScroll))
 </script>
 
 <template>
-  <header class="bg-void-black" @keydown.escape="open = false">
+  <header
+    class="sticky top-0 z-40 border-b bg-void-black transition-colors duration-150"
+    :class="scrolled || open ? 'border-graphite-border' : 'border-transparent'"
+    @keydown.escape="open = false"
+  >
     <UiContainer class="flex items-center justify-between gap-6 py-4">
       <UiLogo />
 
@@ -50,7 +64,11 @@ watch(
       </div>
     </UiContainer>
 
-    <div v-if="open" id="mobile-menu" class="border-t border-graphite-border lg:hidden">
+    <div
+      v-if="open"
+      id="mobile-menu"
+      class="max-h-[calc(100svh-4.5rem)] overflow-y-auto border-t border-graphite-border lg:hidden"
+    >
       <UiContainer class="flex flex-col gap-8 py-8">
         <nav :aria-label="t('nav.main')">
           <ul class="flex flex-col gap-6 font-mono text-body uppercase">

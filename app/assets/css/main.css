@@ -84,6 +84,8 @@
     color: var(--color-bone-white);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    /* La cabecera es fija: las anclas (#form…) no deben quedar debajo */
+    scroll-padding-top: 5rem;
   }
 
   body {

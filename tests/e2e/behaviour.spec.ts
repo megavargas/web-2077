@@ -122,3 +122,41 @@ test('el HTML del servidor enlaza el selector de idioma a la ruta traducida', as
   expect(html).toContain('href="/services/data"')
   expect(html).not.toContain('/services/datos')
 })
+
+test.describe('cabecera fija', () => {
+  for (const viewport of [
+    { width: 1440, height: 900 },
+    { width: 375, height: 812 },
+  ]) {
+    test(`sigue visible arriba al hacer scroll (${viewport.width}px)`, async ({ page }) => {
+      await page.setViewportSize(viewport)
+      await page.goto('/es/servicios/datos')
+      await waitForHydration(page)
+      const header = page.locator('header').first()
+      await expect(header).toHaveClass(/border-transparent/)
+      await page.mouse.wheel(0, 3000)
+      await expect(header).toHaveClass(/border-graphite-border/)
+      const box = await header.boundingBox()
+      expect(box?.y).toBe(0)
+      await expect(
+        header.getByRole('link', { name: /Contextual Intelligence Partners/ }),
+      ).toBeInViewport()
+    })
+  }
+
+  test('las anclas no quedan tapadas por la cabecera', async ({ page }) => {
+    await page.goto('/es/servicios/diagnostico')
+    await waitForHydration(page)
+    await page.getByRole('link', { name: 'Solicita tu diagnóstico' }).first().click()
+    await expect(page).toHaveURL(/#form$/)
+    const title = page.locator('#form-title')
+    await expect(title).toBeInViewport()
+    // Esperar a que termine el scroll suave
+    await expect
+      .poll(async () => (await title.boundingBox())?.y ?? 0, { timeout: 3000 })
+      .toBeLessThan(400)
+    const headerBox = await page.locator('header').first().boundingBox()
+    const titleBox = await title.boundingBox()
+    expect(titleBox!.y).toBeGreaterThanOrEqual(headerBox!.height)
+  })
+})

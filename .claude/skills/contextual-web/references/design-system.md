@@ -86,7 +86,9 @@ Ambos llevan borde de 1px para que tengan la misma altura cuando van juntos. Ren
 `bg-carbon py-1.5 text-center font-body text-caption text-bone-white`; enlaces en `text-accent underline-offset-4 hover:underline`.
 
 ### Navegación principal
-`<header>` con `bg-void-black` (o transparente sobre el hero), contenedor `flex items-center justify-between py-4 px-4 md:px-10`. Logo de la compañía a la izquierda. Items: `font-mono text-caption uppercase text-bone-white hover:text-accent`, `gap-4 lg:gap-6`; activo con `text-accent` (`aria-current="page"`). A la derecha: CTA `filled` (Contacto) + `ghost` (Login, si aplica). En móvil, menú desplegable a pantalla completa `bg-void-black` con botón hamburguesa de trazo fino; sin mega-menú, sin sticky.
+`<header>` con `bg-void-black` (o transparente sobre el hero), contenedor `flex items-center justify-between py-4 px-4 md:px-10`. Logo de la compañía a la izquierda. Items: `font-mono text-caption uppercase text-bone-white hover:text-accent`, `gap-4 lg:gap-6`; activo con `text-accent` (`aria-current="page"`). A la derecha: CTA `filled` (Contacto) + `ghost` (Login, si aplica). En móvil, menú desplegable a pantalla completa `bg-void-black` con botón hamburguesa de trazo fino; sin mega-menú.
+
+**Cabecera fija (sticky)** — decisión del cliente (17/11/2026), se aparta de DESIGN.md: `sticky top-0 z-40`, fondo `void-black` sólido (sin transparencia ni blur), `border-b` transparente arriba del todo y `border-graphite-border` al hacer scroll o con el menú móvil abierto. `html { scroll-padding-top: 5rem }` para que las anclas no queden tapadas; el panel móvil hace scroll propio (`max-h-[calc(100svh-4.5rem)] overflow-y-auto`).
 
 ### Hero
 ```
