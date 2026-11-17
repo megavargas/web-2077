@@ -44,12 +44,13 @@ useHead({
       :sectors="site.sectors"
     />
     <SectionPillars
-      tone="light"
+      tone="accent"
       :title="data.home.pillars.title"
       :intro="data.home.pillars.intro"
       :pillars="site.pillars"
     />
     <SectionMethod
+      tone="light"
       :method="data.services.method"
       :title="data.home.method.title"
       :intro="data.home.method.intro"

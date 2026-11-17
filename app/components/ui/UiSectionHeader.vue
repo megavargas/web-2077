@@ -13,7 +13,7 @@ const {
   counter?: string
   level?: 2 | 3
   /** Fondo sobre el que va: oscuro (por defecto) o sección clara */
-  tone?: 'dark' | 'light'
+  tone?: 'dark' | 'light' | 'accent'
 }>()
 </script>
 
@@ -23,7 +23,7 @@ const {
       :is="`h${level}`"
       :id="id"
       class="font-display text-heading font-light text-balance md:text-heading-lg lg:text-heading-xl"
-      :class="tone === 'light' ? 'text-void-black' : 'text-bone-white'"
+      :class="tone !== 'dark' ? 'text-void-black' : 'text-bone-white'"
     >
       {{ title }}
     </component>
@@ -31,7 +31,7 @@ const {
       v-if="counter"
       aria-hidden="true"
       class="font-mono text-body"
-      :class="tone === 'light' ? 'text-void-black' : 'text-bone-white'"
+      :class="tone !== 'dark' ? 'text-void-black' : 'text-bone-white'"
     >
       {{ counter }}
     </span>

@@ -12,30 +12,40 @@ const {
   title: string
   intro?: string
   pillars: Pillar[]
-  /** light: sección clara (fondo mist) para romper el ritmo oscuro */
-  tone?: 'dark' | 'light'
+  /** light: sección clara (mist); accent: banda cian (cuenta como la banda de acento de la página) */
+  tone?: 'dark' | 'light' | 'accent'
 }>()
 
 const c = computed(() =>
-  tone === 'light'
+  tone === 'accent'
     ? {
-        section: 'bg-mist',
+        section: 'bg-accent',
         strong: 'text-void-black',
-        muted: 'text-ink-mid',
-        line: 'border-mist-border',
+        muted: 'text-void-black/80',
+        line: 'border-void-black/25',
         lineHover: 'hover:border-void-black',
-        hover: 'group-hover:text-accent-deep',
+        hover: 'group-hover:underline underline-offset-4',
         focus: 'focus-visible:outline-void-black',
       }
-    : {
-        section: '',
-        strong: 'text-bone-white',
-        muted: 'text-fog-light',
-        line: 'border-graphite-border',
-        lineHover: 'hover:border-bone-white',
-        hover: 'group-hover:text-accent',
-        focus: '',
-      },
+    : tone === 'light'
+      ? {
+          section: 'bg-mist',
+          strong: 'text-void-black',
+          muted: 'text-ink-mid',
+          line: 'border-mist-border',
+          lineHover: 'hover:border-void-black',
+          hover: 'group-hover:text-accent-deep',
+          focus: 'focus-visible:outline-void-black',
+        }
+      : {
+          section: '',
+          strong: 'text-bone-white',
+          muted: 'text-fog-light',
+          line: 'border-graphite-border',
+          lineHover: 'hover:border-bone-white',
+          hover: 'group-hover:text-accent',
+          focus: '',
+        },
 )
 </script>
 
