@@ -31,6 +31,7 @@
   --color-mist-border: #c9dfee; /* hairlines sobre claro */
   --color-ink-mid: #4b5a70; /* texto secundario sobre claro (6,2:1) */
   --color-accent-deep: #006b99; /* cian para texto sobre claro (5,2:1) */
+  --color-accent-strong: #0077a8; /* banda azul con texto blanco (5,0:1) */
 
   /* Familias (papel → fuente) */
   --font-display: "Archivo", ui-sans-serif, system-ui, sans-serif;

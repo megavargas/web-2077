@@ -12,20 +12,20 @@ const {
   title: string
   intro?: string
   pillars: Pillar[]
-  /** light: sección clara (mist); accent: banda cian (cuenta como la banda de acento de la página) */
+  /** light: sección clara (mist); accent: banda azul (accent-strong) con texto blanco */
   tone?: 'dark' | 'light' | 'accent'
 }>()
 
 const c = computed(() =>
   tone === 'accent'
     ? {
-        section: 'bg-accent',
-        strong: 'text-void-black',
-        muted: 'text-void-black/80',
-        line: 'border-void-black/25',
-        lineHover: 'hover:border-void-black',
+        section: 'bg-accent-strong',
+        strong: 'text-paper',
+        muted: 'text-bone-white',
+        line: 'border-bone-white/30',
+        lineHover: 'hover:border-paper',
         hover: 'group-hover:underline underline-offset-4',
-        focus: 'focus-visible:outline-void-black',
+        focus: '',
       }
     : tone === 'light'
       ? {
