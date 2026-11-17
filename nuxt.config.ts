@@ -64,7 +64,16 @@ export default defineNuxtConfig({
   image: { quality: 80, format: ['avif', 'webp'] },
 
   // Iconos empaquetados en el build: sin llamadas a la API de Iconify
-  icon: { serverBundle: { collections: ['lucide'] } },
+  // mode svg: los iconos respetan las clases size-* de Tailwind
+  icon: {
+    mode: 'svg',
+    serverBundle: { collections: ['lucide'] },
+    // Iconos en el bundle del cliente (también los del contenido YAML): funcionan en
+    // navegación cliente y en hosting estático, sin endpoint /api/_nuxt_icon.
+    clientBundle: {
+      scan: { globInclude: ['app/**/*.vue', 'content/**/*.yml'] },
+    },
+  },
 
   eslint: { config: { stylistic: false } },
 })

@@ -16,15 +16,87 @@ hero:
   secondaryCta: Ver servicios
 
 context:
-  title: Contexto es negocio, datos y sector
-  intro: Sin las tres capas, la IA se queda en piloto. Por eso las trabajamos juntas.
+  quote: La IA solo funciona con contexto. Lo construimos de abajo arriba, capa a capa.
+  titleLines:
+    - Tres capas de contexto.
+    - Una IA que funciona.
   layers:
-    - name: Negocio
-      text: Estrategia y casos de uso priorizados con business case. Qué hacer primero, por qué y con qué retorno.
-    - name: Datos
-      text: Dato gobernado y una capa semántica común. Una sola versión de la verdad sobre la que construir.
-    - name: Sector
-      text: Regulación y conocimiento de dominio en Telco, Banca y Seguros. Soluciones que superan la auditoría y el comité.
+    - number: '04'
+      name: IA aplicada
+      tagline: Lo que se ve
+      text: Agentes, asistentes y modelos en producción. Funcionan cuando las tres capas de abajo están en su sitio.
+      tiles:
+        - { label: Agentes, sub: 'IA generativa', icon: 'lucide:bot', pillar: ai }
+        - {
+            label: Asistentes,
+            sub: 'Sobre tu conocimiento',
+            icon: 'lucide:message-square-text',
+            pillar: ai,
+          }
+        - {
+            label: Modelos predictivos,
+            sub: 'Riesgo, abandono, fraude',
+            icon: 'lucide:trending-up',
+            pillar: ai,
+          }
+        - {
+            label: Automatización,
+            sub: 'Documentos y procesos',
+            icon: 'lucide:workflow',
+            pillar: ai,
+          }
+    - number: '03'
+      name: Negocio
+      tagline: Lo que importa
+      text: Estrategia, casos de uso priorizados y decisiones medibles. Sin esta capa, la IA resuelve problemas que nadie tenía.
+      tiles:
+        - { label: Estrategia, sub: 'Datos e IA', icon: 'lucide:compass', pillar: strategy }
+        - {
+            label: Casos de uso,
+            sub: 'Con business case',
+            icon: 'lucide:list-checks',
+            pillar: strategy,
+          }
+        - { label: Gobierno, sub: 'Incluido el AI Act', icon: 'lucide:scale', pillar: strategy }
+        - {
+            label: Decision intelligence,
+            sub: 'BI y analítica',
+            icon: 'lucide:gauge',
+            pillar: intelligence,
+          }
+    - number: '02'
+      name: Datos
+      tagline: Lo que se sabe
+      text: Un dato gobernado, de calidad y con definiciones comunes. Es la memoria sobre la que razona la IA.
+      tiles:
+        - {
+            label: Plataforma cloud,
+            sub: 'Google Cloud, Azure, AWS',
+            icon: 'lucide:cloud',
+            pillar: data,
+          }
+        - { label: Lakehouse, sub: 'Y data warehouse', icon: 'lucide:database', pillar: data }
+        - { label: Calidad, sub: 'Y observabilidad', icon: 'lucide:shield-check', pillar: data }
+        - {
+            label: Capa semántica,
+            sub: 'Métricas comunes',
+            icon: 'lucide:layers',
+            pillar: intelligence,
+          }
+    - number: '01'
+      name: Sector
+      tagline: Lo que no se negocia
+      text: Regulación, vocabulario y procesos de Telco, Banca y Seguros. Lo que convierte una solución genérica en una que supera la auditoría.
+      tiles:
+        - { label: Telco, sub: 'Clientes y red', icon: 'lucide:radio-tower', sector: telco }
+        - { label: Banca, sub: 'Riesgo y fraude', icon: 'lucide:landmark', sector: banking }
+        - {
+            label: Seguros,
+            sub: 'Tarificación y siniestros',
+            icon: 'lucide:umbrella',
+            sector: insurance,
+          }
+        - { label: Regulación, sub: 'AI Act, DORA, Solvencia II', icon: 'lucide:file-check' }
 
 pillars:
   title: De la estrategia a la IA en producción

@@ -89,6 +89,10 @@ test.describe('menú móvil', () => {
     await toggle.click()
     const menu = page.locator('#mobile-menu')
     await expect(menu).toBeVisible()
+    // El icono de cerrar solo se pinta en cliente: debe venir en el bundle
+    const closeIcon = page.getByRole('button', { name: 'Cerrar menú' }).locator('svg')
+    await expect(closeIcon).toBeVisible()
+    expect((await closeIcon.boundingBox())?.width).toBe(24)
     await menu.getByRole('link', { name: 'Sectores' }).click()
     await expect(page).toHaveURL(/\/es\/sectores$/)
     await expect(menu).toBeHidden()
@@ -159,4 +163,14 @@ test.describe('cabecera fija', () => {
     const titleBox = await title.boundingBox()
     expect(titleBox!.y).toBeGreaterThanOrEqual(headerBox!.height)
   })
+})
+
+test('la pila de contexto enlaza cada tarjeta a su pilar o sector', async ({ page }) => {
+  await page.goto('/es')
+  const layers = page.locator('#context ol > li')
+  await expect(layers).toHaveCount(4)
+  await expect(layers.locator('h3')).toHaveText(['IA aplicada', 'Negocio', 'Datos', 'Sector'])
+  await expect(page.locator('#context ol a[href]')).toHaveCount(15)
+  await expect(page.locator('#context a[href="/es/sectores/banca"]')).toContainText('Banca')
+  await expect(page.locator('#context a[href="/es/servicios/ia"]').first()).toContainText('Agentes')
 })

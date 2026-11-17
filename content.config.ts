@@ -31,7 +31,28 @@ const schemas = {
       primaryCta: z.string(),
       secondaryCta: z.string(),
     }),
-    context: z.object({ title: z.string(), intro: z.string(), layers: z.array(named) }),
+    // Pila de contexto: capas numeradas de arriba (IA) a la base (sector).
+    context: z.object({
+      quote: z.string(),
+      titleLines: z.array(z.string()),
+      layers: z.array(
+        z.object({
+          number: z.string(),
+          name: z.string(),
+          tagline: z.string(),
+          text: z.string(),
+          tiles: z.array(
+            z.object({
+              label: z.string(),
+              sub: z.string(),
+              icon: z.string(),
+              pillar: z.enum(pillarKeys).optional(),
+              sector: z.enum(sectorKeys).optional(),
+            }),
+          ),
+        }),
+      ),
+    }),
     pillars: z.object({ title: z.string(), intro: z.string() }),
     method: z.object({ title: z.string(), intro: z.string(), linkLabel: z.string() }),
     sectors: z.object({ title: z.string(), intro: z.string() }),

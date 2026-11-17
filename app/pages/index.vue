@@ -38,7 +38,11 @@ useHead({
 <template>
   <div v-if="data?.home && data.services && data.ecosystem && site">
     <SectionHero :hero="data.home.hero" />
-    <SectionContextLayers :context="data.home.context" />
+    <SectionContextStack
+      :context="data.home.context"
+      :pillars="site.pillars"
+      :sectors="site.sectors"
+    />
     <SectionPillars
       :title="data.home.pillars.title"
       :intro="data.home.pillars.intro"
