@@ -3,6 +3,7 @@ order: 2
 number: '02'
 slug: datos
 name: Datos
+subtitle: Plataformas cloud, ingeniería y calidad del dato
 benefit: Un dato único, fiable y gobernado sobre el que construir.
 summary: Plataformas de datos modernas en Google Cloud, Azure y AWS, gobernadas desde el primer día.
 seo:

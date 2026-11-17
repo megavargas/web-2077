@@ -3,6 +3,7 @@ order: 2
 number: '02'
 slug: data
 name: Data
+subtitle: Cloud platforms, data engineering and quality
 benefit: A single, reliable, governed source of data to build on.
 summary: Modern data platforms on Google Cloud, Azure and AWS, governed from day one.
 seo:

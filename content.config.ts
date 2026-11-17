@@ -67,7 +67,8 @@ const schemas = {
     number: z.string(),
     slug: z.string(),
     name: z.string(),
-    subtitle: z.string().optional(),
+    // Obligatorio: la lista de pilares muestra los cuatro con la misma estructura
+    subtitle: z.string(),
     benefit: z.string(),
     summary: z.string(),
     seo,
