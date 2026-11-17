@@ -1,0 +1,26 @@
+{
+  "common": {
+    "home": "Contextual Intelligence Partners: home",
+    "language": "Language",
+    "skip": "Skip to content"
+  },
+  "footer": {
+    "rights": "All rights reserved"
+  },
+  "home": {
+    "seo": {
+      "title": "Consulting, data, intelligence and AI",
+      "description": "Strategy, data and AI so that the decisions that matter are made better, and sooner. Consulting for Telco, Banking and Insurance."
+    },
+    "hero": {
+      "eyebrow": "Consulting · Data · Intelligence · AI",
+      "title": "Intelligence, in {emphasis}.",
+      "emphasis": "context",
+      "subtitle": "Strategy, data and AI so that the decisions that matter are made better, and sooner."
+    },
+    "statement": {
+      "label": "Our view",
+      "text": "AI without context is just statistics. We bring the context."
+    }
+  }
+}

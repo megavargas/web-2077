@@ -1,0 +1,26 @@
+{
+  "common": {
+    "home": "Contextual Intelligence Partners: inicio",
+    "language": "Idioma",
+    "skip": "Saltar al contenido"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados"
+  },
+  "home": {
+    "seo": {
+      "title": "Consultoría, datos, inteligencia e IA",
+      "description": "Estrategia, datos e IA para que las decisiones importantes se tomen mejor y antes. Consultoría para Telco, Banca y Seguros."
+    },
+    "hero": {
+      "eyebrow": "Consultoría · Datos · Inteligencia · IA",
+      "title": "Inteligencia con {emphasis}.",
+      "emphasis": "contexto",
+      "subtitle": "Estrategia, datos e IA para que las decisiones importantes se tomen mejor y antes."
+    },
+    "statement": {
+      "label": "Nuestra visión",
+      "text": "La IA sin contexto es solo estadística. Nosotros ponemos el contexto."
+    }
+  }
+}

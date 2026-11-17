@@ -1,0 +1,35 @@
+name: contextual-web
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.dev
+    volumes:
+      - .:/app
+      - pnpm-store:/pnpm/store
+    ports:
+      - '${WEB_PORT:-3100}:3000'
+    environment:
+      npm_config_store_dir: /pnpm/store
+      CHOKIDAR_USEPOLLING: 'false'
+    stdin_open: true
+    tty: true
+
+  # Tests e2e con navegadores reales. Uso: docker compose run --rm e2e
+  e2e:
+    image: mcr.microsoft.com/playwright:v1.65.1-noble
+    profiles: ['e2e']
+    working_dir: /app
+    volumes:
+      - .:/app
+    environment:
+      BASE_URL: http://web:3000
+      CI: '1'
+    ipc: host
+    depends_on:
+      - web
+    command: ['node', 'node_modules/@playwright/test/cli.js', 'test']
+
+volumes:
+  pnpm-store:

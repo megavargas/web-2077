@@ -1,0 +1,45 @@
+{
+  "name": "contextual-web",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint . && prettier --check .",
+    "format": "eslint . --fix && prettier --write .",
+    "typecheck": "nuxt typecheck",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "check:design": "bash .claude/skills/contextual-web/scripts/check-design.sh"
+  },
+  "dependencies": {
+    "@iconify-json/lucide": "^1.2.155",
+    "@nuxt/content": "^3.16.2",
+    "@nuxt/fonts": "^1.2.0",
+    "@nuxt/icon": "^2.6.2",
+    "@nuxt/image": "^2.2.1",
+    "@nuxtjs/i18n": "^10.6.0",
+    "nuxt": "^4.6.4",
+    "vue": "^3.5.45",
+    "vue-router": "^5.5.1"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "@nuxt/eslint": "^1.17.0",
+    "@nuxt/test-utils": "^4.4.0",
+    "@playwright/test": "1.65.1",
+    "@tailwindcss/vite": "^4.3.5",
+    "@vue/test-utils": "^2.6.0",
+    "eslint": "^10.15.0",
+    "happy-dom": "^21.0.4",
+    "prettier": "^3.10.1",
+    "prettier-plugin-tailwindcss": "^0.8.1",
+    "tailwindcss": "^4.3.5",
+    "typescript": "~6.0.3",
+    "vitest": "^5.1.0",
+    "vue-tsc": "^3.3.14"
+  }
+}

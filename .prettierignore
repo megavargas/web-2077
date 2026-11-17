@@ -1,0 +1,9 @@
+.nuxt
+.output
+.data
+node_modules
+pnpm-lock.yaml
+base
+.claude
+playwright-report
+test-results
