@@ -66,6 +66,6 @@ useHead({
       :ecosystem="data.home.ecosystem"
       :partners="data.ecosystem.partners.items.map((p) => p.name)"
     />
-    <SectionCta :cta="data.home.cta" />
+    <SectionCta :cta="data.home.cta" :divider="false" />
   </div>
 </template>
