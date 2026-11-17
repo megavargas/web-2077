@@ -1,8 +1,225 @@
 import { defineCollection, defineContentConfig, z } from '@nuxt/content'
 
-// Insights (blog/noticias), una colección por idioma.
-const insights = (locale: 'es' | 'en') =>
-  defineCollection({
+/*
+ * Modelo de contenido de la web. Cada colección existe por idioma (`<nombre>_es`, `<nombre>_en`)
+ * con el mismo esquema, a partir de content/es/… y content/en/….
+ * Ver .claude/skills/contextual-web/references/content.md.
+ */
+
+const locales = ['es', 'en'] as const
+type Locale = (typeof locales)[number]
+
+export const pillarKeys = ['strategy', 'data', 'intelligence', 'ai'] as const
+export const sectorKeys = ['telco', 'banking', 'insurance'] as const
+
+const seo = z.object({ title: z.string(), description: z.string() })
+const header = z.object({ eyebrow: z.string(), title: z.string(), intro: z.string() })
+const faq = z.array(z.object({ q: z.string(), a: z.string() })).default([])
+const cta = z.object({ title: z.string(), text: z.string(), button: z.string() })
+const named = z.object({ name: z.string(), text: z.string() })
+const titled = <T extends z.ZodTypeAny>(items: T) => z.object({ title: z.string(), items })
+
+const schemas = {
+  home: z.object({
+    seo,
+    hero: z.object({
+      eyebrow: z.string(),
+      title: z.string(), // contiene {emphasis}
+      emphasis: z.string(),
+      subtitle: z.string(),
+      primaryCta: z.string(),
+      secondaryCta: z.string(),
+    }),
+    context: z.object({ title: z.string(), intro: z.string(), layers: z.array(named) }),
+    pillars: z.object({ title: z.string(), intro: z.string() }),
+    method: z.object({ title: z.string(), intro: z.string(), linkLabel: z.string() }),
+    sectors: z.object({ title: z.string(), intro: z.string() }),
+    ecosystem: z.object({ title: z.string(), text: z.string(), linkLabel: z.string() }),
+    statement: z.object({ label: z.string(), text: z.string() }),
+    cta,
+  }),
+
+  pillars: z.object({
+    key: z.enum(pillarKeys),
+    order: z.number(),
+    number: z.string(),
+    slug: z.string(),
+    name: z.string(),
+    subtitle: z.string().optional(),
+    benefit: z.string(),
+    summary: z.string(),
+    seo,
+    problem: z.object({ title: z.string(), text: z.string() }),
+    includes: titled(z.array(named)),
+    outcome: z.object({ title: z.string(), text: z.string() }),
+    technologies: z.array(z.string()).default([]),
+    faq,
+    cta,
+  }),
+
+  sectors: z.object({
+    key: z.enum(sectorKeys),
+    order: z.number(),
+    slug: z.string(),
+    name: z.string(),
+    benefit: z.string(),
+    seo,
+    header,
+    challenges: titled(z.array(named)),
+    domains: z.object({
+      title: z.string(),
+      intro: z.string(),
+      items: z.array(
+        z.object({
+          name: z.string(),
+          useCases: z.array(
+            z.object({ name: z.string(), text: z.string(), pillars: z.array(z.enum(pillarKeys)) }),
+          ),
+        }),
+      ),
+    }),
+    regulation: z.object({ title: z.string(), intro: z.string(), items: z.array(named) }),
+    // Persona responsable del sector: solo se muestra si existe (pendiente de decidir).
+    expert: z
+      .object({ name: z.string(), role: z.string(), linkedin: z.string().optional() })
+      .optional(),
+    faq,
+    cta,
+  }),
+
+  services: z.object({
+    seo,
+    header,
+    pillarsTitle: z.string(),
+    method: z.object({
+      title: z.string(),
+      intro: z.string(),
+      deliverablesLabel: z.string(),
+      phases: z.array(
+        z.object({
+          key: z.string(),
+          name: z.string(),
+          tag: z.string().optional(),
+          highlight: z.boolean().default(false),
+          description: z.string(),
+          deliverables: z.array(z.string()).default([]),
+        }),
+      ),
+    }),
+    engagement: z.object({ title: z.string(), intro: z.string(), models: z.array(named) }),
+    faq,
+    cta,
+  }),
+
+  diagnostic: z.object({
+    seo,
+    header,
+    forWho: titled(z.array(z.string())),
+    analysis: titled(z.array(named)),
+    deliverables: titled(z.array(z.string())),
+    format: titled(z.array(z.object({ label: z.string(), value: z.string() }))),
+    next: z.object({ title: z.string(), text: z.string() }),
+    faq,
+    form: z.object({ title: z.string(), text: z.string() }),
+  }),
+
+  sectorsPage: z.object({ seo, header }),
+
+  ecosystem: z.object({
+    seo,
+    header,
+    partners: z.object({
+      title: z.string(),
+      intro: z.string(),
+      items: z.array(
+        z.object({
+          name: z.string(),
+          role: z.string(),
+          text: z.string(),
+          technologies: z.array(z.string()).default([]),
+        }),
+      ),
+    }),
+    licensing: z.object({
+      title: z.string(),
+      text: z.string(),
+      points: z.array(named),
+      button: z.string(),
+    }),
+    technologies: z.object({
+      title: z.string(),
+      intro: z.string(),
+      groups: z.array(z.object({ name: z.string(), items: z.array(z.string()) })),
+    }),
+  }),
+
+  about: z.object({
+    seo,
+    header,
+    story: z.object({ title: z.string(), paragraphs: z.array(z.string()) }),
+    principles: titled(z.array(named)),
+    team: z.object({
+      title: z.string(),
+      people: z.array(z.object({ name: z.string(), role: z.string() })),
+    }),
+    offices: titled(
+      z.array(z.object({ city: z.string(), label: z.string(), address: z.string().optional() })),
+    ),
+    cta,
+  }),
+
+  talent: z.object({
+    seo,
+    header,
+    culture: titled(z.array(named)),
+    process: z.object({ title: z.string(), steps: z.array(named) }),
+    openings: z.object({ title: z.string(), text: z.string(), button: z.string() }),
+  }),
+
+  contact: z.object({
+    seo,
+    header,
+    channels: titled(z.array(z.object({ label: z.string(), email: z.string() }))),
+  }),
+} as const
+
+type Name = keyof typeof schemas
+
+/** Ruta del archivo (o glob) de cada colección dentro de content/<locale>/. */
+const sources: Record<Name, string> = {
+  home: 'home.yml',
+  pillars: 'pillars/*.yml',
+  sectors: 'sectors/*.yml',
+  services: 'services.yml',
+  diagnostic: 'diagnostic.yml',
+  sectorsPage: 'sectors.yml',
+  ecosystem: 'ecosystem.yml',
+  about: 'about.yml',
+  talent: 'talent.yml',
+  contact: 'contact.yml',
+}
+
+function dataCollections() {
+  const out: Record<string, ReturnType<typeof defineCollection>> = {}
+  for (const name of Object.keys(schemas) as Name[]) {
+    for (const locale of locales) {
+      out[`${name}_${locale}`] = defineCollection({
+        type: 'data',
+        source: `${locale}/${sources[name]}`,
+        schema: schemas[name],
+      })
+    }
+  }
+  return out
+}
+
+const pageCollections = (locale: Locale) => ({
+  [`legal_${locale}`]: defineCollection({
+    type: 'page',
+    source: { include: `${locale}/legal/*.md`, prefix: '/legal' },
+    schema: z.object({ key: z.enum(['notice', 'privacy', 'cookies']), updated: z.string() }),
+  }),
+  [`insights_${locale}`]: defineCollection({
     type: 'page',
     source: { include: `${locale}/insights/**/*.md`, prefix: '/insights' },
     schema: z.object({
@@ -11,11 +228,13 @@ const insights = (locale: 'es' | 'en') =>
       image: z.string().optional(),
       tags: z.array(z.string()).default([]),
     }),
-  })
+  }),
+})
 
 export default defineContentConfig({
   collections: {
-    insights_es: insights('es'),
-    insights_en: insights('en'),
+    ...dataCollections(),
+    ...pageCollections('es'),
+    ...pageCollections('en'),
   },
 })

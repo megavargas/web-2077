@@ -54,7 +54,7 @@ No confundir esta numeración con la de pilares en la misma vista: si aparecen j
 
 Foco: **Telco, Banca y Seguros** (`/sectores/telco`, `/sectores/banca`, `/sectores/seguros`). Son sectores regulados y con muchísimo dato: el discurso pone por delante gobierno, seguridad y trazabilidad.
 
-**No hay casos de cliente publicables.** Las páginas de sector sustituyen a los casos con: retos del sector → casos de uso que abordamos → qué pilares intervienen → CTA a diagnóstico. Los casos de uso son **capacidades**, nunca se presentan como proyectos realizados.
+**Casos de cliente: no se reutilizan por ahora (ver §5b).** Mientras tanto, las páginas de sector sustituyen a los casos con: retos del sector → casos de uso que abordamos → qué pilares intervienen → CTA a diagnóstico. Los casos de uso son **capacidades**, nunca se presentan como proyectos realizados.
 
 | Sector | Casos de uso que abordamos (base para redactar) | Contexto regulatorio a mencionar |
 |---|---|---|
@@ -64,21 +64,35 @@ Foco: **Telco, Banca y Seguros** (`/sectores/telco`, `/sectores/banca`, `/sector
 
 Menciona la regulación como contexto que entendemos, **no** como certificaciones ni cumplimiento garantizado.
 
-## 5. Mapa del sitio
+## 5. Mapa del sitio (implementado)
+
+Base: `docs/reports/Benchmark competitivo web Contextual.md` (benchmark de 29 competidores, nov. 2026).
 
 ```
-/                          Home: hero · 4 pilares · cómo trabajamos · sectores · banda de acento · insights · CTA
-/servicios                 Visión general del recorrido 01→04
-/servicios/{estrategia,datos,inteligencia,ia}
-/sectores/{telco,banca,seguros}
-/ecosistema                Partners tecnológicos y herramientas
-/insights                  Blog/noticias (NewsCard) — /insights/<slug>
-/nosotros                  Quiénes somos, equipo, oficinas
-/contacto                  Formulario + CTA "Solicita un diagnóstico"
-/en/...                    Mismas rutas en inglés (slugs traducidos vía i18n)
+/                                Home: hero · contexto en 3 capas · pilares 01→04 · método · sectores · banda · ecosistema · CTA
+/servicios                       Recorrido 01→04 · método con entregables · formas de trabajar (proyecto, gestionado, capacidad flexible) · FAQ
+/servicios/{estrategia,datos,inteligencia,ia}    Problema · qué incluye · resultado · dónde lo aplicamos (por sector) · tecnologías · FAQ · anterior/siguiente
+/servicios/diagnostico           Landing de la oferta de entrada + formulario (motivo fijo)
+/sectores · /sectores/{telco,banca,seguros}      Retos · casos de uso por área de negocio con pilares · regulación · FAQ · CTA con sector
+/ecosistema                      Partners · licencias y facturación · tecnologías
+/nosotros · /talento · /contacto (formulario con motivo y sector, ?sector=&reason=)
+/legal/{aviso-legal,privacidad,cookies}          Borradores pendientes de revisión legal (noindex)
+/en/...                          services, industries, ecosystem, about, careers, contact, legal (slugs traducidos)
 ```
 
-Sin página de "Casos" hasta que haya casos publicables (no dejes enlaces vacíos ni "próximamente"). Navegación principal: Servicios · Sectores · Ecosistema · Insights · Nosotros + CTA "Contacto".
+Reservado y **sin enlazar** hasta que haya decisión o contenido: `/casos` (casos de cliente), `/insights` (sin artículos aún), `/autodiagnostico` (fase 2).
+
+Contenido: cada página tiene su YAML en `content/{es,en}/` (esquemas en `content.config.ts`). Pilares y sectores son la única fuente de verdad: la home, los listados, el pie y los enlaces cruzados los leen de ahí.
+
+## 5b. Decisiones pendientes del cliente
+
+- **Casos de cliente:** decidido el 17/11/2026 **no reutilizar** las 17 historias de la web antigua por ahora. No publicar nombres de clientes, logos ni cifras de esos casos; `/casos` sigue reservada y sin enlazar.
+- **Nombre del método/diagnóstico** (el benchmark recomienda darle marca). No inventarlo.
+- **Expertos por sector** (campo `expert` en el YAML del sector; solo se muestra si existe).
+- **Google Marketing Platform:** si aparece o no en Ecosistema.
+- **Niveles de partnership** y servicios del bloque de licencias (marcados `TODO` en `ecosystem.yml`).
+- **Oficinas** fuera de Madrid y dirección (solo se publican las que tengan dirección real).
+- **Envío del formulario:** definir destino (`NUXT_CONTACT_WEBHOOK_URL`) y hosting con servidor; en estático, el formulario ofrece el email.
 
 ## 6. Tono y reglas de redacción
 
@@ -95,6 +109,8 @@ Voz: **consultor senior hablando con un directivo**. Directa, concreta, segura s
 ## 7. Datos de empresa (confirmar antes de publicar)
 
 Tomados de la web actual (contextual.team); pueden estar desactualizados:
-- Partnerships: Google (Google Cloud y Google Marketing Platform, partner y revendedor), Microsoft Azure, Datadog.
-- Oficinas: Madrid, Milán, Lisboa, México, Tallin, Zúrich.
+- Partnerships publicados en la web nueva: Google Cloud, Microsoft Azure y AWS, los tres como partner y revendedor de licencias. **Datadog no se menciona** (decisión del cliente, 17/11/2026). Google Marketing Platform: pendiente.
+- Oficinas declaradas en la web antigua: Madrid, Milán, Lisboa, México, Tallin, Zúrich (varias con teléfonos de relleno). Publicada solo Madrid.
+- Domicilio social (BORME, mayo 2026): C/ Espoz y Mina 2, Madrid. NIF B87568440. Fundada en 2016.
+- Email de contacto: **hola@contextual.team** (único; formulario, legal y contacto).
 - Logo: pendiente versión vectorial ligera y versión monocroma blanca para fondo negro (el `logo_small.svg` actual pesa 1,7 MB). Hasta tenerla, usa `UiLogo` con el texto "CONTEXTUAL" en `font-mono` como placeholder.

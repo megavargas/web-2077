@@ -1,0 +1,48 @@
+key: data
+order: 2
+number: '02'
+slug: data
+name: Data
+benefit: A single, reliable, governed source of data to build on.
+summary: Modern data platforms on Google Cloud, Azure and AWS, governed from day one.
+seo:
+  title: Data platforms on Google Cloud, Azure and AWS
+  description: Cloud data platforms, lakehouse and data warehouse, legacy BI and ETL migration, data engineering and quality, DataOps and observability.
+problem:
+  title: The problem
+  text: Data scattered across legacy systems, figures that do not reconcile between departments and platforms that cost more than they deliver. Without a reliable foundation, every analytics or AI initiative inherits the problem.
+includes:
+  title: What it includes
+  items:
+    - name: Cloud data platforms
+      text: Architecture and deployment on Google Cloud, Azure or AWS, with security and costs under control by design.
+    - name: Lakehouse and data warehouse
+      text: Data models designed for the business, with a single version of the truth.
+    - name: Legacy BI and ETL migration
+      text: From Cognos, MicroStrategy, PowerCenter or Teradata to a modern stack, without interrupting reporting.
+    - name: Data engineering and quality
+      text: Automated pipelines, testing and measurable quality rules.
+    - name: DataOps and observability
+      text: Continuous deployment, monitoring and alerting to catch failures before users do.
+outcome:
+  title: Outcome
+  text: A governed platform with predictable costs and data the business trusts.
+technologies:
+  - Google Cloud
+  - BigQuery
+  - Microsoft Azure
+  - Azure Data Factory
+  - Azure Synapse
+  - AWS
+  - Snowflake
+  - Airflow
+  - Matillion
+faq:
+  - q: Do you only work with Google Cloud?
+    a: No. We work with Google Cloud, Azure and AWS, and choose based on the problem, the existing systems and the costs, not on the contract.
+  - q: Can we migrate without stopping current reporting?
+    a: Yes. We plan the migration by domain and run critical reports in parallel until the new ones are validated.
+cta:
+  title: Modernise your data platform
+  text: A 2–4 week assessment tells you what to migrate, in what order and at what cost.
+  button: Request an assessment

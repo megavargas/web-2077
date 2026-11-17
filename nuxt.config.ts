@@ -10,9 +10,13 @@ export default defineNuxtConfig({
     '@nuxt/fonts',
     '@nuxt/icon',
     '@nuxtjs/i18n',
+    '@nuxtjs/sitemap',
     '@nuxt/eslint',
     '@nuxt/test-utils/module',
   ],
+
+  // Los nombres ya llevan prefijo (Ui*, Section*, The*): sin prefijo de carpeta.
+  components: [{ path: '~/components', pathPrefix: false }],
 
   css: ['~/assets/css/main.css'],
   vite: {
@@ -22,8 +26,21 @@ export default defineNuxtConfig({
   },
   typescript: { strict: true, typeCheck: false },
 
+  site: {
+    url: 'https://contextual.team',
+    name: 'Contextual Intelligence Partners',
+  },
+
+  runtimeConfig: {
+    // URL a la que el formulario de contacto reenvía las solicitudes (NUXT_CONTACT_WEBHOOK_URL).
+    // Sin ella, /api/contact responde 503 y la web ofrece el email como alternativa.
+    contactWebhookUrl: '',
+  },
+
   i18n: {
     baseUrl: 'https://contextual.team',
+    // Rutas traducidas con definePageMeta({ i18n: { paths: { en: '/services' } } })
+    customRoutes: 'meta',
     defaultLocale: 'es',
     strategy: 'prefix_except_default', // /servicios  y  /en/services
     locales: [

@@ -4,23 +4,87 @@
     "language": "Idioma",
     "skip": "Saltar al contenido"
   },
-  "footer": {
-    "rights": "Todos los derechos reservados"
+  "nav": {
+    "main": "Principal",
+    "footer": "Pie de página",
+    "services": "Servicios",
+    "sectors": "Sectores",
+    "ecosystem": "Ecosistema",
+    "about": "Nosotros",
+    "careers": "Talento",
+    "contact": "Contacto",
+    "assessment": "Diagnóstico",
+    "open": "Abrir menú",
+    "close": "Cerrar menú"
   },
-  "home": {
-    "seo": {
-      "title": "Consultoría, datos, inteligencia e IA",
-      "description": "Estrategia, datos e IA para que las decisiones importantes se tomen mejor y antes. Consultoría para Telco, Banca y Seguros."
+  "footer": {
+    "tagline": "Consultoría independiente de estrategia, datos e IA para Telco, Banca y Seguros.",
+    "rights": "Todos los derechos reservados",
+    "company": "Compañía",
+    "legal": "Legal"
+  },
+  "legal": {
+    "notice": "Aviso legal",
+    "privacy": "Privacidad",
+    "cookies": "Cookies",
+    "updated": "Última actualización: {date}"
+  },
+  "labels": {
+    "faq": "Preguntas frecuentes",
+    "pillars": "Pilares",
+    "technologies": "Tecnologías",
+    "whereWeApply": "Dónde lo aplicamos",
+    "otherSectors": "Otros sectores",
+    "previous": "Anterior",
+    "next": "Siguiente",
+    "services": "Servicios",
+    "readMore": "Ver más"
+  },
+  "form": {
+    "name": "Nombre y apellidos",
+    "email": "Email profesional",
+    "company": "Empresa",
+    "sector": "Sector",
+    "reason": "Motivo",
+    "message": "Mensaje",
+    "messagePlaceholder": "Cuéntanos tu contexto y qué necesitas.",
+    "optional": "opcional",
+    "select": "Selecciona una opción",
+    "website": "Deja este campo vacío",
+    "consent": "He leído la {link} y acepto el tratamiento de mis datos para atender esta solicitud.",
+    "consentLink": "política de privacidad",
+    "submit": "Enviar",
+    "sending": "Enviando…",
+    "sectors": {
+      "telco": "Telco",
+      "banking": "Banca",
+      "insurance": "Seguros",
+      "other": "Otro"
     },
-    "hero": {
-      "eyebrow": "Consultoría · Datos · Inteligencia · IA",
-      "title": "Inteligencia con {emphasis}.",
-      "emphasis": "contexto",
-      "subtitle": "Estrategia, datos e IA para que las decisiones importantes se tomen mejor y antes."
+    "reasons": {
+      "assessment": "Solicitar un diagnóstico",
+      "project": "Proyecto o propuesta",
+      "rfp": "Enviar una RFP",
+      "licences": "Licencias cloud",
+      "careers": "Trabajar con nosotros",
+      "press": "Prensa",
+      "other": "Otro"
     },
-    "statement": {
-      "label": "Nuestra visión",
-      "text": "La IA sin contexto es solo estadística. Nosotros ponemos el contexto."
-    }
+    "errors": {
+      "summary": "Revisa los campos marcados.",
+      "name": "Escribe tu nombre.",
+      "email": "Escribe un email válido.",
+      "company": "El nombre de la empresa es demasiado largo.",
+      "sector": "Elige un sector.",
+      "reason": "Elige un motivo.",
+      "message": "Escribe un mensaje de al menos 10 caracteres.",
+      "consent": "Necesitamos tu consentimiento para responderte."
+    },
+    "success": {
+      "title": "Mensaje enviado",
+      "text": "Gracias. Hemos recibido tu mensaje y te responderá una persona del equipo."
+    },
+    "unavailable": "Ahora mismo no podemos recibir el formulario. Escríbenos a {email} y te responderemos igualmente.",
+    "error": "No se ha podido enviar el mensaje. Inténtalo de nuevo o escríbenos a {email}."
   }
 }

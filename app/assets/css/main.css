@@ -79,6 +79,12 @@
     line-height: var(--text-body--line-height);
   }
 
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+
   ::selection {
     background-color: var(--color-accent);
     color: var(--color-void-black);
@@ -98,5 +104,80 @@
       transition-duration: 0.01ms !important;
       scroll-behavior: auto !important;
     }
+  }
+}
+
+/* Texto largo renderizado desde Markdown (páginas legales, insights). Solo tokens del tema. */
+@layer components {
+  .prose-ctx {
+    color: var(--color-fog-light);
+    font-family: var(--font-body);
+    font-size: var(--text-body);
+    line-height: 1.6;
+  }
+  .prose-ctx > * + * {
+    margin-top: 1rem;
+  }
+  .prose-ctx h2 {
+    margin-top: 2.5rem;
+    color: var(--color-bone-white);
+    font-family: var(--font-display);
+    font-size: var(--text-heading-sm);
+    line-height: var(--text-heading-sm--line-height);
+    letter-spacing: var(--text-heading-sm--letter-spacing);
+    font-weight: 400;
+  }
+  .prose-ctx h3 {
+    margin-top: 2rem;
+    color: var(--color-bone-white);
+    font-family: var(--font-display);
+    font-size: var(--text-subheading);
+    font-weight: 400;
+  }
+  .prose-ctx strong {
+    color: var(--color-bone-white);
+    font-weight: 400;
+  }
+  .prose-ctx a {
+    color: var(--color-bone-white);
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+  .prose-ctx a:hover {
+    color: var(--color-accent);
+  }
+  .prose-ctx ul,
+  .prose-ctx ol {
+    padding-left: 1.25rem;
+  }
+  .prose-ctx ul {
+    list-style: square;
+  }
+  .prose-ctx ol {
+    list-style: decimal;
+  }
+  .prose-ctx li + li {
+    margin-top: 0.5rem;
+  }
+  .prose-ctx code {
+    font-family: var(--font-mono);
+    font-size: var(--text-caption);
+    color: var(--color-bone-white);
+  }
+  .prose-ctx table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: var(--text-caption);
+  }
+  .prose-ctx th,
+  .prose-ctx td {
+    border-bottom: 1px solid var(--color-graphite-border);
+    padding: 0.75rem 0.5rem 0.75rem 0;
+    text-align: left;
+  }
+  .prose-ctx th {
+    font-family: var(--font-mono);
+    font-weight: 400;
+    text-transform: uppercase;
   }
 }

@@ -10,10 +10,10 @@ const { t } = useI18n()
     >
       {{ t('common.skip') }}
     </a>
-    <LayoutTheHeader />
+    <TheHeader />
     <main id="main" class="flex-1">
       <slot />
     </main>
-    <LayoutTheFooter />
+    <TheFooter />
   </div>
 </template>

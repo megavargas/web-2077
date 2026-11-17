@@ -1,0 +1,44 @@
+key: intelligence
+order: 3
+number: '03'
+slug: intelligence
+name: Intelligence
+subtitle: BI, analytics and decision intelligence
+benefit: Evidence-based decisions, at the moment they are made.
+summary: Analytics that reach decision-makers at the moment they decide.
+seo:
+  title: BI, advanced analytics and decision intelligence
+  description: BI and semantic layer, advanced analytics, predictive models, decision intelligence and self-service analytics.
+problem:
+  title: The problem
+  text: Dashboards nobody looks at, metrics each department defines its own way, and analysis that arrives after the decision has been made.
+includes:
+  title: What it includes
+  items:
+    - name: BI and semantic layer
+      text: Single metric definitions, reusable across every report and tool.
+    - name: Advanced analytics
+      text: Segmentation, attribution and root-cause analysis to understand what is happening and why.
+    - name: Predictive models
+      text: Forecasting demand, churn, risk or fraud, built into business processes.
+    - name: Decision intelligence
+      text: Dashboards that recommend the next action, rather than just showing the data.
+    - name: Self-service analytics
+      text: Tools and training so that each team can answer its own questions with reliable data.
+outcome:
+  title: Outcome
+  text: Shared metrics, timely analysis and models that are used in day-to-day operations.
+technologies:
+  - Power BI
+  - Looker Studio
+  - BigQuery
+  - Python
+faq:
+  - q: Do we have to change our BI tool?
+    a: Only if it adds value. Often the problem is not the tool, but the definitions and the data model behind it.
+  - q: What is decision intelligence?
+    a: Bringing analysis to the point of decision. The dashboard suggests the action (who to retain, which offer to make, which risk to review) and measures the result.
+cta:
+  title: Bring analytics to the point of decision
+  text: Start with an assessment and find out which decisions gain most from better data.
+  button: Request an assessment

@@ -1,0 +1,48 @@
+key: data
+order: 2
+number: '02'
+slug: datos
+name: Datos
+benefit: Un dato único, fiable y gobernado sobre el que construir.
+summary: Plataformas de datos modernas en Google Cloud, Azure y AWS, gobernadas desde el primer día.
+seo:
+  title: Plataformas de datos en Google Cloud, Azure y AWS
+  description: Plataformas cloud de datos, lakehouse y data warehouse, migración de BI y ETL heredados, ingeniería y calidad del dato, DataOps y observabilidad.
+problem:
+  title: El problema
+  text: Datos repartidos en sistemas heredados, cifras que no cuadran entre áreas y plataformas que cuestan más de lo que aportan. Sin una base fiable, cualquier iniciativa de analítica o IA hereda el problema.
+includes:
+  title: Qué incluye
+  items:
+    - name: Plataformas cloud de datos
+      text: Arquitectura y despliegue en Google Cloud, Azure o AWS, con seguridad y costes bajo control desde el diseño.
+    - name: Lakehouse y data warehouse
+      text: Modelos de datos pensados para el negocio, con una sola versión de la verdad.
+    - name: Migración de BI y ETL heredados
+      text: De Cognos, MicroStrategy, PowerCenter o Teradata a un stack moderno, sin interrumpir el reporting.
+    - name: Ingeniería y calidad del dato
+      text: Pipelines automatizados, pruebas y reglas de calidad medibles.
+    - name: DataOps y observabilidad
+      text: Despliegue continuo, monitorización y alertas para detectar los fallos antes que el usuario.
+outcome:
+  title: Resultado
+  text: Una plataforma gobernada, con costes previsibles y datos en los que el negocio confía.
+technologies:
+  - Google Cloud
+  - BigQuery
+  - Microsoft Azure
+  - Azure Data Factory
+  - Azure Synapse
+  - AWS
+  - Snowflake
+  - Airflow
+  - Matillion
+faq:
+  - q: ¿Trabajáis solo con Google Cloud?
+    a: No. Trabajamos con Google Cloud, Azure y AWS, y elegimos según el problema, los sistemas existentes y los costes, no por el contrato.
+  - q: ¿Se puede migrar sin parar el reporting actual?
+    a: Sí. Planificamos la migración por dominios y mantenemos en paralelo los informes críticos hasta validar los nuevos.
+cta:
+  title: Moderniza tu plataforma de datos
+  text: Un diagnóstico de 2–4 semanas te dice qué migrar, en qué orden y con qué coste.
+  button: Solicita un diagnóstico

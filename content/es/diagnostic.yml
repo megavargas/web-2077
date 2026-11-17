@@ -1,0 +1,55 @@
+seo:
+  title: Diagnóstico de datos e IA en 2–4 semanas
+  description: Un diagnóstico de 2–4 semanas para priorizar casos de uso de datos e IA con business case, evaluar la madurez y salir con una hoja de ruta.
+header:
+  eyebrow: Diagnóstico
+  title: Decide con datos en 2–4 semanas
+  intro: La forma más rápida de saber dónde está el valor de los datos y la IA en tu organización, y qué hacer primero.
+forWho:
+  title: Para quién
+  items:
+    - Direcciones de negocio, datos o tecnología que necesitan priorizar iniciativas de IA.
+    - Organizaciones con pilotos que no llegan a producción.
+    - Equipos que preparan presupuesto o un plan director de datos.
+    - Entidades reguladas que deben encajar la IA con el AI Act, DORA o Solvencia II.
+analysis:
+  title: Qué analizamos
+  items:
+    - name: Negocio
+      text: Objetivos, procesos críticos y casos de uso candidatos.
+    - name: Datos
+      text: Fuentes, calidad, plataforma y gobierno.
+    - name: Organización
+      text: Equipos, capacidades y modelo operativo.
+    - name: Regulación y riesgo
+      text: Requisitos sectoriales y de IA aplicables a cada caso de uso.
+deliverables:
+  title: Qué te llevas
+  items:
+    - Inventario de casos de uso priorizados con business case.
+    - Evaluación de madurez de datos, analítica e IA.
+    - Arquitectura y modelo de gobierno recomendados.
+    - Hoja de ruta con hitos, equipo y presupuesto estimado.
+    - Presentación de resultados al comité de dirección.
+format:
+  title: Formato
+  items:
+    - label: Duración
+      value: 2–4 semanas
+    - label: Participantes
+      value: Responsables de negocio, datos y tecnología
+    - label: Dedicación de tu equipo
+      value: Entrevistas y talleres puntuales
+next:
+  title: Y después
+  text: Si decides seguir, la hoja de ruta se convierte en el plan de diseño y construcción. Si no, te quedas con un plan accionable para ejecutarlo con quien quieras.
+faq:
+  - q: ¿Cuánto cuesta?
+    a: Depende del alcance. Tras una primera conversación te damos un precio cerrado.
+  - q: ¿Qué datos necesitáis?
+    a: Normalmente basta con documentación y entrevistas. Si hace falta revisar datos, lo acordamos con tus equipos de seguridad.
+  - q: ¿Qué pasa si ya tenemos una estrategia de datos?
+    a: La usamos como punto de partida y nos centramos en priorizar casos de uso y en lo que falta para llevarlos a producción.
+form:
+  title: Solicita tu diagnóstico
+  text: Cuéntanos tu contexto y te responderá una persona del equipo.

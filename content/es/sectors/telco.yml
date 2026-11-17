@@ -1,0 +1,81 @@
+key: telco
+order: 1
+slug: telco
+name: Telco
+benefit: Retener clientes, operar la red con datos y atender mejor con IA.
+seo:
+  title: Datos e IA para telecomunicaciones
+  description: Predicción de abandono, next-best-offer, analítica de red, asistentes de IA y revenue assurance para operadores de telecomunicaciones.
+header:
+  eyebrow: Sector · Telco
+  title: Datos e IA para operadores de telecomunicaciones
+  intro: Clientes que cambian de operador con un clic y redes que generan datos sin parar. Convertimos ese volumen en decisiones de retención, red y atención.
+challenges:
+  title: Retos del sector
+  items:
+    - name: Competencia y portabilidad
+      text: El abandono se decide en semanas. Hay que anticiparlo con datos de uso, red y atención.
+    - name: Datos fragmentados
+      text: Varias marcas, sistemas de facturación y CRM distintos tras fusiones y adquisiciones.
+    - name: Red y experiencia
+      text: La calidad que percibe el cliente depende de la red, pero se mide en sistemas separados.
+    - name: Atención a escala
+      text: Millones de contactos al año, con presión sobre los costes y la satisfacción.
+domains:
+  title: Casos de uso por área de negocio
+  intro: Cada caso de uso indica qué pilares de servicio intervienen.
+  items:
+    - name: Cliente
+      useCases:
+        - name: Predicción de abandono y retención
+          text: Detectar a tiempo qué clientes van a irse y con qué acción retenerlos.
+          pillars: [intelligence, ai]
+        - name: Next-best-offer
+          text: La oferta adecuada para cada cliente en cada canal.
+          pillars: [intelligence, ai]
+        - name: Visión única de cliente multimarca
+          text: Un mismo cliente, aunque esté en varias marcas y sistemas.
+          pillars: [data]
+    - name: Red
+      useCases:
+        - name: Analítica de red y experiencia de cliente
+          text: Cruzar el rendimiento de la red con la experiencia real de cada cliente.
+          pillars: [data, intelligence]
+        - name: Mantenimiento predictivo
+          text: Anticipar incidencias antes de que afecten al servicio.
+          pillars: [intelligence, ai]
+    - name: Atención
+      useCases:
+        - name: Asistentes de IA para agentes y clientes
+          text: Respuestas basadas en el conocimiento interno, con fuentes y control.
+          pillars: [ai]
+        - name: Análisis de interacciones
+          text: Motivos de contacto, sentimiento y oportunidades a partir de llamadas y chats.
+          pillars: [intelligence, ai]
+    - name: Ingresos
+      useCases:
+        - name: Revenue assurance
+          text: Detectar fugas de ingresos entre red, facturación y contratos.
+          pillars: [data, intelligence]
+        - name: Detección de fraude
+          text: Patrones de fraude de suscripción y de uso en tiempo casi real.
+          pillars: [intelligence, ai]
+regulation:
+  title: Contexto regulatorio
+  intro: Diseñamos con la regulación en mente desde el principio, no como un añadido final.
+  items:
+    - name: GDPR
+      text: Datos de clientes y de tráfico con base legal clara, minimización y anonimización en la analítica.
+    - name: NIS2
+      text: Los operadores de comunicaciones son entidades esenciales. Ciberseguridad y gestión de incidentes también en las plataformas de datos.
+    - name: AI Act
+      text: Transparencia en los asistentes conversacionales y gestión del riesgo de los sistemas de IA.
+faq:
+  - q: ¿Tenéis experiencia en telco?
+    a: Sí. Es el sector en el que más proyectos hemos hecho, desde data warehouses multimarca hasta asistentes con IA generativa.
+  - q: ¿Podéis trabajar sobre nuestros sistemas actuales?
+    a: Sí. Partimos de vuestros sistemas de red, facturación y CRM, y los integramos por fases sin interrumpir la operación.
+cta:
+  title: Habla con nuestro equipo de Telco
+  text: Cuéntanos tu reto y te propondremos por dónde empezar.
+  button: Habla con el equipo de Telco

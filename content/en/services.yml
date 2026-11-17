@@ -1,0 +1,64 @@
+seo:
+  title: Consulting, data, intelligence and AI services
+  description: Four service pillars, an approach that starts with an assessment and three ways of working together, from strategy to AI in production.
+header:
+  eyebrow: Services
+  title: From strategy to AI in production
+  intro: Four pillars that form a journey, an approach that starts with an assessment, and three ways of working together.
+pillarsTitle: What we do
+method:
+  title: How we work
+  intro: Four phases. Each one ends with concrete deliverables, so you always know what you have and what comes next.
+  deliverablesLabel: What you get
+  phases:
+    - key: diagnostic
+      name: Assessment
+      tag: 2–4 weeks
+      highlight: true
+      description: We analyse where you are, prioritise use cases and design the roadmap.
+      deliverables:
+        - Use cases prioritised with a business case
+        - Data and AI maturity assessment
+        - Roadmap with milestones and estimated budget
+    - key: design
+      name: Design
+      description: We define the architecture, the governance model and the delivery plan.
+      deliverables:
+        - Target architecture
+        - Data and AI governance model
+        - Phased delivery plan
+    - key: build
+      name: Build
+      description: Iterative delivery, with measurable value in every sprint.
+      deliverables:
+        - Solutions delivered into production incrementally
+        - Business metrics for every release
+        - Documentation and knowledge transfer
+    - key: run
+      name: Run
+      description: We operate platforms, models and dashboards as a managed service.
+      deliverables:
+        - Managed service for platforms and models
+        - Monitoring, cost control and continuous improvement
+        - Regular service reports
+engagement:
+  title: Ways of working together
+  intro: We adapt to how you buy and how your team works.
+  models:
+    - name: Project
+      text: Fixed scope, timeline and deliverables. For initiatives with a clear objective.
+    - name: Managed service
+      text: We run platforms, models and dashboards with service commitments, observability and cost control.
+    - name: Flexible capacity
+      text: An on-demand data and AI team that grows or shrinks as needed, without adding headcount.
+faq:
+  - q: Where do we start?
+    a: With the assessment. In 2–4 weeks you will know which use cases have the highest return, what you need to take them into production and in what order.
+  - q: Do you work with our in-house team?
+    a: Yes. We work alongside your teams and transfer knowledge so that you do not depend on us.
+  - q: Do you resell cloud licences?
+    a: Yes, for Google Cloud, Azure and AWS, with billing, support and cost control. We explain it under Ecosystem.
+cta:
+  title: Where to start? With an assessment.
+  text: In 2–4 weeks you will have a clear view of where you stand, the use cases with the highest return, and a roadmap to take them into production.
+  button: Request an assessment

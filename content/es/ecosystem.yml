@@ -1,0 +1,52 @@
+# TODO: confirmar el nivel de partnership vigente con Google Cloud, Microsoft y AWS.
+# TODO: validar con el equipo los servicios del bloque de licencias.
+seo:
+  title: Ecosistema — Google Cloud, Azure y AWS
+  description: Consultora independiente y multicloud. Partner de Google Cloud, Microsoft Azure y AWS, con reventa de licencias, facturación y control de costes.
+header:
+  eyebrow: Ecosistema
+  title: Independientes y multicloud
+  intro: Google Cloud, Azure y AWS, elegidos por el problema, no por el contrato.
+partners:
+  title: Partners
+  intro: Trabajamos a diario con estos proveedores y somos partners de todos ellos.
+  items:
+    - name: Google Cloud
+      role: Partner y revendedor
+      text: Plataformas de datos e IA en Google Cloud, con licencias, facturación y soporte.
+      technologies: [BigQuery, Vertex AI, Gemini, Looker Studio]
+    - name: Microsoft Azure
+      role: Partner y revendedor
+      text: Plataformas de datos e IA en Azure para organizaciones con ecosistema Microsoft.
+      technologies: [Azure Data Factory, Azure Synapse, Power BI]
+    - name: AWS
+      role: Partner y revendedor
+      text: Plataformas de datos e IA en AWS para organizaciones que ya operan en Amazon Web Services.
+      technologies: [] # TODO: servicios de AWS con los que trabajáis
+licensing:
+  title: Licencias y facturación
+  text: Revendemos licencias de Google Cloud, Azure y AWS. Esto es lo que añadimos a la licencia.
+  points:
+    - name: Facturación unificada
+      text: Una sola relación para el consumo cloud y los servicios.
+    - name: Soporte
+      text: Un equipo que conoce tu plataforma como primer punto de contacto.
+    - name: Control de costes
+      text: Revisión periódica del consumo y recomendaciones de optimización.
+    - name: Observabilidad
+      text: Alertas de coste y rendimiento sobre la plataforma.
+  button: Habla con nosotros sobre licencias
+technologies:
+  title: Tecnologías con las que trabajamos
+  intro: Elegimos la tecnología por el problema. Estas son las que más usamos.
+  groups:
+    - name: Cloud y plataformas
+      items: [Google Cloud, Microsoft Azure, AWS, Snowflake]
+    - name: Datos
+      items: [BigQuery, Azure Data Factory, Azure Synapse, Airflow, Matillion]
+    - name: BI
+      items: [Power BI, Looker Studio]
+    - name: IA
+      items: [Vertex AI, Gemini]
+    - name: Migración desde
+      items: [Cognos, MicroStrategy, PowerCenter, Teradata]

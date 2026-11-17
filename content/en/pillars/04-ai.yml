@@ -1,0 +1,45 @@
+key: ai
+order: 4
+number: '04'
+slug: ai
+name: Applied AI
+subtitle: Generative AI, agents and their governance
+benefit: AI in production, measured and under control. Not endless pilots.
+summary: Generative AI and agents embedded in real processes, measured and under control.
+seo:
+  title: Generative AI and agents in production
+  description: Generative AI and agents, assistants over internal knowledge, process automation, MLOps and LLMOps, AI evaluation and governance.
+problem:
+  title: The problem
+  text: Most generative AI initiatives never get past the pilot. What is missing is quality data, integration with processes and controls that satisfy risk, security and compliance.
+includes:
+  title: What it includes
+  items:
+    - name: Generative AI and agents
+      text: Agents that carry out tasks on real systems, with human oversight where needed.
+    - name: Assistants over internal knowledge
+      text: Answers grounded in your documentation, with cited sources and access control.
+    - name: Process automation
+      text: Document reading, classification and extraction built into the workflow.
+    - name: MLOps and LLMOps
+      text: Deployment, versioning, monitoring and cost control of models in production.
+    - name: Evaluation, security and agent governance
+      text: Quality testing, action limits, traceability and audit logging.
+outcome:
+  title: Outcome
+  text: AI use cases in production, with business metrics, known costs and documented controls.
+technologies:
+  - Google Cloud
+  - Vertex AI
+  - Gemini
+  - Microsoft Azure
+  - AWS
+faq:
+  - q: How do you stop an assistant from making things up?
+    a: We ground answers in your sources, cite where each piece of information comes from, and measure quality with evaluation sets before and after going live.
+  - q: What does the AI Act mean for our use cases?
+    a: It depends on the use case. Some, such as assessing the creditworthiness of individuals or pricing life and health insurance, are high-risk and require risk management, documentation and human oversight. We assess this at design stage.
+cta:
+  title: Take your AI into production
+  text: Start with an assessment and prioritise the use cases with the highest return and the lowest risk.
+  button: Request an assessment

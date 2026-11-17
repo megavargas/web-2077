@@ -1,0 +1,39 @@
+# TODO: confirmar la dirección y qué oficinas fuera de Madrid se publican.
+seo:
+  title: Nosotros — Consultora independiente desde 2016
+  description: Contextual Intelligence Partners es una consultora independiente de estrategia, datos e IA, fundada en Madrid en 2016, con foco en Telco, Banca y Seguros.
+header:
+  eyebrow: Nosotros
+  title: Consultora independiente de estrategia, datos e IA
+  intro: Desde 2016 ayudamos a empresas de Telco, Banca y Seguros a tomar mejores decisiones con datos.
+story:
+  title: Nuestra historia
+  paragraphs:
+    - Contextual nació en Madrid en 2016 como consultora de business intelligence y datos. Desde entonces hemos acompañado a operadores de telecomunicaciones, entidades financieras y otras grandes organizaciones en la construcción de sus plataformas de datos y analítica.
+    - Hoy unimos consultoría, datos, inteligencia e IA en un mismo recorrido, con foco en sectores regulados, donde el contexto lo es todo.
+principles:
+  title: Cómo somos
+  items:
+    - name: Independientes
+      text: No pertenecemos a ningún gran grupo ni a ningún fabricante. Elegimos la tecnología por el problema.
+    - name: Orientados a producción
+      text: Medimos el éxito por lo que llega a producción y se usa, no por los pilotos.
+    - name: Transferimos el conocimiento
+      text: Trabajamos con tus equipos para que no dependan de nosotros.
+team:
+  title: Equipo directivo
+  people:
+    - name: Iván Marbán
+      role: Cofundador
+    - name: Samuel Vargas
+      role: Cofundador
+offices:
+  title: Dónde estamos
+  items:
+    - city: Madrid
+      label: Sede
+      address: Calle de Espoz y Mina, 2 · Madrid
+cta:
+  title: ¿Hablamos?
+  text: Cuéntanos tu reto o, si quieres trabajar con nosotros, conoce cómo es nuestro proceso.
+  button: Contacto

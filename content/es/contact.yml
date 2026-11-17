@@ -1,0 +1,12 @@
+seo:
+  title: Contacto
+  description: Cuéntanos tu reto de datos e IA. Diagnósticos, proyectos, RFP, licencias cloud y talento.
+header:
+  eyebrow: Contacto
+  title: Hablemos
+  intro: Cuéntanos qué necesitas. Te responderá una persona del equipo.
+channels:
+  title: También por email
+  items:
+    - label: Email
+      email: hola@contextual.team

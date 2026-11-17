@@ -1,0 +1,81 @@
+key: telco
+order: 1
+slug: telco
+name: Telco
+benefit: Retain customers, run the network on data and serve customers better with AI.
+seo:
+  title: Data and AI for telecoms
+  description: Churn prediction, next-best-offer, network analytics, AI assistants and revenue assurance for telecoms operators.
+header:
+  eyebrow: Industry · Telco
+  title: Data and AI for telecoms operators
+  intro: Customers who switch provider in one click, and networks that never stop generating data. We turn that volume into decisions on retention, network and customer care.
+challenges:
+  title: Industry challenges
+  items:
+    - name: Competition and number portability
+      text: Churn is decided within weeks. It has to be anticipated with usage, network and customer-care data.
+    - name: Fragmented data
+      text: Several brands, billing systems and CRMs after mergers and acquisitions.
+    - name: Network and experience
+      text: The quality customers perceive depends on the network, but it is measured in separate systems.
+    - name: Customer care at scale
+      text: Millions of contacts a year, under pressure on both cost and satisfaction.
+domains:
+  title: Use cases by business area
+  intro: Each use case shows which service pillars are involved.
+  items:
+    - name: Customer
+      useCases:
+        - name: Churn prediction and retention
+          text: Spot in time which customers are about to leave, and which action will keep them.
+          pillars: [intelligence, ai]
+        - name: Next-best-offer
+          text: The right offer for each customer in every channel.
+          pillars: [intelligence, ai]
+        - name: Single multi-brand customer view
+          text: One customer, even across several brands and systems.
+          pillars: [data]
+    - name: Network
+      useCases:
+        - name: Network analytics and customer experience
+          text: Combining network performance with each customer's actual experience.
+          pillars: [data, intelligence]
+        - name: Predictive maintenance
+          text: Anticipating incidents before they affect the service.
+          pillars: [intelligence, ai]
+    - name: Customer care
+      useCases:
+        - name: AI assistants for agents and customers
+          text: Answers grounded in internal knowledge, with sources and controls.
+          pillars: [ai]
+        - name: Interaction analytics
+          text: Contact reasons, sentiment and opportunities from calls and chats.
+          pillars: [intelligence, ai]
+    - name: Revenue
+      useCases:
+        - name: Revenue assurance
+          text: Detecting revenue leakage between network, billing and contracts.
+          pillars: [data, intelligence]
+        - name: Fraud detection
+          text: Subscription and usage fraud patterns in near real time.
+          pillars: [intelligence, ai]
+regulation:
+  title: Regulatory context
+  intro: We design with regulation in mind from the start, not as an afterthought.
+  items:
+    - name: GDPR
+      text: Customer and traffic data with a clear legal basis, minimisation and anonymisation in analytics.
+    - name: NIS2
+      text: Communications providers are essential entities. Cybersecurity and incident management apply to data platforms too.
+    - name: AI Act
+      text: Transparency in conversational assistants and risk management of AI systems.
+faq:
+  - q: Do you have telecoms experience?
+    a: Yes. It is the industry where we have delivered the most projects, from multi-brand data warehouses to generative AI assistants.
+  - q: Can you work on top of our current systems?
+    a: Yes. We start from your network, billing and CRM systems and integrate them in phases without disrupting operations.
+cta:
+  title: Talk to our Telco team
+  text: Tell us about your challenge and we will suggest where to start.
+  button: Talk to the Telco team

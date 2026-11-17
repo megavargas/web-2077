@@ -4,23 +4,87 @@
     "language": "Language",
     "skip": "Skip to content"
   },
-  "footer": {
-    "rights": "All rights reserved"
+  "nav": {
+    "main": "Main",
+    "footer": "Footer",
+    "services": "Services",
+    "sectors": "Industries",
+    "ecosystem": "Ecosystem",
+    "about": "About us",
+    "careers": "Careers",
+    "contact": "Contact",
+    "assessment": "Assessment",
+    "open": "Open menu",
+    "close": "Close menu"
   },
-  "home": {
-    "seo": {
-      "title": "Consulting, data, intelligence and AI",
-      "description": "Strategy, data and AI so that the decisions that matter are made better, and sooner. Consulting for Telco, Banking and Insurance."
+  "footer": {
+    "tagline": "An independent strategy, data and AI consultancy for Telco, Banking and Insurance.",
+    "rights": "All rights reserved",
+    "company": "Company",
+    "legal": "Legal"
+  },
+  "legal": {
+    "notice": "Legal notice",
+    "privacy": "Privacy",
+    "cookies": "Cookies",
+    "updated": "Last updated: {date}"
+  },
+  "labels": {
+    "faq": "Frequently asked questions",
+    "pillars": "Pillars",
+    "technologies": "Technologies",
+    "whereWeApply": "Where we apply it",
+    "otherSectors": "Other industries",
+    "previous": "Previous",
+    "next": "Next",
+    "services": "Services",
+    "readMore": "Read more"
+  },
+  "form": {
+    "name": "Full name",
+    "email": "Work email",
+    "company": "Company",
+    "sector": "Industry",
+    "reason": "Reason",
+    "message": "Message",
+    "messagePlaceholder": "Tell us about your context and what you need.",
+    "optional": "optional",
+    "select": "Select an option",
+    "website": "Leave this field empty",
+    "consent": "I have read the {link} and agree to my data being processed to handle this request.",
+    "consentLink": "privacy policy",
+    "submit": "Send",
+    "sending": "Sending…",
+    "sectors": {
+      "telco": "Telco",
+      "banking": "Banking",
+      "insurance": "Insurance",
+      "other": "Other"
     },
-    "hero": {
-      "eyebrow": "Consulting · Data · Intelligence · AI",
-      "title": "Intelligence, in {emphasis}.",
-      "emphasis": "context",
-      "subtitle": "Strategy, data and AI so that the decisions that matter are made better, and sooner."
+    "reasons": {
+      "assessment": "Request an assessment",
+      "project": "Project or proposal",
+      "rfp": "Send an RFP",
+      "licences": "Cloud licences",
+      "careers": "Work with us",
+      "press": "Press",
+      "other": "Other"
     },
-    "statement": {
-      "label": "Our view",
-      "text": "AI without context is just statistics. We bring the context."
-    }
+    "errors": {
+      "summary": "Please check the highlighted fields.",
+      "name": "Please enter your name.",
+      "email": "Please enter a valid email.",
+      "company": "The company name is too long.",
+      "sector": "Please choose an industry.",
+      "reason": "Please choose a reason.",
+      "message": "Please write a message of at least 10 characters.",
+      "consent": "We need your consent to reply to you."
+    },
+    "success": {
+      "title": "Message sent",
+      "text": "Thank you. We have received your message and a member of the team will get back to you."
+    },
+    "unavailable": "We cannot receive the form right now. Write to us at {email} and we will get back to you.",
+    "error": "Your message could not be sent. Please try again or write to us at {email}."
   }
 }

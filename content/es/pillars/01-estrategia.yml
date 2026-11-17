@@ -1,0 +1,39 @@
+key: strategy
+order: 1
+number: '01'
+slug: estrategia
+name: Consultoría y estrategia
+benefit: Saber qué hacer primero, por qué y con qué retorno.
+summary: Antes que la tecnología, las decisiones. Identificamos dónde está el valor y cómo capturarlo.
+seo:
+  title: Consultoría de estrategia de datos e IA
+  description: Estrategia de datos e IA, diagnóstico de madurez, priorización de casos de uso con business case y gobierno del dato y de la IA.
+problem:
+  title: El problema
+  text: Pilotos de IA que no escalan, plataformas a medio construir y una lista de iniciativas que compiten por el mismo presupuesto. Falta un criterio común para decidir qué hacer primero y cómo medirlo.
+includes:
+  title: Qué incluye
+  items:
+    - name: Estrategia de datos e IA
+      text: Visión, objetivos y principios alineados con la estrategia de negocio.
+    - name: Diagnóstico de madurez
+      text: Dónde estás hoy en datos, analítica, IA y organización, frente a lo que necesitas.
+    - name: Casos de uso priorizados
+      text: Inventario y priorización de casos de uso con business case, riesgos y dependencias.
+    - name: Modelo operativo y centro de excelencia
+      text: Roles, procesos y equipo para que los datos y la IA escalen más allá del primer proyecto.
+    - name: Gobierno del dato y de la IA
+      text: Políticas, responsabilidades y controles, incluida la preparación para el AI Act.
+outcome:
+  title: Resultado
+  text: Una hoja de ruta priorizada, con business case por iniciativa y un modelo de gobierno que el comité puede aprobar.
+technologies: []
+faq:
+  - q: ¿Necesitamos tener los datos ordenados antes de empezar?
+    a: No. El diagnóstico parte de la situación real y sirve precisamente para decidir qué hay que ordenar primero.
+  - q: ¿Cómo se tiene en cuenta el AI Act?
+    a: Clasificamos el riesgo de cada caso de uso y definimos los requisitos de gobierno desde el diseño, para que no aparezcan al final como un bloqueo.
+cta:
+  title: Prioriza tus casos de uso de datos e IA
+  text: Empieza por un diagnóstico de 2–4 semanas y sal con una hoja de ruta accionable.
+  button: Solicita un diagnóstico

@@ -79,6 +79,12 @@
     line-height: var(--text-body--line-height);
   }
 
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+
   ::selection {
     background-color: var(--color-accent);
     color: var(--color-void-black);

@@ -1,0 +1,49 @@
+seo:
+  title: Strategy, data and AI consulting for Telco, Banking and Insurance
+  description: An independent strategy, data and AI consultancy for Telco, Banking and Insurance. We bring the context AI needs to reach production.
+
+hero:
+  eyebrow: Consulting · Data · Intelligence · AI
+  title: 'Intelligence, in {emphasis}.'
+  emphasis: context
+  subtitle: Strategy, data and AI so that the decisions that matter are made better, and sooner.
+  primaryCta: Request an assessment
+  secondaryCta: Our services
+
+context:
+  title: Context is business, data and industry
+  intro: Without all three layers, AI stays a pilot. That is why we work on them together.
+  layers:
+    - name: Business
+      text: Strategy and use cases prioritised with a business case. What to do first, why, and what it will return.
+    - name: Data
+      text: Governed data and a shared semantic layer. A single version of the truth to build on.
+    - name: Industry
+      text: Regulation and domain knowledge in Telco, Banking and Insurance. Solutions that get through audit and committee.
+
+pillars:
+  title: From strategy to AI in production
+  intro: A four-step journey. You can start at any step, but each one builds on the one before.
+
+method:
+  title: How we work
+  intro: We start with a short assessment and end up running what we build.
+  linkLabel: See the full approach
+
+sectors:
+  title: Industries
+  intro: We work where data is abundant and mistakes are expensive.
+
+ecosystem:
+  title: Independent and multicloud
+  text: Google Cloud, Azure and AWS, chosen for the problem, not the contract.
+  linkLabel: See our ecosystem
+
+statement:
+  label: Our view
+  text: AI without context is just statistics. We bring the context.
+
+cta:
+  title: Where to start? With an assessment.
+  text: In 2–4 weeks you will have a clear view of where you stand, the use cases with the highest return, and a roadmap to take them into production.
+  button: Request an assessment

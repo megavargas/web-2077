@@ -1,0 +1,80 @@
+key: banking
+order: 2
+slug: banking
+name: Banking
+benefit: Risk, fraud and customers, with traceable data and AI under control.
+seo:
+  title: Data and AI for banking
+  description: Credit risk, risk data aggregation (BCBS 239), fraud and AML, hyper-personalisation and copilots, with DORA and the AI Act in mind.
+header:
+  eyebrow: Industry · Banking
+  title: Data and AI for banking
+  intro: Risk, fraud and regulation demand data that is aggregated, traceable and available on demand. We help AI move from proof of concept to production without losing control.
+challenges:
+  title: Industry challenges
+  items:
+    - name: Supervisory demands
+      text: Risk data that is aggregated, reconciled and traceable back to source.
+    - name: Real-time fraud
+      text: Instant payments and new fraud patterns that change every week.
+    - name: Digital customers
+      text: Relevant personalisation without compromising privacy.
+    - name: Operational efficiency
+      text: Document-heavy and back-office processes that are still largely manual.
+domains:
+  title: Use cases by business area
+  intro: Each use case shows which service pillars are involved.
+  items:
+    - name: Risk and regulatory
+      useCases:
+        - name: Credit risk and scoring
+          text: Explainable, documented models ready for internal validation.
+          pillars: [intelligence, ai]
+        - name: Risk data aggregation and reporting
+          text: Governed, reconciled and traceable risk data for regulatory reporting.
+          pillars: [strategy, data]
+    - name: Fraud and AML
+      useCases:
+        - name: Transaction fraud detection
+          text: Near real-time transaction scoring, with fewer false positives.
+          pillars: [intelligence, ai]
+        - name: Anti-money laundering (AML)
+          text: Customer and transaction monitoring with alert prioritisation.
+          pillars: [data, ai]
+    - name: Customer
+      useCases:
+        - name: Hyper-personalisation
+          text: Offers and messages tailored to each customer's life and financial moment.
+          pillars: [intelligence, ai]
+        - name: Churn prediction
+          text: Spotting declining engagement in time.
+          pillars: [intelligence]
+    - name: Operations
+      useCases:
+        - name: Copilots for relationship managers and back office
+          text: Assistants that prepare, summarise and document, with human oversight.
+          pillars: [ai]
+        - name: Document automation
+          text: Reading and validating documents in onboarding, lending and complaints.
+          pillars: [ai]
+regulation:
+  title: Regulatory context
+  intro: We design with regulation in mind from the start, not as an afterthought.
+  items:
+    - name: BCBS 239
+      text: Principles for effective risk data aggregation and risk reporting. Governance, architecture and quality of risk data.
+    - name: DORA
+      text: Digital operational resilience, applicable since January 2025. ICT risk and third-party management, including cloud services.
+    - name: AI Act
+      text: Assessing the creditworthiness of individuals is a high-risk use. It requires risk management, documentation and human oversight.
+    - name: GDPR
+      text: Legal basis, minimisation and data-subject rights for every use of data.
+faq:
+  - q: Is cloud compatible with DORA?
+    a: Yes. DORA does not prohibit cloud. It requires managing ICT third-party risk through appropriate contracts, exit plans and resilience testing, and we design platforms to meet it.
+  - q: Is a credit scoring model high-risk under the AI Act?
+    a: Yes, when it assesses the creditworthiness of individuals (fraud detection is excluded). It requires risk management, data quality, documentation and human oversight.
+cta:
+  title: Talk to our Banking team
+  text: Tell us about your challenge and we will suggest where to start.
+  button: Talk to the Banking team

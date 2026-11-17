@@ -1,0 +1,64 @@
+seo:
+  title: Servicios de consultoría, datos, inteligencia e IA
+  description: Cuatro pilares de servicio, un método que empieza por un diagnóstico y tres formas de trabajar juntos, desde la estrategia hasta la IA en producción.
+header:
+  eyebrow: Servicios
+  title: De la estrategia a la IA en producción
+  intro: Cuatro pilares que forman un recorrido, un método que empieza por un diagnóstico y tres formas de trabajar juntos.
+pillarsTitle: Qué hacemos
+method:
+  title: Cómo trabajamos
+  intro: Cuatro fases. Cada una termina con entregables concretos, para que siempre sepas qué tienes y qué viene después.
+  deliverablesLabel: Qué te llevas
+  phases:
+    - key: diagnostic
+      name: Diagnóstico
+      tag: 2–4 semanas
+      highlight: true
+      description: Analizamos la situación, priorizamos casos de uso y diseñamos la hoja de ruta.
+      deliverables:
+        - Casos de uso priorizados con business case
+        - Evaluación de madurez de datos e IA
+        - Hoja de ruta con hitos y presupuesto estimado
+    - key: design
+      name: Diseño
+      description: Definimos la arquitectura, el modelo de gobierno y el plan de entrega.
+      deliverables:
+        - Arquitectura objetivo
+        - Modelo de gobierno del dato y de la IA
+        - Plan de entrega por fases
+    - key: build
+      name: Construcción
+      description: Entregas iterativas, con valor medible en cada sprint.
+      deliverables:
+        - Soluciones en producción por entregas
+        - Métricas de negocio en cada entrega
+        - Documentación y transferencia de conocimiento
+    - key: run
+      name: Operación
+      description: Operamos plataforma, modelos y cuadros de mando como servicio gestionado.
+      deliverables:
+        - Servicio gestionado de plataforma y modelos
+        - Monitorización, control de costes y mejora continua
+        - Informes periódicos de servicio
+engagement:
+  title: Formas de trabajar juntos
+  intro: Nos adaptamos a cómo compras y a cómo trabaja tu equipo.
+  models:
+    - name: Proyecto
+      text: Alcance, plazos y entregables cerrados. Para iniciativas con un objetivo claro.
+    - name: Servicio gestionado
+      text: Operamos plataforma, modelos y cuadros de mando con compromisos de servicio, observabilidad y control de costes.
+    - name: Capacidad flexible
+      text: Un equipo de datos e IA a demanda que crece o se reduce según la necesidad, sin ampliar plantilla.
+faq:
+  - q: ¿Por dónde empezamos?
+    a: Por el diagnóstico. En 2–4 semanas sabrás qué casos de uso tienen más retorno, qué necesitas para llevarlos a producción y en qué orden.
+  - q: ¿Trabajáis con nuestro equipo interno?
+    a: Sí. Nos integramos con vuestros equipos y transferimos el conocimiento para que no dependáis de nosotros.
+  - q: ¿Revendéis licencias cloud?
+    a: Sí, de Google Cloud, Azure y AWS, con facturación, soporte y control de costes. Lo explicamos en Ecosistema.
+cta:
+  title: ¿Por dónde empezar? Por un diagnóstico.
+  text: En 2–4 semanas tendrás una visión clara de tu situación, los casos de uso con más retorno y una hoja de ruta para llevarlos a producción.
+  button: Solicita un diagnóstico

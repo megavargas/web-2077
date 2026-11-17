@@ -59,6 +59,16 @@ Lo que ya se resolvió (no lo "arregles" de nuevo):
 - Nuxt Content usa `node:sqlite` nativo (`experimental.sqliteConnector: 'native'`).
 - Si en el contenedor de dev aparecen errores `EAI_AGAIN` (DNS) al cargar fuentes, recréalo: `docker compose up -d --force-recreate web`.
 - Prettier formatea también `compose.yaml` (comillas simples): ten en cuenta eso al editarlo con `sed`.
+- Componentes registrados **sin prefijo de carpeta** (`components: [{ path: '~/components', pathPrefix: false }]`): se usan como `<UiButton>`, `<SectionHero>`, `<TheHeader>`.
+- Contenido de la home en `content/{es,en}/home.yml` (colecciones `home_es`/`home_en`, esquema en `content.config.ts`, tipo `HomeContent` en `app/types/home.ts`). Nuevas páginas: mismo patrón, una colección por idioma.
+- Navegación en `app/composables/useMainNav.ts`: hoy apunta a anclas de la home; al crear páginas, cambia ahí las rutas.
+- Email comercial en `app/app.config.ts` (`useContactHref()` construye el `mailto:`).
+- Nunca pases clases de `display` (`hidden`, `sm:inline-flex`…) a una primitiva: chocan con las suyas. Envuélvela en un `<div>` con la clase responsive.
+- **Selector de idioma con `<SwitchLocalePathLink>`**, nunca `switchLocalePath` + `NuxtLink`: en SSR la cabecera se pinta antes de que la página fije los slugs (`useSetI18nParams`) y el HTML estático enlazaría a rutas mezcladas (`/en/services/datos`), lo que rompe `nuxt generate`.
+- Páginas dinámicas traducidas (`[pillar]`, `[sector]`, `legal/[slug]`): buscan por `slug` en su idioma y llaman a `useSetI18nParams` con el slug del otro idioma (por `key`).
+- `UiContainer`: las clases que recibe se aplican al bloque interior (dentro del gutter), así los bordes quedan alineados con el contenido.
+- Formulario: esquema compartido en `shared/contact.ts` (cliente y servidor), endpoint `server/api/contact.post.ts` → `NUXT_CONTACT_WEBHOOK_URL`. Sin webhook (o en hosting estático) muestra el email como alternativa.
+- E2E: antes de hacer clic, espera a la hidratación (`waitForHydration` en `tests/e2e/helpers.ts`); `pages.spec.ts` recorre todas las rutas en ES/EN con axe; el proyecto `mobile` de Playwright va a 375px para detectar desbordes.
 
 ## 3. Estructura de carpetas
 

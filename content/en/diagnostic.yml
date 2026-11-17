@@ -1,0 +1,55 @@
+seo:
+  title: Data and AI assessment in 2–4 weeks
+  description: A 2–4 week assessment to prioritise data and AI use cases with a business case, evaluate maturity and leave with a roadmap.
+header:
+  eyebrow: Assessment
+  title: Decide with data in 2–4 weeks
+  intro: The fastest way to find out where the value of data and AI lies in your organisation, and what to do first.
+forWho:
+  title: Who it is for
+  items:
+    - Business, data or technology leaders who need to prioritise AI initiatives.
+    - Organisations with pilots that never reach production.
+    - Teams preparing a budget or a data master plan.
+    - Regulated institutions that need to align AI with the AI Act, DORA or Solvency II.
+analysis:
+  title: What we analyse
+  items:
+    - name: Business
+      text: Objectives, critical processes and candidate use cases.
+    - name: Data
+      text: Sources, quality, platform and governance.
+    - name: Organisation
+      text: Teams, capabilities and operating model.
+    - name: Regulation and risk
+      text: Industry and AI requirements that apply to each use case.
+deliverables:
+  title: What you get
+  items:
+    - An inventory of use cases prioritised with a business case.
+    - A data, analytics and AI maturity assessment.
+    - Recommended architecture and governance model.
+    - A roadmap with milestones, team and estimated budget.
+    - A presentation of the results to the leadership team.
+format:
+  title: Format
+  items:
+    - label: Duration
+      value: 2–4 weeks
+    - label: Participants
+      value: Business, data and technology leads
+    - label: Time from your team
+      value: Interviews and occasional workshops
+next:
+  title: What happens next
+  text: If you decide to continue, the roadmap becomes the design and build plan. If not, you keep an actionable plan to deliver with whoever you choose.
+faq:
+  - q: How much does it cost?
+    a: It depends on the scope. After a first conversation we give you a fixed price.
+  - q: What data do you need?
+    a: Documentation and interviews are usually enough. If data needs reviewing, we agree it with your security teams.
+  - q: What if we already have a data strategy?
+    a: We use it as a starting point and focus on prioritising use cases and on what is missing to take them into production.
+form:
+  title: Request your assessment
+  text: Tell us about your context and a member of the team will get back to you.

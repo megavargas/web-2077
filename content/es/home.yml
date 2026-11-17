@@ -1,0 +1,49 @@
+seo:
+  title: Consultoría de estrategia, datos e IA para Telco, Banca y Seguros
+  description: Consultora independiente de estrategia, datos e IA para Telco, Banca y Seguros. Ponemos el contexto que la IA necesita para llegar a producción.
+
+hero:
+  eyebrow: Consultoría · Datos · Inteligencia · IA
+  title: 'Inteligencia con {emphasis}.'
+  emphasis: contexto
+  subtitle: Estrategia, datos e IA para que las decisiones importantes se tomen mejor y antes.
+  primaryCta: Solicita un diagnóstico
+  secondaryCta: Ver servicios
+
+context:
+  title: Contexto es negocio, datos y sector
+  intro: Sin las tres capas, la IA se queda en piloto. Por eso las trabajamos juntas.
+  layers:
+    - name: Negocio
+      text: Estrategia y casos de uso priorizados con business case. Qué hacer primero, por qué y con qué retorno.
+    - name: Datos
+      text: Dato gobernado y una capa semántica común. Una sola versión de la verdad sobre la que construir.
+    - name: Sector
+      text: Regulación y conocimiento de dominio en Telco, Banca y Seguros. Soluciones que superan la auditoría y el comité.
+
+pillars:
+  title: De la estrategia a la IA en producción
+  intro: Un recorrido en cuatro pasos. Puedes empezar por cualquiera, pero cada uno se apoya en el anterior.
+
+method:
+  title: Cómo trabajamos
+  intro: Empezamos con un diagnóstico corto y terminamos operando lo que construimos.
+  linkLabel: Ver el método completo
+
+sectors:
+  title: Sectores
+  intro: Trabajamos donde el dato abunda y el error sale caro.
+
+ecosystem:
+  title: Independientes y multicloud
+  text: Google Cloud, Azure y AWS, elegidos por el problema, no por el contrato.
+  linkLabel: Ver ecosistema
+
+statement:
+  label: Nuestra visión
+  text: La IA sin contexto es solo estadística. Nosotros ponemos el contexto.
+
+cta:
+  title: ¿Por dónde empezar? Por un diagnóstico.
+  text: En 2–4 semanas tendrás una visión clara de tu situación, los casos de uso con más retorno y una hoja de ruta para llevarlos a producción.
+  button: Solicita un diagnóstico

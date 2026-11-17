@@ -1,0 +1,76 @@
+key: insurance
+order: 3
+slug: seguros
+name: Seguros
+benefit: Tarificar mejor y resolver siniestros más rápido, con cada decisión justificada.
+seo:
+  title: Datos e IA para seguros
+  description: Pricing y tarificación, automatización de siniestros, detección de fraude, retención de cartera y datos para Solvencia II e IFRS 17.
+header:
+  eyebrow: Sector · Seguros
+  title: Datos e IA para aseguradoras
+  intro: Tarificar mejor y resolver siniestros más rápido, con cada decisión justificada ante el cliente, el actuario y el supervisor.
+challenges:
+  title: Retos del sector
+  items:
+    - name: Tarificación competitiva
+      text: Precios ajustados al riesgo en mercados cada vez más comparables.
+    - name: Siniestros documentales
+      text: Partes, informes y facturas que se revisan a mano.
+    - name: Fraude
+      text: Patrones que solo se ven al cruzar siniestros, pólizas y proveedores.
+    - name: Reporting regulatorio
+      text: Solvencia II e IFRS 17 exigen datos granulares, conciliados y auditables.
+domains:
+  title: Casos de uso por área de negocio
+  intro: Cada caso de uso indica qué pilares de servicio intervienen.
+  items:
+    - name: Tarificación
+      useCases:
+        - name: Pricing y tarificación
+          text: Modelos de riesgo y de demanda construidos junto al equipo actuarial.
+          pillars: [intelligence, ai]
+    - name: Siniestros
+      useCases:
+        - name: Automatización de siniestros
+          text: Lectura y extracción de documentos para acelerar la apertura y la liquidación.
+          pillars: [ai]
+        - name: Triaje y estimación de costes
+          text: Priorizar los expedientes y anticipar su coste desde el primer aviso.
+          pillars: [intelligence, ai]
+    - name: Fraude
+      useCases:
+        - name: Detección de fraude en siniestros
+          text: Señales de alerta y redes de relación entre siniestros, asegurados y proveedores.
+          pillars: [intelligence, ai]
+    - name: Cartera
+      useCases:
+        - name: Retención y venta cruzada
+          text: Anticipar las bajas y detectar necesidades de cobertura.
+          pillars: [intelligence]
+    - name: Regulatorio
+      useCases:
+        - name: Datos para Solvencia II e IFRS 17
+          text: Un dato gobernado y trazable desde la póliza hasta el informe.
+          pillars: [strategy, data]
+regulation:
+  title: Contexto regulatorio
+  intro: Diseñamos con la regulación en mente desde el principio, no como un añadido final.
+  items:
+    - name: Solvencia II
+      text: Régimen prudencial del seguro en la UE. Calidad, trazabilidad y gobierno del dato que alimenta el cálculo y el reporting.
+    - name: IFRS 17
+      text: Norma contable de contratos de seguro, en vigor desde 2023. Datos granulares por cohorte y contrato.
+    - name: DORA
+      text: Resiliencia operativa digital también para aseguradoras. Riesgo TIC y gestión de proveedores cloud.
+    - name: AI Act
+      text: La evaluación de riesgos y la tarificación en seguros de vida y salud son usos de alto riesgo.
+faq:
+  - q: ¿Cómo trabajáis con el equipo actuarial?
+    a: Los modelos de pricing y reservas se construyen con el equipo actuarial, que mantiene la propiedad del modelo y el criterio técnico.
+  - q: ¿La tarificación con IA es de alto riesgo según el AI Act?
+    a: En seguros de vida y salud, sí. Implica gestión de riesgos, calidad de datos, documentación y supervisión humana, y lo tenemos en cuenta desde el diseño.
+cta:
+  title: Habla con nuestro equipo de Seguros
+  text: Cuéntanos tu reto y te propondremos por dónde empezar.
+  button: Habla con el equipo de Seguros

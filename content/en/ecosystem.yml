@@ -1,0 +1,52 @@
+# TODO: confirm current partnership levels with Google Cloud, Microsoft and AWS.
+# TODO: validate the licensing services with the team.
+seo:
+  title: Ecosystem — Google Cloud, Azure and AWS
+  description: An independent, multicloud consultancy. Partner of Google Cloud, Microsoft Azure and AWS, with licence resale, billing and cost control.
+header:
+  eyebrow: Ecosystem
+  title: Independent and multicloud
+  intro: Google Cloud, Azure and AWS, chosen for the problem, not the contract.
+partners:
+  title: Partners
+  intro: We work with these providers every day and are partners of all of them.
+  items:
+    - name: Google Cloud
+      role: Partner and reseller
+      text: Data and AI platforms on Google Cloud, with licences, billing and support.
+      technologies: [BigQuery, Vertex AI, Gemini, Looker Studio]
+    - name: Microsoft Azure
+      role: Partner and reseller
+      text: Data and AI platforms on Azure for organisations in the Microsoft ecosystem.
+      technologies: [Azure Data Factory, Azure Synapse, Power BI]
+    - name: AWS
+      role: Partner and reseller
+      text: Data and AI platforms on AWS for organisations that already run on Amazon Web Services.
+      technologies: [] # TODO: AWS services you work with
+licensing:
+  title: Licences and billing
+  text: We resell Google Cloud, Azure and AWS licences. This is what we add to the licence.
+  points:
+    - name: Unified billing
+      text: A single relationship for cloud consumption and services.
+    - name: Support
+      text: A team that knows your platform as your first point of contact.
+    - name: Cost control
+      text: Regular consumption reviews and optimisation recommendations.
+    - name: Observability
+      text: Cost and performance alerts across the platform.
+  button: Talk to us about licences
+technologies:
+  title: Technologies we work with
+  intro: We choose technology for the problem. These are the ones we use most.
+  groups:
+    - name: Cloud and platforms
+      items: [Google Cloud, Microsoft Azure, AWS, Snowflake]
+    - name: Data
+      items: [BigQuery, Azure Data Factory, Azure Synapse, Airflow, Matillion]
+    - name: BI
+      items: [Power BI, Looker Studio]
+    - name: AI
+      items: [Vertex AI, Gemini]
+    - name: Migrating from
+      items: [Cognos, MicroStrategy, PowerCenter, Teradata]

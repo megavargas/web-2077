@@ -1,0 +1,33 @@
+seo:
+  title: Talento — Trabaja en Contextual
+  description: Únete a una consultora independiente de datos e IA. Conoce nuestro proceso de selección en cinco pasos y envíanos tu candidatura.
+header:
+  eyebrow: Talento
+  title: Trabaja en Contextual
+  intro: Buscamos personas a las que les guste resolver problemas reales con datos e IA, y explicarlos con claridad.
+culture:
+  title: Qué vas a encontrar
+  items:
+    - name: Problemas reales
+      text: Proyectos en sectores donde una buena decisión basada en datos marca la diferencia.
+    - name: Del dato a la producción
+      text: Participarás en todo el recorrido, desde la estrategia hasta la operación.
+    - name: Equipos cercanos
+      text: Equipos pequeños, con responsabilidad real desde el primer día.
+process:
+  title: Nuestro proceso de selección
+  steps:
+    - name: Tu candidatura
+      text: Revisamos tu perfil y tu experiencia.
+    - name: Primera entrevista
+      text: Una conversación en remoto para conocernos.
+    - name: Prueba técnica
+      text: Solo para perfiles técnicos, sobre un caso parecido al trabajo real.
+    - name: Segunda entrevista
+      text: Con el equipo con el que vas a trabajar.
+    - name: Incorporación
+      text: Tu llegada a Contextual y al equipo.
+openings:
+  title: Ofertas
+  text: Si no ves una oferta que encaje contigo, envíanos tu candidatura igualmente.
+  button: Envía tu candidatura

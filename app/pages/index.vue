@@ -1,48 +1,65 @@
 <script setup lang="ts">
-// Home PROVISIONAL: solo valida el stack. La home real se construirá según content.md §5.
-const { t } = useI18n()
+const l = useContentLocale()
+const { data: site } = await useSiteData()
+const { data } = await useAsyncData(
+  () => `home-${l.value}`,
+  async () => {
+    const [home, services, ecosystem] = await Promise.all([
+      queryCollection(`home_${l.value}`).first(),
+      queryCollection(`services_${l.value}`).first(),
+      queryCollection(`ecosystem_${l.value}`).first(),
+    ])
+    return { home, services, ecosystem }
+  },
+)
 
-useSeoMeta({
-  title: () => t('home.seo.title'),
-  description: () => t('home.seo.description'),
-  ogTitle: () => t('home.seo.title'),
-  ogDescription: () => t('home.seo.description'),
+if (!data.value?.home || !data.value.services || !data.value.ecosystem) {
+  throw createError({ statusCode: 500, statusMessage: 'Home content not found', fatal: true })
+}
+
+usePageSeo(() => data.value?.home?.seo)
+
+useHead({
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'Organization',
+        name: 'Contextual Intelligence Partners',
+        url: 'https://contextual.team',
+        foundingDate: '2016',
+      }),
+    },
+  ],
 })
 </script>
 
 <template>
-  <div>
-    <section class="bg-void-black py-20 md:py-45" aria-labelledby="hero-title">
-      <UiContainer class="flex flex-col gap-8">
-        <p class="font-mono text-caption text-fog-light uppercase">{{ t('home.hero.eyebrow') }}</p>
-        <i18n-t
-          id="hero-title"
-          keypath="home.hero.title"
-          tag="h1"
-          scope="global"
-          class="font-display text-heading-lg font-light text-balance text-bone-white md:text-display xl:text-display-lg"
-        >
-          <template #emphasis>
-            <span class="text-accent">{{ t('home.hero.emphasis') }}</span>
-          </template>
-        </i18n-t>
-        <p class="max-w-[540px] font-body text-subheading text-pretty text-bone-white">
-          {{ t('home.hero.subtitle') }}
-        </p>
-      </UiContainer>
-    </section>
-
-    <section
-      class="w-full bg-accent py-20 [&_:focus-visible]:outline-void-black"
-      :aria-label="t('home.statement.label')"
-    >
-      <UiContainer>
-        <p
-          class="mx-auto max-w-4xl text-center font-display text-heading-sm font-normal text-balance text-void-black md:text-heading lg:text-heading-lg"
-        >
-          {{ t('home.statement.text') }}
-        </p>
-      </UiContainer>
-    </section>
+  <div v-if="data?.home && data.services && data.ecosystem && site">
+    <SectionHero :hero="data.home.hero" />
+    <SectionContextLayers :context="data.home.context" />
+    <SectionPillars
+      :title="data.home.pillars.title"
+      :intro="data.home.pillars.intro"
+      :pillars="site.pillars"
+    />
+    <SectionMethod
+      :method="data.services.method"
+      :title="data.home.method.title"
+      :intro="data.home.method.intro"
+      :link="{ label: data.home.method.linkLabel, to: { name: 'servicios', hash: '#approach' } }"
+    />
+    <SectionSectors
+      :title="data.home.sectors.title"
+      :intro="data.home.sectors.intro"
+      :sectors="site.sectors"
+    />
+    <SectionStatement :statement="data.home.statement" />
+    <SectionEcosystemTeaser
+      :ecosystem="data.home.ecosystem"
+      :partners="data.ecosystem.partners.items.map((p) => p.name)"
+    />
+    <SectionCta :cta="data.home.cta" />
   </div>
 </template>

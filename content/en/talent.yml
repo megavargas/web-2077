@@ -1,0 +1,33 @@
+seo:
+  title: Careers — Work at Contextual
+  description: Join an independent data and AI consultancy. Learn about our five-step hiring process and send us your application.
+header:
+  eyebrow: Careers
+  title: Work at Contextual
+  intro: We are looking for people who enjoy solving real problems with data and AI, and explaining them clearly.
+culture:
+  title: What you will find
+  items:
+    - name: Real problems
+      text: Projects in industries where a good data-driven decision makes the difference.
+    - name: From data to production
+      text: You will take part in the whole journey, from strategy to operations.
+    - name: Close-knit teams
+      text: Small teams, with real responsibility from day one.
+process:
+  title: Our hiring process
+  steps:
+    - name: Your application
+      text: We review your profile and experience.
+    - name: First interview
+      text: A remote conversation to get to know each other.
+    - name: Technical exercise
+      text: For technical roles only, based on a case similar to the real work.
+    - name: Second interview
+      text: With the team you will be working with.
+    - name: Joining
+      text: Your arrival at Contextual and in the team.
+openings:
+  title: Openings
+  text: If you do not see an opening that fits you, send us your application anyway.
+  button: Send your application

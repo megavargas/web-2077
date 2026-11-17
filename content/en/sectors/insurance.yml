@@ -1,0 +1,76 @@
+key: insurance
+order: 3
+slug: insurance
+name: Insurance
+benefit: Better pricing and faster claims, with every decision accounted for.
+seo:
+  title: Data and AI for insurance
+  description: Pricing and rating, claims automation, fraud detection, portfolio retention, and data for Solvency II and IFRS 17.
+header:
+  eyebrow: Industry · Insurance
+  title: Data and AI for insurers
+  intro: Better pricing and faster claims, with every decision accounted for to the customer, the actuary and the supervisor.
+challenges:
+  title: Industry challenges
+  items:
+    - name: Competitive pricing
+      text: Risk-adjusted prices in increasingly comparable markets.
+    - name: Document-heavy claims
+      text: Claim forms, reports and invoices reviewed by hand.
+    - name: Fraud
+      text: Patterns that only appear when claims, policies and suppliers are combined.
+    - name: Regulatory reporting
+      text: Solvency II and IFRS 17 require granular, reconciled and auditable data.
+domains:
+  title: Use cases by business area
+  intro: Each use case shows which service pillars are involved.
+  items:
+    - name: Pricing
+      useCases:
+        - name: Pricing and rating
+          text: Risk and demand models built together with the actuarial team.
+          pillars: [intelligence, ai]
+    - name: Claims
+      useCases:
+        - name: Claims automation
+          text: Document reading and extraction to speed up claim opening and settlement.
+          pillars: [ai]
+        - name: Triage and cost estimation
+          text: Prioritising claims and anticipating their cost from first notification.
+          pillars: [intelligence, ai]
+    - name: Fraud
+      useCases:
+        - name: Claims fraud detection
+          text: Red flags and relationship networks across claims, policyholders and suppliers.
+          pillars: [intelligence, ai]
+    - name: Portfolio
+      useCases:
+        - name: Retention and cross-selling
+          text: Anticipating lapses and spotting coverage needs.
+          pillars: [intelligence]
+    - name: Regulatory
+      useCases:
+        - name: Data for Solvency II and IFRS 17
+          text: Governed, traceable data from policy to report.
+          pillars: [strategy, data]
+regulation:
+  title: Regulatory context
+  intro: We design with regulation in mind from the start, not as an afterthought.
+  items:
+    - name: Solvency II
+      text: The EU prudential regime for insurance. Quality, traceability and governance of the data behind calculation and reporting.
+    - name: IFRS 17
+      text: The accounting standard for insurance contracts, effective since 2023. Granular data by cohort and contract.
+    - name: DORA
+      text: Digital operational resilience for insurers too. ICT risk and management of cloud providers.
+    - name: AI Act
+      text: Risk assessment and pricing in life and health insurance are high-risk uses.
+faq:
+  - q: How do you work with the actuarial team?
+    a: Pricing and reserving models are built with the actuarial team, which keeps ownership of the model and the technical judgement.
+  - q: Is AI-based pricing high-risk under the AI Act?
+    a: For life and health insurance, yes. It requires risk management, data quality, documentation and human oversight, and we account for it at design stage.
+cta:
+  title: Talk to our Insurance team
+  text: Tell us about your challenge and we will suggest where to start.
+  button: Talk to the Insurance team

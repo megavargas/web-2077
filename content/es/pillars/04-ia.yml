@@ -1,0 +1,45 @@
+key: ai
+order: 4
+number: '04'
+slug: ia
+name: IA aplicada
+subtitle: IA generativa, agentes y su gobierno
+benefit: IA en producción, medida y controlada. No pilotos eternos.
+summary: IA generativa y agentes integrados en procesos reales, medidos y bajo control.
+seo:
+  title: IA generativa y agentes en producción
+  description: IA generativa y agentes, asistentes sobre conocimiento interno, automatización de procesos, MLOps y LLMOps, evaluación y gobierno de la IA.
+problem:
+  title: El problema
+  text: La mayoría de iniciativas de IA generativa no pasan del piloto. Faltan datos de calidad, integración con los procesos y controles que convenzan a riesgos, seguridad y cumplimiento.
+includes:
+  title: Qué incluye
+  items:
+    - name: IA generativa y agentes
+      text: Agentes que ejecutan tareas sobre sistemas reales, con supervisión humana donde hace falta.
+    - name: Asistentes sobre conocimiento interno
+      text: Respuestas basadas en vuestra documentación, con fuentes citadas y control de acceso.
+    - name: Automatización de procesos
+      text: Lectura, clasificación y extracción de documentos integradas en el flujo de trabajo.
+    - name: MLOps y LLMOps
+      text: Despliegue, versionado, monitorización y control de costes de los modelos en producción.
+    - name: Evaluación, seguridad y gobierno de agentes
+      text: Pruebas de calidad, límites de actuación, trazabilidad y registro para auditoría.
+outcome:
+  title: Resultado
+  text: Casos de IA en producción con métricas de negocio, costes conocidos y controles documentados.
+technologies:
+  - Google Cloud
+  - Vertex AI
+  - Gemini
+  - Microsoft Azure
+  - AWS
+faq:
+  - q: ¿Cómo se evita que un asistente invente respuestas?
+    a: Anclamos las respuestas en vuestras fuentes, citamos de dónde sale cada dato y medimos la calidad con conjuntos de evaluación antes y después de salir a producción.
+  - q: ¿Qué implica el AI Act para nuestros casos de uso?
+    a: Depende del caso. Algunos, como la evaluación de solvencia de personas o la tarificación de seguros de vida y salud, son de alto riesgo y exigen gestión de riesgos, documentación y supervisión humana. Lo evaluamos en el diseño.
+cta:
+  title: Lleva tu IA a producción
+  text: Empieza por un diagnóstico y prioriza los casos de uso con más retorno y menos riesgo.
+  button: Solicita un diagnóstico

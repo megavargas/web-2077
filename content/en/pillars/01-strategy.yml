@@ -1,0 +1,39 @@
+key: strategy
+order: 1
+number: '01'
+slug: strategy
+name: Consulting & Strategy
+benefit: Knowing what to do first, why, and what it will return.
+summary: Decisions before technology. We pinpoint where the value lies and how to capture it.
+seo:
+  title: Data and AI strategy consulting
+  description: Data and AI strategy, maturity assessment, use-case prioritisation with a business case, and data and AI governance.
+problem:
+  title: The problem
+  text: AI pilots that do not scale, half-built platforms and a list of initiatives competing for the same budget. What is missing is a shared way to decide what to do first and how to measure it.
+includes:
+  title: What it includes
+  items:
+    - name: Data and AI strategy
+      text: Vision, objectives and principles aligned with the business strategy.
+    - name: Maturity assessment
+      text: Where you stand today in data, analytics, AI and organisation, compared with what you need.
+    - name: Prioritised use cases
+      text: An inventory of use cases, prioritised with business case, risks and dependencies.
+    - name: Operating model and centre of excellence
+      text: Roles, processes and teams so that data and AI scale beyond the first project.
+    - name: Data and AI governance
+      text: Policies, responsibilities and controls, including readiness for the AI Act.
+outcome:
+  title: Outcome
+  text: A prioritised roadmap, with a business case per initiative and a governance model the board can approve.
+technologies: []
+faq:
+  - q: Do we need our data in order before we start?
+    a: No. The assessment starts from where you are today, and its purpose is precisely to decide what needs sorting out first.
+  - q: How do you take the AI Act into account?
+    a: We classify the risk of each use case and define governance requirements at design stage, so they do not surface at the end as a blocker.
+cta:
+  title: Prioritise your data and AI use cases
+  text: Start with a 2–4 week assessment and leave with an actionable roadmap.
+  button: Request an assessment
