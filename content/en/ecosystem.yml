@@ -2,10 +2,10 @@
 # TODO: validate the licensing services with the team.
 seo:
   title: Ecosystem — Google Cloud, Azure and AWS
-  description: An independent, multicloud consultancy. Partner of Google Cloud, Microsoft Azure and AWS, with licence resale, billing and cost control.
+  description: A multicloud consultancy. Partner of Google Cloud, Microsoft Azure and AWS, with licence resale, billing and cost control.
 header:
   eyebrow: Ecosystem
-  title: Independent and multicloud
+  title: Multicloud, no lock-in
   intro: Google Cloud, Azure and AWS, chosen for the problem, not the contract.
 partners:
   title: Partners

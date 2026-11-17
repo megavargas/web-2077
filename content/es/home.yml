@@ -1,6 +1,6 @@
 seo:
   title: Consultoría de estrategia, datos e IA para Telco, Banca y Seguros
-  description: Consultora independiente de estrategia, datos e IA para Telco, Banca y Seguros. Ponemos el contexto que la IA necesita para llegar a producción.
+  description: Consultora de estrategia, datos e IA para Telco, Banca y Seguros. Ponemos el contexto que la IA necesita para llegar a producción.
 
 hero:
   eyebrow: Consultoría · Datos · Inteligencia · IA
@@ -112,7 +112,7 @@ sectors:
   intro: Trabajamos donde el dato abunda y el error sale caro.
 
 ecosystem:
-  title: Independientes y multicloud
+  title: Multicloud, sin ataduras
   text: Google Cloud, Azure y AWS, elegidos por el problema, no por el contrato.
   linkLabel: Ver ecosistema
 

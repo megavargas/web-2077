@@ -1,10 +1,10 @@
 # TODO: confirm the address and which offices outside Madrid are published.
 seo:
-  title: About us — An independent consultancy since 2016
-  description: Contextual Intelligence Partners is an independent strategy, data and AI consultancy, founded in Madrid in 2016 and focused on Telco, Banking and Insurance.
+  title: About us — A data and AI consultancy since 2016
+  description: Contextual Intelligence Partners is a strategy, data and AI consultancy, founded in Madrid in 2016 and focused on Telco, Banking and Insurance.
 header:
   eyebrow: About us
-  title: An independent strategy, data and AI consultancy
+  title: A strategy, data and AI consultancy
   intro: Since 2016 we have helped Telco, Banking and Insurance companies make better decisions with data.
 story:
   title: Our story
@@ -14,8 +14,8 @@ story:
 principles:
   title: Who we are
   items:
-    - name: Independent
-      text: We do not belong to any large group or vendor. We choose technology for the problem.
+    - name: Problem first, then technology
+      text: We choose technology for the problem, not for the vendor.
     - name: Production-minded
       text: We measure success by what reaches production and gets used, not by pilots.
     - name: We transfer knowledge

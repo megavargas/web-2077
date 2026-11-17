@@ -1,10 +1,10 @@
 # TODO: confirmar la dirección y qué oficinas fuera de Madrid se publican.
 seo:
-  title: Nosotros — Consultora independiente desde 2016
-  description: Contextual Intelligence Partners es una consultora independiente de estrategia, datos e IA, fundada en Madrid en 2016, con foco en Telco, Banca y Seguros.
+  title: Nosotros — Consultora de datos e IA desde 2016
+  description: Contextual Intelligence Partners es una consultora de estrategia, datos e IA, fundada en Madrid en 2016, con foco en Telco, Banca y Seguros.
 header:
   eyebrow: Nosotros
-  title: Consultora independiente de estrategia, datos e IA
+  title: Consultora de estrategia, datos e IA
   intro: Desde 2016 ayudamos a empresas de Telco, Banca y Seguros a tomar mejores decisiones con datos.
 story:
   title: Nuestra historia
@@ -14,8 +14,8 @@ story:
 principles:
   title: Cómo somos
   items:
-    - name: Independientes
-      text: No pertenecemos a ningún gran grupo ni a ningún fabricante. Elegimos la tecnología por el problema.
+    - name: Tecnología al servicio del problema
+      text: Elegimos la tecnología por el problema, no por el fabricante.
     - name: Orientados a producción
       text: Medimos el éxito por lo que llega a producción y se usa, no por los pilotos.
     - name: Transferimos el conocimiento

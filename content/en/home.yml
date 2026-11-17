@@ -1,6 +1,6 @@
 seo:
   title: Strategy, data and AI consulting for Telco, Banking and Insurance
-  description: An independent strategy, data and AI consultancy for Telco, Banking and Insurance. We bring the context AI needs to reach production.
+  description: A strategy, data and AI consultancy for Telco, Banking and Insurance. We bring the context AI needs to reach production.
 
 hero:
   eyebrow: Consulting · Data · Intelligence · AI
@@ -107,7 +107,7 @@ sectors:
   intro: We work where data is abundant and mistakes are expensive.
 
 ecosystem:
-  title: Independent and multicloud
+  title: Multicloud, no lock-in
   text: Google Cloud, Azure and AWS, chosen for the problem, not the contract.
   linkLabel: See our ecosystem
 

@@ -19,7 +19,7 @@ Idea central (úsala como hilo conductor de toda la web, juega con el nombre):
 > **La IA solo funciona con contexto.** El contexto es una estrategia clara (01), datos fiables (02) y conocimiento del negocio (03). Sin eso, la IA (04) se queda en piloto.
 
 Mensajes de referencia (ES / EN):
-- **Claim del hero (aprobado 17/11/2026):** *Somos / inteligencia / aplicada / **a tu contexto.*** — *We Are / Applied / Intelligence, / **in your context.*** (apilado, última línea en cian). Línea de confianza: «Desde 2016. Google Cloud, Azure y AWS. Telco, Banca y Seguros.» No usar «independientes».
+- **Claim del hero (aprobado 17/11/2026):** *Somos / inteligencia / aplicada / **a tu contexto.*** — *We Are / Applied / Intelligence, / **in your context.*** (apilado, última línea en cian). Línea de confianza: «Desde 2016. Google Cloud, Azure y AWS. Telco, Banca y Seguros.» **No usar «independiente(s)» en ninguna parte de la web** (decisión del cliente, 17/11/2026).
 - Hero: *Inteligencia con **contexto**.* / *Intelligence, in **context**.* (la palabra enfatizada va en `text-accent`)
 - Subtítulo: *Estrategia, datos e IA para que las decisiones importantes se tomen mejor y antes.* / *Strategy, data and AI so that the decisions that matter are made better, and sooner.*
 - Banda de acento: *La IA sin contexto es solo estadística. Nosotros ponemos el contexto.* / *AI without context is just statistics. We bring the context.*
