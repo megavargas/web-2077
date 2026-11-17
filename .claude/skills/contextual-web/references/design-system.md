@@ -42,6 +42,8 @@ El tema (`assets/theme.css`) **borra** la paleta, radios, sombras, familias y es
 
 > **Fondo azul marino (decisión del cliente, 17/11/2026):** el canvas pasa de negro puro a `#0c1829` y los grises se tiñen de azul para casar con él. Sin degradados ni halos de fondo (se probó un halo tipo cqisense.com y se descartó). Contraste sobre el canvas: bone-white 16,4:1, fog-light 10,8:1, steel-mid 5,3:1, cian 7,1:1.
 
+> **Sección clara (decisión del cliente, 17/11/2026):** para romper el ritmo oscuro, una sección por página puede ir sobre `bg-mist` (#eef2f7), con corte recto, sin degradado. Colores propios: titulares `text-void-black`, secundario `text-ink-mid` (#4b5a70, 6,2:1), líneas `border-mist-border` (#d3dbe6), tarjetas `bg-paper` (#fff) y énfasis/hover `text-accent-deep` (#006b99, 5,2:1; el cian de marca no llega a 4,5:1 sobre claro). Foco: `focus-visible:outline-void-black`. Se implementa como prop `tone="light"` del componente (hoy `SectionPillars` y `UiSectionHeader`), nunca con clases del padre. En la home: «From strategy to AI in production». Se probó en la pila de contexto y se descartó.
+
 ### Tipografía
 | Clase | Tamaño / LH / tracking | Familia y peso típicos |
 |---|---|---|
@@ -104,7 +106,7 @@ CTAs: flex flex-wrap gap-4 → UiButton filled + UiButton ghost
 ```
 (`min-h-[100svh]` y `max-w-[540px]` son de los pocos valores arbitrarios aceptables: no son colores, tipos ni radios.)
 
-### Ilustración del hero (`HeroEmbeddings`)
+### Ilustración del hero (`EmbeddingField`)
 Espacio de embeddings generado por código (SVG con semilla fija, idéntico en SSR y cliente): nube de clústeres en perspectiva sobre una retícula fina, con un clúster en cian enmarcado como selección («a tu contexto»). Algunos puntos parpadean (`motion-safe:animate-blink`). Se funde a negro con overlays `bg-linear-to-b` y `bg-linear-to-r` (uso permitido de gradientes). Elegida el 17/11/2026 frente a racks (infraestructura, no es nuestro negocio), señales y ruido→orden. No usar servidores ni fotos de la web de referencia.
 
 ### Banda de acento full-bleed (máx. 1 por página)

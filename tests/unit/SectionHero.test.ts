@@ -24,9 +24,9 @@ describe('SectionHero', () => {
     expect(h1.find('span.text-accent').text()).toBe('aplicada.')
   })
 
-  it('enlaza los CTA al diagnóstico y a servicios', async () => {
+  it('enlaza los CTA al diagnóstico y a servicios, y baja a la sección de contexto', async () => {
     const wrapper = await mountSuspended(SectionHero, { props: { hero } })
     const hrefs = wrapper.findAll('a').map((a) => a.attributes('href'))
-    expect(hrefs).toEqual(['/services/assessment', '/services'])
+    expect(hrefs).toEqual(['/services/assessment', '/services', '#context'])
   })
 })

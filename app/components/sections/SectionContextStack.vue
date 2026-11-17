@@ -30,7 +30,7 @@ function tileTo(tile: Tile) {
 </script>
 
 <template>
-  <section id="context" class="py-12 md:py-20" aria-labelledby="context-title">
+  <section id="context" class="pt-16 pb-12 md:pt-24 md:pb-20" aria-labelledby="context-title">
     <UiContainer>
       <div class="mb-12 flex flex-col gap-6 md:mb-20">
         <p class="max-w-prose font-body text-subheading text-pretty text-fog-light">

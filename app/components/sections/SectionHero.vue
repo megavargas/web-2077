@@ -6,14 +6,14 @@ defineProps<{ hero: HomeContent['hero'] }>()
 
 <template>
   <section
-    class="relative isolate overflow-hidden bg-void-black py-20 md:py-40"
+    class="relative isolate overflow-hidden bg-void-black pt-20 md:pt-40"
     aria-labelledby="hero-title"
   >
     <!-- Espacio de embeddings con fundido a negro (izquierda, arriba y abajo) -->
     <div
       class="absolute inset-x-0 bottom-0 -z-10 h-3/5 opacity-50 lg:inset-y-0 lg:right-0 lg:left-auto lg:h-full lg:w-3/5 lg:opacity-100"
     >
-      <HeroEmbeddings class="h-full w-full" />
+      <EmbeddingField class="h-full w-full" />
       <div class="absolute inset-0 bg-linear-to-b from-void-black via-transparent to-void-black" />
       <div
         class="absolute inset-0 hidden bg-linear-to-r from-void-black via-void-black/40 to-transparent lg:block"
@@ -40,11 +40,23 @@ defineProps<{ hero: HomeContent['hero'] }>()
         <UiButton :to="{ name: 'servicios-diagnostico' }">{{ hero.primaryCta }}</UiButton>
         <UiButton variant="ghost" :to="{ name: 'servicios' }">{{ hero.secondaryCta }}</UiButton>
       </div>
-      <p
-        class="max-w-[600px] border-t border-graphite-border pt-6 font-mono text-caption text-fog-light uppercase"
+    </UiContainer>
+    <!-- Franja de cierre: lectura de sistema + paso a la sección de contexto -->
+    <UiContainer
+      class="mt-16 flex flex-col gap-4 border-t border-graphite-border py-6 sm:flex-row sm:items-center sm:justify-between md:mt-24"
+    >
+      <p class="font-mono text-caption text-fog-light uppercase">{{ hero.proof }}</p>
+      <a
+        href="#context"
+        class="group inline-flex shrink-0 items-center gap-2 font-mono text-caption text-bone-white uppercase hover:text-accent"
       >
-        {{ hero.proof }}
-      </p>
+        {{ $t('common.scrollCue') }}
+        <Icon
+          name="lucide:arrow-down"
+          class="size-4 motion-safe:transition-transform motion-safe:group-hover:translate-y-0.5"
+          aria-hidden="true"
+        />
+      </a>
     </UiContainer>
   </section>
 </template>

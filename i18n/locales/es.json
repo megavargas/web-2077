@@ -2,7 +2,8 @@
   "common": {
     "home": "Contextual Intelligence Partners: inicio",
     "language": "Idioma",
-    "skip": "Saltar al contenido"
+    "skip": "Saltar al contenido",
+    "scrollCue": "Cómo construimos el contexto"
   },
   "nav": {
     "main": "Principal",

@@ -25,6 +25,12 @@
   --color-steel-mid: #7f8ca3; /* antes #737373 */
   --color-fog-light: #c2cad8; /* antes #bfbfbf */
   --color-bone-white: #f5f5f5;
+  /* Sección clara (una por página como máximo, ver design-system.md) */
+  --color-mist: #eef2f7; /* fondo claro */
+  --color-paper: #ffffff; /* tarjetas sobre mist */
+  --color-mist-border: #d3dbe6; /* hairlines sobre claro */
+  --color-ink-mid: #4b5a70; /* texto secundario sobre claro (6,2:1) */
+  --color-accent-deep: #006b99; /* cian para texto sobre claro (5,2:1) */
 
   /* Familias (papel → fuente) */
   --font-display: 'Archivo', ui-sans-serif, system-ui, sans-serif;

@@ -6,21 +6,47 @@ const {
   title,
   intro,
   pillars,
+  tone = 'dark',
 } = defineProps<{
   id?: string
   title: string
   intro?: string
   pillars: Pillar[]
+  /** light: sección clara (fondo mist) para romper el ritmo oscuro */
+  tone?: 'dark' | 'light'
 }>()
+
+const c = computed(() =>
+  tone === 'light'
+    ? {
+        section: 'bg-mist',
+        strong: 'text-void-black',
+        muted: 'text-ink-mid',
+        line: 'border-mist-border',
+        lineHover: 'hover:border-void-black',
+        hover: 'group-hover:text-accent-deep',
+        focus: 'focus-visible:outline-void-black',
+      }
+    : {
+        section: '',
+        strong: 'text-bone-white',
+        muted: 'text-fog-light',
+        line: 'border-graphite-border',
+        lineHover: 'hover:border-bone-white',
+        hover: 'group-hover:text-accent',
+        focus: '',
+      },
+)
 </script>
 
 <template>
-  <section :id="id" class="py-12 md:py-20" :aria-labelledby="`${id}-title`">
+  <section :id="id" class="py-12 md:py-20" :class="c.section" :aria-labelledby="`${id}-title`">
     <UiContainer>
-      <UiSectionHeader :id="`${id}-title`" :title="title" />
+      <UiSectionHeader :id="`${id}-title`" :title="title" :tone="tone" />
       <p
         v-if="intro"
-        class="mb-12 max-w-prose font-body text-subheading text-pretty text-fog-light"
+        class="mb-12 max-w-prose font-body text-subheading text-pretty"
+        :class="c.muted"
       >
         {{ intro }}
       </p>
@@ -28,39 +54,44 @@ const {
         <li
           v-for="pillar in pillars"
           :key="pillar.key"
-          class="group relative flex flex-col gap-4 border-t border-graphite-border pt-6 hover:border-bone-white"
+          class="group relative flex flex-col gap-4 border-t border-graphite-border pt-6"
+          :class="[c.line, c.lineHover]"
         >
-          <span aria-hidden="true" class="font-mono text-caption text-fog-light">
+          <span aria-hidden="true" class="font-mono text-caption" :class="c.muted">
             {{ pillar.number }}
           </span>
-          <h3 class="font-display text-heading-sm font-normal text-bone-white">
+          <h3 class="font-display text-heading-sm font-normal" :class="c.strong">
             <NuxtLinkLocale
               :to="{ name: 'servicios-pillar', params: { pillar: pillar.slug } }"
-              class="group-hover:text-accent after:absolute after:inset-0"
+              class="after:absolute after:inset-0"
+              :class="[c.hover, c.focus]"
             >
               {{ pillar.name }}
             </NuxtLinkLocale>
           </h3>
-          <p v-if="pillar.subtitle" class="font-mono text-caption text-fog-light uppercase">
+          <p v-if="pillar.subtitle" class="font-mono text-caption uppercase" :class="c.muted">
             {{ pillar.subtitle }}
           </p>
-          <p class="font-body text-body text-pretty text-fog-light">{{ pillar.summary }}</p>
-          <ul class="border-t border-graphite-border font-body text-caption text-bone-white">
+          <p class="font-body text-body text-pretty" :class="c.muted">{{ pillar.summary }}</p>
+          <ul class="border-t font-body text-caption" :class="[c.line, c.strong]">
             <li
               v-for="item in pillar.includes.items"
               :key="item.name"
-              class="border-b border-graphite-border py-2.5"
+              class="border-b py-2.5"
+              :class="c.line"
             >
               {{ item.name }}
             </li>
           </ul>
           <p
-            class="mt-auto flex items-start justify-between gap-4 pt-2 font-body text-body text-bone-white"
+            class="mt-auto flex items-start justify-between gap-4 pt-2 font-body text-body"
+            :class="c.strong"
           >
             {{ pillar.benefit }}
             <Icon
               name="lucide:arrow-right"
-              class="mt-1 size-5 shrink-0 text-fog-light group-hover:text-accent"
+              class="mt-1 size-5 shrink-0"
+              :class="[c.muted, c.hover]"
               aria-hidden="true"
             />
           </p>

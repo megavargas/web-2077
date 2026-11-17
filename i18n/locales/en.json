@@ -2,7 +2,8 @@
   "common": {
     "home": "Contextual Intelligence Partners: home",
     "language": "Language",
-    "skip": "Skip to content"
+    "skip": "Skip to content",
+    "scrollCue": "How we build context"
   },
   "nav": {
     "main": "Main",

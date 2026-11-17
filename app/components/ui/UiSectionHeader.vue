@@ -4,6 +4,7 @@ const {
   id,
   counter,
   level = 2,
+  tone = 'dark',
 } = defineProps<{
   title: string
   /** id del título, para <section aria-labelledby> */
@@ -11,6 +12,8 @@ const {
   /** Contador decorativo: "01", "02"… */
   counter?: string
   level?: 2 | 3
+  /** Fondo sobre el que va: oscuro (por defecto) o sección clara */
+  tone?: 'dark' | 'light'
 }>()
 </script>
 
@@ -19,11 +22,17 @@ const {
     <component
       :is="`h${level}`"
       :id="id"
-      class="font-display text-heading font-light text-balance text-bone-white md:text-heading-lg lg:text-heading-xl"
+      class="font-display text-heading font-light text-balance md:text-heading-lg lg:text-heading-xl"
+      :class="tone === 'light' ? 'text-void-black' : 'text-bone-white'"
     >
       {{ title }}
     </component>
-    <span v-if="counter" aria-hidden="true" class="font-mono text-body text-bone-white">
+    <span
+      v-if="counter"
+      aria-hidden="true"
+      class="font-mono text-body"
+      :class="tone === 'light' ? 'text-void-black' : 'text-bone-white'"
+    >
       {{ counter }}
     </span>
   </div>

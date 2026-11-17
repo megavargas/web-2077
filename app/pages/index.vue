@@ -44,6 +44,7 @@ useHead({
       :sectors="site.sectors"
     />
     <SectionPillars
+      tone="light"
       :title="data.home.pillars.title"
       :intro="data.home.pillars.intro"
       :pillars="site.pillars"
