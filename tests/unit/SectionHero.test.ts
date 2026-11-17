@@ -4,19 +4,24 @@ import SectionHero from '~/components/sections/SectionHero.vue'
 
 const hero = {
   eyebrow: 'Consultoría',
-  title: 'Inteligencia con {emphasis}.',
-  emphasis: 'contexto',
-  subtitle: 'Sub',
+  titleLines: [
+    { text: 'Somos', emphasis: false },
+    { text: 'inteligencia', emphasis: false },
+    { text: 'aplicada.', emphasis: true },
+  ],
+  subtitle: 'Tu contexto, nuestra inteligencia.',
+  proof: 'Desde 2016.',
   primaryCta: 'Diagnóstico',
   secondaryCta: 'Servicios',
 }
 
 describe('SectionHero', () => {
-  it('compone el titular con la palabra enfatizada en el color de acento', async () => {
+  it('apila el titular en líneas y resalta la marcada', async () => {
     const wrapper = await mountSuspended(SectionHero, { props: { hero } })
     const h1 = wrapper.find('h1')
-    expect(h1.text()).toBe('Inteligencia con contexto.')
-    expect(h1.find('span.text-accent').text()).toBe('contexto')
+    expect(h1.text()).toBe('Somos inteligencia aplicada.')
+    expect(h1.findAll('span.block')).toHaveLength(3)
+    expect(h1.find('span.text-accent').text()).toBe('aplicada.')
   })
 
   it('enlaza los CTA al diagnóstico y a servicios', async () => {

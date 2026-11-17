@@ -4,9 +4,14 @@ seo:
 
 hero:
   eyebrow: Consulting · Data · Intelligence · AI
-  title: 'Intelligence, in {emphasis}.'
-  emphasis: context
-  subtitle: Strategy, data and AI so that the decisions that matter are made better, and sooner.
+  titleLines:
+    - text: We Are
+    - text: Applied
+    - text: Intelligence,
+    - text: in your context.
+      emphasis: true
+  subtitle: Consulting, data and AI that help Telco, Banking and Insurance make better decisions and take AI into production.
+  proof: Since 2016. Google Cloud, Azure and AWS. Telco, Banking and Insurance.
   primaryCta: Request an assessment
   secondaryCta: Our services
 

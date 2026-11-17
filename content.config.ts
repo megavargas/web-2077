@@ -24,9 +24,10 @@ const schemas = {
     seo,
     hero: z.object({
       eyebrow: z.string(),
-      title: z.string(), // contiene {emphasis}
-      emphasis: z.string(),
+      // Titular apilado: una línea por elemento; la marcada con emphasis va en cian.
+      titleLines: z.array(z.object({ text: z.string(), emphasis: z.boolean().default(false) })),
       subtitle: z.string(),
+      proof: z.string(),
       primaryCta: z.string(),
       secondaryCta: z.string(),
     }),

@@ -4,9 +4,14 @@ seo:
 
 hero:
   eyebrow: Consultoría · Datos · Inteligencia · IA
-  title: 'Inteligencia con {emphasis}.'
-  emphasis: contexto
-  subtitle: Estrategia, datos e IA para que las decisiones importantes se tomen mejor y antes.
+  titleLines:
+    - text: Somos
+    - text: inteligencia
+    - text: aplicada
+    - text: a tu contexto.
+      emphasis: true
+  subtitle: Consultoría, datos e IA para que Telco, Banca y Seguros decidan mejor y lleven la IA a producción.
+  proof: Desde 2016. Google Cloud, Azure y AWS. Telco, Banca y Seguros.
   primaryCta: Solicita un diagnóstico
   secondaryCta: Ver servicios
 
