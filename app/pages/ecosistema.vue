@@ -1,5 +1,5 @@
 <script setup lang="ts">
-definePageMeta({ i18n: { paths: { en: '/ecosystem' } } })
+definePageMeta({ i18n: { paths: { es: '/ecosistema', en: '/ecosystem' } } })
 
 const l = useContentLocale()
 const { data: page } = await useAsyncData(

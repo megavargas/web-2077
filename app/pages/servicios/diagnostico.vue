@@ -1,5 +1,5 @@
 <script setup lang="ts">
-definePageMeta({ i18n: { paths: { en: '/services/assessment' } } })
+definePageMeta({ i18n: { paths: { es: '/servicios/diagnostico', en: '/services/assessment' } } })
 
 const l = useContentLocale()
 const { data: page } = await useAsyncData(

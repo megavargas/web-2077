@@ -3,7 +3,7 @@ import { defineConfig, devices } from '@playwright/test'
 export default defineConfig({
   testDir: 'tests/e2e',
   reporter: process.env.CI ? 'list' : 'html',
-  use: { baseURL: process.env.BASE_URL ?? 'http://localhost:3100', locale: 'es-ES' },
+  use: { baseURL: process.env.BASE_URL ?? 'http://localhost:3100', locale: 'en-GB' },
   projects: [
     // 375px: el ancho móvil más estrecho que soportamos
     { name: 'mobile', use: { ...devices['Pixel 7'], viewport: { width: 375, height: 812 } } },

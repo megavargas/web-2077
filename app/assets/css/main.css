@@ -64,7 +64,7 @@
   /* Layout */
   --container-page: 80rem; /* 1280px → max-w-page */
 
-  /* Animación: parpadeo de LEDs del hero (se anula con prefers-reduced-motion) */
+  /* Animación: parpadeo de puntos del hero (se anula con prefers-reduced-motion) */
   --animate-blink: blink 4s steps(1, end) infinite;
   @keyframes blink {
     0%,

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-definePageMeta({ i18n: { paths: { en: '/services/[pillar]' } } })
+definePageMeta({ i18n: { paths: { es: '/servicios/[pillar]', en: '/services/[pillar]' } } })
 
 const { t } = useI18n()
 const route = useRoute()

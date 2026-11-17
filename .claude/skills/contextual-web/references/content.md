@@ -78,7 +78,7 @@ Base: `docs/reports/Benchmark competitivo web Contextual.md` (benchmark de 29 co
 /ecosistema                      Partners · licencias y facturación · tecnologías
 /nosotros · /talento · /contacto (formulario con motivo y sector, ?sector=&reason=)
 /legal/{aviso-legal,privacidad,cookies}          Borradores pendientes de revisión legal (noindex)
-/en/...                          services, industries, ecosystem, about, careers, contact, legal (slugs traducidos)
+Idioma por defecto: **inglés** en la raíz (`/services`, `/industries/banking`…); español bajo `/es` (`/es/servicios`, `/es/sectores/banca`…). Las rutas de arriba son las españolas, sin el prefijo `/es`.
 ```
 
 Reservado y **sin enlazar** hasta que haya decisión o contenido: `/casos` (casos de cliente), `/insights` (sin artículos aún), `/autodiagnostico` (fase 2).
@@ -104,7 +104,7 @@ Voz: **consultor senior hablando con un directivo**. Directa, concreta, segura s
 - **No inventes**: ni clientes, ni logos, ni cifras ("+200 proyectos", "30% de ahorro"), ni testimonios, ni certificaciones. Si una sección lo necesita, deja `TODO:` visible y avisa.
 - Siglas explicadas la primera vez (AML, MLOps…). Mayúsculas solo donde toque (no "DATA strategy").
 - Etiquetas en `font-mono` mayúsculas con formato de "lectura de sistema": `01 — ESTRATEGIA`, `SECTOR: BANCA`, `INSIGHTS / 2026`.
-- Escribe ES y EN a la vez; el inglés es una adaptación natural (británico), no una traducción literal.
+- Escribe ES y EN a la vez; el inglés es una adaptación natural (británico), no una traducción literal. El inglés es el idioma por defecto de la web.
 - Revisa ortografía antes de cerrar: la web anterior publicó erratas y texto lorem ipsum.
 
 ## 7. Datos de empresa (confirmar antes de publicar)

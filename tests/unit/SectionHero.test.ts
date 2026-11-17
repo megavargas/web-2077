@@ -27,6 +27,6 @@ describe('SectionHero', () => {
   it('enlaza los CTA al diagnóstico y a servicios', async () => {
     const wrapper = await mountSuspended(SectionHero, { props: { hero } })
     const hrefs = wrapper.findAll('a').map((a) => a.attributes('href'))
-    expect(hrefs).toEqual(['/servicios/diagnostico', '/servicios'])
+    expect(hrefs).toEqual(['/services/assessment', '/services'])
   })
 })

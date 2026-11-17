@@ -1,5 +1,5 @@
 <script setup lang="ts">
-definePageMeta({ i18n: { paths: { en: '/industries/[sector]' } } })
+definePageMeta({ i18n: { paths: { es: '/sectores/[sector]', en: '/industries/[sector]' } } })
 
 const { t } = useI18n()
 const route = useRoute()

@@ -41,11 +41,11 @@ export default defineNuxtConfig({
     baseUrl: 'https://contextual.team',
     // Rutas traducidas con definePageMeta({ i18n: { paths: { en: '/services' } } })
     customRoutes: 'meta',
-    defaultLocale: 'es',
-    strategy: 'prefix_except_default', // /servicios  y  /en/services
+    defaultLocale: 'en',
+    strategy: 'prefix_except_default', // /services  y  /es/servicios
     locales: [
-      { code: 'es', language: 'es-ES', name: 'Español', file: 'es.json' },
       { code: 'en', language: 'en-GB', name: 'English', file: 'en.json' },
+      { code: 'es', language: 'es-ES', name: 'Español', file: 'es.json' },
     ],
   },
 

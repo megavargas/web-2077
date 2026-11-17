@@ -28,7 +28,7 @@
 | Tests | Vitest + `@nuxt/test-utils` + `@vue/test-utils`; Playwright para e2e y accesibilidad (`@axe-core/playwright`) | |
 | Paquetes | pnpm | |
 | Estado global | Ninguno por defecto. `useState` de Nuxt si hace falta; Pinia solo si aparece estado complejo compartido. | Una web de marketing casi no tiene estado. |
-| i18n | `@nuxtjs/i18n`, español (por defecto) + inglés | La web actual ya es bilingüe y hay clientes/oficinas fuera de España. |
+| i18n | `@nuxtjs/i18n`, **inglés por defecto** (raíz: `/services`) + español en `/es` (`/es/servicios`) | Decisión del cliente (17/11/2026). Un navegador en español que entra por `/` va a `/es`. |
 
 Si el usuario prefiere Vue "puro" (SPA con Vite + Vue Router), todo lo de diseño y componentes aplica igual; cambian el scaffolding, el SEO (usar `@unhead/vue` + prerender) y la estructura (`src/` en vez de `app/`). Avisa de que una SPA sin prerender perjudica el SEO.
 
@@ -65,10 +65,11 @@ Lo que ya se resolvió (no lo "arregles" de nuevo):
 - Email comercial en `app/app.config.ts` (`useContactHref()` construye el `mailto:`).
 - Nunca pases clases de `display` (`hidden`, `sm:inline-flex`…) a una primitiva: chocan con las suyas. Envuélvela en un `<div>` con la clase responsive.
 - **Selector de idioma con `<SwitchLocalePathLink>`**, nunca `switchLocalePath` + `NuxtLink`: en SSR la cabecera se pinta antes de que la página fije los slugs (`useSetI18nParams`) y el HTML estático enlazaría a rutas mezcladas (`/en/services/datos`), lo que rompe `nuxt generate`.
+- **Cada página declara las rutas de los dos idiomas** en `definePageMeta({ i18n: { paths: { es: '/servicios', en: '/services' } } })`. Si falta una, i18n usa la del idioma por defecto (inglés) y la versión española acaba en `/es/services`.
 - Páginas dinámicas traducidas (`[pillar]`, `[sector]`, `legal/[slug]`): buscan por `slug` en su idioma y llaman a `useSetI18nParams` con el slug del otro idioma (por `key`).
 - `UiContainer`: las clases que recibe se aplican al bloque interior (dentro del gutter), así los bordes quedan alineados con el contenido.
 - Formulario: esquema compartido en `shared/contact.ts` (cliente y servidor), endpoint `server/api/contact.post.ts` → `NUXT_CONTACT_WEBHOOK_URL`. Sin webhook (o en hosting estático) muestra el email como alternativa.
-- E2E: antes de hacer clic, espera a la hidratación (`waitForHydration` en `tests/e2e/helpers.ts`); `pages.spec.ts` recorre todas las rutas en ES/EN con axe; el proyecto `mobile` de Playwright va a 375px para detectar desbordes.
+- E2E: antes de hacer clic, espera a la hidratación completa (`waitForHydration` en `tests/e2e/helpers.ts`, que espera a `html[data-hydrated]`, marcado por `app/plugins/hydrated.client.ts`; `__vue_app__` no basta con páginas asíncronas); `pages.spec.ts` recorre todas las rutas en ES/EN con axe; el proyecto `mobile` de Playwright va a 375px para detectar desbordes.
 
 ## 3. Estructura de carpetas
 

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-definePageMeta({ i18n: { paths: { en: '/industries' } } })
+definePageMeta({ i18n: { paths: { es: '/sectores', en: '/industries' } } })
 
 const l = useContentLocale()
 const { data: site } = await useSiteData()
