@@ -2,6 +2,16 @@
 import type { HomeContent } from '~/types/content'
 
 defineProps<{ hero: HomeContent['hero'] }>()
+
+/** Trocea una línea del titular: lo marcado con **…** va en negrita. */
+function parts(text: string) {
+  return text
+    .split(/(\*\*[^*]+\*\*)/)
+    .filter(Boolean)
+    .map((t) =>
+      t.startsWith('**') ? { text: t.slice(2, -2), bold: true } : { text: t, bold: false },
+    )
+}
 </script>
 
 <template>
@@ -30,7 +40,10 @@ defineProps<{ hero: HomeContent['hero'] }>()
           :key="i"
           class="block"
           :class="{ 'text-accent': line.emphasis }"
-          >{{ line.text }}{{ i < hero.titleLines.length - 1 ? ' ' : '' }}</span
+          ><template v-for="(part, j) in parts(line.text)" :key="j"
+            ><strong v-if="part.bold" class="font-bold">{{ part.text }}</strong
+            ><template v-else>{{ part.text }}</template></template
+          >{{ i < hero.titleLines.length - 1 ? ' ' : '' }}</span
         >
       </h1>
       <p class="max-w-[600px] font-body text-subheading text-pretty text-bone-white">

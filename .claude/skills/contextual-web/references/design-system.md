@@ -42,9 +42,9 @@ El tema (`assets/theme.css`) **borra** la paleta, radios, sombras, familias y es
 
 > **Fondo azul marino (decisión del cliente, 17/11/2026):** el canvas pasa de negro puro a `#0c1829` y los grises se tiñen de azul para casar con él. Sin degradados ni halos de fondo (se probó un halo tipo cqisense.com y se descartó). Contraste sobre el canvas: bone-white 16,4:1, fog-light 10,8:1, steel-mid 5,3:1, cian 7,1:1.
 
-> **Ritmo de fondos de la home (decisión del cliente, 17/11/2026):** hero y contexto en marino → pilares en **banda azul** (`tone="accent"`, `bg-accent-strong` #0077a8 con texto blanco: el blanco sobre el cian de marca solo da 2,3:1) → «Cómo trabajamos» en **azul muy claro** (`tone="light"`, `bg-mist` #eaf6fd) → sectores en marino → ecosistema (Multicloud) en **azul muy claro** → CTA y pie en marino. La banda «AI without context…» se quitó de la home (sigue en /sectores). Una sola banda cian por página (la azul de pilares no cuenta como cian).
+> **Ritmo de fondos de la home (decisión del cliente, 17/11/2026):** hero y contexto en marino → pilares en **banda azul** (`tone="accent"`, `bg-accent-strong` #0077a8 con texto blanco: el blanco sobre el cian de marca solo da 2,3:1) → «Cómo trabajamos» en **azul muy claro** (`tone="light"`, `bg-mist` #f3f9fe) → sectores en marino → ecosistema (Multicloud) en **azul muy claro** → CTA y pie en marino. La banda «AI without context…» se quitó de la home (sigue en /sectores). Una sola banda cian por página (la azul de pilares no cuenta como cian).
 >
-> **Secciones de color:** cortes rectos, sin degradado. Sobre `bg-mist`: titulares `text-void-black`, secundario `text-ink-mid` (#4b5a70, 6,4:1), líneas `border-mist-border` (#c9dfee), tarjetas/badges `bg-paper`, enlaces `text-accent-deep` (#006b99, 5,4:1). Sobre `bg-accent-strong`: títulos `text-paper` (5,0:1), resto `text-bone-white` (4,6:1; no bajes la opacidad), líneas `border-bone-white/30`, hover con subrayado, foco blanco por defecto. Sobre `bg-mist`, foco `outline-void-black`. Se implementan con la prop `tone` del componente (`SectionPillars`, `SectionMethod`, `SectionEcosystemTeaser`, `UiSectionHeader`, `UiBadge`, `UiLinkArrow`), nunca con clases del padre.
+> **Secciones de color:** cortes rectos, sin degradado. Sobre `bg-mist`: titulares `text-void-black`, secundario `text-ink-mid` (#4b5a70, 6,4:1), líneas `border-mist-border` (#d3e6f2), tarjetas/badges `bg-paper`, enlaces `text-accent-deep` (#006b99, 5,4:1). Sobre `bg-accent-strong`: títulos `text-paper` (5,0:1), resto `text-bone-white` (4,6:1; no bajes la opacidad), líneas `border-bone-white/30`, hover con subrayado, foco blanco por defecto. Sobre `bg-mist`, foco `outline-void-black`. Botón sobre `bg-accent-strong`: `UiButton variant="inverse"` (blanco con texto azul; el `filled` desaparecería). Se implementan con la prop `tone` del componente (`SectionPillars`, `UiTagList`, `SectionMethod`, `SectionEcosystemTeaser`, `UiSectionHeader`, `UiBadge`, `UiLinkArrow`), nunca con clases del padre.
 
 ### Tipografía
 | Clase | Tamaño / LH / tracking | Familia y peso típicos |
@@ -109,7 +109,20 @@ CTAs: flex flex-wrap gap-4 → UiButton filled + UiButton ghost
 (`min-h-[100svh]` y `max-w-[540px]` son de los pocos valores arbitrarios aceptables: no son colores, tipos ni radios.)
 
 ### Ilustración del hero (`EmbeddingField`)
-Espacio de embeddings generado por código (SVG con semilla fija, idéntico en SSR y cliente): nube de clústeres en perspectiva sobre una retícula fina, con un clúster en cian enmarcado como selección («a tu contexto»). Algunos puntos parpadean (`motion-safe:animate-blink`). Se funde a negro con overlays `bg-linear-to-b` y `bg-linear-to-r` (uso permitido de gradientes). Elegida el 17/11/2026 frente a racks (infraestructura, no es nuestro negocio), señales y ruido→orden. No usar servidores ni fotos de la web de referencia.
+Espacio de embeddings generado por código (SVG con semilla fija, idéntico en SSR y cliente): nube de clústeres en perspectiva sobre una retícula fina, con un clúster en cian enmarcado como selección («a tu contexto»). Algunos puntos parpadean (`motion-safe:animate-blink`). Se funde a negro con overlays `bg-linear-to-b` y `bg-linear-to-r` (uso permitido de gradientes). Elegida para la home el 17/11/2026 frente a racks, señales y ruido→orden. Los racks (`RackField`) se usan solo en la cabecera de Ecosistema. No usar fotos de la web de referencia.
+
+### Titular del hero: negritas
+En `home.yml`, `**palabra**` dentro de una línea del titular se pinta en `font-bold` («**Applied** Intelligence, in your **context**»). Es la única excepción a «nunca titulares en negrita»: una o dos palabras clave, no la frase entera.
+
+### Cabeceras de páginas interiores con grafismo (`UiPageHeader` + slot `visual`)
+`UiPageHeader` acepta un slot `visual` que se pinta a la derecha (mitad derecha en desktop, de fondo y tenue en móvil) con fundidos al marino. Ecosistema usa `RackField` (pasillo de racks con LEDs que parpadean, SVG con semilla fija): encaja ahí porque la página habla de nube e infraestructura. En la home se mantiene `EmbeddingField`.
+
+### Iconos y logos
+- Sectores (Telco, Banca, Seguros): icono lucide de trazo fino (`icon` en el YAML del sector), el mismo de la pila de contexto.
+- Partners cloud: logo plano monocromo de `simple-icons` (`icon` en `ecosystem.yml`), en el color del texto. Nunca logos a color.
+
+### Ritmo de fondos de Ecosistema
+Cabecera con racks y partners en marino → «Licencias y facturación» en banda azul (`bg-accent-strong`, botón `inverse`) → «Tecnologías» en azul muy claro (`bg-mist`, `UiTagList tone="light"`) → pie en marino.
 
 ### Banda de acento full-bleed (máx. 1 por página)
 `<section class="w-full bg-accent py-20 [&_:focus-visible]:outline-void-black">` → contenedor centrado → `<p>` `font-display font-normal text-heading-sm md:text-heading lg:text-heading-lg text-void-black text-center text-balance max-w-4xl mx-auto`. Una o dos frases, sin botones ni imágenes.

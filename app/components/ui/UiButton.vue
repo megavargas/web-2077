@@ -7,7 +7,8 @@ const {
   href,
   type = 'button',
 } = defineProps<{
-  variant?: 'filled' | 'ghost'
+  /** inverse: botón blanco para la banda azul (accent-strong) */
+  variant?: 'filled' | 'ghost' | 'inverse'
   /** Ruta interna (se localiza automáticamente) */
   to?: RouteLocationRaw
   /** Enlace externo */
@@ -21,6 +22,8 @@ const variants = {
   filled: 'border-accent bg-accent text-void-black hover:border-bone-white hover:bg-bone-white',
   ghost:
     'border-bone-white bg-transparent text-bone-white hover:bg-bone-white hover:text-void-black',
+  inverse:
+    'border-paper bg-paper text-accent-strong hover:border-void-black hover:bg-void-black hover:text-paper',
 } as const
 
 const tag = computed(() => (to ? NuxtLinkLocale : href ? 'a' : 'button'))

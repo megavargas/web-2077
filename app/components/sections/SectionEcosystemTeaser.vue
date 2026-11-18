@@ -3,7 +3,7 @@ import type { HomeContent } from '~/types/content'
 
 const { tone = 'dark' } = defineProps<{
   ecosystem: HomeContent['ecosystem']
-  partners: string[]
+  partners: { name: string; icon?: string }[]
   /** light: sección clara (mist) */
   tone?: 'dark' | 'light'
 }>()
@@ -46,11 +46,12 @@ const c = computed(() =>
       <ul class="border-t" :class="c.line">
         <li
           v-for="p in partners"
-          :key="p"
-          class="border-b py-5 font-display text-heading-sm font-normal"
+          :key="p.name"
+          class="flex items-center gap-4 border-b py-5 font-display text-heading-sm font-normal"
           :class="[c.line, c.strong]"
         >
-          {{ p }}
+          <Icon v-if="p.icon" :name="p.icon" class="size-7 shrink-0" aria-hidden="true" />
+          {{ p.name }}
         </li>
       </ul>
     </UiContainer>

@@ -64,7 +64,7 @@ useHead({
     <SectionEcosystemTeaser
       tone="light"
       :ecosystem="data.home.ecosystem"
-      :partners="data.ecosystem.partners.items.map((p) => p.name)"
+      :partners="data.ecosystem.partners.items.map((p) => ({ name: p.name, icon: p.icon }))"
     />
     <SectionCta :cta="data.home.cta" :divider="false" />
   </div>

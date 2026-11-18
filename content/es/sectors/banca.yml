@@ -2,6 +2,7 @@ key: banking
 order: 2
 slug: banca
 name: Banca
+icon: 'lucide:landmark'
 benefit: Riesgo, fraude y cliente con datos trazables e IA bajo control.
 seo:
   title: Datos e IA para banca

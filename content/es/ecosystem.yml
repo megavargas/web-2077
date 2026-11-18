@@ -12,17 +12,53 @@ partners:
   intro: Trabajamos a diario con estos proveedores y somos partners de todos ellos.
   items:
     - name: Google Cloud
+      icon: 'simple-icons:googlecloud'
       role: Partner y revendedor
       text: Plataformas de datos e IA en Google Cloud, con licencias, facturación y soporte.
-      technologies: [BigQuery, Vertex AI, Gemini, Looker Studio]
+      technologies:
+        [
+          BigQuery,
+          Dataflow,
+          Dataproc,
+          Pub/Sub,
+          Cloud Composer,
+          Dataplex,
+          Vertex AI,
+          Gemini,
+          Looker,
+          Looker Studio,
+        ]
     - name: Microsoft Azure
+      icon: 'simple-icons:microsoftazure'
       role: Partner y revendedor
       text: Plataformas de datos e IA en Azure para organizaciones con ecosistema Microsoft.
-      technologies: [Azure Data Factory, Azure Synapse, Power BI]
+      technologies:
+        [
+          Microsoft Fabric,
+          Azure Data Factory,
+          Azure Synapse,
+          Azure Databricks,
+          Microsoft Purview,
+          Azure Machine Learning,
+          Azure OpenAI,
+          Power BI,
+        ]
     - name: AWS
+      icon: 'simple-icons:amazonwebservices'
       role: Partner y revendedor
       text: Plataformas de datos e IA en AWS para organizaciones que ya operan en Amazon Web Services.
-      technologies: [] # TODO: servicios de AWS con los que trabajáis
+      technologies:
+        [
+          Amazon S3,
+          AWS Glue,
+          Amazon Redshift,
+          Amazon EMR,
+          Amazon Kinesis,
+          AWS Lake Formation,
+          Amazon SageMaker,
+          Amazon Bedrock,
+          Amazon QuickSight,
+        ]
 licensing:
   title: Licencias y facturación
   text: Revendemos licencias de Google Cloud, Azure y AWS. Esto es lo que añadimos a la licencia.
@@ -41,12 +77,27 @@ technologies:
   intro: Elegimos la tecnología por el problema. Estas son las que más usamos.
   groups:
     - name: Cloud y plataformas
-      items: [Google Cloud, Microsoft Azure, AWS, Snowflake]
+      items: [Google Cloud, Microsoft Azure, AWS, Snowflake, Databricks, Microsoft Fabric]
     - name: Datos
-      items: [BigQuery, Azure Data Factory, Azure Synapse, Airflow, Matillion]
+      items:
+        [
+          BigQuery,
+          Dataflow,
+          Cloud Composer,
+          Azure Data Factory,
+          Azure Synapse,
+          AWS Glue,
+          Amazon Redshift,
+          dbt,
+          Apache Spark,
+          Apache Kafka,
+        ]
     - name: BI
-      items: [Power BI, Looker Studio]
+      items: [Power BI, Looker, Looker Studio, Tableau, Amazon QuickSight, Grafana]
     - name: IA
-      items: [Vertex AI, Gemini]
+      items:
+        [Vertex AI, Gemini, Azure OpenAI, Azure Machine Learning, Amazon Bedrock, Amazon SageMaker]
+    - name: Gobierno y calidad
+      items: [Dataplex, Microsoft Purview, AWS Lake Formation]
     - name: Migración desde
       items: [Cognos, MicroStrategy, PowerCenter, Teradata]

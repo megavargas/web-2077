@@ -2,6 +2,7 @@ key: insurance
 order: 3
 slug: seguros
 name: Seguros
+icon: 'lucide:umbrella'
 benefit: Tarificar mejor y resolver siniestros más rápido, con cada decisión justificada.
 seo:
   title: Datos e IA para seguros

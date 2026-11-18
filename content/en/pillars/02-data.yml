@@ -36,8 +36,7 @@ technologies:
   - Azure Synapse
   - AWS
   - Snowflake
-  - Airflow
-  - Matillion
+  - Cloud Composer
 faq:
   - q: Do you only work with Google Cloud?
     a: No. We work with Google Cloud, Azure and AWS, and choose based on the problem, the existing systems and the costs, not on the contract.

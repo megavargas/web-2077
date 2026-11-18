@@ -36,8 +36,9 @@ const {
         >
           <component
             :is="title ? 'h3' : `h${headingLevel}`"
-            class="font-display text-heading font-light text-bone-white"
+            class="flex items-center gap-4 font-display text-heading font-light text-bone-white"
           >
+            <Icon :name="sector.icon" class="size-8 shrink-0" aria-hidden="true" />
             <NuxtLinkLocale
               :to="{ name: 'sectores-sector', params: { sector: sector.slug } }"
               class="group-hover:text-accent after:absolute after:inset-0"

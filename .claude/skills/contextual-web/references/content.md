@@ -39,7 +39,7 @@ Siempre en este orden y con esta numeración (encaja con el contador mono "01–
 
 Reglas:
 - Los pilares se presentan como un **recorrido** (01→04), no como un catálogo: cada página de pilar enlaza al anterior/siguiente.
-- Las herramientas (BigQuery, Snowflake, Power BI, Looker, Airflow, Matillion…) **no tienen página propia**; aparecen como "tecnologías con las que trabajamos" dentro del pilar 02/03 y en Ecosistema.
+- Las herramientas (BigQuery, Snowflake, Power BI, Looker, Cloud Composer, Grafana…) **no tienen página propia**; aparecen como "tecnologías con las que trabajamos" dentro del pilar 02/03 y en Ecosistema.
 
 ## 3. Cómo trabajamos
 

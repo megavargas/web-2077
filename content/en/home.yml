@@ -6,9 +6,9 @@ hero:
   eyebrow: Consulting · Data · Intelligence · AI
   titleLines:
     - text: We Are
-    - text: Applied
+    - text: '**Applied**'
     - text: Intelligence,
-    - text: in your context.
+    - text: 'in your **context**.'
       emphasis: true
   subtitle: Consulting, data and AI that help Telco, Banking and Insurance make better decisions and take AI into production.
   proof: Since 2016. Google Cloud, Azure and AWS. Telco, Banking and Insurance.

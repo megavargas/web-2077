@@ -1,5 +1,8 @@
 <script setup lang="ts">
-definePageMeta({ i18n: { paths: { es: '/servicios/[pillar]', en: '/services/[pillar]' } } })
+definePageMeta({
+  middleware: 'locale-params',
+  i18n: { paths: { es: '/servicios/[pillar]', en: '/services/[pillar]' } },
+})
 
 const { t } = useI18n()
 const route = useRoute()
@@ -15,16 +18,8 @@ const { data: pillar } = await useAsyncData(
 if (!pillar.value)
   throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
 
-// Slug equivalente en el otro idioma, para el selector de idioma.
-const other = l.value === 'es' ? 'en' : 'es'
-const { data: otherPillar } = await useAsyncData(
-  () => `pillar-${other}-${pillar.value?.key}`,
-  () => queryCollection(`pillars_${other}`).where('key', '=', pillar.value!.key).first(),
-)
-setI18nParams({
-  [l.value]: { pillar: slug.value },
-  [other]: { pillar: otherPillar.value?.slug ?? slug.value },
-})
+// Slug equivalente en el otro idioma: lo calcula el middleware locale-params
+setI18nParams(useLocaleParamsState().value?.params ?? {})
 
 usePageSeo(() => pillar.value?.seo)
 

@@ -2,6 +2,7 @@ key: insurance
 order: 3
 slug: insurance
 name: Insurance
+icon: 'lucide:umbrella'
 benefit: Better pricing and faster claims, with every decision accounted for.
 seo:
   title: Data and AI for insurance

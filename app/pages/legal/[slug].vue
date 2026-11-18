@@ -1,5 +1,8 @@
 <script setup lang="ts">
-definePageMeta({ i18n: { paths: { es: '/legal/[slug]', en: '/legal/[slug]' } } })
+definePageMeta({
+  middleware: 'locale-params',
+  i18n: { paths: { es: '/legal/[slug]', en: '/legal/[slug]' } },
+})
 
 const { t } = useI18n()
 const route = useRoute()
@@ -13,8 +16,7 @@ const { data: doc } = await useAsyncData(
 )
 if (!doc.value) throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
 
-const key = doc.value.key
-setI18nParams({ es: { slug: legalSlugs.es[key] }, en: { slug: legalSlugs.en[key] } })
+setI18nParams(useLocaleParamsState().value?.params ?? {})
 
 usePageSeo(() =>
   doc.value ? { title: doc.value.title, description: doc.value.description } : undefined,

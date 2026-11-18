@@ -67,7 +67,7 @@ export default defineNuxtConfig({
   // mode svg: los iconos respetan las clases size-* de Tailwind
   icon: {
     mode: 'svg',
-    serverBundle: { collections: ['lucide'] },
+    serverBundle: { collections: ['lucide', 'simple-icons'] },
     // Iconos en el bundle del cliente (también los del contenido YAML): funcionan en
     // navegación cliente y en hosting estático, sin endpoint /api/_nuxt_icon.
     clientBundle: {

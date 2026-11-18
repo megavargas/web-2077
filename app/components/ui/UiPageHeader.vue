@@ -7,7 +7,21 @@ const { eyebrow, title, intro } = defineProps<{
 </script>
 
 <template>
-  <section class="bg-void-black py-16 md:py-24" aria-labelledby="page-title">
+  <section
+    class="relative isolate overflow-hidden bg-void-black py-16 md:py-24"
+    aria-labelledby="page-title"
+  >
+    <!-- Grafismo opcional a la derecha, con fundido al fondo (como el hero de la home) -->
+    <div
+      v-if="$slots.visual"
+      class="absolute inset-0 -z-10 opacity-50 lg:right-0 lg:left-auto lg:w-1/2 lg:opacity-100"
+    >
+      <slot name="visual" />
+      <div
+        class="absolute inset-0 bg-linear-to-b from-void-black/80 via-transparent to-void-black"
+      />
+      <div class="absolute inset-0 bg-linear-to-r from-void-black via-transparent to-transparent" />
+    </div>
     <UiContainer class="flex flex-col gap-6">
       <p class="font-mono text-caption text-fog-light uppercase">{{ eyebrow }}</p>
       <h1

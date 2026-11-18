@@ -1,5 +1,8 @@
 <script setup lang="ts">
-definePageMeta({ i18n: { paths: { es: '/sectores/[sector]', en: '/industries/[sector]' } } })
+definePageMeta({
+  middleware: 'locale-params',
+  i18n: { paths: { es: '/sectores/[sector]', en: '/industries/[sector]' } },
+})
 
 const { t } = useI18n()
 const route = useRoute()
@@ -15,15 +18,8 @@ const { data: sector } = await useAsyncData(
 if (!sector.value)
   throw createError({ statusCode: 404, statusMessage: 'Page not found', fatal: true })
 
-const other = l.value === 'es' ? 'en' : 'es'
-const { data: otherSector } = await useAsyncData(
-  () => `sector-${other}-${sector.value?.key}`,
-  () => queryCollection(`sectors_${other}`).where('key', '=', sector.value!.key).first(),
-)
-setI18nParams({
-  [l.value]: { sector: slug.value },
-  [other]: { sector: otherSector.value?.slug ?? slug.value },
-})
+// Slug equivalente en el otro idioma: lo calcula el middleware locale-params
+setI18nParams(useLocaleParamsState().value?.params ?? {})
 
 usePageSeo(() => sector.value?.seo)
 

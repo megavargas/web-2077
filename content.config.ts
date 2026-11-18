@@ -25,6 +25,7 @@ const schemas = {
     hero: z.object({
       eyebrow: z.string(),
       // Titular apilado: una línea por elemento; la marcada con emphasis va en cian.
+      // **palabra** dentro del texto va en negrita.
       titleLines: z.array(z.object({ text: z.string(), emphasis: z.boolean().default(false) })),
       subtitle: z.string(),
       proof: z.string(),
@@ -85,6 +86,8 @@ const schemas = {
     order: z.number(),
     slug: z.string(),
     name: z.string(),
+    // Icono plano (lucide), el mismo que en la pila de contexto
+    icon: z.string(),
     benefit: z.string(),
     seo,
     header,
@@ -157,6 +160,8 @@ const schemas = {
       items: z.array(
         z.object({
           name: z.string(),
+          // Logo plano monocromo (colección simple-icons de Iconify)
+          icon: z.string().optional(),
           role: z.string(),
           text: z.string(),
           technologies: z.array(z.string()).default([]),

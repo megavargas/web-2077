@@ -2,6 +2,7 @@ key: telco
 order: 1
 slug: telco
 name: Telco
+icon: 'lucide:radio-tower'
 benefit: Retener clientes, operar la red con datos y atender mejor con IA.
 seo:
   title: Datos e IA para telecomunicaciones

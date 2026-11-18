@@ -2,6 +2,7 @@ key: telco
 order: 1
 slug: telco
 name: Telco
+icon: 'lucide:radio-tower'
 benefit: Retain customers, run the network on data and serve customers better with AI.
 seo:
   title: Data and AI for telecoms

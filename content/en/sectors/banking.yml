@@ -2,6 +2,7 @@ key: banking
 order: 2
 slug: banking
 name: Banking
+icon: 'lucide:landmark'
 benefit: Risk, fraud and customers, with traceable data and AI under control.
 seo:
   title: Data and AI for banking

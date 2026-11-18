@@ -26,9 +26,9 @@
   --color-fog-light: #c2cad8; /* antes #bfbfbf */
   --color-bone-white: #f5f5f5;
   /* Sección clara (una por página como máximo, ver design-system.md) */
-  --color-mist: #eaf6fd; /* fondo claro: azul muy claro */
+  --color-mist: #f3f9fe; /* fondo claro: azul muy claro */
   --color-paper: #ffffff; /* tarjetas sobre mist */
-  --color-mist-border: #c9dfee; /* hairlines sobre claro */
+  --color-mist-border: #d3e6f2; /* hairlines sobre claro */
   --color-ink-mid: #4b5a70; /* texto secundario sobre claro (6,2:1) */
   --color-accent-deep: #006b99; /* cian para texto sobre claro (5,2:1) */
   --color-accent-strong: #0077a8; /* banda azul con texto blanco (5,0:1) */
