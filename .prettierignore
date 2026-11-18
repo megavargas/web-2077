@@ -11,3 +11,4 @@ docs
 
 # Datos generados (mapa de puntos)
 app/assets/data/world-dots.json
+app/assets/data/logo.json

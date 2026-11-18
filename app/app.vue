@@ -3,7 +3,10 @@ const head = useLocaleHead()
 
 useHead({
   htmlAttrs: { lang: () => head.value.htmlAttrs.lang },
-  link: () => head.value.link ?? [],
+  link: () => [
+    { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
+    ...(head.value.link ?? []),
+  ],
   meta: () => head.value.meta ?? [],
   titleTemplate: (title) =>
     title ? `${title} · Contextual Intelligence Partners` : 'Contextual Intelligence Partners',

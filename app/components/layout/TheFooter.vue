@@ -46,7 +46,7 @@ const columns = computed(() => [
     <UiContainer class="flex flex-col gap-12">
       <div class="grid gap-12 lg:grid-cols-3">
         <div class="flex flex-col gap-4">
-          <UiLogo />
+          <UiLogo size="md" />
           <p class="max-w-xs font-body text-body text-fog-light">{{ t('footer.tagline') }}</p>
         </div>
         <nav :aria-label="t('nav.footer')" class="lg:col-span-2">
