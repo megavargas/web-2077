@@ -43,43 +43,48 @@ const contactTo = computed(() => ({
       </UiButton>
     </UiPageHeader>
 
-    <section class="py-12 md:py-20" aria-labelledby="challenges-title">
+    <!-- Retos: banda azul con texto blanco -->
+    <section class="bg-accent-strong py-16 md:py-24" aria-labelledby="challenges-title">
       <UiContainer>
-        <UiSectionHeader id="challenges-title" :title="sector.challenges.title" />
+        <UiSectionHeader id="challenges-title" :title="sector.challenges.title" tone="accent" />
         <ul class="grid gap-10 md:grid-cols-2 xl:grid-cols-4 xl:gap-8">
           <li
             v-for="item in sector.challenges.items"
             :key="item.name"
-            class="flex flex-col gap-3 border-t border-graphite-border pt-6"
+            class="flex flex-col gap-3 border-t border-bone-white/30 pt-6"
           >
-            <h3 class="font-display text-heading-sm font-normal text-bone-white">
+            <h3 class="font-display text-heading-sm font-normal text-paper">
               {{ item.name }}
             </h3>
-            <p class="font-body text-body text-pretty text-fog-light">{{ item.text }}</p>
+            <p class="font-body text-body text-pretty text-bone-white">{{ item.text }}</p>
           </li>
         </ul>
       </UiContainer>
     </section>
 
-    <section class="py-12 md:py-20" aria-labelledby="domains-title">
+    <!-- Casos de uso: sección blanca -->
+    <section
+      class="bg-paper py-16 md:py-24 [&_:focus-visible]:outline-void-black"
+      aria-labelledby="domains-title"
+    >
       <UiContainer>
-        <UiSectionHeader id="domains-title" :title="sector.domains.title" />
-        <p class="mb-12 max-w-prose font-body text-subheading text-pretty text-fog-light">
+        <UiSectionHeader id="domains-title" :title="sector.domains.title" tone="light" />
+        <p class="mb-12 max-w-prose font-body text-subheading text-pretty text-ink-mid">
           {{ sector.domains.intro }}
         </p>
         <div class="flex flex-col gap-12">
           <div
             v-for="domain in sector.domains.items"
             :key="domain.name"
-            class="grid gap-6 border-t border-graphite-border pt-6 lg:grid-cols-3"
+            class="grid gap-6 border-t border-mist-border pt-6 lg:grid-cols-3"
           >
-            <h3 class="font-display text-heading font-light text-bone-white">{{ domain.name }}</h3>
+            <h3 class="font-display text-heading font-light text-void-black">{{ domain.name }}</h3>
             <ul class="flex flex-col gap-8 lg:col-span-2">
               <li v-for="u in domain.useCases" :key="u.name" class="flex flex-col gap-3">
-                <h4 class="font-display text-heading-sm font-normal text-bone-white">
+                <h4 class="font-display text-heading-sm font-normal text-void-black">
                   {{ u.name }}
                 </h4>
-                <p class="font-body text-body text-pretty text-fog-light">{{ u.text }}</p>
+                <p class="font-body text-body text-pretty text-ink-mid">{{ u.text }}</p>
                 <p class="sr-only">{{ t('labels.pillars') }}:</p>
                 <ul class="flex flex-wrap gap-2">
                   <li v-for="key in u.pillars" :key="key">
@@ -89,7 +94,7 @@ const contactTo = computed(() => ({
                         name: 'servicios-pillar',
                         params: { pillar: pillarByKey.get(key)!.slug },
                       }"
-                      class="inline-block border border-graphite-border bg-carbon px-2 py-1 font-mono text-caption text-fog-light uppercase hover:border-bone-white hover:text-bone-white"
+                      class="inline-block border border-mist-border bg-mist px-2 py-1 font-mono text-caption text-ink-mid uppercase hover:border-void-black hover:text-void-black"
                     >
                       {{ pillarByKey.get(key)!.number }} {{ pillarByKey.get(key)!.name }}
                     </NuxtLinkLocale>

@@ -119,6 +119,9 @@ En `home.yml`, `**palabra**` dentro de una línea del titular se pinta en `font-
 
 Sectores usa dibujos técnicos **estáticos** a línea fina, solo en grises (sin acento, sin animación), en el estilo de un plano: `BlueprintField` (alzado de torres de oficinas con ejes A–E y cotas) en el listado `/sectores`, y `SectorBlueprint` con un dibujo propio por sector en cada landing: Telco = torre de celosía con antenas y ondas; Banca = fachada clásica con frontón y columnas; Seguros = curva actuarial de pérdidas con la cola rayada y observaciones. El cliente descartó para Sectores un skyline animado y una casa con paraguas (18/11/2026).
 
+### Ritmo de fondos de las landings de sector
+Cabecera con dibujo técnico en marino → «Retos del sector» en banda azul (`bg-accent-strong`, títulos `text-paper`, texto `text-bone-white`, líneas `border-bone-white/30`) → «Casos de uso» en **blanco** (`bg-paper`, titulares `text-void-black`, texto `text-ink-mid`, líneas `border-mist-border`, etiquetas de pilar `bg-mist`, foco `outline-void-black`) → regulación, FAQ, otros sectores, CTA y pie en marino.
+
 ### Iconos y logos
 - Sectores (Telco, Banca, Seguros): icono lucide de trazo fino (`icon` en el YAML del sector), el mismo de la pila de contexto.
 - Partners cloud: logo plano monocromo de `simple-icons` (`icon` en `ecosystem.yml`), en el color del texto. Nunca logos a color.
