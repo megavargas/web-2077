@@ -111,7 +111,7 @@ Voz: **consultor senior hablando con un directivo**. Directa, concreta, segura s
 
 Tomados de la web actual (contextual.team); pueden estar desactualizados:
 - Partnerships publicados en la web nueva: Google Cloud, Microsoft Azure y AWS, los tres como partner y revendedor de licencias. **Datadog no se menciona** (decisión del cliente, 17/11/2026). Google Marketing Platform: pendiente.
-- Oficinas declaradas en la web antigua: Madrid, Milán, Lisboa, México, Tallin, Zúrich (varias con teléfonos de relleno). Publicada solo Madrid.
+- Oficinas declaradas en la web antigua: Madrid, Milán, Lisboa, México, Tallin, Zúrich (varias con teléfonos de relleno). Publicada solo Madrid en la lista. El mapa de puntos de «Dónde estamos» (decisión del cliente, 18/11/2026) marca México, Madrid, Suiza (Zúrich), Londres, Arabia Saudí (Riad) y Israel (Tel Aviv); las ubicaciones están en `WorldDotsMap.vue`. La sección «Equipo directivo» se quitó de Nosotros el 18/11/2026.
 - Domicilio social (BORME, mayo 2026): C/ Espoz y Mina 2, Madrid. NIF B87568440. Fundada en 2016.
 - Email de contacto: **hola@contextual.team** (único; formulario, legal y contacto).
 - Logo: pendiente versión vectorial ligera y versión monocroma blanca para fondo negro (el `logo_small.svg` actual pesa 1,7 MB). Hasta tenerla, usa `UiLogo` con el texto "CONTEXTUAL" en `font-mono` como placeholder.

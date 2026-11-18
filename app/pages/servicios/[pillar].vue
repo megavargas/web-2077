@@ -49,6 +49,7 @@ const applications = computed(() =>
       :title="pillar.name"
       :intro="pillar.summary"
     >
+      <template #visual><PillarVisual :pillar="pillar.key" class="h-full w-full" /></template>
       <UiButton :to="{ name: 'servicios-diagnostico' }">{{ pillar.cta.button }}</UiButton>
     </UiPageHeader>
 
@@ -81,14 +82,15 @@ const applications = computed(() =>
       </UiContainer>
     </section>
 
-    <section class="py-12 md:py-20" aria-labelledby="outcome-title">
+    <!-- Resultado: sección azul muy claro -->
+    <section class="bg-mist py-16 md:py-24" aria-labelledby="outcome-title">
       <UiContainer>
-        <div class="border-l border-bone-white pl-6 md:pl-10">
-          <h2 id="outcome-title" class="mb-4 font-mono text-caption text-fog-light uppercase">
+        <div class="border-l border-void-black pl-6 md:pl-10">
+          <h2 id="outcome-title" class="mb-4 font-mono text-caption text-ink-mid uppercase">
             {{ pillar.outcome.title }}
           </h2>
           <p
-            class="max-w-4xl font-display text-heading-sm font-light text-balance text-bone-white md:text-heading"
+            class="max-w-4xl font-display text-heading-sm font-light text-balance text-void-black md:text-heading"
           >
             {{ pillar.outcome.text }}
           </p>
@@ -96,29 +98,30 @@ const applications = computed(() =>
       </UiContainer>
     </section>
 
-    <section v-if="applications.length" class="py-12 md:py-20" aria-labelledby="apply-title">
+    <!-- Dónde lo aplicamos: sección blanca -->
+    <section
+      v-if="applications.length"
+      class="bg-paper py-16 md:py-24 [&_:focus-visible]:outline-void-black"
+      aria-labelledby="apply-title"
+    >
       <UiContainer>
-        <UiSectionHeader id="apply-title" :title="t('labels.whereWeApply')" />
+        <UiSectionHeader id="apply-title" :title="t('labels.whereWeApply')" tone="light" />
         <ul class="grid gap-12 lg:grid-cols-3 lg:gap-8">
           <li
             v-for="a in applications"
             :key="a.sector.key"
-            class="flex flex-col gap-4 border-t border-graphite-border pt-6"
+            class="flex flex-col gap-4 border-t border-mist-border pt-6"
           >
-            <h3 class="font-display text-heading-sm font-normal text-bone-white">
+            <h3 class="font-display text-heading-sm font-normal text-void-black">
               <NuxtLinkLocale
                 :to="{ name: 'sectores-sector', params: { sector: a.sector.slug } }"
-                class="hover:text-accent"
+                class="hover:text-accent-deep"
               >
                 {{ a.sector.name }}
               </NuxtLinkLocale>
             </h3>
-            <ul class="border-t border-graphite-border font-body text-caption text-bone-white">
-              <li
-                v-for="u in a.useCases"
-                :key="u.name"
-                class="border-b border-graphite-border py-2.5"
-              >
+            <ul class="border-t border-mist-border font-body text-caption text-void-black">
+              <li v-for="u in a.useCases" :key="u.name" class="border-b border-mist-border py-2.5">
                 {{ u.name }}
               </li>
             </ul>

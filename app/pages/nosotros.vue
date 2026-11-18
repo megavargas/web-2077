@@ -51,25 +51,10 @@ usePageSeo(() => page.value?.seo)
       </UiContainer>
     </section>
 
-    <section class="py-12 md:py-20" aria-labelledby="team-title">
-      <UiContainer class="grid gap-12 lg:grid-cols-2">
+    <section class="py-12 md:py-20" aria-labelledby="offices-title">
+      <UiContainer class="grid gap-12 lg:grid-cols-2 lg:items-center">
         <div>
-          <h2 id="team-title" class="mb-8 font-display text-heading font-light text-bone-white">
-            {{ page.team.title }}
-          </h2>
-          <ul class="border-t border-graphite-border">
-            <li
-              v-for="person in page.team.people"
-              :key="person.name"
-              class="flex items-baseline justify-between gap-4 border-b border-graphite-border py-5"
-            >
-              <span class="font-display text-heading-sm text-bone-white">{{ person.name }}</span>
-              <span class="font-mono text-caption text-fog-light uppercase">{{ person.role }}</span>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h2 class="mb-8 font-display text-heading font-light text-bone-white">
+          <h2 id="offices-title" class="mb-8 font-display text-heading font-light text-bone-white">
             {{ page.offices.title }}
           </h2>
           <ul class="border-t border-graphite-border">
@@ -90,6 +75,7 @@ usePageSeo(() => page.value?.seo)
             </li>
           </ul>
         </div>
+        <WorldDotsMap />
       </UiContainer>
     </section>
 

@@ -43,48 +43,44 @@ const contactTo = computed(() => ({
       </UiButton>
     </UiPageHeader>
 
-    <!-- Retos: banda azul con texto blanco -->
-    <section class="bg-accent-strong py-16 md:py-24" aria-labelledby="challenges-title">
+    <section class="py-12 md:py-20" aria-labelledby="challenges-title">
       <UiContainer>
-        <UiSectionHeader id="challenges-title" :title="sector.challenges.title" tone="accent" />
+        <UiSectionHeader id="challenges-title" :title="sector.challenges.title" />
         <ul class="grid gap-10 md:grid-cols-2 xl:grid-cols-4 xl:gap-8">
           <li
             v-for="item in sector.challenges.items"
             :key="item.name"
-            class="flex flex-col gap-3 border-t border-bone-white/30 pt-6"
+            class="flex flex-col gap-3 border-t border-graphite-border pt-6"
           >
-            <h3 class="font-display text-heading-sm font-normal text-paper">
+            <h3 class="font-display text-heading-sm font-normal text-bone-white">
               {{ item.name }}
             </h3>
-            <p class="font-body text-body text-pretty text-bone-white">{{ item.text }}</p>
+            <p class="font-body text-body text-pretty text-fog-light">{{ item.text }}</p>
           </li>
         </ul>
       </UiContainer>
     </section>
 
-    <!-- Casos de uso: sección blanca -->
-    <section
-      class="bg-paper py-16 md:py-24 [&_:focus-visible]:outline-void-black"
-      aria-labelledby="domains-title"
-    >
+    <!-- Casos de uso: banda azul con texto blanco -->
+    <section class="bg-accent-strong py-16 md:py-24" aria-labelledby="domains-title">
       <UiContainer>
-        <UiSectionHeader id="domains-title" :title="sector.domains.title" tone="light" />
-        <p class="mb-12 max-w-prose font-body text-subheading text-pretty text-ink-mid">
+        <UiSectionHeader id="domains-title" :title="sector.domains.title" tone="accent" />
+        <p class="mb-12 max-w-prose font-body text-subheading text-pretty text-bone-white">
           {{ sector.domains.intro }}
         </p>
         <div class="flex flex-col gap-12">
           <div
             v-for="domain in sector.domains.items"
             :key="domain.name"
-            class="grid gap-6 border-t border-mist-border pt-6 lg:grid-cols-3"
+            class="grid gap-6 border-t border-bone-white/30 pt-6 lg:grid-cols-3"
           >
-            <h3 class="font-display text-heading font-light text-void-black">{{ domain.name }}</h3>
+            <h3 class="font-display text-heading font-light text-paper">{{ domain.name }}</h3>
             <ul class="flex flex-col gap-8 lg:col-span-2">
               <li v-for="u in domain.useCases" :key="u.name" class="flex flex-col gap-3">
-                <h4 class="font-display text-heading-sm font-normal text-void-black">
+                <h4 class="font-display text-heading-sm font-normal text-paper">
                   {{ u.name }}
                 </h4>
-                <p class="font-body text-body text-pretty text-ink-mid">{{ u.text }}</p>
+                <p class="font-body text-body text-pretty text-bone-white">{{ u.text }}</p>
                 <p class="sr-only">{{ t('labels.pillars') }}:</p>
                 <ul class="flex flex-wrap gap-2">
                   <li v-for="key in u.pillars" :key="key">
@@ -94,7 +90,7 @@ const contactTo = computed(() => ({
                         name: 'servicios-pillar',
                         params: { pillar: pillarByKey.get(key)!.slug },
                       }"
-                      class="inline-block border border-mist-border bg-mist px-2 py-1 font-mono text-caption text-ink-mid uppercase hover:border-void-black hover:text-void-black"
+                      class="inline-block border border-bone-white/40 px-2 py-1 font-mono text-caption text-paper uppercase hover:border-paper hover:bg-paper hover:text-accent-strong"
                     >
                       {{ pillarByKey.get(key)!.number }} {{ pillarByKey.get(key)!.name }}
                     </NuxtLinkLocale>
@@ -107,26 +103,30 @@ const contactTo = computed(() => ({
       </UiContainer>
     </section>
 
-    <section class="py-12 md:py-20" aria-labelledby="regulation-title">
+    <!-- Regulación: sección azul muy claro -->
+    <section
+      class="bg-mist py-16 md:py-24 [&_:focus-visible]:outline-void-black"
+      aria-labelledby="regulation-title"
+    >
       <UiContainer class="grid gap-10 lg:grid-cols-3">
         <div class="flex flex-col gap-4">
-          <h2 id="regulation-title" class="font-display text-heading font-light text-bone-white">
+          <h2 id="regulation-title" class="font-display text-heading font-light text-void-black">
             {{ sector.regulation.title }}
           </h2>
-          <p class="font-body text-body text-pretty text-fog-light">
+          <p class="font-body text-body text-pretty text-ink-mid">
             {{ sector.regulation.intro }}
           </p>
         </div>
-        <dl class="border-t border-graphite-border lg:col-span-2">
+        <dl class="border-t border-mist-border lg:col-span-2">
           <div
             v-for="item in sector.regulation.items"
             :key="item.name"
-            class="grid gap-3 border-b border-graphite-border py-5 md:grid-cols-3"
+            class="grid gap-3 border-b border-mist-border py-5 md:grid-cols-3"
           >
             <dt>
-              <UiBadge>{{ item.name }}</UiBadge>
+              <UiBadge tone="light">{{ item.name }}</UiBadge>
             </dt>
-            <dd class="font-body text-body text-pretty text-bone-white md:col-span-2">
+            <dd class="font-body text-body text-pretty text-void-black md:col-span-2">
               {{ item.text }}
             </dd>
           </div>

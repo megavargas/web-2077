@@ -20,13 +20,6 @@ principles:
       text: We measure success by what reaches production and gets used, not by pilots.
     - name: We transfer knowledge
       text: We work with your teams so that they do not depend on us.
-team:
-  title: Leadership
-  people:
-    - name: Iván Marbán
-      role: Co-founder
-    - name: Samuel Vargas
-      role: Co-founder
 offices:
   title: Where we are
   items:

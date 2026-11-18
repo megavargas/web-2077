@@ -8,3 +8,6 @@ base
 playwright-report
 test-results
 docs
+
+# Datos generados (mapa de puntos)
+app/assets/data/world-dots.json

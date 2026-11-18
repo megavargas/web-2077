@@ -186,10 +186,13 @@ const schemas = {
     header,
     story: z.object({ title: z.string(), paragraphs: z.array(z.string()) }),
     principles: titled(z.array(named)),
-    team: z.object({
-      title: z.string(),
-      people: z.array(z.object({ name: z.string(), role: z.string() })),
-    }),
+    // Sin uso en la web (se quitó «Equipo directivo» el 18/11/2026); se conserva opcional.
+    team: z
+      .object({
+        title: z.string(),
+        people: z.array(z.object({ name: z.string(), role: z.string() })),
+      })
+      .optional(),
     offices: titled(
       z.array(z.object({ city: z.string(), label: z.string(), address: z.string().optional() })),
     ),
