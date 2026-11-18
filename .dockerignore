@@ -8,3 +8,7 @@ test-results
 
 # Credenciales locales (nunca dentro de la imagen)
 .cloud/
+
+# Variables locales (contraseñas)
+.env
+.env.*

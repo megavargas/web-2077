@@ -3,7 +3,9 @@
     "home": "Contextual Intelligence Partners: inicio",
     "language": "Idioma",
     "skip": "Saltar al contenido",
-    "scrollCue": "Cómo construimos el contexto"
+    "scrollCue": "Cómo construimos el contexto",
+    "toLight": "Cambiar a modo claro",
+    "toDark": "Cambiar a modo oscuro"
   },
   "nav": {
     "main": "Principal",

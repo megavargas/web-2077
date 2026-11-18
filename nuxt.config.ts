@@ -35,6 +35,9 @@ export default defineNuxtConfig({
     // URL a la que el formulario de contacto reenvía las solicitudes (NUXT_CONTACT_WEBHOOK_URL).
     // Sin ella, /api/contact responde 503 y la web ofrece el email como alternativa.
     contactWebhookUrl: '',
+    // Contraseña general de vista previa (NUXT_PREVIEW_PASSWORD). Vacía = web abierta.
+    // Con valor, todo el sitio la pide y el acceso dura 24 h (server/middleware/preview-gate.ts).
+    previewPassword: '',
   },
 
   i18n: {

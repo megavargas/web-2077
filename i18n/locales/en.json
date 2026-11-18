@@ -3,7 +3,9 @@
     "home": "Contextual Intelligence Partners: home",
     "language": "Language",
     "skip": "Skip to content",
-    "scrollCue": "How we build context"
+    "scrollCue": "How we build context",
+    "toLight": "Switch to light mode",
+    "toDark": "Switch to dark mode"
   },
   "nav": {
     "main": "Main",

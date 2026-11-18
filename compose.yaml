@@ -13,6 +13,8 @@ services:
     environment:
       npm_config_store_dir: /pnpm/store
       CHOKIDAR_USEPOLLING: 'false'
+      # Vacía por defecto: la contraseña de vista previa solo se activa si se exporta
+      NUXT_PREVIEW_PASSWORD: ${NUXT_PREVIEW_PASSWORD:-}
     stdin_open: true
     tty: true
 

@@ -45,6 +45,7 @@ onBeforeUnmount(() => window.removeEventListener('scroll', onScroll))
       </nav>
 
       <div class="flex items-center gap-6">
+        <TheThemeToggle />
         <nav :aria-label="t('common.language')">
           <TheLocaleSwitch />
         </nav>

@@ -181,3 +181,7 @@ const tag = computed(() => (to ? resolveComponent('NuxtLink') : href ? 'a' : 'bu
   }
 }
 ```
+
+## Contraseña de vista previa
+
+Para enseñar la web antes de publicarla: `NUXT_PREVIEW_PASSWORD=<contraseña>` activa `server/middleware/preview-gate.ts`. Todo el sitio pide la contraseña; al acertar, cookie firmada `ctx_preview` (HttpOnly, 24 h) y cabecera `X-Robots-Tag: noindex`. Sin la variable, la web está abierta (local, tests). En local: `set -a; . ./.env.preview; set +a; docker compose up -d web` (`.env.preview` está ignorado por git y Docker). Requiere servidor (no funciona en hosting estático). Los ficheros de `public/` y `/_nuxt/` se sirven sin contraseña (no contienen el contenido de las páginas).

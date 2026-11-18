@@ -18,7 +18,7 @@ const { t } = useI18n()
     <svg
       :viewBox="logo.viewBox"
       class="w-auto fill-current"
-      :class="size === 'md' ? 'h-12' : 'h-9'"
+      :class="size === 'md' ? 'h-14' : 'h-11'"
       fill-rule="evenodd"
       aria-hidden="true"
       focusable="false"

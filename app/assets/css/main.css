@@ -26,7 +26,7 @@
   --color-fog-light: #c2cad8; /* antes #bfbfbf */
   --color-bone-white: #f5f5f5;
   /* Sección clara (una por página como máximo, ver design-system.md) */
-  --color-mist: #f3f9fe; /* fondo claro: azul muy claro */
+  --color-mist: #f7fbfe; /* fondo claro: azul muy claro */
   --color-paper: #ffffff; /* tarjetas sobre mist */
   --color-mist-border: #d3e6f2; /* hairlines sobre claro */
   --color-ink-mid: #4b5a70; /* texto secundario sobre claro (6,2:1) */
@@ -82,6 +82,37 @@
       opacity: 0.2;
     }
   }
+}
+
+/*
+ * Modo claro (selector de la cabecera): intercambia marino ↔ azul muy claro y adapta los
+ * textos; el acento pasa a naranja. Las bandas azules/de acento conservan el texto blanco.
+ * Contrastes sobre #f7fbfe: navy 16,8 · ink 6,6 · naranja 4,9 · steel 4,95.
+ */
+:root[data-theme='light'] {
+  color-scheme: light;
+  --color-accent: #c2410c; /* naranja (texto sobre claro 4,9:1; blanco sobre él 5,2:1) */
+  --color-void-black: #f7fbfe;
+  --color-carbon: #ffffff;
+  --color-graphite-border: #d3e6f2;
+  --color-steel-mid: #5f6d82;
+  --color-fog-light: #4b5a70;
+  --color-bone-white: #0c1829;
+  --color-mist: #0c1829;
+  --color-paper: #13233a;
+  --color-mist-border: #2b3d58;
+  --color-ink-mid: #c2cad8;
+  --color-accent-deep: #ff7a3d; /* naranja claro para texto sobre las secciones marino (6,9:1) */
+}
+/* Bandas de color: mantienen la paleta original (texto blanco) dentro */
+:root[data-theme='light'] .bg-accent-strong {
+  --color-paper: #ffffff;
+  --color-bone-white: #f5f5f5;
+  --color-void-black: #0c1829;
+  --color-fog-light: #c2cad8;
+}
+:root[data-theme='light'] .bg-accent {
+  --color-paper: #ffffff;
 }
 
 @layer base {
