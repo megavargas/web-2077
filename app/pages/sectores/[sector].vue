@@ -36,6 +36,7 @@ const contactTo = computed(() => ({
 <template>
   <div v-if="sector">
     <UiPageHeader v-bind="sector.header">
+      <template #visual><SectorBlueprint :sector="sector.key" class="h-full w-full" /></template>
       <UiButton :to="contactTo">{{ sector.cta.button }}</UiButton>
       <UiButton variant="ghost" :to="{ name: 'servicios-diagnostico' }">
         {{ t('nav.assessment') }}

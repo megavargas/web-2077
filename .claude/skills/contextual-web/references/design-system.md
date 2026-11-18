@@ -117,6 +117,8 @@ En `home.yml`, `**palabra**` dentro de una línea del titular se pinta en `font-
 ### Cabeceras de páginas interiores con grafismo (`UiPageHeader` + slot `visual`)
 `UiPageHeader` acepta un slot `visual` que se pinta a la derecha (mitad derecha en desktop, de fondo y tenue en móvil) con fundidos al marino. Ecosistema usa `RackField` (pasillo de racks con LEDs que parpadean, SVG con semilla fija): encaja ahí porque la página habla de nube e infraestructura. En la home se mantiene `EmbeddingField`.
 
+Sectores usa dibujos técnicos **estáticos** a línea fina, solo en grises (sin acento, sin animación), en el estilo de un plano: `BlueprintField` (alzado de torres de oficinas con ejes A–E y cotas) en el listado `/sectores`, y `SectorBlueprint` con un dibujo propio por sector en cada landing: Telco = torre de celosía con antenas y ondas; Banca = fachada clásica con frontón y columnas; Seguros = curva actuarial de pérdidas con la cola rayada y observaciones. El cliente descartó para Sectores un skyline animado y una casa con paraguas (18/11/2026).
+
 ### Iconos y logos
 - Sectores (Telco, Banca, Seguros): icono lucide de trazo fino (`icon` en el YAML del sector), el mismo de la pila de contexto.
 - Partners cloud: logo plano monocromo de `simple-icons` (`icon` en `ecosystem.yml`), en el color del texto. Nunca logos a color.

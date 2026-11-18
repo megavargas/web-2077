@@ -22,7 +22,9 @@ usePageSeo(() => data.value?.page?.seo)
 
 <template>
   <div v-if="data?.page && data.home && site">
-    <UiPageHeader v-bind="data.page.header" />
+    <UiPageHeader v-bind="data.page.header">
+      <template #visual><BlueprintField class="h-full w-full" /></template>
+    </UiPageHeader>
     <SectionSectors :sectors="site.sectors" />
     <SectionStatement :statement="data.home.statement" />
     <SectionCta :cta="data.home.cta" />
