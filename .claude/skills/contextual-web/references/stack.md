@@ -185,3 +185,12 @@ const tag = computed(() => (to ? resolveComponent('NuxtLink') : href ? 'a' : 'bu
 ## Contraseña de vista previa
 
 Para enseñar la web antes de publicarla: `NUXT_PREVIEW_PASSWORD=<contraseña>` activa `server/middleware/preview-gate.ts`. Todo el sitio pide la contraseña; al acertar, cookie firmada `ctx_preview` (HttpOnly, 24 h) y cabecera `X-Robots-Tag: noindex`. Sin la variable, la web está abierta (local, tests). En local: `set -a; . ./.env.preview; set +a; docker compose up -d web` (`.env.preview` está ignorado por git y Docker). Requiere servidor (no funciona en hosting estático). Los ficheros de `public/` y `/_nuxt/` se sirven sin contraseña (no contienen el contenido de las páginas).
+
+## Despliegue (Cloud Run)
+
+- Proyecto `contextual-cloudverse`, servicio `contextual-web`, región `europe-southwest1` (Madrid). URL: https://contextual-web-739958616024.europe-southwest1.run.app
+- Imagen de producción: `Dockerfile` en la raíz (build con pnpm → `node .output/server/index.mjs`, puerto 8080, usuario `node`). `.gcloudignore` excluye `.cloud/`, `.env*`, `node_modules`, builds.
+- Contraseña de vista previa en Secret Manager (`contextual-web-preview-password`), montada como `NUXT_PREVIEW_PASSWORD`.
+- Desplegar (con la cuenta de servicio de `.cloud/`, en un `CLOUDSDK_CONFIG` aislado):
+  `gcloud run deploy contextual-web --source . --region europe-southwest1 --allow-unauthenticated --port 8080 --memory 512Mi --max-instances 3 --set-secrets NUXT_PREVIEW_PASSWORD=contextual-web-preview-password:latest`
+- Cambiar la contraseña: `gcloud secrets versions add contextual-web-preview-password --data-file=-` y volver a desplegar.

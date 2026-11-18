@@ -12,3 +12,5 @@ test-results
 # Variables locales (contraseñas)
 .env
 .env.*
+.git
+.tmp-*
