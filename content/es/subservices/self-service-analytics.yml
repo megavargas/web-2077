@@ -76,13 +76,6 @@ related:
   - semantic-layer
   - operating-model
   - data-ai-governance
-faq:
-  - q: ¿El autoservicio no acaba generando caos?
-    a: Sin reglas, sí. Por eso separamos el contenido personal, el de equipo y el certificado, y cada nivel tiene dueño y criterios de revisión. El objetivo es dar libertad sobre una base común, no prohibir.
-  - q: ¿Podemos dejar que la gente pregunte a los datos en lenguaje natural?
-    a: Sí, siempre que el asistente trabaje sobre datos certificados y una capa semántica con definiciones y permisos. Sin esa base, cada pregunta puede devolver una cifra distinta. Lo activamos por áreas y revisamos la calidad de las respuestas.
-  - q: ¿Cuánta formación hace falta?
-    a: Depende del perfil. Quien consulta necesita aprender a encontrar e interpretar sus informes; quien crea, un itinerario práctico con sus propios datos. Lo que mejor funciona es el acompañamiento continuado de la comunidad, no un curso aislado.
 cta:
   title: ¿Cuántos informes tienes y cuántos se usan?
   text: En un diagnóstico de 2–4 semanas medimos el uso real de tu BI y te proponemos un modelo de autoservicio con reglas y prioridades.

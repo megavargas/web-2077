@@ -18,11 +18,6 @@ outcome:
   title: Outcome
   text: A prioritised roadmap, with a business case per initiative and a governance model the board can approve.
 technologies: []
-faq:
-  - q: Do we need our data in order before we start?
-    a: No. The assessment starts from where you are today, and its purpose is precisely to decide what needs sorting out first.
-  - q: How do you take the AI Act into account?
-    a: We classify the risk of each use case and define governance requirements at design stage, so they do not surface at the end as a blocker.
 cta:
   title: Prioritise your data and AI use cases
   text: Start with a 2–4 week assessment and leave with an actionable roadmap.

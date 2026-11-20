@@ -78,13 +78,6 @@ related:
   - process-automation
   - ai-evaluation-governance
   - use-case-portfolio
-faq:
-  - q: ¿Qué procesos tienen sentido para un agente?
-    a: Los que tienen volumen, pasos repetibles con algo de criterio y un indicador que se pueda medir. Si basta una regla o una automatización clásica, lo decimos y no construimos un agente.
-  - q: ¿Qué pasa si el agente se equivoca?
-    a: Cada agente tiene permisos limitados y puntos de aprobación humana en las acciones con impacto. Todo queda registrado, así que se puede revisar cualquier decisión y deshacerla si hace falta.
-  - q: ¿Cuánto se tarda en tener un agente en producción?
-    a: Depende del proceso y de las integraciones. Un diagnóstico de 2–4 semanas fija el alcance y el plan; después desplegamos por fases, empezando en modo sombra para medir antes de dar autonomía.
 cta:
   title: ¿Qué proceso pondrías en manos de un agente?
   text: Empieza por un diagnóstico de 2–4 semanas y sal con el proceso elegido, su business case y el plan para llevarlo a producción.

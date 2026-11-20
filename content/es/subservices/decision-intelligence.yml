@@ -76,13 +76,6 @@ related:
   - predictive-models
   - ai-agents
   - use-case-portfolio
-faq:
-  - q: ¿Qué diferencia hay con un cuadro de mando?
-    a: Un cuadro de mando muestra la situación y deja la conclusión al usuario. Un sistema de decision intelligence propone la acción concreta, explica por qué y registra lo que se hizo para medir el resultado.
-  - q: ¿Las decisiones se automatizan por completo?
-    a: Solo las que se acuerden. Empezamos en modo sugerencia, con una persona que acepta, modifica o rechaza la propuesta, y ampliamos la autonomía cuando los resultados lo justifican. Las decisiones que afectan a los derechos de las personas mantienen supervisión humana.
-  - q: ¿Hace falta comprar una plataforma específica?
-    a: No necesariamente. Muchas decisiones se resuelven con la plataforma de datos y BI que ya tienes, más reglas y modelos. Si el volumen o la complejidad lo justifican, comparamos las plataformas del mercado con criterios explícitos.
 cta:
   title: ¿Qué decisión se repite cada día en tu empresa?
   text: En un diagnóstico de 2–4 semanas elegimos la decisión con más retorno, la modelamos y te decimos qué datos y qué cambios hacen falta.

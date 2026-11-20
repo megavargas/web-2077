@@ -66,11 +66,6 @@ regulation:
       text: Resiliencia operativa digital también para aseguradoras. Riesgo TIC y gestión de proveedores cloud.
     - name: AI Act
       text: La evaluación de riesgos y la tarificación en seguros de vida y salud son usos de alto riesgo.
-faq:
-  - q: ¿Cómo trabajáis con el equipo actuarial?
-    a: Los modelos de pricing y reservas se construyen con el equipo actuarial, que mantiene la propiedad del modelo y el criterio técnico.
-  - q: ¿La tarificación con IA es de alto riesgo según el AI Act?
-    a: En seguros de vida y salud, sí. Implica gestión de riesgos, calidad de datos, documentación y supervisión humana, y lo tenemos en cuenta desde el diseño.
 cta:
   title: Habla con nuestro equipo de Seguros
   text: Cuéntanos tu reto y te propondremos por dónde empezar.

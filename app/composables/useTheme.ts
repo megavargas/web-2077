@@ -2,7 +2,7 @@ export type Theme = 'dark' | 'light'
 
 /**
  * Modo de color de la web. Oscuro por defecto (marca); el claro intercambia marino y azul
- * muy claro y usa acento naranja (ver main.css, [data-theme='light']).
+ * muy claro y usa el azul de marca oscuro como acento (ver main.css, [data-theme='light']).
  * Se guarda en cookie para que el servidor pinte ya el modo elegido (sin parpadeo).
  */
 export function useTheme() {

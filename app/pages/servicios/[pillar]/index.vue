@@ -163,8 +163,6 @@ const applications = computed(() =>
       </UiContainer>
     </section>
 
-    <SectionFaq :items="pillar.faq" />
-
     <nav :aria-label="t('labels.services')" class="py-12">
       <UiContainer class="grid grid-cols-2 gap-6 border-t border-graphite-border pt-8">
         <div>

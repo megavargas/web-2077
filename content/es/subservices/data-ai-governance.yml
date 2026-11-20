@@ -76,13 +76,6 @@ related:
   - ai-evaluation-governance
   - data-engineering-quality
   - semantic-layer
-faq:
-  - q: ¿Cuándo nos afecta el AI Act?
-    a: Algunas obligaciones, como las prácticas prohibidas, ya se aplican. Los requisitos de los sistemas de alto riesgo del anexo III, como el scoring de crédito, llegan después, y en 2026 la UE ha acordado aplazar parte de ellos. Conviene tener antes el inventario y la clasificación, porque condicionan el diseño.
-  - q: ¿Tenemos que comprar una herramienta de gobierno?
-    a: No necesariamente. Empezamos con lo que ofrece tu plataforma, como Microsoft Purview, Dataplex o Unity Catalog, y solo recomendamos otra herramienta si hay una necesidad que no cubren.
-  - q: ¿Garantizáis el cumplimiento normativo?
-    a: No. El cumplimiento es responsabilidad de cada organización y de sus asesores legales. Nosotros diseñamos el gobierno y los controles para que sea más fácil demostrarlo, y trabajamos con tus equipos de cumplimiento, riesgos y protección de datos.
 cta:
   title: ¿Sabes qué sistemas de IA tienes en uso?
   text: Un diagnóstico de 2–4 semanas revisa tu gobierno actual y deja un plan para ordenar los datos críticos y el inventario de IA.

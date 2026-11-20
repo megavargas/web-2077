@@ -5,7 +5,7 @@ export function useMainNav() {
     { key: 'services', label: t('nav.services'), to: { name: 'servicios' } },
     { key: 'sectors', label: t('nav.sectors'), to: { name: 'sectores' } },
     { key: 'ecosystem', label: t('nav.ecosystem'), to: { name: 'ecosistema' } },
-    { key: 'about', label: t('nav.about'), to: { name: 'nosotros' } },
+    { key: 'contact', label: t('nav.contact'), to: { name: 'contacto' } },
   ])
 }
 

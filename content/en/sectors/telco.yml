@@ -71,11 +71,6 @@ regulation:
       text: Communications providers are essential entities. Cybersecurity and incident management apply to data platforms too.
     - name: AI Act
       text: Transparency in conversational assistants and risk management of AI systems.
-faq:
-  - q: Do you have telecoms experience?
-    a: Yes. It is the industry where we have delivered the most projects, from multi-brand data warehouses to generative AI assistants.
-  - q: Can you work on top of our current systems?
-    a: Yes. We start from your network, billing and CRM systems and integrate them in phases without disrupting operations.
 cta:
   title: Talk to our Telco team
   text: Tell us about your challenge and we will suggest where to start.

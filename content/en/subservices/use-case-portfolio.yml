@@ -77,13 +77,6 @@ related:
   - data-ai-strategy
   - ai-agents
   - predictive-models
-faq:
-  - q: How do you build a business case before there is any data?
-    a: From a baseline of the current process and explicit assumptions validated by the people who own it. The pilot exists precisely to confirm or correct those assumptions before investing at scale.
-  - q: What do we do with use cases that are high risk under the AI Act?
-    a: They are not ruled out. They are identified early and designed with the risk management, documentation and human oversight they require, so the timeline and cost reflect them from the start.
-  - q: How many use cases should we take on at once?
-    a: A few, well chosen. Getting two or three into production with measured value beats opening ten pilots in parallel.
 cta:
   title: Which use case should go first?
   text: A 2–4 week assessment leaves you with prioritised use cases, an initial business case for each and a roadmap.

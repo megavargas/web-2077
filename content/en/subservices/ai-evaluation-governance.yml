@@ -77,13 +77,6 @@ related:
   - data-ai-governance
   - mlops-llmops
   - ai-agents
-faq:
-  - q: How is this different from data and AI governance?
-    a: 'AI governance sets policies, roles and responsibilities across the organisation. Here we go down to each agent and each model: how it is tested, what it may do, who approves and what is logged.'
-  - q: What does the AI Act mean for our agents?
-    a: It depends on the use case. Some uses, such as assessing the creditworthiness of individuals or pricing life and health insurance, are high-risk, and in 2026 the EU agreed to postpone some of their obligations. We assess each case with your compliance team.
-  - q: Does this slow projects down?
-    a: Quite the opposite. With acceptance criteria and clear limits from the design stage, risk and security sign off sooner and going live stops being a case-by-case negotiation.
 cta:
   title: Could you explain tomorrow what your AI did, and why?
   text: In a 2–4 week assessment we review your AI use cases, their risks and their controls, and you leave with a plan to close the gaps.

@@ -79,13 +79,6 @@ related:
   - lakehouse-warehouse
   - dataops-observability
   - data-ai-governance
-faq:
-  - q: Which cloud is right for us?
-    a: It depends on your current systems, your team's skills and total cost over several years. We work with Google Cloud, Azure and AWS, compare them using your own data and give you a reasoned recommendation, even if the answer is to combine two.
-  - q: How do we stop the bill from spiralling?
-    a: With FinOps from the design stage. Every resource is tagged by domain, budgets carry alerts and a cost dashboard is reviewed by business and IT together. Data platforms charge by query or by capacity, so we optimise models and queries as well as infrastructure.
-  - q: Is a cloud data platform compatible with DORA?
-    a: Yes. DORA does not prohibit the cloud. It requires you to manage provider risk, test continuity and keep a workable exit plan, and we build that into the architecture (open formats, backups, documentation) so your answer to the supervisor does not rest on a separate document.
 cta:
   title: Is your platform ready for what comes next?
   text: In a 2–4 week assessment we review architecture, security and costs, and tell you what to fix first.

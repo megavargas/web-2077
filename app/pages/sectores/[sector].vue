@@ -158,8 +158,6 @@ const contactTo = computed(() => ({
       </UiContainer>
     </section>
 
-    <SectionFaq :items="sector.faq" />
-
     <nav :aria-label="t('labels.otherSectors')" class="py-12">
       <UiContainer class="flex flex-col gap-6 border-t border-graphite-border pt-8">
         <h2 class="font-mono text-caption text-fog-light uppercase">

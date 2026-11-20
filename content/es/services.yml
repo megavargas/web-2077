@@ -51,13 +51,6 @@ engagement:
       text: Operamos plataforma, modelos y cuadros de mando con compromisos de servicio, observabilidad y control de costes.
     - name: Capacidad flexible
       text: Un equipo de datos e IA a demanda que crece o se reduce según la necesidad, sin ampliar plantilla.
-faq:
-  - q: ¿Por dónde empezamos?
-    a: Por el diagnóstico. En 2–4 semanas sabrás qué casos de uso tienen más retorno, qué necesitas para llevarlos a producción y en qué orden.
-  - q: ¿Trabajáis con nuestro equipo interno?
-    a: Sí. Nos integramos con vuestros equipos y transferimos el conocimiento para que no dependáis de nosotros.
-  - q: ¿Revendéis licencias cloud?
-    a: Sí, de Google Cloud, Azure y AWS, con facturación, soporte y control de costes. Lo explicamos en Ecosistema.
 cta:
   title: ¿Por dónde empezar? Por un diagnóstico.
   text: En 2–4 semanas tendrás una visión clara de tu situación, los casos de uso con más retorno y una hoja de ruta para llevarlos a producción.

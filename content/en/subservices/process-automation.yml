@@ -76,13 +76,6 @@ related:
   - ai-agents
   - mlops-llmops
   - use-case-portfolio
-faq:
-  - q: How is this different from robotic process automation (RPA)?
-    a: RPA replays clicks on screens and breaks when something changes. Here the AI understands the document even when its format changes, and integration runs through APIs with validation and human review where needed.
-  - q: What happens to documents the AI cannot read well?
-    a: They do not go straight through. Confidence thresholds send them to a person with the doubtful field highlighted, and those corrections help improve the model.
-  - q: How do you estimate the return before starting?
-    a: We measure the current process on a real sample of documents and estimate how much can go straight through and how much time it frees up. That estimate is part of the assessment.
 cta:
   title: Which process eats up most of your team's hours?
   text: In a 2–4 week assessment we measure the process, estimate the return and hand you the plan to automate it.

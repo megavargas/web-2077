@@ -76,13 +76,6 @@ related:
   - dataops-observability
   - lakehouse-warehouse
   - data-ai-governance
-faq:
-  - q: Where should we start with data quality?
-    a: With a small set of critical data, the data behind a major decision, a model or a regulatory report. Measuring twenty or so key data elements properly is worth more than a quality programme across the whole estate.
-  - q: Who fixes the errors?
-    a: The data owner at source, with the issue already pinpointed. Our job is to make sure errors are caught early, reach the right person and stop being patched in the report.
-  - q: Does this help with BCBS 239 or the supervisor?
-    a: It helps you demonstrate it. Documented rules, lineage and quality metrics are the evidence a review asks for. Compliance also depends on roles, policies and processes, which are covered by data governance.
 cta:
   title: Can you prove where every figure comes from?
   text: A 2–4 week assessment identifies your critical data, measures its current quality and proposes the first rules.

@@ -76,13 +76,6 @@ related:
   - data-ai-governance
   - mlops-llmops
   - self-service-analytics
-faq:
-  - q: Do we need a centre of excellence?
-    a: Almost always at the start, to concentrate expertise and set standards. As maturity grows, the CoE shifts from building to enabling, and business and platform teams take on more of the delivery.
-  - q: How long does it take to get up and running?
-    a: The design takes weeks; adoption takes months. That is why we test it on real use cases first and roll it out in phases.
-  - q: Can we do this without adding headcount?
-    a: Partly. Many responsibilities can be reassigned within existing teams, and the capability plan shows which roles to hire, train or cover with a partner.
 cta:
   title: Does your AI depend on four people?
   text: A 2–4 week assessment reviews your current organisation and proposes the operating model your roadmap needs.

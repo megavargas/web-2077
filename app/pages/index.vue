@@ -1,5 +1,6 @@
 <script setup lang="ts">
 const l = useContentLocale()
+const { contact } = useAppConfig()
 const { data: site } = await useSiteData()
 const { data } = await useAsyncData(
   () => `home-${l.value}`,
@@ -28,7 +29,17 @@ useHead({
         '@type': 'Organization',
         name: 'Contextual Intelligence Partners',
         url: 'https://contextual.team',
+        logo: 'https://contextual.team/favicon.svg',
+        image: 'https://contextual.team/og-en.png',
         foundingDate: '2016',
+        email: contact.email,
+        sameAs: [contact.linkedin],
+        address: {
+          '@type': 'PostalAddress',
+          streetAddress: 'Calle de Espoz y Mina, 2',
+          addressLocality: 'Madrid',
+          addressCountry: 'ES',
+        },
       }),
     },
   ],

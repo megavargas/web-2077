@@ -75,13 +75,6 @@ related:
   - maturity-assessment
   - use-case-portfolio
   - cloud-data-platforms
-faq:
-  - q: ¿Cuánto se tarda en tener una estrategia de datos e IA?
-    a: Depende del alcance y del número de áreas implicadas. Lo habitual es empezar por un diagnóstico de 2–4 semanas, que ya deja una hoja de ruta inicial, y profundizar después donde haga falta.
-  - q: ¿Qué pasa con las iniciativas que ya tenemos en marcha?
-    a: Entran en el análisis. La estrategia decide cuáles siguen, cuáles se reorientan y cuáles se paran, con criterios explícitos que el comité puede revisar.
-  - q: ¿La estrategia nos ata a un proveedor cloud?
-    a: No. Trabajamos con Google Cloud, Microsoft Azure y AWS. La arquitectura objetivo parte de lo que ya tienes y de lo que pide cada caso de uso, y deja documentado por qué se elige cada proveedor.
 cta:
   title: ¿Por dónde empieza tu estrategia de datos e IA?
   text: Un diagnóstico de 2–4 semanas te da la foto de partida, los primeros casos de uso priorizados y una hoja de ruta inicial.

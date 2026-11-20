@@ -76,13 +76,6 @@ related:
   - data-engineering-quality
   - ai-evaluation-governance
   - ai-agents
-faq:
-  - q: How do you stop the assistant from making things up?
-    a: Answers are based only on your sources, cite the original document, and the assistant says when it does not have enough information. We measure quality with real questions before go-live and again in production.
-  - q: What about confidential information?
-    a: The assistant respects the permissions of the source systems, data stays in your cloud environment and every query is logged. We design for security and data protection from the outset.
-  - q: Where should we start?
-    a: With an area that gets many repeated questions and has reasonably well-kept documentation, such as customer service or an operations team. The assessment identifies which one and what needs tidying first.
 cta:
   title: Which questions keep coming up in your organisation?
   text: In a 2–4 week assessment we identify the area with the highest return, the state of its sources and the plan to take the assistant into production.

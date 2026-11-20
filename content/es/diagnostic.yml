@@ -43,13 +43,6 @@ format:
 next:
   title: Y después
   text: Si decides seguir, la hoja de ruta se convierte en el plan de diseño y construcción. Si no, te quedas con un plan accionable para ejecutarlo con quien quieras.
-faq:
-  - q: ¿Cuánto cuesta?
-    a: Depende del alcance. Tras una primera conversación te damos un precio cerrado.
-  - q: ¿Qué datos necesitáis?
-    a: Normalmente basta con documentación y entrevistas. Si hace falta revisar datos, lo acordamos con tus equipos de seguridad.
-  - q: ¿Qué pasa si ya tenemos una estrategia de datos?
-    a: La usamos como punto de partida y nos centramos en priorizar casos de uso y en lo que falta para llevarlos a producción.
 form:
   title: Solicita tu diagnóstico
   text: Cuéntanos tu contexto y te responderá una persona del equipo.

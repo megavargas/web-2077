@@ -77,13 +77,6 @@ related:
   - data-engineering-quality
   - mlops-llmops
   - cloud-data-platforms
-faq:
-  - q: Do we need to buy an observability tool?
-    a: Not to begin with. Cloud platforms, the orchestrator and dbt already let you monitor the freshness, volume and quality of critical data. If the scale justifies it, we compare specialist tools against your real use cases.
-  - q: Can you run the platform for us?
-    a: Yes. We can run the platform, the pipelines and the dashboards as a managed service with agreed service levels, or prepare your team to do it.
-  - q: What does this have to do with AI?
-    a: A great deal. A model or agent working on late or incomplete data gets things wrong with complete confidence. Monitoring the data that AI consumes is the first part of running it well, and it connects directly with MLOps and LLMOps.
 cta:
   title: Do you hear about failures before your committee does?
   text: In a 2–4 week assessment we review how you deploy and monitor your data and prioritise what to automate first.

@@ -77,13 +77,6 @@ related:
   - data-ai-governance
   - mlops-llmops
   - ai-agents
-faq:
-  - q: ¿En qué se diferencia del gobierno del dato y de la IA?
-    a: 'El gobierno de la IA fija políticas, roles y responsabilidades para toda la organización. Aquí bajamos a cada agente y cada modelo: cómo se prueba, qué puede hacer, quién aprueba y qué queda registrado.'
-  - q: ¿Qué implica el AI Act para nuestros agentes?
-    a: Depende del caso. Algunos usos, como evaluar la solvencia de personas o tarificar seguros de vida y salud, son de alto riesgo, y en 2026 la UE ha acordado aplazar parte de sus obligaciones. Lo analizamos caso a caso con tu equipo de cumplimiento.
-  - q: ¿Esto frena los proyectos?
-    a: Al contrario. Con criterios de aceptación y límites claros desde el diseño, riesgos y seguridad aprueban antes y el paso a producción deja de ser una negociación caso a caso.
 cta:
   title: ¿Podrías explicar mañana qué hizo tu IA y por qué?
   text: En un diagnóstico de 2–4 semanas revisamos tus casos de IA, sus riesgos y sus controles, y te llevas el plan para cerrar los huecos.

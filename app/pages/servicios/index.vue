@@ -48,7 +48,6 @@ usePageSeo(() => page.value?.seo)
       </UiContainer>
     </section>
 
-    <SectionFaq :items="page.faq" />
     <SectionCta :cta="page.cta" />
   </div>
 </template>

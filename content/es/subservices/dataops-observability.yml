@@ -77,13 +77,6 @@ related:
   - data-engineering-quality
   - mlops-llmops
   - cloud-data-platforms
-faq:
-  - q: ¿Necesitamos comprar una herramienta de observabilidad?
-    a: No para empezar. Las plataformas cloud, el orquestador y dbt ya permiten vigilar la frescura, el volumen y la calidad de los datos críticos. Si el volumen lo justifica, comparamos herramientas especializadas con tus casos reales.
-  - q: ¿Podéis operar la plataforma por nosotros?
-    a: Sí. Podemos operar la plataforma, los procesos y los cuadros de mando como servicio gestionado, con niveles de servicio acordados, o dejar a tu equipo preparado para hacerlo.
-  - q: ¿Qué tiene que ver esto con la IA?
-    a: Mucho. Un modelo o un agente que trabaja con datos atrasados o incompletos se equivoca con total seguridad. Vigilar el dato que consume la IA es la primera parte de operarla bien, y enlaza con MLOps y LLMOps.
 cta:
   title: ¿Te enteras de los fallos antes que tu comité?
   text: En un diagnóstico de 2–4 semanas revisamos cómo despliegas y vigilas tus datos y priorizamos qué automatizar primero.

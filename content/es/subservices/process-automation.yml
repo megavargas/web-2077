@@ -76,13 +76,6 @@ related:
   - ai-agents
   - mlops-llmops
   - use-case-portfolio
-faq:
-  - q: ¿Qué diferencia hay con la automatización robótica de procesos (RPA)?
-    a: La RPA repite clics sobre pantallas y se rompe cuando algo cambia. Aquí la IA entiende el documento aunque cambie el formato, y la integración se hace por APIs con validaciones y revisión humana donde hace falta.
-  - q: ¿Qué pasa con los documentos que la IA no entiende bien?
-    a: No pasan directos. Los umbrales de confianza los envían a una persona con el dato dudoso señalado, y sus correcciones sirven para mejorar el modelo.
-  - q: ¿Cómo se calcula el retorno antes de empezar?
-    a: Medimos el proceso actual con una muestra real de documentos y estimamos qué parte puede pasar directa y cuánto tiempo libera. Ese cálculo forma parte del diagnóstico.
 cta:
   title: ¿Qué proceso se come más horas de tu equipo?
   text: En un diagnóstico de 2–4 semanas medimos el proceso, estimamos el retorno y te llevas el plan para automatizarlo.

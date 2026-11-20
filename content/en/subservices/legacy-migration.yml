@@ -79,13 +79,6 @@ related:
   - lakehouse-warehouse
   - semantic-layer
   - data-engineering-quality
-faq:
-  - q: How much can be converted automatically?
-    a: The vendors' tools translate SQL, schemas and a good share of ETL jobs well. Hidden business logic, heavily formatted reports and exceptions need expert review. We measure this during the inventory, before committing to timelines.
-  - q: Will we be paying for two platforms at once?
-    a: For a while, yes, and that is what most needs containing. We plan by domain and set legacy retirement dates from the outset, so parallel running is short and the licence savings materialise.
-  - q: Where do we start?
-    a: With the domain that combines the highest licence cost or support risk with well-understood usage. The initial assessment includes a first inventory and compares the cost of migrating with the cost of staying put.
 cta:
   title: What is staying on legacy costing you?
   text: In a 2–4 week assessment we inventory your BI and ETL estate and tell you what to migrate, in what order and at what cost.

@@ -78,13 +78,6 @@ related:
   - process-automation
   - ai-evaluation-governance
   - use-case-portfolio
-faq:
-  - q: Which processes are a good fit for an agent?
-    a: Those with volume, repeatable steps that need some judgement and a metric you can measure. If a rule or conventional automation will do, we say so and do not build an agent.
-  - q: What happens if the agent gets it wrong?
-    a: Each agent has limited permissions and human approval points for actions with real impact. Everything is logged, so any decision can be reviewed and reversed if needed.
-  - q: How long does it take to get an agent into production?
-    a: It depends on the process and the integrations. A 2–4 week assessment sets the scope and the plan; we then roll out in stages, starting in shadow mode so we can measure before granting autonomy.
 cta:
   title: Which process would you hand to an agent?
   text: Start with a 2–4 week assessment and come away with the chosen process, its business case and a plan to take it into production.

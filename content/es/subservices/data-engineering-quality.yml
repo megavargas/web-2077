@@ -76,13 +76,6 @@ related:
   - dataops-observability
   - lakehouse-warehouse
   - data-ai-governance
-faq:
-  - q: ¿Por dónde empezamos con la calidad?
-    a: Por pocos datos y críticos, los que alimentan una decisión importante, un modelo o un informe regulatorio. Medir bien una veintena de datos clave aporta más que un programa de calidad sobre todo el inventario.
-  - q: ¿Quién corrige los errores?
-    a: El responsable del dato en origen, con la incidencia ya localizada. Nuestro trabajo es que el error se detecte pronto, llegue a la persona adecuada y no se vuelva a parchear en el informe.
-  - q: ¿Nos ayuda esto con BCBS 239 o con el supervisor?
-    a: Ayuda a demostrarlo. Reglas documentadas, linaje y métricas de calidad son la evidencia que se pide en una revisión. El cumplimiento depende también de roles, políticas y procesos, que se trabajan en el gobierno del dato.
 cta:
   title: ¿Puedes demostrar de dónde sale cada cifra?
   text: Un diagnóstico de 2–4 semanas identifica tus datos críticos, mide su calidad actual y propone las primeras reglas.

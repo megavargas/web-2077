@@ -70,11 +70,6 @@ regulation:
       text: La evaluación de la solvencia de personas físicas es un uso de alto riesgo. Exige gestión de riesgos, documentación y supervisión humana.
     - name: GDPR
       text: Base legal, minimización y derechos de los interesados en cada uso de los datos.
-faq:
-  - q: ¿Es compatible el cloud con DORA?
-    a: Sí. DORA no prohíbe el cloud. Exige gestionar el riesgo de los proveedores TIC con contratos adecuados, planes de salida y pruebas de resiliencia, y diseñamos las plataformas para cumplirlo.
-  - q: ¿Un modelo de scoring es de alto riesgo según el AI Act?
-    a: Sí, cuando evalúa la solvencia de personas físicas (la detección de fraude queda fuera). Implica gestión de riesgos, calidad de datos, documentación y supervisión humana.
 cta:
   title: Habla con nuestro equipo de Banca
   text: Cuéntanos tu reto y te propondremos por dónde empezar.

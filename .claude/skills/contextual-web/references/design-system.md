@@ -120,13 +120,10 @@ En `home.yml`, `**palabra**` dentro de una línea del titular se pinta en `font-
 Sectores usa dibujos técnicos **estáticos** a línea fina, solo en grises (sin acento, sin animación), en el estilo de un plano: `BlueprintField` (alzado de torres de oficinas con ejes A–E y cotas) en el listado `/sectores`, y `SectorBlueprint` con un dibujo propio por sector en cada landing: Telco = torre de celosía con antenas y ondas; Banca = fachada clásica con frontón y columnas; Seguros = curva actuarial de pérdidas con la cola rayada y observaciones. El cliente descartó para Sectores un skyline animado y una casa con paraguas (18/11/2026).
 
 ### Ritmo de fondos de las landings de sector
-Cabecera con dibujo técnico y «Retos del sector» en marino → «Casos de uso» en banda azul (`bg-accent-strong`, títulos `text-paper`, texto `text-bone-white`, líneas `border-bone-white/30`, etiquetas de pilar con borde `border-bone-white/40` y texto `text-paper`) → «Contexto regulatorio» en **azul muy claro** (`bg-mist`, titulares `text-void-black`, texto `text-ink-mid`, líneas `border-mist-border`, `UiBadge tone="light"`, foco `outline-void-black`) → FAQ, otros sectores, CTA y pie en marino.
+Cabecera con dibujo técnico y «Retos del sector» en marino → «Casos de uso» en banda azul (`bg-accent-strong`, títulos `text-paper`, texto `text-bone-white`, líneas `border-bone-white/30`, etiquetas de pilar con borde `border-bone-white/40` y texto `text-paper`) → «Contexto regulatorio» en **azul muy claro** (`bg-mist`, titulares `text-void-black`, texto `text-ink-mid`, líneas `border-mist-border`, `UiBadge tone="light"`, foco `outline-void-black`) → otros sectores, CTA y pie en marino.
 
 ### Servicios y pilares
 Cabecera de `/servicios` con `LineChartField` (series grises y una destacada en acento). Cada pilar con `PillarVisual`: Estrategia = matriz de priorización; Datos = arquitectura fuentes → plataforma → consumo; Inteligencia = barras + previsión con banda; IA = red por capas con el camino destacado. Estáticos, grises, un único elemento en acento. Fondos: en `/servicios`, «Cómo trabajamos» en `bg-mist` y «Formas de trabajar» en `bg-paper`; en cada pilar, «Resultado» en `bg-mist` y «Dónde lo aplicamos» en `bg-paper`.
-
-### Nosotros
-Sin «Equipo directivo». «Dónde estamos» a dos columnas: lista de oficinas + `WorldDotsMap` (rejilla de puntos completa, sin fundidos, `opacity-25`, ubicaciones en acento). Datos del mapa en `app/assets/data/world-dots.json` (generado, excluido de Prettier).
 
 ### Iconos y logos
 - Sectores (Telco, Banca, Seguros): icono lucide de trazo fino (`icon` en el YAML del sector), el mismo de la pila de contexto.

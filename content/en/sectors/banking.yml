@@ -70,11 +70,6 @@ regulation:
       text: Assessing the creditworthiness of individuals is a high-risk use. It requires risk management, documentation and human oversight.
     - name: GDPR
       text: Legal basis, minimisation and data-subject rights for every use of data.
-faq:
-  - q: Is cloud compatible with DORA?
-    a: Yes. DORA does not prohibit cloud. It requires managing ICT third-party risk through appropriate contracts, exit plans and resilience testing, and we design platforms to meet it.
-  - q: Is a credit scoring model high-risk under the AI Act?
-    a: Yes, when it assesses the creditworthiness of individuals (fraud detection is excluded). It requires risk management, data quality, documentation and human oversight.
 cta:
   title: Talk to our Banking team
   text: Tell us about your challenge and we will suggest where to start.

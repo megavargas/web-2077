@@ -22,11 +22,6 @@ technologies:
   - Looker Studio
   - BigQuery
   - Python
-faq:
-  - q: Do we have to change our BI tool?
-    a: Only if it adds value. Often the problem is not the tool, but the definitions and the data model behind it.
-  - q: What is decision intelligence?
-    a: Bringing analysis to the point of decision. The dashboard suggests the action (who to retain, which offer to make, which risk to review) and measures the result.
 cta:
   title: Bring analytics to the point of decision
   text: Start with an assessment and find out which decisions gain most from better data.

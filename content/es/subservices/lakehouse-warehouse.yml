@@ -75,13 +75,6 @@ related:
   - cloud-data-platforms
   - data-engineering-quality
   - semantic-layer
-faq:
-  - q: ¿Necesitamos un lakehouse o nos basta con un data warehouse?
-    a: Si casi todo tu dato es estructurado y el uso principal es el reporting, un warehouse bien modelado suele bastar. El lakehouse compensa cuando conviven datos semiestructurados, grandes volúmenes y casos de ciencia de datos o IA sobre el mismo dato. Lo decidimos con tus casos de uso delante.
-  - q: ¿Cuándo tendremos datos útiles?
-    a: Trabajamos por dominios y elegimos el primero para que llegue pronto a producción con un uso concreto. El plazo depende de las fuentes y de su calidad, y lo fijamos en el diagnóstico, no a ciegas.
-  - q: ¿Nos ata esto a un fabricante?
-    a: Menos que antes. Con formatos abiertos como Apache Iceberg o Delta Lake, el mismo dato puede leerse desde varios motores. Además, el modelo y la lógica quedan en código versionado, no encerrados en una herramienta.
 cta:
   title: ¿Cuántas versiones de la misma cifra circulan en tu empresa?
   text: Un diagnóstico de 2–4 semanas identifica los dominios prioritarios y el modelo de datos que necesitan.

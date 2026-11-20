@@ -76,13 +76,6 @@ related:
   - predictive-models
   - decision-intelligence
   - data-engineering-quality
-faq:
-  - q: ¿En qué se diferencia de un cuadro de mando?
-    a: El cuadro de mando muestra qué ha pasado. La analítica avanzada explica por qué y estima qué habría pasado sin una acción concreta. Se complementan, y lo que el análisis descubre suele acabar como indicador en el cuadro.
-  - q: ¿Hace falta tener un equipo de científicos de datos?
-    a: No para empezar. Hacemos el análisis con tu equipo y dejamos el método documentado y automatizado. Si debe repetirse, lo transferimos a tu equipo o lo operamos nosotros.
-  - q: ¿Podemos analizar datos de clientes respetando el GDPR?
-    a: Sí, con una base legal clara, minimización de datos y seudonimización cuando el análisis no necesita identificar a nadie. Lo diseñamos con tu delegado de protección de datos desde el principio, no al final.
 cta:
   title: ¿Qué métrica te gustaría poder explicar?
   text: En un diagnóstico de 2–4 semanas elegimos las preguntas de negocio con más impacto y comprobamos si tus datos pueden responderlas.

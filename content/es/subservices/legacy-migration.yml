@@ -79,13 +79,6 @@ related:
   - lakehouse-warehouse
   - semantic-layer
   - data-engineering-quality
-faq:
-  - q: ¿Cuánto se puede convertir automáticamente?
-    a: Las herramientas de los fabricantes traducen bien SQL, esquemas y buena parte de los procesos ETL. La lógica de negocio escondida, los informes muy formateados y las excepciones necesitan revisión experta. Lo medimos en el inventario, antes de comprometer plazos.
-  - q: ¿Pagaremos dos plataformas a la vez?
-    a: Durante un tiempo sí, y es lo que más hay que acotar. Planificamos por dominios y fijamos desde el principio las fechas de baja del legacy, para que la convivencia sea corta y el ahorro en licencias llegue.
-  - q: ¿Por dónde empezamos?
-    a: Por el dominio que combina más coste de licencia o riesgo de soporte con un uso bien conocido. El diagnóstico de entrada incluye un primer inventario y compara el coste de migrar con el de quedarse.
 cta:
   title: ¿Cuánto te cuesta seguir en el legacy?
   text: En un diagnóstico de 2–4 semanas inventariamos tu BI y tu ETL y te decimos qué migrar, en qué orden y con qué coste.

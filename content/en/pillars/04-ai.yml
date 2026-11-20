@@ -23,11 +23,6 @@ technologies:
   - Gemini
   - Microsoft Azure
   - AWS
-faq:
-  - q: How do you stop an assistant from making things up?
-    a: We ground answers in your sources, cite where each piece of information comes from, and measure quality with evaluation sets before and after going live.
-  - q: What does the AI Act mean for our use cases?
-    a: It depends on the use case. Some, such as assessing the creditworthiness of individuals or pricing life and health insurance, are high-risk and require risk management, documentation and human oversight. We assess this at design stage.
 cta:
   title: Take your AI into production
   text: Start with an assessment and prioritise the use cases with the highest return and the lowest risk.

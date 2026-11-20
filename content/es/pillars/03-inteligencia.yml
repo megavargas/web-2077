@@ -22,11 +22,6 @@ technologies:
   - Looker Studio
   - BigQuery
   - Python
-faq:
-  - q: ¿Hay que cambiar nuestra herramienta de BI?
-    a: Solo si aporta valor. A menudo el problema no es la herramienta, sino las definiciones y el modelo de datos que hay detrás.
-  - q: ¿Qué es decision intelligence?
-    a: Llevar el análisis al punto de decisión. El cuadro de mando sugiere la acción (a quién retener, qué oferta presentar, qué riesgo revisar) y mide el resultado.
 cta:
   title: Lleva la analítica al punto de decisión
   text: Empieza por un diagnóstico y descubre qué decisiones ganan más con mejores datos.

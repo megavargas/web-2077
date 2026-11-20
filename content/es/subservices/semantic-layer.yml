@@ -76,13 +76,6 @@ related:
   - lakehouse-warehouse
   - self-service-analytics
   - ai-agents
-faq:
-  - q: ¿Necesitamos una herramienta nueva para tener una capa semántica?
-    a: Normalmente no. Power BI, Looker y dbt ya incluyen una capa semántica; el trabajo está en acordar las definiciones y ordenarlas. Si conviven varias herramientas, valoramos si compensa una capa común a todas.
-  - q: ¿Por dónde se empieza?
-    a: Por las métricas que se discuten en el comité de dirección o en un área concreta. Ese primer bloque se lleva a producción en el primer ciclo de construcción y el resto se incorpora por oleadas, retirando informes duplicados en cada una.
-  - q: ¿Por qué importa la capa semántica para la IA?
-    a: Un asistente que consulta tablas en bruto tiene que adivinar qué significa «ingresos» o «cliente activo». Si consulta una capa semántica, usa la definición acordada y respeta los permisos de cada usuario. Es la forma más directa de que la IA responda con las cifras oficiales.
 cta:
   title: ¿Cuántas versiones tienes de la misma métrica?
   text: En un diagnóstico de 2–4 semanas revisamos tus informes críticos, te decimos dónde divergen las cifras y por dónde empezar.

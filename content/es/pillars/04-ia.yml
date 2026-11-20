@@ -23,11 +23,6 @@ technologies:
   - Gemini
   - Microsoft Azure
   - AWS
-faq:
-  - q: ¿Cómo se evita que un asistente invente respuestas?
-    a: Anclamos las respuestas en vuestras fuentes, citamos de dónde sale cada dato y medimos la calidad con conjuntos de evaluación antes y después de salir a producción.
-  - q: ¿Qué implica el AI Act para nuestros casos de uso?
-    a: Depende del caso. Algunos, como la evaluación de solvencia de personas o la tarificación de seguros de vida y salud, son de alto riesgo y exigen gestión de riesgos, documentación y supervisión humana. Lo evaluamos en el diseño.
 cta:
   title: Lleva tu IA a producción
   text: Empieza por un diagnóstico y prioriza los casos de uso con más retorno y menos riesgo.

@@ -18,11 +18,6 @@ outcome:
   title: Resultado
   text: Una hoja de ruta priorizada, con business case por iniciativa y un modelo de gobierno que el comité puede aprobar.
 technologies: []
-faq:
-  - q: ¿Necesitamos tener los datos ordenados antes de empezar?
-    a: No. El diagnóstico parte de la situación real y sirve precisamente para decidir qué hay que ordenar primero.
-  - q: ¿Cómo se tiene en cuenta el AI Act?
-    a: Clasificamos el riesgo de cada caso de uso y definimos los requisitos de gobierno desde el diseño, para que no aparezcan al final como un bloqueo.
 cta:
   title: Prioriza tus casos de uso de datos e IA
   text: Empieza por un diagnóstico de 2–4 semanas y sal con una hoja de ruta accionable.

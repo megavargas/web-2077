@@ -1,5 +1,19 @@
 <script setup lang="ts">
-const { t } = useI18n()
+const { t, locale } = useI18n()
+const site = useSiteConfig()
+
+// Imagen para compartir (LinkedIn, X, Slack…) por idioma: public/og-es.png y og-en.png, 1200×630
+const ogImage = computed(() => `${site.url}/og-${locale.value === 'es' ? 'es' : 'en'}.png`)
+useSeoMeta({
+  ogImage,
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
+  ogImageAlt: () => t('common.ogAlt'),
+  ogSiteName: 'Contextual Intelligence Partners',
+  ogLocale: () => (locale.value === 'es' ? 'es_ES' : 'en_GB'),
+  twitterCard: 'summary_large_image',
+  twitterImage: ogImage,
+})
 </script>
 
 <template>

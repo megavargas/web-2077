@@ -76,13 +76,6 @@ related:
   - predictive-models
   - decision-intelligence
   - data-engineering-quality
-faq:
-  - q: How is this different from a dashboard?
-    a: A dashboard shows what happened. Advanced analytics explains why, and estimates what would have happened without a given action. The two work together, and what the analysis uncovers often ends up as an indicator on the dashboard.
-  - q: Do we need a team of data scientists?
-    a: Not to get started. We carry out the analysis with your team and leave the method documented and automated. If it needs repeating, we either hand it over to your team or run it for you.
-  - q: Can we analyse customer data and still comply with GDPR?
-    a: Yes, with a clear legal basis, data minimisation and pseudonymisation wherever the analysis does not need to identify anyone. We design it with your data protection officer from the outset, not at the end.
 cta:
   title: Which metric would you like to be able to explain?
   text: In a two-to-four-week assessment we pick the business questions with the most impact and check whether your data can answer them.

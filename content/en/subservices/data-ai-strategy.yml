@@ -75,13 +75,6 @@ related:
   - maturity-assessment
   - use-case-portfolio
   - cloud-data-platforms
-faq:
-  - q: How long does a data and AI strategy take?
-    a: It depends on the scope and how many business areas are involved. The usual route is to start with a 2–4 week assessment, which already produces an initial roadmap, and then go deeper where it is needed.
-  - q: What happens to the initiatives we already have under way?
-    a: They are part of the analysis. The strategy decides which continue, which are refocused and which stop, using explicit criteria the committee can review.
-  - q: Does the strategy tie us to one cloud provider?
-    a: No. We work with Google Cloud, Microsoft Azure and AWS. The target architecture starts from what you have and what each use case needs, and records why each provider was chosen.
 cta:
   title: Where should your data and AI strategy start?
   text: A 2–4 week assessment gives you a clear baseline, your first prioritised use cases and an initial roadmap.

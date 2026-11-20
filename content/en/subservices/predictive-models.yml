@@ -75,13 +75,6 @@ related:
   - mlops-llmops
   - decision-intelligence
   - advanced-analytics
-faq:
-  - q: Is our model high-risk under the AI Act?
-    a: It depends on the use. Assessing the creditworthiness of individuals and pricing life and health insurance are high-risk uses; detecting financial fraud falls outside that category. We assess each case with your legal and compliance teams.
-  - q: Machine learning or classical statistical models?
-    a: Whichever performs best at the level of explainability the case requires. We always compare against a simple baseline, and if a more complex model does not clearly beat it, the extra validation and maintenance cost is not worth it.
-  - q: When will the business see the effect?
-    a: Once the model is embedded in the process, not before. That is why we plan a controlled test from the start, comparing model-guided action with the current way of working.
 cta:
   title: Which decision would improve if you could see it coming?
   text: In a two-to-four-week assessment we review your candidate use cases, the data available and the regulatory requirements of each, and choose the first one.

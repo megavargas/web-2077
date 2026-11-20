@@ -103,8 +103,6 @@ usePageSeo(() => page.value?.seo)
       </UiContainer>
     </section>
 
-    <SectionFaq :items="page.faq" />
-
     <section id="form" class="py-12 md:py-20" aria-labelledby="form-title">
       <UiContainer class="grid gap-10 border-t border-graphite-border pt-12 lg:grid-cols-3">
         <div class="flex flex-col gap-4">

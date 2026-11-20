@@ -37,7 +37,6 @@ export const subserviceKeys = [
 
 const seo = z.object({ title: z.string(), description: z.string() })
 const header = z.object({ eyebrow: z.string(), title: z.string(), intro: z.string() })
-const faq = z.array(z.object({ q: z.string(), a: z.string() })).default([])
 const cta = z.object({ title: z.string(), text: z.string(), button: z.string() })
 const named = z.object({ name: z.string(), text: z.string() })
 const titled = <T extends z.ZodTypeAny>(items: T) => z.object({ title: z.string(), items })
@@ -102,7 +101,6 @@ const schemas = {
     includes: z.object({ title: z.string() }),
     outcome: z.object({ title: z.string(), text: z.string() }),
     technologies: z.array(z.string()).default([]),
-    faq,
     cta,
   }),
 
@@ -137,7 +135,6 @@ const schemas = {
     technologies: z.array(z.string()).default([]),
     // Subservicios relacionados (de este u otros pilares)
     related: z.array(z.enum(subserviceKeys)).default([]),
-    faq,
     cta,
   }),
 
@@ -174,7 +171,6 @@ const schemas = {
     expert: z
       .object({ name: z.string(), role: z.string(), linkedin: z.string().optional() })
       .optional(),
-    faq,
     cta,
   }),
 
@@ -198,7 +194,6 @@ const schemas = {
       ),
     }),
     engagement: z.object({ title: z.string(), intro: z.string(), models: z.array(named) }),
-    faq,
     cta,
   }),
 
@@ -210,7 +205,6 @@ const schemas = {
     deliverables: titled(z.array(z.string())),
     format: titled(z.array(z.object({ label: z.string(), value: z.string() }))),
     next: z.object({ title: z.string(), text: z.string() }),
-    faq,
     form: z.object({ title: z.string(), text: z.string() }),
   }),
 
@@ -258,24 +252,6 @@ const schemas = {
     }),
   }),
 
-  about: z.object({
-    seo,
-    header,
-    story: z.object({ title: z.string(), paragraphs: z.array(z.string()) }),
-    principles: titled(z.array(named)),
-    // Sin uso en la web (se quitó «Equipo directivo» el 18/11/2026); se conserva opcional.
-    team: z
-      .object({
-        title: z.string(),
-        people: z.array(z.object({ name: z.string(), role: z.string() })),
-      })
-      .optional(),
-    offices: titled(
-      z.array(z.object({ city: z.string(), label: z.string(), address: z.string().optional() })),
-    ),
-    cta,
-  }),
-
   talent: z.object({
     seo,
     header,
@@ -303,7 +279,6 @@ const sources: Record<Name, string> = {
   diagnostic: 'diagnostic.yml',
   sectorsPage: 'sectors.yml',
   ecosystem: 'ecosystem.yml',
-  about: 'about.yml',
   talent: 'talent.yml',
   contact: 'contact.yml',
 }

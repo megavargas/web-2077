@@ -26,11 +26,6 @@ technologies:
   - AWS
   - Snowflake
   - Cloud Composer
-faq:
-  - q: ¿Trabajáis solo con Google Cloud?
-    a: No. Trabajamos con Google Cloud, Azure y AWS, y elegimos según el problema, los sistemas existentes y los costes, no por el contrato.
-  - q: ¿Se puede migrar sin parar el reporting actual?
-    a: Sí. Planificamos la migración por dominios y mantenemos en paralelo los informes críticos hasta validar los nuevos.
 cta:
   title: Moderniza tu plataforma de datos
   text: Un diagnóstico de 2–4 semanas te dice qué migrar, en qué orden y con qué coste.

@@ -26,11 +26,6 @@ technologies:
   - AWS
   - Snowflake
   - Cloud Composer
-faq:
-  - q: Do you only work with Google Cloud?
-    a: No. We work with Google Cloud, Azure and AWS, and choose based on the problem, the existing systems and the costs, not on the contract.
-  - q: Can we migrate without stopping current reporting?
-    a: Yes. We plan the migration by domain and run critical reports in parallel until the new ones are validated.
 cta:
   title: Modernise your data platform
   text: A 2–4 week assessment tells you what to migrate, in what order and at what cost.

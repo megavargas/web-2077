@@ -336,8 +336,6 @@ useHead({
       </UiContainer>
     </section>
 
-    <SectionFaq :items="service.faq" />
-
     <!-- Resto del pilar y servicios relacionados -->
     <section class="py-12 md:py-20" aria-labelledby="more-title">
       <UiContainer

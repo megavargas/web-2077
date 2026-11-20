@@ -49,8 +49,12 @@ onBeforeUnmount(() => window.removeEventListener('scroll', onScroll))
         <nav :aria-label="t('common.language')">
           <TheLocaleSwitch />
         </nav>
-        <div class="hidden sm:block">
-          <UiButton :to="{ name: 'contacto' }">{{ t('nav.contact') }}</UiButton>
+        <!-- Etiqueta corta mientras convive con la navegación (lg), completa desde xl -->
+        <div class="hidden whitespace-nowrap sm:block">
+          <UiButton :to="{ name: 'servicios-diagnostico' }">
+            <span class="hidden sm:inline lg:hidden xl:inline">{{ t('nav.assessmentCta') }}</span>
+            <span class="hidden lg:inline xl:hidden">{{ t('nav.assessment') }}</span>
+          </UiButton>
         </div>
         <button
           type="button"
@@ -85,7 +89,7 @@ onBeforeUnmount(() => window.removeEventListener('scroll', onScroll))
           </ul>
         </nav>
         <div>
-          <UiButton :to="{ name: 'contacto' }">{{ t('nav.contact') }}</UiButton>
+          <UiButton :to="{ name: 'servicios-diagnostico' }">{{ t('nav.assessmentCta') }}</UiButton>
         </div>
       </UiContainer>
     </div>

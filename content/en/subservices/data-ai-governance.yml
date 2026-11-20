@@ -76,13 +76,6 @@ related:
   - ai-evaluation-governance
   - data-engineering-quality
   - semantic-layer
-faq:
-  - q: When does the AI Act affect us?
-    a: Some obligations, such as the prohibited practices, already apply. The requirements for Annex III high-risk systems, such as credit scoring, come later, and in 2026 the EU agreed to postpone some of them. It pays to have the inventory and classification in place first, because they shape the design.
-  - q: Do we need to buy a governance tool?
-    a: Not necessarily. We start with what your platform offers, such as Microsoft Purview, Dataplex or Unity Catalog, and only recommend another tool if there is a need they do not cover.
-  - q: Do you guarantee regulatory compliance?
-    a: No. Compliance is the responsibility of each organisation and its legal advisers. We design governance and controls so it is easier to demonstrate, working alongside your compliance, risk and data protection teams.
 cta:
   title: Do you know which AI systems are in use?
   text: A 2–4 week assessment reviews your current governance and leaves a plan to get critical data and your AI inventory in order.

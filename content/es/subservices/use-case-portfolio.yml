@@ -77,13 +77,6 @@ related:
   - data-ai-strategy
   - ai-agents
   - predictive-models
-faq:
-  - q: ¿Cómo se calcula un business case si aún no hay datos?
-    a: Con una línea base del proceso actual y supuestos explícitos que validan sus responsables. El piloto sirve precisamente para confirmar o corregir esos supuestos antes de invertir en escala.
-  - q: ¿Qué hacemos con los casos de alto riesgo según el AI Act?
-    a: No se descartan. Se identifican pronto y se diseñan con la gestión de riesgos, la documentación y la supervisión humana que exigen, para que el calendario y el coste los reflejen desde el principio.
-  - q: ¿Cuántos casos conviene abordar a la vez?
-    a: Pocos y bien elegidos. Es mejor llevar dos o tres casos a producción con su valor medido que abrir diez pilotos en paralelo.
 cta:
   title: ¿Qué caso de uso debería ir primero?
   text: En un diagnóstico de 2–4 semanas sales con los casos de uso priorizados, su business case inicial y una hoja de ruta.

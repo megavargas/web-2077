@@ -77,14 +77,15 @@ Base: `docs/reports/Benchmark competitivo web Contextual.md` (benchmark de 29 co
 
 ```
 /                                Home: hero · clientes (muro de logos) · contexto en 3 capas · pilares 01→04 · método · sectores · banda · ecosistema · CTA
-/servicios                       Recorrido 01→04 · método con entregables · formas de trabajar (proyecto, gestionado, capacidad flexible) · FAQ
-/servicios/{estrategia,datos,inteligencia,ia}    Problema · qué incluye (tarjetas a sus 5 subservicios) · resultado · dónde lo aplicamos (por sector) · tecnologías · FAQ · anterior/siguiente
-/servicios/<pilar>/<subservicio>   20 landings (5 por pilar, numeradas 01.1–04.5): migas · problema · qué hacemos · cómo (4 pasos) · resultado y entregables · un caso de uso por sector · tecnologías · FAQ · resto del pilar y relacionados · anterior/siguiente (recorrido 01.1→04.5) · CTA
+/servicios                       Recorrido 01→04 · método con entregables · formas de trabajar (proyecto, gestionado, capacidad flexible)
+/servicios/{estrategia,datos,inteligencia,ia}    Problema · qué incluye (tarjetas a sus 5 subservicios) · resultado · dónde lo aplicamos (por sector) · tecnologías · anterior/siguiente
+/servicios/<pilar>/<subservicio>   20 landings (5 por pilar, numeradas 01.1–04.5): migas · problema · qué hacemos · cómo (4 pasos) · resultado y entregables · un caso de uso por sector · tecnologías · resto del pilar y relacionados · anterior/siguiente (recorrido 01.1→04.5) · CTA
                                  En la landing: «El problema» muestra la primera frase de `problem.text` como titular y el resto como consecuencias (escríbelo en 2–3 frases); «Cómo lo hacemos» es la banda azul de la página (`bg-accent-strong`), con 4 pasos y un icono lucide por paso (`approach.steps[].icon`).
 /servicios/diagnostico           Landing de la oferta de entrada + formulario (motivo fijo)
-/sectores (con bloque «También trabajamos en», sin páginas propias) · /sectores/{telco,banca,seguros}      Retos · casos de uso por área de negocio con pilares · regulación · FAQ · CTA con sector
+/sectores (con bloque «También trabajamos en», sin páginas propias) · /sectores/{telco,banca,seguros}      Retos · casos de uso por área de negocio con pilares · regulación · CTA con sector
 /ecosistema                      Partners · licencias y facturación · tecnologías
-/nosotros · /talento · /contacto (formulario con motivo y sector, ?sector=&reason=)
+/talento · /contacto (formulario con motivo y sector, ?sector=&reason=)
+(Sin página «Nosotros»: se quitó el 20/11/2026 por decisión del cliente. La sede y el LinkedIn están en el pie, `app.config.ts`.)
 /legal/{aviso-legal,privacidad,cookies}          Borradores pendientes de revisión legal (noindex)
 Idioma por defecto: **inglés** en la raíz (`/services`, `/industries/banking`…); español bajo `/es` (`/es/servicios`, `/es/sectores/banca`…). Las rutas de arriba son las españolas, sin el prefijo `/es`.
 ```
@@ -122,7 +123,10 @@ Voz: **consultor senior hablando con un directivo**. Directa, concreta, segura s
 
 Tomados de la web actual (contextual.team); pueden estar desactualizados:
 - Partnerships publicados en la web nueva: Google Cloud, Microsoft Azure y AWS, los tres como partner y revendedor de licencias. **Datadog no se menciona** (decisión del cliente, 17/11/2026). Google Marketing Platform: pendiente.
-- Oficinas declaradas en la web antigua: Madrid, Milán, Lisboa, México, Tallin, Zúrich (varias con teléfonos de relleno). Publicada solo Madrid en la lista. El mapa de puntos de «Dónde estamos» (decisión del cliente, 18/11/2026) marca México, Madrid, Suiza (Zúrich), Londres, Arabia Saudí (Riad) y Israel (Tel Aviv); las ubicaciones están en `WorldDotsMap.vue`. La sección «Equipo directivo» se quitó de Nosotros el 18/11/2026.
+- Oficinas declaradas en la web antigua: Madrid, Milán, Lisboa, México, Tallin, Zúrich (varias con teléfonos de relleno). Publicada solo Madrid en la lista. El mapa de «Dónde estamos» (México, Madrid, Zúrich, Londres, Riad, Tel Aviv) desapareció con la página «Nosotros» el 20/11/2026; la sede de Madrid se publica en el pie.
 - Domicilio social (BORME, mayo 2026): C/ Espoz y Mina 2, Madrid. NIF B87568440. Fundada en 2016.
 - Email de contacto: **hola@contextual.team** (único; formulario, legal y contacto).
 - Logo: vectorizado el 18/11/2026 desde `contextual_logo_new.avif` de contextual.team (símbolo hexagonal + «contextual» + «intelligence partners»), en `app/assets/data/logo.json` y `UiLogo` (monocromo, color del texto). `public/favicon.svg` usa solo el símbolo. Si llega el vector oficial, sustituye `logo.json`.
+
+
+**Sin preguntas frecuentes (decisión del cliente, 20/11/2026):** la web no tiene secciones de FAQ en ninguna página (ni datos estructurados FAQPage). Si una duda importa, se responde en el propio contenido de la sección.

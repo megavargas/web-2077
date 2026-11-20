@@ -76,13 +76,6 @@ related:
   - semantic-layer
   - operating-model
   - data-ai-governance
-faq:
-  - q: Doesn't self-service end up in chaos?
-    a: Without rules, yes. That is why we separate personal, team and certified content, and give each level an owner and review criteria. The aim is freedom on a common foundation, not prohibition.
-  - q: Can we let people ask questions of the data in natural language?
-    a: Yes, as long as the assistant works on certified data and a semantic layer with definitions and permissions. Without that foundation, each question can return a different figure. We switch it on team by team and review the quality of the answers.
-  - q: How much training is needed?
-    a: It depends on the role. Report consumers need to learn to find and interpret their reports; creators need a hands-on learning path using their own data. What works best is ongoing support from the community, not a one-off course.
 cta:
   title: How many reports do you have, and how many are used?
   text: In a two-to-four-week assessment we measure how your BI is really used and propose a self-service model with rules and priorities.

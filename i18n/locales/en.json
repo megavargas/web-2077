@@ -5,7 +5,8 @@
     "skip": "Skip to content",
     "scrollCue": "How we build context",
     "toLight": "Switch to light mode",
-    "toDark": "Switch to dark mode"
+    "toDark": "Switch to dark mode",
+    "ogAlt": "Contextual Intelligence Partners: applied intelligence, in your context"
   },
   "nav": {
     "main": "Main",
@@ -13,18 +14,22 @@
     "services": "Services",
     "sectors": "Industries",
     "ecosystem": "Ecosystem",
-    "about": "About us",
     "careers": "Careers",
     "contact": "Contact",
     "assessment": "Assessment",
     "open": "Open menu",
-    "close": "Close menu"
+    "close": "Close menu",
+    "assessmentCta": "Request an assessment"
   },
   "footer": {
     "tagline": "A strategy, data and AI consultancy for Telco, Banking and Insurance.",
     "rights": "All rights reserved",
     "company": "Company",
-    "legal": "Legal"
+    "legal": "Legal",
+    "talk": "Let's talk",
+    "partners": "Cloud partners",
+    "newTab": "opens in a new tab",
+    "since": "Since 2016"
   },
   "legal": {
     "notice": "Legal notice",
@@ -33,7 +38,6 @@
     "updated": "Last updated: {date}"
   },
   "labels": {
-    "faq": "Frequently asked questions",
     "pillars": "Pillars",
     "technologies": "Technologies",
     "whereWeApply": "Where we apply it",

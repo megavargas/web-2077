@@ -78,13 +78,6 @@ related:
   - ai-evaluation-governance
   - dataops-observability
   - cloud-data-platforms
-faq:
-  - q: ¿Necesitamos MLOps si solo tenemos unos pocos modelos?
-    a: Con pocos modelos basta con lo esencial, como registro de versiones, despliegue reproducible y alertas básicas. Lo dimensionamos para que crezca contigo sin montar una plataforma sobredimensionada.
-  - q: ¿Cómo controlamos el coste de la IA generativa?
-    a: Medimos el coste de cada llamada y lo repartimos por caso de uso. Con eso se ajusta el modelo, la caché o el tamaño del contexto donde más gasta, sin perder calidad.
-  - q: ¿Lo operáis vosotros o nuestro equipo?
-    a: Las dos opciones son posibles. Podemos operarlo como servicio gestionado o formar a tu equipo y traspasarle la plataforma con la documentación y los procedimientos.
 cta:
   title: ¿Sabes cuántos modelos tienes en producción y cuánto cuestan?
   text: Empieza por un diagnóstico de 2–4 semanas y sal con el inventario, los riesgos principales y el plan para industrializar tus modelos.

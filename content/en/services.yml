@@ -51,13 +51,6 @@ engagement:
       text: We run platforms, models and dashboards with service commitments, observability and cost control.
     - name: Flexible capacity
       text: An on-demand data and AI team that grows or shrinks as needed, without adding headcount.
-faq:
-  - q: Where do we start?
-    a: With the assessment. In 2–4 weeks you will know which use cases have the highest return, what you need to take them into production and in what order.
-  - q: Do you work with our in-house team?
-    a: Yes. We work alongside your teams and transfer knowledge so that you do not depend on us.
-  - q: Do you resell cloud licences?
-    a: Yes, for Google Cloud, Azure and AWS, with billing, support and cost control. We explain it under Ecosystem.
 cta:
   title: Where to start? With an assessment.
   text: In 2–4 weeks you will have a clear view of where you stand, the use cases with the highest return, and a roadmap to take them into production.

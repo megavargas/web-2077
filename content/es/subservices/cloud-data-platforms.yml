@@ -79,13 +79,6 @@ related:
   - lakehouse-warehouse
   - dataops-observability
   - data-ai-governance
-faq:
-  - q: ¿Qué nube nos conviene?
-    a: Depende de tus sistemas actuales, de lo que sabe hacer tu equipo y del coste total a varios años. Trabajamos con Google Cloud, Azure y AWS, comparamos con tus datos y te damos una recomendación argumentada, también si la respuesta es combinar dos.
-  - q: ¿Cómo evitamos que la factura se dispare?
-    a: Con FinOps desde el diseño. Cada recurso va etiquetado por dominio, hay presupuestos con alertas y un cuadro de costes que revisan negocio y tecnología. Las plataformas de datos cobran por consulta o por capacidad, así que también optimizamos modelos y consultas, no solo infraestructura.
-  - q: ¿Es compatible una plataforma cloud con DORA?
-    a: Sí. DORA no prohíbe el cloud. Pide gestionar el riesgo del proveedor, probar la continuidad y tener un plan de salida viable, y lo incorporamos a la arquitectura (formatos abiertos, copias, documentación) para que la respuesta al supervisor no dependa de un documento aparte.
 cta:
   title: ¿Tu plataforma aguanta lo que viene?
   text: En un diagnóstico de 2–4 semanas revisamos arquitectura, seguridad y costes, y te decimos qué corregir primero.

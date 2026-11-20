@@ -76,13 +76,6 @@ related:
   - lakehouse-warehouse
   - self-service-analytics
   - ai-agents
-faq:
-  - q: Do we need a new tool to have a semantic layer?
-    a: Usually not. Power BI, Looker and dbt already include a semantic layer; the work lies in agreeing the definitions and putting them in order. Where several tools coexist, we assess whether a layer shared by all of them is worth it.
-  - q: Where do we start?
-    a: With the metrics debated at the executive committee or in one specific department. That first block goes into production in the first build cycle, and the rest follows in waves, retiring duplicate reports along the way.
-  - q: Why does a semantic layer matter for AI?
-    a: An assistant querying raw tables has to guess what ‘revenue’ or ‘active customer’ means. Querying a semantic layer, it uses the agreed definition and respects each user's permissions. It is the most direct way to make AI answer with the official figures.
 cta:
   title: How many versions of the same metric do you have?
   text: In a two-to-four-week assessment we review your critical reports, show you where the figures diverge and where to start.

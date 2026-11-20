@@ -9,7 +9,6 @@ playwright-report
 test-results
 docs
 
-# Datos generados (mapa de puntos, logos)
-app/assets/data/world-dots.json
+# Datos generados (logos)
 app/assets/data/logo.json
 app/assets/data/clients.json

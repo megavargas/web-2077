@@ -76,13 +76,6 @@ related:
   - data-ai-governance
   - mlops-llmops
   - self-service-analytics
-faq:
-  - q: ¿Necesitamos un centro de excelencia?
-    a: Casi siempre al principio, para concentrar conocimiento y fijar estándares. Con la madurez, el CoE pasa de construir a habilitar, y los equipos de negocio y de plataforma asumen más entrega.
-  - q: ¿Cuánto tarda en estar en marcha?
-    a: El diseño se cierra en semanas; la adopción lleva meses. Por eso lo probamos primero con casos reales y lo extendemos por fases.
-  - q: ¿Podemos hacerlo sin aumentar plantilla?
-    a: En parte sí. Muchas funciones se reasignan dentro de los equipos existentes, y el plan de capacidades indica qué perfiles conviene incorporar, formar o cubrir con un socio.
 cta:
   title: ¿Tu IA depende de cuatro personas?
   text: Un diagnóstico de 2–4 semanas revisa tu organización actual y propone el modelo operativo que necesita tu hoja de ruta.

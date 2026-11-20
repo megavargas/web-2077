@@ -86,12 +86,13 @@
 
 /*
  * Modo claro (selector de la cabecera): intercambia marino ↔ azul muy claro y adapta los
- * textos; el acento pasa a naranja. Las bandas azules/de acento conservan el texto blanco.
- * Contrastes sobre #f7fbfe: navy 16,8 · ink 6,6 · naranja 4,9 · steel 4,95.
+ * textos; el acento pasa al azul de marca oscuro (el cian no da contraste sobre claro). Las
+ * bandas azules/de acento conservan el texto blanco.
+ * Contrastes sobre #f7fbfe: navy 16,8 · ink 6,6 · azul 5,7 · steel 4,95.
  */
 :root[data-theme='light'] {
   color-scheme: light;
-  --color-accent: #c2410c; /* naranja (texto sobre claro 4,9:1; blanco sobre él 5,2:1) */
+  --color-accent: #006b99; /* azul de marca oscuro (texto sobre claro 5,7:1; blanco sobre él 5,9:1) */
   --color-void-black: #f7fbfe;
   --color-carbon: #ffffff;
   --color-graphite-border: #d3e6f2;
@@ -102,7 +103,7 @@
   --color-paper: #13233a;
   --color-mist-border: #2b3d58;
   --color-ink-mid: #c2cad8;
-  --color-accent-deep: #ff7a3d; /* naranja claro para texto sobre las secciones marino (6,9:1) */
+  --color-accent-deep: #00aff0; /* cian de marca para texto sobre las secciones marino (7,1:1) */
 }
 /* Bandas de color: mantienen la paleta original (texto blanco) dentro */
 :root[data-theme='light'] .bg-accent-strong {

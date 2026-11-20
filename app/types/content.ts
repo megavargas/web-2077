@@ -22,6 +22,5 @@ export type SubserviceSummary = Pick<
 export type PillarWithSubservices = Pillar & { subservices: SubserviceSummary[] }
 export type ServicesContent = ServicesEsCollectionItem
 export type PillarKey = Pillar['key']
-export type FaqItem = NonNullable<Pillar['faq']>[number]
 export type CtaContent = Pillar['cta']
 export type MethodContent = ServicesContent['method']

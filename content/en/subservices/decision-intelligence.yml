@@ -76,13 +76,6 @@ related:
   - predictive-models
   - ai-agents
   - use-case-portfolio
-faq:
-  - q: How is this different from a dashboard?
-    a: A dashboard shows the situation and leaves the conclusion to the user. A decision intelligence system proposes a specific action, explains why and records what was done so the result can be measured.
-  - q: Are decisions fully automated?
-    a: Only those you agree to automate. We start in suggestion mode, with a person who accepts, amends or rejects each proposal, and extend autonomy when the results justify it. Decisions that affect people's rights keep human oversight.
-  - q: Do we need to buy a dedicated platform?
-    a: Not necessarily. Many decisions can be handled with your existing data and BI platform plus rules and models. If volume or complexity calls for it, we compare the platforms on the market against explicit criteria.
 cta:
   title: Which decision does your organisation make every day?
   text: In a two-to-four-week assessment we choose the decision with the highest return, model it and tell you what data and changes it needs.

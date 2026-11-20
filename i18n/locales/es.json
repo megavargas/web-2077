@@ -5,7 +5,8 @@
     "skip": "Saltar al contenido",
     "scrollCue": "Cómo construimos el contexto",
     "toLight": "Cambiar a modo claro",
-    "toDark": "Cambiar a modo oscuro"
+    "toDark": "Cambiar a modo oscuro",
+    "ogAlt": "Contextual Intelligence Partners: somos inteligencia aplicada a tu contexto"
   },
   "nav": {
     "main": "Principal",
@@ -13,18 +14,22 @@
     "services": "Servicios",
     "sectors": "Sectores",
     "ecosystem": "Ecosistema",
-    "about": "Nosotros",
     "careers": "Talento",
     "contact": "Contacto",
     "assessment": "Diagnóstico",
     "open": "Abrir menú",
-    "close": "Cerrar menú"
+    "close": "Cerrar menú",
+    "assessmentCta": "Solicita un diagnóstico"
   },
   "footer": {
     "tagline": "Consultoría de estrategia, datos e IA para Telco, Banca y Seguros.",
     "rights": "Todos los derechos reservados",
     "company": "Compañía",
-    "legal": "Legal"
+    "legal": "Legal",
+    "talk": "¿Hablamos?",
+    "partners": "Partners cloud",
+    "newTab": "se abre en una pestaña nueva",
+    "since": "Desde 2016"
   },
   "legal": {
     "notice": "Aviso legal",
@@ -33,7 +38,6 @@
     "updated": "Última actualización: {date}"
   },
   "labels": {
-    "faq": "Preguntas frecuentes",
     "pillars": "Pilares",
     "technologies": "Tecnologías",
     "whereWeApply": "Dónde lo aplicamos",

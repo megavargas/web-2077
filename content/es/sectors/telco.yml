@@ -71,11 +71,6 @@ regulation:
       text: Los operadores de comunicaciones son entidades esenciales. Ciberseguridad y gestión de incidentes también en las plataformas de datos.
     - name: AI Act
       text: Transparencia en los asistentes conversacionales y gestión del riesgo de los sistemas de IA.
-faq:
-  - q: ¿Tenéis experiencia en telco?
-    a: Sí. Es el sector en el que más proyectos hemos hecho, desde data warehouses multimarca hasta asistentes con IA generativa.
-  - q: ¿Podéis trabajar sobre nuestros sistemas actuales?
-    a: Sí. Partimos de vuestros sistemas de red, facturación y CRM, y los integramos por fases sin interrumpir la operación.
 cta:
   title: Habla con nuestro equipo de Telco
   text: Cuéntanos tu reto y te propondremos por dónde empezar.
