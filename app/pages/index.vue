@@ -58,7 +58,7 @@ useHead({
       :pillars="site.pillars"
     />
     <SectionMethod
-      tone="light"
+      tone="frost"
       :method="data.services.method"
       :title="data.home.method.title"
       :intro="data.home.method.intro"
@@ -70,7 +70,7 @@ useHead({
       :sectors="site.sectors"
     />
     <SectionEcosystemTeaser
-      tone="light"
+      tone="frost"
       :ecosystem="data.home.ecosystem"
       :partners="data.ecosystem.partners.items.map((p) => ({ name: p.name, icon: p.icon }))"
     />

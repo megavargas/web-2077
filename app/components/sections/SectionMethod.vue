@@ -15,17 +15,20 @@ const {
   intro?: string
   showDeliverables?: boolean
   link?: { label: string; to: RouteLocationRaw }
-  /** light: sección clara (mist) */
-  tone?: 'dark' | 'light'
+  /** light: sección clara (mist) · frost: azul clarito */
+  tone?: 'dark' | 'light' | 'frost'
 }>()
 
+/** Las primitivas (cabecera, badge, enlace) solo distinguen oscuro y claro */
+const childTone = computed(() => (tone === 'dark' ? 'dark' : 'light'))
+
 const c = computed(() =>
-  tone === 'light'
+  tone !== 'dark'
     ? {
-        section: 'bg-mist',
+        section: tone === 'frost' ? 'bg-frost' : 'bg-mist',
         strong: 'text-void-black',
         muted: 'text-ink-mid',
-        line: 'border-mist-border',
+        line: tone === 'frost' ? 'border-frost-border' : 'border-mist-border',
         lineStrong: 'border-void-black',
       }
     : {
@@ -41,7 +44,7 @@ const c = computed(() =>
 <template>
   <section id="approach" class="py-12 md:py-20" :class="c.section" aria-labelledby="approach-title">
     <UiContainer>
-      <UiSectionHeader id="approach-title" :title="title ?? method.title" :tone="tone" />
+      <UiSectionHeader id="approach-title" :title="title ?? method.title" :tone="childTone" />
       <p class="mb-12 max-w-prose font-body text-subheading text-pretty" :class="c.muted">
         {{ intro ?? method.intro }}
       </p>
@@ -56,7 +59,7 @@ const c = computed(() =>
             <h3 class="font-display text-heading-sm font-normal" :class="c.strong">
               {{ phase.name }}
             </h3>
-            <UiBadge v-if="phase.tag" :tone="tone">{{ phase.tag }}</UiBadge>
+            <UiBadge v-if="phase.tag" :tone="childTone">{{ phase.tag }}</UiBadge>
           </div>
           <p class="font-body text-body text-pretty" :class="c.muted">{{ phase.description }}</p>
           <div v-if="showDeliverables && phase.deliverables?.length" class="pt-2">
@@ -72,7 +75,7 @@ const c = computed(() =>
         </li>
       </ol>
       <div v-if="link" class="mt-10">
-        <UiLinkArrow :to="link.to" :tone="tone">{{ link.label }}</UiLinkArrow>
+        <UiLinkArrow :to="link.to" :tone="childTone">{{ link.label }}</UiLinkArrow>
       </div>
     </UiContainer>
   </section>

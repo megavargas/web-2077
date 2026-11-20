@@ -176,3 +176,10 @@ El estado de error usa borde cian + mensaje de texto (nunca solo color).
 - Contenido de texto a `max-w-page`; imágenes y bandas pueden romper a sangre.
 - Líneas de párrafo de 60–75 caracteres (`max-w-prose` o `max-w-[540px]` en el hero).
 - Titulares largos: `text-balance`; párrafos: `text-pretty`.
+
+
+### Azul clarito (`bg-frost`)
+Token `frost` (#dcedf8) con hairlines `frost-border` (#b6d4e8): secciones claras con más color que `mist`. Se usa en la home para «Cómo trabajamos» y «Multicloud» (`tone="frost"` en `SectionMethod` y `SectionEcosystemTeaser`; dentro, textos y primitivas como en `tone="light"`). En modo claro pasa a marino, como el resto de secciones claras. Contrastes: navy 14,9 · ink-mid 5,9 · accent-deep 4,9.
+
+### «Qué hacemos» en las landings de subservicio (`SectionCapabilities`)
+Columna izquierda fija (`lg:sticky`): icono del subservicio en caja (acento), título, resumen y recuento («6 CAPACIDADES»). Derecha: rejilla de módulos con hairlines (`gap-px` sobre `bg-graphite-border`), dos columnas. Cada capacidad lleva su **firma**: glifo de 5×5 celdas generado del nombre (simétrico, 9–17 celdas encendidas, siempre igual en servidor y cliente); al pasar el ratón el módulo pasa a `bg-carbon` y el glifo a acento. Si el número de módulos es impar, una celda vacía cierra la rejilla.

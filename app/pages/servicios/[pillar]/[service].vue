@@ -175,23 +175,12 @@ useHead({
       </UiContainer>
     </section>
 
-    <section class="py-12 md:py-20" aria-labelledby="capabilities-title">
-      <UiContainer>
-        <UiSectionHeader id="capabilities-title" :title="service.capabilities.title" />
-        <ul class="grid gap-10 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
-          <li
-            v-for="item in service.capabilities.items"
-            :key="item.name"
-            class="flex flex-col gap-3 border-t border-graphite-border pt-6"
-          >
-            <h3 class="font-display text-heading-sm font-normal text-bone-white">
-              {{ item.name }}
-            </h3>
-            <p class="font-body text-body text-pretty text-fog-light">{{ item.text }}</p>
-          </li>
-        </ul>
-      </UiContainer>
-    </section>
+    <SectionCapabilities
+      :title="service.capabilities.title"
+      :items="service.capabilities.items"
+      :icon="service.icon"
+      :summary="service.summary"
+    />
 
     <!-- Cómo lo hacemos: banda azul con texto blanco (la única banda de color de la página) -->
     <section class="bg-accent-strong py-16 md:py-24" aria-labelledby="approach-title">

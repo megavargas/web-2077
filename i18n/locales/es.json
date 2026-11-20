@@ -52,7 +52,8 @@
     "pillarOverview": "Visión general de {pillar}",
     "step": "Paso {n}",
     "seeSector": "Ver {sector}",
-    "regulation": "Regulación"
+    "regulation": "Regulación",
+    "capabilities": "{n} capacidades"
   },
   "form": {
     "name": "Nombre y apellidos",

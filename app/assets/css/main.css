@@ -32,6 +32,8 @@
   --color-ink-mid: #4b5a70; /* texto secundario sobre claro (6,2:1) */
   --color-accent-deep: #006b99; /* cian para texto sobre claro (5,2:1) */
   --color-accent-strong: #0077a8; /* banda azul con texto blanco (5,0:1) */
+  --color-frost: #dcedf8; /* sección azul clarito (navy 14,9 · ink 5,9 · accent-deep 4,9) */
+  --color-frost-border: #b6d4e8; /* hairlines sobre frost */
 
   /* Familias (papel → fuente) */
   --font-display: 'Archivo', ui-sans-serif, system-ui, sans-serif;
@@ -104,6 +106,8 @@
   --color-mist-border: #2b3d58;
   --color-ink-mid: #c2cad8;
   --color-accent-deep: #00aff0; /* cian de marca para texto sobre las secciones marino (7,1:1) */
+  --color-frost: #12263f; /* en claro, las secciones azul clarito pasan a marino */
+  --color-frost-border: #2b3d58;
 }
 /* Bandas de color: mantienen la paleta original (texto blanco) dentro */
 :root[data-theme='light'] .bg-accent-strong {

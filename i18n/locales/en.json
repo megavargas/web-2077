@@ -52,7 +52,8 @@
     "pillarOverview": "{pillar} overview",
     "step": "Step {n}",
     "seeSector": "See {sector}",
-    "regulation": "Regulation"
+    "regulation": "Regulation",
+    "capabilities": "{n} capabilities"
   },
   "form": {
     "name": "Full name",

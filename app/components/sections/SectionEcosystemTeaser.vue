@@ -4,17 +4,20 @@ import type { HomeContent } from '~/types/content'
 const { tone = 'dark' } = defineProps<{
   ecosystem: HomeContent['ecosystem']
   partners: { name: string; icon?: string }[]
-  /** light: sección clara (mist) */
-  tone?: 'dark' | 'light'
+  /** light: sección clara (mist) · frost: azul clarito */
+  tone?: 'dark' | 'light' | 'frost'
 }>()
 
+/** Las primitivas (cabecera, badge, enlace) solo distinguen oscuro y claro */
+const childTone = computed(() => (tone === 'dark' ? 'dark' : 'light'))
+
 const c = computed(() =>
-  tone === 'light'
+  tone !== 'dark'
     ? {
-        section: 'bg-mist',
+        section: tone === 'frost' ? 'bg-frost' : 'bg-mist',
         strong: 'text-void-black',
         muted: 'text-ink-mid',
-        line: 'border-mist-border',
+        line: tone === 'frost' ? 'border-frost-border' : 'border-mist-border',
       }
     : {
         section: '',
@@ -39,7 +42,7 @@ const c = computed(() =>
         <p class="max-w-prose font-body text-subheading text-pretty" :class="c.muted">
           {{ ecosystem.text }}
         </p>
-        <UiLinkArrow :to="{ name: 'ecosistema' }" :tone="tone">{{
+        <UiLinkArrow :to="{ name: 'ecosistema' }" :tone="childTone">{{
           ecosystem.linkLabel
         }}</UiLinkArrow>
       </div>
