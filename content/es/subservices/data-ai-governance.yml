@@ -1,0 +1,84 @@
+key: data-ai-governance
+pillar: strategy
+order: 5
+slug: gobierno-datos-ia
+name: Gobierno de datos e IA
+summary: Políticas, roles y controles de datos e IA que se aplican en la plataforma y preparan a la organización para el AI Act.
+seo:
+  title: Gobierno del dato y de la IA, con el AI Act en mente
+  description: Diseñamos el gobierno del dato y de la IA, con políticas, roles, inventario y clasificación de riesgo de los sistemas de IA y controles aplicados en plataforma.
+intro: Un único modelo de gobierno para datos e IA. Quién responde de cada dato y de cada sistema de IA, con qué reglas y cómo se comprueban en la plataforma.
+problem:
+  title: El problema
+  text: El gobierno del dato suele quedarse en un comité y un glosario que nadie consulta, y el de la IA a menudo ni existe. Cuando llega una auditoría, una revisión del supervisor o el AI Act, nadie sabe qué modelos hay en uso, con qué datos ni quién responde de ellos.
+capabilities:
+  title: Qué hacemos
+  items:
+    - name: Políticas y estándares
+      text: Calidad, acceso, privacidad, retención y uso aceptable de la IA, escritas para aplicarse y no para archivarse.
+    - name: Roles y órganos de decisión
+      text: Propietarios y responsables del dato, comité de datos e IA y relación con riesgos, cumplimiento y protección de datos.
+    - name: Inventario de sistemas de IA
+      text: Un registro de modelos, asistentes y agentes en uso, con su finalidad, sus datos, su responsable y su nivel de riesgo.
+    - name: Preparación para el AI Act
+      text: Clasificación de riesgo de cada sistema y requisitos de documentación, supervisión humana y transparencia.
+    - name: Gobierno aplicado en la plataforma
+      text: Catálogo, linaje, calidad y políticas de acceso configurados en las herramientas, no solo documentados.
+    - name: Encaje con regulación sectorial
+      text: Alineamos el modelo con BCBS 239, DORA, Solvencia II y el GDPR según el sector.
+approach:
+  title: Cómo lo hacemos
+  steps:
+    - name: Evaluar
+      text: Revisamos políticas, roles, herramientas y sistemas de IA existentes frente a tus obligaciones.
+    - name: Diseñar
+      text: Definimos el modelo de gobierno, sus órganos y el inventario de datos críticos y de sistemas de IA.
+    - name: Implantar
+      text: Configuramos catálogo, linaje y controles en la plataforma, empezando por un dominio de datos prioritario.
+    - name: Extender
+      text: Ampliamos el modelo por dominios, con indicadores de calidad, cobertura y cumplimiento de las políticas.
+deliverables:
+  title: Qué te llevas
+  items:
+    - Marco de gobierno de datos e IA con políticas y estándares
+    - Modelo de roles y órganos de decisión con su RACI
+    - Inventario de sistemas de IA con clasificación de riesgo
+    - Glosario de negocio y catálogo de datos críticos
+    - Controles de calidad, linaje y acceso configurados en la plataforma
+    - Cuadro de mando de gobierno con indicadores por dominio
+outcome:
+  title: Resultado
+  text: Datos y sistemas de IA con responsable, reglas y evidencias, de modo que una auditoría o una revisión regulatoria se responde con lo que ya existe y no con un proyecto de urgencia.
+useCases:
+  title: Dónde lo aplicamos
+  items:
+    - sector: telco
+      name: Datos de cliente y privacidad
+      text: Gobierno del uso de datos de cliente y de tráfico en modelos y asistentes, con base legal y minimización según el GDPR.
+    - sector: banking
+      name: Dato de riesgo y modelos
+      text: Gobierno del dato de riesgo según BCBS 239 y de los modelos de IA, junto a la función de riesgo de modelos.
+    - sector: insurance
+      name: Dato regulatorio y de siniestros
+      text: Gobierno de los datos que alimentan Solvencia II e IFRS 17 y de la IA que se usa en siniestros y suscripción.
+technologies:
+  - Microsoft Purview
+  - Google Cloud Dataplex
+  - Databricks Unity Catalog
+  - AWS Lake Formation
+  - BigQuery
+related:
+  - ai-evaluation-governance
+  - data-engineering-quality
+  - semantic-layer
+faq:
+  - q: ¿Cuándo nos afecta el AI Act?
+    a: Algunas obligaciones, como las prácticas prohibidas, ya se aplican. Los requisitos de los sistemas de alto riesgo del anexo III, como el scoring de crédito, llegan después, y en 2026 la UE ha acordado aplazar parte de ellos. Conviene tener antes el inventario y la clasificación, porque condicionan el diseño.
+  - q: ¿Tenemos que comprar una herramienta de gobierno?
+    a: No necesariamente. Empezamos con lo que ofrece tu plataforma, como Microsoft Purview, Dataplex o Unity Catalog, y solo recomendamos otra herramienta si hay una necesidad que no cubren.
+  - q: ¿Garantizáis el cumplimiento normativo?
+    a: No. El cumplimiento es responsabilidad de cada organización y de sus asesores legales. Nosotros diseñamos el gobierno y los controles para que sea más fácil demostrarlo, y trabajamos con tus equipos de cumplimiento, riesgos y protección de datos.
+cta:
+  title: ¿Sabes qué sistemas de IA tienes en uso?
+  text: Un diagnóstico de 2–4 semanas revisa tu gobierno actual y deja un plan para ordenar los datos críticos y el inventario de IA.
+  button: Solicita un diagnóstico

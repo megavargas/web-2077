@@ -1,0 +1,84 @@
+key: advanced-analytics
+pillar: intelligence
+order: 2
+slug: advanced-analytics
+name: Advanced analytics
+summary: Root-cause analysis, segmentation and attribution to understand what is happening, why, and which lever to pull.
+seo:
+  title: 'Advanced analytics: root cause, segments, attribution'
+  description: Advanced analytics for telecoms, banking and insurance. Root-cause analysis, segmentation, attribution and experiments that show what works and why it works.
+intro: We give rigorous answers to the questions a dashboard raises but cannot answer. Why a metric is falling, which customers behave alike and which action really made a difference.
+problem:
+  title: The problem
+  text: Dashboards tell you what happened, not why. Explanations are pieced together by hand in spreadsheets, each with its own assumptions, and arrive late. And many investments are judged a success because they coincided with an uplift, without anyone measuring whether they caused it.
+capabilities:
+  title: What we do
+  items:
+    - name: Root-cause analysis
+      text: We break down the change in an indicator by segment, channel or product to find what explains it.
+    - name: Customer segmentation
+      text: We group customers by behaviour and value into segments the business understands and can act on.
+    - name: Attribution and impact measurement
+      text: We measure how much of a result each channel or action is responsible for, combining statistical models and experiments.
+    - name: Experiment design
+      text: We set up A/B tests and control groups to prove a hypothesis before scaling it.
+    - name: Process bottleneck analysis
+      text: We pinpoint the step in a process where customers, transactions or time are lost.
+    - name: Automated recurring analysis
+      text: We turn the analyses that work into reproducible, version-controlled and scheduled processes.
+approach:
+  title: How we do it
+  steps:
+    - name: Frame the question
+      text: We turn the business question into a measurable hypothesis and the decision that depends on it.
+    - name: Prepare the data
+      text: We gather and validate the data required on your existing platform, without parallel extracts.
+    - name: Analyse and test
+      text: We apply the right method and check the results against experiments or data the analysis has not used.
+    - name: Put it to work
+      text: We present findings with their degree of uncertainty and automate whatever needs repeating.
+deliverables:
+  title: What you get
+  items:
+    - Findings report with causes, effect size and confidence level
+    - Documented customer segmentation, available on the data platform
+    - Attribution or marketing mix model calibrated with experiments
+    - Experiment plan with hypotheses, control groups and success criteria
+    - Version-controlled notebooks and queries to repeat the analysis
+outcome:
+  title: Outcome
+  text: Investment and operational decisions backed by measured causes rather than coincidences, and analyses that can be repeated without depending on one person.
+useCases:
+  title: Where we apply it
+  items:
+    - sector: telco
+      name: Drivers of churn and complaints
+      text: Linking churn and customer service calls to network incidents, billing errors or tariff changes.
+    - sector: banking
+      name: Segmentation by financial life stage
+      text: Grouping customers by product and channel usage to shape the commercial offer and the service model.
+    - sector: insurance
+      name: Loss ratio deviations
+      text: Explaining by line of business, channel or region why the loss ratio departs from plan.
+technologies:
+  - BigQuery
+  - Python
+  - Databricks
+  - Snowflake
+  - Power BI
+  - Looker
+related:
+  - predictive-models
+  - decision-intelligence
+  - data-engineering-quality
+faq:
+  - q: How is this different from a dashboard?
+    a: A dashboard shows what happened. Advanced analytics explains why, and estimates what would have happened without a given action. The two work together, and what the analysis uncovers often ends up as an indicator on the dashboard.
+  - q: Do we need a team of data scientists?
+    a: Not to get started. We carry out the analysis with your team and leave the method documented and automated. If it needs repeating, we either hand it over to your team or run it for you.
+  - q: Can we analyse customer data and still comply with GDPR?
+    a: Yes, with a clear legal basis, data minimisation and pseudonymisation wherever the analysis does not need to identify anyone. We design it with your data protection officer from the outset, not at the end.
+cta:
+  title: Which metric would you like to be able to explain?
+  text: In a two-to-four-week assessment we pick the business questions with the most impact and check whether your data can answer them.
+  button: Request an assessment

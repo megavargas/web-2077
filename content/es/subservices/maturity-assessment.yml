@@ -1,0 +1,85 @@
+key: maturity-assessment
+pillar: strategy
+order: 2
+slug: evaluacion-madurez
+name: Evaluación de madurez
+summary: Una medición de tu madurez en datos, analítica e IA basada en evidencias, con una línea base para medir el avance.
+seo:
+  title: Evaluación de madurez en datos e IA
+  description: Evaluamos tu madurez en datos, analítica, IA, organización y gobierno con evidencias de tus sistemas, no solo encuestas, y dejamos una línea base medible.
+intro: Medimos dónde estás en datos, analítica e IA con evidencias de tus sistemas y equipos, frente a lo que exigen tus objetivos de negocio y la regulación de tu sector.
+problem:
+  title: El problema
+  text: Muchas evaluaciones de madurez son encuestas de autopercepción que dan una nota y poco más. No dicen si los datos que necesita un caso de uso concreto están listos, casi nunca miran la regulación y no sirven para medir el progreso un año después.
+capabilities:
+  title: Qué hacemos
+  items:
+    - name: Modelo por dimensiones
+      text: Evaluamos estrategia, datos, plataforma, analítica, IA, organización y gobierno con niveles definidos y criterios observables.
+    - name: Evidencias, no solo entrevistas
+      text: Contrastamos lo que se cuenta con lo que hay en arquitectura, calidad de datos, linaje, accesos y modelos en producción.
+    - name: Preparación para la IA
+      text: Comprobamos si los datos y la plataforma soportan los casos de IA que quieres abordar, incluidos asistentes y agentes.
+    - name: Lectura regulatoria
+      text: Situamos tu madurez frente a lo que piden BCBS 239, DORA, Solvencia II o el AI Act, según tu sector.
+    - name: Línea base repetible
+      text: Te dejamos el modelo y las métricas para repetir la evaluación y medir el avance con el mismo criterio.
+approach:
+  title: Cómo lo hacemos
+  steps:
+    - name: Acotar
+      text: Fijamos el alcance, las dimensiones y las áreas a evaluar, y quién aporta cada evidencia.
+    - name: Recoger evidencias
+      text: Combinamos entrevistas y cuestionarios dirigidos con una revisión técnica de plataforma, datos y procesos.
+    - name: Puntuar y validar
+      text: Puntuamos cada dimensión con criterios explícitos y validamos los resultados con sus responsables.
+    - name: Priorizar brechas
+      text: Convertimos las brechas en acciones ordenadas por su impacto en los objetivos de negocio.
+deliverables:
+  title: Qué te llevas
+  items:
+    - Informe de madurez por dimensión, con nivel actual y nivel objetivo
+    - Mapa de brechas y riesgos con las evidencias que lo sostienen
+    - Evaluación de preparación para la IA de los casos de uso prioritarios
+    - Lectura frente a los requisitos regulatorios de tu sector
+    - Plan de acción priorizado para cerrar las brechas
+    - Modelo de evaluación y cuestionario para repetir la medición
+outcome:
+  title: Resultado
+  text: Una foto compartida y defendible de dónde estáis, que separa lo urgente de lo accesorio y permite medir con el mismo criterio cuánto se ha avanzado.
+useCases:
+  title: Dónde lo aplicamos
+  items:
+    - sector: telco
+      name: Dato de cliente y de red
+      text: Evaluación de si los datos de cliente, uso y red están listos para modelos de churn, next-best-offer y mantenimiento predictivo.
+    - sector: banking
+      name: Dato de riesgo y BCBS 239
+      text: Evaluación del gobierno, la arquitectura y la calidad del dato de riesgo frente a los principios de agregación y reporting.
+    - sector: insurance
+      name: Dato actuarial y de siniestros
+      text: Evaluación de la calidad y la trazabilidad de los datos que alimentan pricing, reservas y reporting de Solvencia II e IFRS 17.
+technologies:
+  - Google Cloud
+  - Microsoft Azure
+  - AWS
+  - BigQuery
+  - Microsoft Fabric
+  - Databricks
+  - Snowflake
+  - Power BI
+related:
+  - data-ai-strategy
+  - data-ai-governance
+  - data-engineering-quality
+faq:
+  - q: ¿En qué se diferencia del diagnóstico de 2–4 semanas?
+    a: El diagnóstico es el punto de partida rápido e incluye una lectura de madurez para priorizar casos de uso. La evaluación de madurez profundiza con evidencias técnicas y deja una línea base formal, útil para un plan director, una auditoría interna o una conversación con el supervisor.
+  - q: ¿Nos compararéis con otras empresas del sector?
+    a: No damos rankings frente a competidores sin datos que los sostengan. Comparamos tu situación con lo que exigen tus objetivos y la regulación de tu sector, que es lo que sirve para decidir.
+  - q: ¿Cuánto esfuerzo pide a nuestros equipos?
+    a: Entrevistas y talleres puntuales con responsables de negocio, datos y tecnología, y acceso de lectura a documentación y plataforma. Cualquier acceso a datos se acuerda antes con tus equipos de seguridad.
+cta:
+  title: ¿Necesitas una foto fiable de tu punto de partida?
+  text: Empieza por un diagnóstico de 2–4 semanas y decide después si necesitas una evaluación completa con línea base.
+  button: Solicita un diagnóstico

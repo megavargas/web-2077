@@ -1,0 +1,86 @@
+key: ai-agents
+pillar: ai
+order: 1
+slug: agentes-ia
+name: Agentes de IA
+summary: Agentes que ejecutan pasos de un proceso real sobre tus sistemas, con la persona decidiendo donde importa.
+seo:
+  title: Agentes de IA en producción para procesos reales
+  description: Diseñamos y desplegamos agentes de IA generativa que ejecutan tareas sobre tus sistemas, con límites claros, supervisión humana y métricas de negocio.
+intro: Agentes que consultan, preparan y ejecutan pasos de un proceso sobre tus sistemas. Empezamos por el proceso y el indicador que quieres mover, no por la herramienta.
+problem:
+  title: El problema
+  text: Muchos agentes se quedan en demostración porque se colocan encima de un proceso que nadie ha rediseñado. No está claro qué puede hacer el agente por sí solo, qué decide una persona ni cómo se mide si funciona. Sin esas respuestas, riesgos y negocio no dan el paso a producción.
+capabilities:
+  title: Qué hacemos
+  items:
+    - name: Selección del proceso
+      text: Elegimos procesos con volumen, reglas conocidas y un indicador claro, y descartamos los que no necesitan un agente.
+    - name: Rediseño del flujo
+      text: Definimos qué pasos hace el agente, cuáles revisa una persona y dónde se traspasa el caso.
+    - name: Integración con sistemas
+      text: Conectamos el agente a CRM, core y gestores documentales mediante APIs con permisos mínimos.
+    - name: Orquestación de varios agentes
+      text: Repartimos el trabajo entre agentes especializados cuando un solo agente no basta.
+    - name: Supervisión humana
+      text: Ponemos puntos de aprobación y bandejas de revisión en las decisiones que lo requieren.
+    - name: Medición en producción
+      text: Medimos calidad, tiempo, coste por tarea e impacto en el indicador de negocio.
+approach:
+  title: Cómo lo hacemos
+  steps:
+    - name: Elegir y medir
+      text: Fijamos el proceso, su indicador de partida y el límite de lo que el agente puede hacer.
+    - name: Rediseñar
+      text: Dibujamos el flujo nuevo con las herramientas, permisos y traspasos a persona de cada paso.
+    - name: Construir y evaluar
+      text: Construimos el agente y lo probamos con casos reales del proceso antes de tocar sistemas productivos.
+    - name: Desplegar por fases
+      text: Pasamos de modo sombra a supervisado y a autonomía acotada a medida que los resultados lo justifican.
+deliverables:
+  title: Qué te llevas
+  items:
+    - Mapa del proceso rediseñado con la frontera entre agente y persona
+    - Agente en producción integrado con tus sistemas
+    - Catálogo de herramientas y permisos de cada agente
+    - Conjunto de casos de evaluación y resultados de las pruebas
+    - Cuadro de seguimiento de calidad, coste e impacto
+    - Manual de operación y plan de escalado a nuevas tareas
+outcome:
+  title: Resultado
+  text: Un proceso que se resuelve antes y con menos trabajo manual, con decisiones humanas donde importan y un coste por tarea conocido.
+useCases:
+  title: Dónde lo aplicamos
+  items:
+    - sector: telco
+      name: Resolución de incidencias de cliente
+      text: Un agente que consulta facturación y estado del servicio, propone la solución y abre la gestión, con traspaso a una persona cuando hace falta.
+    - sector: banking
+      name: Preparación de alertas de AML
+      text: Un agente que reúne el contexto de cada alerta de prevención del blanqueo y redacta el análisis para que el analista decida.
+    - sector: insurance
+      name: Tramitación de siniestros sencillos
+      text: Un agente que comprueba la cobertura, pide la documentación que falta y propone el siguiente paso al tramitador.
+technologies:
+  - Gemini
+  - Vertex AI
+  - Agent Development Kit
+  - Azure OpenAI
+  - Microsoft Foundry
+  - Amazon Bedrock
+  - Model Context Protocol
+related:
+  - process-automation
+  - ai-evaluation-governance
+  - use-case-portfolio
+faq:
+  - q: ¿Qué procesos tienen sentido para un agente?
+    a: Los que tienen volumen, pasos repetibles con algo de criterio y un indicador que se pueda medir. Si basta una regla o una automatización clásica, lo decimos y no construimos un agente.
+  - q: ¿Qué pasa si el agente se equivoca?
+    a: Cada agente tiene permisos limitados y puntos de aprobación humana en las acciones con impacto. Todo queda registrado, así que se puede revisar cualquier decisión y deshacerla si hace falta.
+  - q: ¿Cuánto se tarda en tener un agente en producción?
+    a: Depende del proceso y de las integraciones. Un diagnóstico de 2–4 semanas fija el alcance y el plan; después desplegamos por fases, empezando en modo sombra para medir antes de dar autonomía.
+cta:
+  title: ¿Qué proceso pondrías en manos de un agente?
+  text: Empieza por un diagnóstico de 2–4 semanas y sal con el proceso elegido, su business case y el plan para llevarlo a producción.
+  button: Solicita un diagnóstico

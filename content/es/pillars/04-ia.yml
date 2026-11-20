@@ -14,17 +14,6 @@ problem:
   text: La mayoría de iniciativas de IA generativa no pasan del piloto. Faltan datos de calidad, integración con los procesos y controles que convenzan a riesgos, seguridad y cumplimiento.
 includes:
   title: Qué incluye
-  items:
-    - name: IA generativa y agentes
-      text: Agentes que ejecutan tareas sobre sistemas reales, con supervisión humana donde hace falta.
-    - name: Asistentes sobre conocimiento interno
-      text: Respuestas basadas en vuestra documentación, con fuentes citadas y control de acceso.
-    - name: Automatización de procesos
-      text: Lectura, clasificación y extracción de documentos integradas en el flujo de trabajo.
-    - name: MLOps y LLMOps
-      text: Despliegue, versionado, monitorización y control de costes de los modelos en producción.
-    - name: Evaluación, seguridad y gobierno de agentes
-      text: Pruebas de calidad, límites de actuación, trazabilidad y registro para auditoría.
 outcome:
   title: Resultado
   text: Casos de IA en producción con métricas de negocio, costes conocidos y controles documentados.

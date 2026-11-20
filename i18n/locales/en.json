@@ -41,7 +41,12 @@
     "previous": "Previous",
     "next": "Next",
     "services": "Services",
-    "readMore": "Read more"
+    "readMore": "Read more",
+    "breadcrumb": "Breadcrumb",
+    "inPillar": "More in {pillar}",
+    "related": "Related services",
+    "pillarOverview": "{pillar} overview",
+    "sectorLabel": "Industry: {sector}"
   },
   "form": {
     "name": "Full name",
@@ -89,5 +94,10 @@
     },
     "unavailable": "We cannot receive the form right now. Write to us at {email} and we will get back to you.",
     "error": "Your message could not be sent. Please try again or write to us at {email}."
+  },
+  "clients": {
+    "pause": "Pause",
+    "play": "Play",
+    "list": "Clients"
   }
 }

@@ -14,17 +14,6 @@ problem:
   text: Most generative AI initiatives never get past the pilot. What is missing is quality data, integration with processes and controls that satisfy risk, security and compliance.
 includes:
   title: What it includes
-  items:
-    - name: Generative AI and agents
-      text: Agents that carry out tasks on real systems, with human oversight where needed.
-    - name: Assistants over internal knowledge
-      text: Answers grounded in your documentation, with cited sources and access control.
-    - name: Process automation
-      text: Document reading, classification and extraction built into the workflow.
-    - name: MLOps and LLMOps
-      text: Deployment, versioning, monitoring and cost control of models in production.
-    - name: Evaluation, security and agent governance
-      text: Quality testing, action limits, traceability and audit logging.
 outcome:
   title: Outcome
   text: AI use cases in production, with business metrics, known costs and documented controls.

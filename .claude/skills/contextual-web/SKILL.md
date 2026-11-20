@@ -38,7 +38,7 @@ Si `base/DESIGN.md` y este skill discrepan, manda este skill (ya resuelve los co
 5. **Tipografía en tres papeles fijos**: `font-display` (titulares, peso 300 en grande / 400 en secciones y tarjetas), `font-body` (párrafos), `font-mono` (etiquetas, nav, botones, metadatos — en mayúsculas, 14px). Nunca titulares completos en negrita.
 6. **Solo escala tipográfica del sistema** (`text-caption` … `text-display-lg`), no tamaños arbitrarios.
 7. **Accesibilidad no se negocia aunque DESIGN.md diga "sin anillo de foco"**: todo elemento interactivo tiene `:focus-visible` visible (rectangular). `steel-mid` (#7f8ca3, 5,3:1 sobre el fondo marino) para texto secundario; en superficie `carbon` baja a 4,6:1; para metadatos pequeños usa `fog-light`.
-8. **Imágenes**: fotografía oscura de infraestructura/arquitectura, a sangre, sin radio. Sin personas, ilustraciones, 3D ni iconografía decorativa. Iconos solo de trazo fino monocromo (lucide); logos de partners en plano monocromo (simple-icons).
+8. **Imágenes**: fotografía oscura de infraestructura/arquitectura, a sangre, sin radio. Sin personas, ilustraciones, 3D ni iconografía decorativa. Iconos solo de trazo fino monocromo (lucide); logos de partners en plano monocromo (simple-icons) y logos de clientes planos en el color del texto (`SectionClients`).
 
 ## Flujo de trabajo
 

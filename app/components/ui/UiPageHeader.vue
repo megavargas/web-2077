@@ -1,9 +1,13 @@
 <script setup lang="ts">
-const { eyebrow, title, intro } = defineProps<{
+const localePath = useLocalePath()
+const { eyebrow, title, intro, crumbs } = defineProps<{
   eyebrow: string
   title: string
   intro?: string
+  /** Migas de pan antes del eyebrow (páginas de tercer nivel): enlaces a los niveles superiores */
+  crumbs?: { label: string; to: Parameters<typeof localePath>[0] }[]
 }>()
+const { t } = useI18n()
 </script>
 
 <template>
@@ -23,7 +27,21 @@ const { eyebrow, title, intro } = defineProps<{
       <div class="absolute inset-0 bg-linear-to-r from-void-black via-transparent to-transparent" />
     </div>
     <UiContainer class="flex flex-col gap-6">
-      <p class="font-mono text-caption text-fog-light uppercase">{{ eyebrow }}</p>
+      <nav v-if="crumbs?.length" :aria-label="t('labels.breadcrumb')">
+        <ol class="flex flex-wrap items-center gap-x-2 gap-y-1 font-mono text-caption uppercase">
+          <li v-for="c in crumbs" :key="c.label" class="flex items-center gap-2">
+            <NuxtLink
+              :to="localePath(c.to)"
+              class="text-fog-light underline-offset-4 hover:text-bone-white hover:underline"
+            >
+              {{ c.label }}
+            </NuxtLink>
+            <span aria-hidden="true" class="text-steel-mid">/</span>
+          </li>
+          <li class="text-bone-white">{{ eyebrow }}</li>
+        </ol>
+      </nav>
+      <p v-else class="font-mono text-caption text-fog-light uppercase">{{ eyebrow }}</p>
       <h1
         id="page-title"
         class="max-w-5xl font-display text-heading font-light text-balance wrap-break-word hyphens-auto text-bone-white sm:text-heading-lg lg:text-display"

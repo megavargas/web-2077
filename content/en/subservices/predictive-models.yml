@@ -1,0 +1,83 @@
+key: predictive-models
+pillar: intelligence
+order: 3
+slug: predictive-models
+name: Predictive models
+summary: Forecasting demand, churn, risk or fraud with explainable models that are used in day-to-day operations.
+seo:
+  title: Explainable predictive models in production
+  description: Predictive models for telecoms, banking and insurance. Forecasting, churn, risk and fraud, with explainability, validation-ready documentation and monitoring.
+intro: We build forecasting and scoring models that reach the process where decisions are made, with explanations the business understands and documentation ready for validation.
+problem:
+  title: The problem
+  text: Many models never leave the notebook. They work in testing, but nobody integrates them into the CRM, the risk engine or the planning cycle. Those that do reach production degrade without anyone noticing, and in banking and insurance a model that cannot be explained or documented will not pass validation.
+capabilities:
+  title: What we do
+  items:
+    - name: Time-series forecasting
+      text: Demand, call volumes, traffic or portfolio, with confidence intervals rather than a single number.
+    - name: Propensity and churn models
+      text: We score each customer's likelihood to leave, buy or default so that action can be prioritised.
+    - name: Fraud and anomaly detection
+      text: We flag unusual transactions and patterns, balancing detection against false positives.
+    - name: Explainable predictions
+      text: Every score comes with the factors behind it, for the people who use it and the people who validate it.
+    - name: Process integration
+      text: We serve predictions in batch or near real time to the system where the decision is taken.
+    - name: Monitoring and retraining
+      text: We track data drift and performance, and retrain against agreed criteria.
+approach:
+  title: How we do it
+  steps:
+    - name: Define the decision
+      text: We set what is being predicted, for which action, and which business metric will measure success.
+    - name: Build and validate
+      text: We train, compare against a simple baseline and validate on data the model has not seen.
+    - name: Document
+      text: We write the model card covering data, assumptions, limitations and explainability, ready for internal review.
+    - name: Deploy and monitor
+      text: We embed the model in the process, measure its real effect and keep it under control.
+deliverables:
+  title: What you get
+  items:
+    - Trained model, deployed and integrated into the target system
+    - Model card covering data, assumptions, limitations and validation metrics
+    - Explainability report, both global and per prediction
+    - Performance and drift monitoring dashboard
+    - Retraining and model retirement procedure
+outcome:
+  title: Outcome
+  text: Predictions that change what teams do every day, with monitored performance and documentation that stands up to risk and audit review.
+useCases:
+  title: Where we apply it
+  items:
+    - sector: telco
+      name: Churn prediction
+      text: Scoring each customer's churn risk and prioritising the retention actions with the greatest expected effect.
+    - sector: banking
+      name: Explainable credit scoring
+      text: Documented, explainable creditworthiness models, prepared for internal validation and the requirements of the AI Act.
+    - sector: insurance
+      name: Pricing and claims fraud
+      text: Estimating risk for pricing alongside the actuarial team and flagging suspicious claims for human review.
+technologies:
+  - Vertex AI
+  - BigQuery ML
+  - Azure Machine Learning
+  - Databricks
+  - Python
+related:
+  - mlops-llmops
+  - decision-intelligence
+  - advanced-analytics
+faq:
+  - q: Is our model high-risk under the AI Act?
+    a: It depends on the use. Assessing the creditworthiness of individuals and pricing life and health insurance are high-risk uses; detecting financial fraud falls outside that category. We assess each case with your legal and compliance teams.
+  - q: Machine learning or classical statistical models?
+    a: Whichever performs best at the level of explainability the case requires. We always compare against a simple baseline, and if a more complex model does not clearly beat it, the extra validation and maintenance cost is not worth it.
+  - q: When will the business see the effect?
+    a: Once the model is embedded in the process, not before. That is why we plan a controlled test from the start, comparing model-guided action with the current way of working.
+cta:
+  title: Which decision would improve if you could see it coming?
+  text: In a two-to-four-week assessment we review your candidate use cases, the data available and the regulatory requirements of each, and choose the first one.
+  button: Request an assessment

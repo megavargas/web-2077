@@ -1,0 +1,83 @@
+key: lakehouse-warehouse
+pillar: data
+order: 2
+slug: lakehouse-data-warehouse
+name: Lakehouse and data warehouse
+summary: Domain data models and clear layers, so every department works from the same number.
+seo:
+  title: 'Lakehouse and data warehouse: domain data modelling'
+  description: We design lakehouses and data warehouses on BigQuery, Snowflake, Databricks or Fabric, with domain models, clear layers and data products that have owners.
+intro: We model your data around the decisions and reports that matter, so finance, risk and the business all work from the same number.
+problem:
+  title: The problem
+  text: The data is already in the cloud, but each department models it its own way and the figures still do not reconcile. Tables are copied for every report and nobody knows which one is right. The first AI use case runs into the same problem as the last dashboard.
+capabilities:
+  title: What we do
+  items:
+    - name: Domain data models
+      text: Customer, contract, risk, policy or claim defined once, with a business meaning and an owner.
+    - name: Clearly separated layers
+      text: Raw, cleansed and consumption-ready data, each layer with its own rules and purpose.
+    - name: Lakehouse or warehouse, on merit
+      text: We choose the pattern based on your data types, use cases and team, not on fashion.
+    - name: Open formats
+      text: Apache Iceberg or Delta Lake where portability and access from several engines matter.
+    - name: Data products
+      text: Published datasets with an owner, documentation and a service level, ready for BI, models and AI.
+approach:
+  title: How we do it
+  steps:
+    - name: Start from the decisions
+      text: We identify the reports, metrics and use cases the model must support, including regulatory reporting.
+    - name: Model the domains
+      text: We design the conceptual and logical model for each domain and agree the definitions with the business.
+    - name: Build the layers
+      text: We implement the raw, cleansed and consumption layers on the chosen platform, starting with one domain.
+    - name: Publish and extend
+      text: We put the first data product into production and roll the pattern out to the other domains.
+deliverables:
+  title: What you get
+  items:
+    - Conceptual and logical data model for each domain
+    - Layer design with modelling and naming standards
+    - Data product catalogue with owners and service levels
+    - First domain in production on a lakehouse or warehouse
+    - Technical documentation and lineage from source to consumption
+outcome:
+  title: Outcome
+  text: One version of every figure, reusable by reports, models and agents, and a pattern that lets you add domains without starting from scratch.
+useCases:
+  title: Where we apply it
+  items:
+    - sector: telco
+      name: A single customer view
+      text: Billing, usage, network and service data joined in one model that serves marketing, retention and operations.
+    - sector: banking
+      name: Risk data model
+      text: Risk data aggregated and reconciled back to source, in line with the BCBS 239 principles.
+    - sector: insurance
+      name: Shared policy and claims model
+      text: One model for actuarial, finance and the business, underpinning IFRS 17 and Solvency II reporting.
+technologies:
+  - BigQuery
+  - Snowflake
+  - Databricks
+  - Microsoft Fabric
+  - dbt
+  - Apache Iceberg
+  - Delta Lake
+related:
+  - cloud-data-platforms
+  - data-engineering-quality
+  - semantic-layer
+faq:
+  - q: Do we need a lakehouse, or is a data warehouse enough?
+    a: If most of your data is structured and reporting is the main use, a well-modelled warehouse is usually enough. A lakehouse pays off when semi-structured data, large volumes and data science or AI work all share the same data. We decide with your use cases on the table.
+  - q: When will we have useful data?
+    a: We work domain by domain and choose the first one so that it reaches production quickly with a specific use. The timeline depends on the sources and their quality, and we set it during the assessment rather than guessing.
+  - q: Will this lock us into one vendor?
+    a: Less than it used to. With open formats such as Apache Iceberg or Delta Lake, the same data can be read by several engines. The model and the logic also live in version-controlled code, not inside a tool.
+cta:
+  title: How many versions of the same figure are going round your organisation?
+  text: A 2–4 week assessment identifies your priority domains and the data model they need.
+  button: Request an assessment

@@ -1,0 +1,85 @@
+key: maturity-assessment
+pillar: strategy
+order: 2
+slug: maturity-assessment
+name: Maturity assessment
+summary: An evidence-based measure of your data, analytics and AI maturity, with a baseline to track progress over time.
+seo:
+  title: Data and AI maturity assessment
+  description: We assess your maturity in data, analytics, AI, organisation and governance using evidence from your systems, not just surveys, and leave a measurable baseline.
+intro: We measure where you stand in data, analytics and AI using evidence from your systems and teams, against what your business goals and your sector's regulation demand.
+problem:
+  title: The problem
+  text: Many maturity assessments are self-perception surveys that produce a score and little else. They do not say whether the data a specific use case needs is ready, they rarely look at regulation, and they are no use for measuring progress a year later.
+capabilities:
+  title: What we do
+  items:
+    - name: Dimension-based model
+      text: We assess strategy, data, platform, analytics, AI, organisation and governance with defined levels and observable criteria.
+    - name: Evidence, not just interviews
+      text: We check what people tell us against what is actually there in architecture, data quality, lineage, access and live models.
+    - name: AI readiness
+      text: We test whether your data and platform can support the AI use cases you want to pursue, including assistants and agents.
+    - name: Regulatory lens
+      text: We read your maturity against what BCBS 239, DORA, Solvency II or the AI Act require, depending on your sector.
+    - name: Repeatable baseline
+      text: We hand over the model and metrics so you can rerun the assessment and measure progress on the same basis.
+approach:
+  title: How we do it
+  steps:
+    - name: Scope
+      text: We agree the scope, dimensions and areas to assess, and who provides each piece of evidence.
+    - name: Gather evidence
+      text: We combine interviews and targeted questionnaires with a technical review of platform, data and processes.
+    - name: Score and validate
+      text: We score each dimension against explicit criteria and validate the results with the people accountable.
+    - name: Prioritise the gaps
+      text: We turn the gaps into actions ranked by their impact on business objectives.
+deliverables:
+  title: What you get
+  items:
+    - Maturity report by dimension, with current and target levels
+    - Map of gaps and risks, with the evidence behind them
+    - AI readiness assessment for the priority use cases
+    - Reading against your sector's regulatory requirements
+    - Prioritised action plan to close the gaps
+    - Assessment model and questionnaire to repeat the exercise
+outcome:
+  title: Outcome
+  text: A shared, defensible picture of where you stand, one that separates the urgent from the incidental and lets you measure progress on the same basis.
+useCases:
+  title: Where we apply it
+  items:
+    - sector: telco
+      name: Customer and network data
+      text: An assessment of whether customer, usage and network data is ready for churn, next-best-offer and predictive maintenance models.
+    - sector: banking
+      name: Risk data and BCBS 239
+      text: An assessment of the governance, architecture and quality of risk data against the aggregation and reporting principles.
+    - sector: insurance
+      name: Actuarial and claims data
+      text: An assessment of the quality and traceability of the data behind pricing, reserving and Solvency II and IFRS 17 reporting.
+technologies:
+  - Google Cloud
+  - Microsoft Azure
+  - AWS
+  - BigQuery
+  - Microsoft Fabric
+  - Databricks
+  - Snowflake
+  - Power BI
+related:
+  - data-ai-strategy
+  - data-ai-governance
+  - data-engineering-quality
+faq:
+  - q: How is this different from the 2–4 week assessment?
+    a: The 2–4 week assessment is the quick starting point and includes a maturity reading to prioritise use cases. The maturity assessment goes deeper with technical evidence and leaves a formal baseline, useful for a data master plan, an internal audit or a conversation with your supervisor.
+  - q: Will you benchmark us against other companies in our sector?
+    a: We do not produce rankings against competitors without data to back them up. We compare your position with what your objectives and your sector's regulation require, which is what you need to make decisions.
+  - q: How much time does it take from our teams?
+    a: A few interviews and workshops with business, data and technology leads, plus read access to documentation and the platform. Any access to data is agreed with your security teams beforehand.
+cta:
+  title: Need a reliable picture of where you stand?
+  text: Start with a 2–4 week assessment, then decide whether you need a full maturity assessment with a formal baseline.
+  button: Request an assessment

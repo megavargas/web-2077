@@ -1,0 +1,84 @@
+key: semantic-layer
+pillar: intelligence
+order: 1
+slug: bi-capa-semantica
+name: BI y capa semántica
+summary: Cada métrica se define una vez y da la misma cifra en todos los informes, herramientas y asistentes de IA.
+seo:
+  title: 'BI y capa semántica: métricas únicas y gobernadas'
+  description: Capa semántica y BI para Telco, Banca y Seguros. Métricas definidas una vez, trazables hasta el origen y listas para cuadros de mando y asistentes de IA.
+intro: Definimos tus métricas de negocio una sola vez, con su dueño, su fórmula y su linaje, para que cuadros de mando, hojas de cálculo y asistentes de IA den la misma cifra.
+problem:
+  title: El problema
+  text: Cada área calcula «cliente activo», «margen» o «siniestralidad» a su manera, y el comité dedica la primera media hora a conciliar cifras. La lógica está repartida en cientos de informes y extracciones que nadie se atreve a tocar. Y si se conecta un asistente de IA sobre ese desorden, las respuestas contradictorias se multiplican.
+capabilities:
+  title: Qué hacemos
+  items:
+    - name: Inventario y racionalización de informes
+      text: Localizamos los informes y métricas existentes, detectamos duplicados y decidimos qué se conserva, qué se fusiona y qué se retira.
+    - name: Diccionario de métricas
+      text: Acordamos con cada área la definición, la fórmula, el dueño y el nivel de detalle de los indicadores críticos.
+    - name: Modelo semántico gobernado
+      text: Implementamos las métricas en una capa reutilizable (modelo semántico de Power BI, LookML o dbt) con pruebas y control de versiones.
+    - name: Seguridad por fila y columna
+      text: Aplicamos los permisos en la capa semántica para que cada usuario vea solo lo que le corresponde, use la herramienta que use.
+    - name: Contexto para la IA
+      text: Exponemos métricas y descripciones a asistentes y agentes para que consulten definiciones acordadas, no tablas en bruto.
+    - name: Cuadros de mando de dirección
+      text: Rediseñamos los cuadros de mando clave sobre la nueva capa, con menos páginas y más foco en las decisiones.
+approach:
+  title: Cómo lo hacemos
+  steps:
+    - name: Inventariar
+      text: Analizamos el uso real de los informes y la lógica existente para saber qué métricas importan y dónde divergen.
+    - name: Acordar
+      text: Cerramos las definiciones con los dueños de negocio y las documentamos en un glosario único.
+    - name: Modelar
+      text: Construimos la capa semántica con pruebas automáticas, control de versiones y permisos.
+    - name: Migrar y retirar
+      text: Llevamos los informes prioritarios a la nueva capa y retiramos los duplicados de forma ordenada.
+deliverables:
+  title: Qué te llevas
+  items:
+    - Inventario de informes y métricas con la recomendación de conservar, fusionar o retirar
+    - Glosario de métricas con definición, fórmula, dueño y linaje
+    - Capa semántica versionada, con pruebas y seguridad por fila
+    - Cuadros de mando de dirección rediseñados sobre la capa
+    - Guía para proponer, aprobar y publicar cambios en las métricas
+outcome:
+  title: Resultado
+  text: Una sola cifra por indicador en comités, informes y asistentes de IA, y menos tiempo conciliando datos para dedicarlo a decidir.
+useCases:
+  title: Dónde lo aplicamos
+  items:
+    - sector: telco
+      name: KPIs comerciales y de red unificados
+      text: Altas, bajas, ARPU y disponibilidad de red con la misma definición en marketing, finanzas y operaciones.
+    - sector: banking
+      name: Métricas de riesgo trazables
+      text: Indicadores de riesgo y de negocio con linaje hasta el origen, en línea con los principios de BCBS 239.
+    - sector: insurance
+      name: Indicadores técnicos comunes
+      text: Primas, siniestralidad y ratio combinado definidos igual para negocio, actuarial y finanzas.
+technologies:
+  - Power BI
+  - Microsoft Fabric
+  - Looker
+  - BigQuery
+  - dbt
+  - Snowflake
+related:
+  - lakehouse-warehouse
+  - self-service-analytics
+  - ai-agents
+faq:
+  - q: ¿Necesitamos una herramienta nueva para tener una capa semántica?
+    a: Normalmente no. Power BI, Looker y dbt ya incluyen una capa semántica; el trabajo está en acordar las definiciones y ordenarlas. Si conviven varias herramientas, valoramos si compensa una capa común a todas.
+  - q: ¿Por dónde se empieza?
+    a: Por las métricas que se discuten en el comité de dirección o en un área concreta. Ese primer bloque se lleva a producción en el primer ciclo de construcción y el resto se incorpora por oleadas, retirando informes duplicados en cada una.
+  - q: ¿Por qué importa la capa semántica para la IA?
+    a: Un asistente que consulta tablas en bruto tiene que adivinar qué significa «ingresos» o «cliente activo». Si consulta una capa semántica, usa la definición acordada y respeta los permisos de cada usuario. Es la forma más directa de que la IA responda con las cifras oficiales.
+cta:
+  title: ¿Cuántas versiones tienes de la misma métrica?
+  text: En un diagnóstico de 2–4 semanas revisamos tus informes críticos, te decimos dónde divergen las cifras y por dónde empezar.
+  button: Solicita un diagnóstico

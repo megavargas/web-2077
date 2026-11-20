@@ -14,17 +14,6 @@ problem:
   text: Cuadros de mando que nadie mira, métricas que cada área define a su manera y análisis que llegan cuando la decisión ya está tomada.
 includes:
   title: Qué incluye
-  items:
-    - name: BI y capa semántica
-      text: Definiciones únicas de las métricas, reutilizables en todos los informes y herramientas.
-    - name: Analítica avanzada
-      text: Segmentación, atribución y análisis de causas para entender qué está pasando y por qué.
-    - name: Modelos predictivos
-      text: Previsión de demanda, abandono, riesgo o fraude, integrada en los procesos.
-    - name: Decision intelligence
-      text: Cuadros de mando que recomiendan la siguiente acción, no solo muestran el dato.
-    - name: Analítica de autoservicio
-      text: Herramientas y formación para que cada área responda sus propias preguntas con datos fiables.
 outcome:
   title: Resultado
   text: Métricas comunes, análisis a tiempo y modelos que se usan en la operación diaria.

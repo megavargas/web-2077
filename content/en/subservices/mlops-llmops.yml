@@ -1,0 +1,86 @@
+key: mlops-llmops
+pillar: ai
+order: 4
+slug: mlops-llmops
+name: MLOps and LLMOps
+summary: Deployment, versioning, monitoring and cost control for predictive and generative models in production.
+seo:
+  title: MLOps and LLMOps for models and generative AI
+  description: 'We take predictive and generative AI models into production and run them: automated deployment, versioning, quality monitoring and cost per use case.'
+intro: One way to deploy, monitor and maintain both predictive and generative models. You will know which model decides what, on which version and at what cost.
+problem:
+  title: The problem
+  text: Every model goes live in a different way, by hand and with no version history. Nobody notices when a model loses accuracy, generative AI spend grows without anyone knowing which use case drives it, and when audit asks which version was live, it is hard to reconstruct.
+capabilities:
+  title: What we do
+  items:
+    - name: Model inventory and registry
+      text: A single catalogue of models, prompts and versions with their owner, status and approvals.
+    - name: Automated deployment
+      text: Continuous integration and deployment with testing and evaluation before every production change.
+    - name: Quality monitoring
+      text: Alerts for data drift, loss of accuracy or deteriorating generative answers.
+    - name: Generative AI tracing
+      text: A record of every call, retrieval and tool use, for debugging and audit.
+    - name: Cost per use case
+      text: Compute and generative model spend broken down by use case, team and business unit.
+    - name: Retraining and rollback
+      text: Scheduled retraining cycles and a quick return to the previous version if something fails.
+approach:
+  title: How we do it
+  steps:
+    - name: Assess the starting point
+      text: We inventory your models and AI applications, how they are deployed today and where the risks lie.
+    - name: Design the platform
+      text: We define the registry, environments, deployment pipelines, permissions and metrics to monitor.
+    - name: Industrialise the first cases
+      text: We move one or two real models onto the platform and leave the pattern ready for the rest.
+    - name: Run and optimise
+      text: We monitor quality and cost, retrain and optimise, as a managed service or alongside your team.
+deliverables:
+  title: What you get
+  items:
+    - Inventory of models and AI applications with status and owner
+    - MLOps and LLMOps platform deployed in your cloud
+    - Deployment pipelines with automated testing and evaluation
+    - Dashboard monitoring quality, drift and cost
+    - Runbooks for operations, incidents and rollback
+    - Managed service or handover to your team
+outcome:
+  title: Outcome
+  text: Models that reach production sooner and stay reliable, with known costs and the traceability that risk and audit expect.
+useCases:
+  title: Where we apply it
+  items:
+    - sector: telco
+      name: Churn and network models
+      text: Retraining and drift monitoring for churn and predictive maintenance models, which shift with every campaign.
+    - sector: banking
+      name: Evidence for internal validation
+      text: Versions, training data and results recorded so that validation and audit teams can review every model.
+    - sector: insurance
+      name: Pricing and document processes
+      text: Pricing models with approved versions and rollback, and cost per claim for generative AI processes.
+technologies:
+  - Vertex AI
+  - MLflow
+  - Databricks
+  - Azure Machine Learning
+  - Microsoft Foundry
+  - Amazon SageMaker
+  - Langfuse
+related:
+  - ai-evaluation-governance
+  - dataops-observability
+  - cloud-data-platforms
+faq:
+  - q: Do we need MLOps if we only have a handful of models?
+    a: With few models, the essentials are enough, such as version control, reproducible deployment and basic alerts. We size it to grow with you rather than building an oversized platform.
+  - q: How do we keep generative AI costs under control?
+    a: We measure the cost of every call and allocate it by use case. That shows where to adjust the model, caching or context size to cut spend without losing quality.
+  - q: Do you run it, or does our team?
+    a: Either works. We can run it as a managed service, or train your team and hand over the platform with documentation and runbooks.
+cta:
+  title: Do you know how many models you have in production, and what they cost?
+  text: Start with a 2–4 week assessment and come away with the inventory, the main risks and a plan to industrialise your models.
+  button: Request an assessment

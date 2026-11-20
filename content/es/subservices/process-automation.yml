@@ -1,0 +1,84 @@
+key: process-automation
+pillar: ai
+order: 3
+slug: automatizacion-procesos
+name: Automatización de procesos
+summary: Lectura, clasificación y validación de documentos integradas en el flujo, con las excepciones en manos de una persona.
+seo:
+  title: Automatización de procesos y documentos con IA
+  description: 'Automatizamos procesos con mucha carga documental: lectura, clasificación, extracción y validación con IA, integradas en tus sistemas, con revisión humana.'
+intro: Automatizamos procesos con mucha carga documental de principio a fin. La IA lee, clasifica y valida; una persona revisa solo lo que lo necesita.
+problem:
+  title: El problema
+  text: Altas, préstamos o siniestros siguen dependiendo de personas que leen documentos y teclean datos en otro sistema. Las automatizaciones por plantillas se rompen en cuanto cambia el formato, y sin integración con los sistemas el ahorro se queda en una demostración.
+capabilities:
+  title: Qué hacemos
+  items:
+    - name: Medición del proceso
+      text: Medimos volumen, tipos de documento, tiempos y excepciones antes de decidir qué automatizar.
+    - name: Clasificación y extracción
+      text: Modelos que identifican cada documento y extraen sus datos aunque cambien el formato o la calidad.
+    - name: Validación contra sistemas
+      text: Contrastamos lo extraído con póliza, contrato o ficha de cliente y marcamos las discrepancias.
+    - name: Umbrales de confianza
+      text: Decidimos por campo y por tipo de documento qué pasa directo y qué va a revisión.
+    - name: Bandeja de excepciones
+      text: Las dudas llegan a una persona con el documento y el dato señalado, sin parar el resto del flujo.
+    - name: Integración en el core
+      text: Los datos validados entran en tus sistemas sin volver a teclearlos.
+approach:
+  title: Cómo lo hacemos
+  steps:
+    - name: Medir
+      text: Tomamos una muestra real de documentos y medimos dónde se va hoy el tiempo y dónde se producen los errores.
+    - name: Diseñar
+      text: Definimos el flujo, los umbrales de revisión y las validaciones con el equipo que hoy hace el trabajo.
+    - name: Construir
+      text: Construimos la clasificación, la extracción y las validaciones y las probamos con documentos reales.
+    - name: Integrar y operar
+      text: Conectamos con los sistemas, ponemos en marcha la bandeja de excepciones y seguimos los indicadores.
+deliverables:
+  title: Qué te llevas
+  items:
+    - Medición del proceso actual con volúmenes, tiempos y excepciones
+    - Flujo automatizado en producción integrado con tus sistemas
+    - Reglas de validación y umbrales de revisión documentados
+    - Bandeja de revisión humana para las excepciones
+    - Cuadro de seguimiento de volumen, proceso directo, tiempos y errores
+outcome:
+  title: Resultado
+  text: Procesos que se resuelven antes y con menos errores de captura, con el equipo dedicado a los casos que de verdad necesitan criterio.
+useCases:
+  title: Dónde lo aplicamos
+  items:
+    - sector: telco
+      name: Altas, portabilidades y reclamaciones
+      text: Lectura y validación de contratos, solicitudes y reclamaciones para que entren completas en los sistemas comerciales.
+    - sector: banking
+      name: Préstamos y alta de clientes
+      text: Extracción y comprobación de nóminas, escrituras y documentación de identificación, con las discrepancias a revisión.
+    - sector: insurance
+      name: Apertura y liquidación de siniestros
+      text: Lectura de partes, informes periciales y facturas para abrir el siniestro y preparar su liquidación.
+technologies:
+  - Document AI
+  - Gemini
+  - Azure AI Document Intelligence
+  - Azure OpenAI
+  - Amazon Textract
+  - Amazon Bedrock
+related:
+  - ai-agents
+  - mlops-llmops
+  - use-case-portfolio
+faq:
+  - q: ¿Qué diferencia hay con la automatización robótica de procesos (RPA)?
+    a: La RPA repite clics sobre pantallas y se rompe cuando algo cambia. Aquí la IA entiende el documento aunque cambie el formato, y la integración se hace por APIs con validaciones y revisión humana donde hace falta.
+  - q: ¿Qué pasa con los documentos que la IA no entiende bien?
+    a: No pasan directos. Los umbrales de confianza los envían a una persona con el dato dudoso señalado, y sus correcciones sirven para mejorar el modelo.
+  - q: ¿Cómo se calcula el retorno antes de empezar?
+    a: Medimos el proceso actual con una muestra real de documentos y estimamos qué parte puede pasar directa y cuánto tiempo libera. Ese cálculo forma parte del diagnóstico.
+cta:
+  title: ¿Qué proceso se come más horas de tu equipo?
+  text: En un diagnóstico de 2–4 semanas medimos el proceso, estimamos el retorno y te llevas el plan para automatizarlo.
+  button: Solicita un diagnóstico

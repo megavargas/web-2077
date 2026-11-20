@@ -1,0 +1,84 @@
+key: knowledge-assistants
+pillar: ai
+order: 2
+slug: asistentes-conocimiento
+name: Asistentes sobre conocimiento interno
+summary: Respuestas basadas en tu documentación, con la fuente citada y respetando quién puede ver qué.
+seo:
+  title: Asistentes de IA sobre conocimiento interno (RAG)
+  description: Asistentes de IA generativa que responden con tu documentación, citan la fuente y respetan permisos. Para atención, operaciones, riesgos y cumplimiento.
+intro: Asistentes que responden con tu documentación interna, citan de dónde sale cada dato y solo muestran lo que cada persona puede ver.
+problem:
+  title: El problema
+  text: Dar acceso a un chat genérico no cambia cómo trabaja la gente. Cuando el asistente se apoya en documentos caducados, contradictorios o sin dueño, responde con seguridad cosas que no son ciertas, y en banca o seguros eso no se puede permitir.
+capabilities:
+  title: Qué hacemos
+  items:
+    - name: Inventario de fuentes
+      text: Identificamos qué documentos cuentan, quién es su dueño, qué versión está vigente y quién puede verlos.
+    - name: Preparación del conocimiento
+      text: Limpiamos, estructuramos y etiquetamos la documentación para que se recupere el fragmento correcto.
+    - name: Respuestas con fuente
+      text: Cada respuesta enlaza al documento y al apartado de donde sale, y dice cuándo no sabe.
+    - name: Control de acceso
+      text: El asistente hereda los permisos de tus sistemas y no muestra a nadie lo que no puede ver.
+    - name: Integración en el puesto
+      text: Lo llevamos a la herramienta donde ya se trabaja, como Teams, el CRM o la intranet.
+    - name: Medición de calidad
+      text: Medimos acierto y uso con preguntas reales validadas por quienes conocen la respuesta.
+approach:
+  title: Cómo lo hacemos
+  steps:
+    - name: Inventariar
+      text: Recogemos las preguntas que hoy se hacen y las fuentes que las responden, con su dueño y su vigencia.
+    - name: Preparar
+      text: Ordenamos, versionamos y etiquetamos el conocimiento y fijamos cómo se mantiene al día.
+    - name: Construir y medir
+      text: Construimos la recuperación y la generación y medimos la calidad contra un conjunto de preguntas validado por expertos.
+    - name: Desplegar y mejorar
+      text: Lo lanzamos en el puesto de trabajo y usamos la valoración de los usuarios para corregir fuentes y respuestas.
+deliverables:
+  title: Qué te llevas
+  items:
+    - Inventario de fuentes con dueño, vigencia y permisos
+    - Base de conocimiento preparada y proceso para mantenerla al día
+    - Asistente en producción integrado en tus herramientas
+    - Conjunto de preguntas de evaluación y resultados de calidad
+    - Cuadro de uso, calidad y preguntas sin respuesta
+outcome:
+  title: Resultado
+  text: Equipos que encuentran la respuesta correcta en segundos, con la fuente a mano, y menos consultas que escalan a los expertos.
+useCases:
+  title: Dónde lo aplicamos
+  items:
+    - sector: telco
+      name: Apoyo a agentes de atención
+      text: Respuestas sobre tarifas, promociones y procedimientos durante la llamada, con el documento de origen a un clic.
+    - sector: banking
+      name: Consulta de normativa y producto
+      text: Un asistente para gestores y cumplimiento sobre políticas internas, circulares y fichas de producto, con acceso por perfil.
+    - sector: insurance
+      name: Condicionados y manuales de suscripción
+      text: Respuestas para tramitadores y suscriptores sobre coberturas, exclusiones y criterios de aceptación, citando la cláusula.
+technologies:
+  - Gemini Enterprise
+  - Vertex AI Search
+  - Gemini
+  - Azure AI Search
+  - Azure OpenAI
+  - Amazon Bedrock
+related:
+  - data-engineering-quality
+  - ai-evaluation-governance
+  - ai-agents
+faq:
+  - q: ¿Cómo se evita que el asistente invente respuestas?
+    a: Las respuestas se basan solo en tus fuentes, citan el documento de origen y el asistente dice cuándo no tiene información suficiente. Medimos la calidad con preguntas reales antes de salir y después en producción.
+  - q: ¿Qué pasa con la información confidencial?
+    a: El asistente respeta los permisos de los sistemas de origen, los datos se quedan en tu entorno cloud y cada consulta queda registrada. Lo diseñamos con seguridad y protección de datos desde el principio.
+  - q: ¿Por dónde empezamos?
+    a: Por un área con muchas consultas repetidas y documentación razonablemente ordenada, como atención al cliente o un equipo de operaciones. El diagnóstico identifica cuál y qué hay que ordenar antes.
+cta:
+  title: ¿Qué preguntas se repiten en tu organización?
+  text: En un diagnóstico de 2–4 semanas identificamos el área con más retorno, el estado de sus fuentes y el plan para llevar el asistente a producción.
+  button: Solicita un diagnóstico

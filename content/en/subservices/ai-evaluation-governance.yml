@@ -1,0 +1,85 @@
+key: ai-evaluation-governance
+pillar: ai
+order: 5
+slug: ai-evaluation-governance
+name: Agent evaluation and control
+summary: Quality and security testing, action limits and a full record of what agents and models do.
+seo:
+  title: AI agent evaluation, security and control
+  description: We evaluate the quality and security of AI agents and models, set what they may do and who approves, and log every action for risk and audit teams.
+intro: We measure whether AI does its job well, set what it may do without permission and keep a record of every action. Technical controls that satisfy risk, security and audit.
+problem:
+  title: The problem
+  text: An agent that only answers can be wrong; one that acts on systems can be wrong with consequences. Most are evaluated with a few manual tests, with no written action limits and no record that explains afterwards what was done and why.
+capabilities:
+  title: What we do
+  items:
+    - name: Risk map per use case
+      text: What can go wrong in each use case, with what impact and where it sits under the AI Act.
+    - name: Evaluation sets
+      text: Real cases and quality criteria agreed with the business to measure every version before release.
+    - name: Adversarial testing
+      text: Controlled attempts at prompt injection, data leakage and misuse of tools.
+    - name: Guardrails and filters
+      text: Input and output filters, and checks before the agent carries out an action.
+    - name: Action limits
+      text: What each agent may do, with which permissions, up to what amount and when it needs human approval.
+    - name: Traceability and logging
+      text: A record of every query, decision and action, ready for internal review and audit.
+approach:
+  title: How we do it
+  steps:
+    - name: Map the risks
+      text: We analyse each use case, its risk classification and everything the agent could touch.
+    - name: Set criteria and limits
+      text: We agree quality thresholds, permitted actions and human approvals with the business, risk and security.
+    - name: Test before release
+      text: We run the evaluations and adversarial tests, and only what meets the thresholds goes live.
+    - name: Monitor in production
+      text: We evaluate continuously, review alerts and logs, and adjust limits as the use case changes.
+deliverables:
+  title: What you get
+  items:
+    - Risk map and classification for each use case
+    - Evaluation sets and acceptance criteria per use case
+    - Adversarial testing report with the mitigations applied
+    - Matrix of action limits and human approvals
+    - Logs and traces for agents and models in production
+    - Technical documentation for risk, compliance and audit
+outcome:
+  title: Outcome
+  text: AI in production with measured quality, known limits and the evidence to explain any decision to risk, audit or the supervisor.
+useCases:
+  title: Where we apply it
+  items:
+    - sector: telco
+      name: Customer assistants with guardrails
+      text: Testing against off-topic answers, unauthorised commercial commitments and exposure of personal data.
+    - sector: banking
+      name: Evidence for risk and audit
+      text: Evaluations, limits and logs for operations agents, documented for the second and third lines of defence.
+    - sector: insurance
+      name: Action limits in claims
+      text: What an agent may settle on its own, up to what amount, and when a claims handler signs off.
+technologies:
+  - Vertex AI
+  - Model Armor
+  - Microsoft Foundry
+  - Azure AI Content Safety
+  - Amazon Bedrock Guardrails
+  - MLflow
+related:
+  - data-ai-governance
+  - mlops-llmops
+  - ai-agents
+faq:
+  - q: How is this different from data and AI governance?
+    a: 'AI governance sets policies, roles and responsibilities across the organisation. Here we go down to each agent and each model: how it is tested, what it may do, who approves and what is logged.'
+  - q: What does the AI Act mean for our agents?
+    a: It depends on the use case. Some uses, such as assessing the creditworthiness of individuals or pricing life and health insurance, are high-risk, and in 2026 the EU agreed to postpone some of their obligations. We assess each case with your compliance team.
+  - q: Does this slow projects down?
+    a: Quite the opposite. With acceptance criteria and clear limits from the design stage, risk and security sign off sooner and going live stops being a case-by-case negotiation.
+cta:
+  title: Could you explain tomorrow what your AI did, and why?
+  text: In a 2–4 week assessment we review your AI use cases, their risks and their controls, and you leave with a plan to close the gaps.
+  button: Request an assessment

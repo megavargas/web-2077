@@ -1,0 +1,84 @@
+key: data-engineering-quality
+pillar: data
+order: 4
+slug: ingenieria-calidad-datos
+name: Ingeniería y calidad del dato
+summary: Pipelines automatizados con pruebas, contratos y reglas de calidad medibles, corregidas en origen.
+seo:
+  title: 'Ingeniería y calidad del dato: pipelines y reglas medibles'
+  description: Pipelines de datos con pruebas automáticas, contratos con los sistemas origen y reglas de calidad con responsable para datos críticos de negocio y regulación.
+intro: Construimos los pipelines que mueven tus datos y medimos su calidad con reglas, pruebas y responsables, para que los errores se corrijan en origen y no en el informe.
+problem:
+  title: El problema
+  text: La calidad del dato suele ser una queja, no una métrica. Los errores se arreglan a mano en el último informe y un cambio en un sistema origen rompe procesos sin avisar. Cuando auditoría o el supervisor preguntan de dónde sale una cifra, nadie puede demostrarlo.
+capabilities:
+  title: Qué hacemos
+  items:
+    - name: Pipelines de datos robustos
+      text: Ingesta y transformación por lotes o en tiempo casi real, versionadas y documentadas.
+    - name: Contratos de datos
+      text: Acuerdos con los sistemas origen sobre esquema, significado, frescura y responsable de cada dato.
+    - name: Pruebas automáticas
+      text: Cada transformación se prueba antes de llegar a producción, como el código de una aplicación.
+    - name: Reglas de calidad medibles
+      text: Completitud, exactitud y coherencia con umbrales, responsables y evolución en el tiempo.
+    - name: Linaje de extremo a extremo
+      text: Trazabilidad de cada cifra desde el sistema origen hasta el informe o el modelo.
+approach:
+  title: Cómo lo hacemos
+  steps:
+    - name: Priorizar los datos críticos
+      text: Identificamos los datos que alimentan decisiones, modelos y reporting regulatorio.
+    - name: Definir reglas y contratos
+      text: Acordamos con negocio y con los dueños de los sistemas origen qué es un dato correcto.
+    - name: Construir y probar
+      text: Desarrollamos los pipelines con pruebas automáticas y reglas de calidad integradas.
+    - name: Medir y corregir en origen
+      text: Publicamos la calidad por dominio y llevamos cada incidencia a quien puede arreglarla.
+deliverables:
+  title: Qué te llevas
+  items:
+    - Pipelines en producción, versionados y documentados
+    - Catálogo de reglas de calidad con umbrales y responsables
+    - Contratos de datos con los sistemas origen
+    - Batería de pruebas automáticas integrada en el desarrollo
+    - Cuadro de calidad del dato por dominio
+    - Linaje del origen al informe para los datos críticos
+outcome:
+  title: Resultado
+  text: Datos en los que negocio, auditoría y supervisor pueden confiar, con los errores detectados antes de llegar a una decisión y corregidos donde nacen.
+useCases:
+  title: Dónde lo aplicamos
+  items:
+    - sector: telco
+      name: Datos de cliente para modelos
+      text: Calidad medida de los datos de uso, facturación y contacto que alimentan los modelos de churn.
+    - sector: banking
+      name: Datos de riesgo trazables
+      text: Controles de calidad y linaje sobre los datos de riesgo, alineados con los principios de BCBS 239.
+    - sector: insurance
+      name: Pólizas y siniestros fiables
+      text: Reglas de calidad sobre pólizas y siniestros antes de los cierres de Solvencia II e IFRS 17.
+technologies:
+  - dbt
+  - Airflow
+  - Cloud Composer
+  - BigQuery
+  - Databricks
+  - Snowflake
+  - Azure Data Factory
+related:
+  - dataops-observability
+  - lakehouse-warehouse
+  - data-ai-governance
+faq:
+  - q: ¿Por dónde empezamos con la calidad?
+    a: Por pocos datos y críticos, los que alimentan una decisión importante, un modelo o un informe regulatorio. Medir bien una veintena de datos clave aporta más que un programa de calidad sobre todo el inventario.
+  - q: ¿Quién corrige los errores?
+    a: El responsable del dato en origen, con la incidencia ya localizada. Nuestro trabajo es que el error se detecte pronto, llegue a la persona adecuada y no se vuelva a parchear en el informe.
+  - q: ¿Nos ayuda esto con BCBS 239 o con el supervisor?
+    a: Ayuda a demostrarlo. Reglas documentadas, linaje y métricas de calidad son la evidencia que se pide en una revisión. El cumplimiento depende también de roles, políticas y procesos, que se trabajan en el gobierno del dato.
+cta:
+  title: ¿Puedes demostrar de dónde sale cada cifra?
+  text: Un diagnóstico de 2–4 semanas identifica tus datos críticos, mide su calidad actual y propone las primeras reglas.
+  button: Solicita un diagnóstico

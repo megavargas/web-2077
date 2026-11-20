@@ -1,0 +1,83 @@
+key: data-ai-strategy
+pillar: strategy
+order: 1
+slug: data-ai-strategy
+name: Data and AI strategy
+summary: What to do with data and AI, in what order and for what return, in a plan the board can sign off.
+seo:
+  title: Data and AI strategy with a roadmap and business case
+  description: We define your data and AI strategy, where the value lies, which capabilities are missing, and a roadmap with a business case and regulation built in.
+intro: We turn ambition into an investment plan. Where AI adds value to your business, what data and capabilities it needs, and in what order to tackle it.
+problem:
+  title: The problem
+  text: Many data strategies are a statement of principles that nobody uses to make decisions. AI pilots get approved one by one, with no shared view of platform, governance or return, and the budget is spread across initiatives that compete with each other.
+capabilities:
+  title: What we do
+  items:
+    - name: Value thesis
+      text: We identify the business objectives where data and AI can move results, and agree how that will be measured.
+    - name: Vision and principles
+      text: We set out which data is strategic, what to build and what to buy, and the criteria behind each decision.
+    - name: Target architecture
+      text: We describe the data and AI platform you need on Google Cloud, Azure or AWS, starting from what you already have.
+    - name: Investment roadmap
+      text: We sequence initiatives by value, dependencies and risk, with budget and team for each phase.
+    - name: Regulation by design
+      text: We build the AI Act, DORA and your sector's rules into the plan as requirements, not as a final review.
+approach:
+  title: How we do it
+  steps:
+    - name: Listen to the business
+      text: We interview leadership and key functions to pin down objectives, constraints and risk appetite.
+    - name: Check against reality
+      text: We review data, platform, teams and work in progress to establish the true starting point.
+    - name: Set out the options
+      text: We present scenarios of ambition and investment with their implications, so leadership can choose on clear grounds.
+    - name: Commit to the plan
+      text: We finalise the roadmap, business case and KPIs, and present them to the executive committee.
+deliverables:
+  title: What you get
+  items:
+    - Strategy document with vision, principles and measurable objectives
+    - Map of prioritised initiatives with business cases
+    - Target data and AI architecture with build-or-buy decisions
+    - 12–24 month roadmap with milestones, team and estimated budget
+    - KPI scorecard to track value and progress
+    - Executive presentation for the management committee or board
+outcome:
+  title: Outcome
+  text: A leadership team that knows where to invest in data and AI, why and in what order, with a plan that can be delivered and measured.
+useCases:
+  title: Where we apply it
+  items:
+    - sector: telco
+      name: Customer and network on shared data
+      text: A strategy that links retention, next-best-offer and network analytics on a common platform and governance model.
+    - sector: banking
+      name: AI under BCBS 239 and DORA
+      text: A roadmap that balances risk, fraud and customer use cases against risk data aggregation and operational resilience requirements.
+    - sector: insurance
+      name: Claims and pricing, fully traceable
+      text: A plan that prioritises claims automation and pricing without losing the traceability that Solvency II and IFRS 17 call for.
+technologies:
+  - Google Cloud
+  - Microsoft Azure
+  - AWS
+  - Vertex AI
+  - Azure OpenAI
+  - Amazon Bedrock
+related:
+  - maturity-assessment
+  - use-case-portfolio
+  - cloud-data-platforms
+faq:
+  - q: How long does a data and AI strategy take?
+    a: It depends on the scope and how many business areas are involved. The usual route is to start with a 2–4 week assessment, which already produces an initial roadmap, and then go deeper where it is needed.
+  - q: What happens to the initiatives we already have under way?
+    a: They are part of the analysis. The strategy decides which continue, which are refocused and which stop, using explicit criteria the committee can review.
+  - q: Does the strategy tie us to one cloud provider?
+    a: No. We work with Google Cloud, Microsoft Azure and AWS. The target architecture starts from what you have and what each use case needs, and records why each provider was chosen.
+cta:
+  title: Where should your data and AI strategy start?
+  text: A 2–4 week assessment gives you a clear baseline, your first prioritised use cases and an initial roadmap.
+  button: Request an assessment

@@ -1,0 +1,84 @@
+key: data-ai-governance
+pillar: strategy
+order: 5
+slug: data-ai-governance
+name: Data and AI governance
+summary: Policies, roles and controls for data and AI, enforced in the platform, that prepare the organisation for the AI Act.
+seo:
+  title: Data and AI governance, with the AI Act in mind
+  description: We design data and AI governance, with policies, roles, an inventory and risk classification of AI systems, and controls enforced in the platform itself.
+intro: One governance model for data and AI. Who is accountable for each dataset and each AI system, under which rules, and how those rules are checked in the platform.
+problem:
+  title: The problem
+  text: Data governance often stops at a committee and a glossary nobody reads, and AI governance frequently does not exist at all. When an audit, a supervisory review or the AI Act arrives, nobody knows which models are in use, on what data, or who is accountable for them.
+capabilities:
+  title: What we do
+  items:
+    - name: Policies and standards
+      text: Quality, access, privacy, retention and acceptable use of AI, written to be applied rather than filed away.
+    - name: Roles and decision bodies
+      text: Data owners and stewards, a data and AI committee, and clear links with risk, compliance and data protection.
+    - name: AI system inventory
+      text: A register of the models, assistants and agents in use, with their purpose, data, owner and risk level.
+    - name: AI Act readiness
+      text: Risk classification of each system and the documentation, human oversight and transparency it requires.
+    - name: Governance enforced in the platform
+      text: Catalogue, lineage, quality and access policies configured in the tools, not just written down.
+    - name: Sector regulation fit
+      text: We align the model with BCBS 239, DORA, Solvency II and GDPR, depending on the sector.
+approach:
+  title: How we do it
+  steps:
+    - name: Assess
+      text: We review existing policies, roles, tools and AI systems against your obligations.
+    - name: Design
+      text: We define the governance model, its decision bodies and the inventory of critical data and AI systems.
+    - name: Implement
+      text: We configure catalogue, lineage and controls in the platform, starting with one priority data domain.
+    - name: Extend
+      text: We roll the model out domain by domain, with KPIs for quality, coverage and policy adherence.
+deliverables:
+  title: What you get
+  items:
+    - Data and AI governance framework with policies and standards
+    - Roles and decision bodies with their RACI
+    - AI system inventory with risk classification
+    - Business glossary and catalogue of critical data
+    - Quality, lineage and access controls configured in the platform
+    - Governance dashboard with KPIs by domain
+outcome:
+  title: Outcome
+  text: Data and AI systems with an owner, rules and evidence, so that an audit or regulatory review is answered with what already exists rather than an emergency project.
+useCases:
+  title: Where we apply it
+  items:
+    - sector: telco
+      name: Customer data and privacy
+      text: Governing the use of customer and traffic data in models and assistants, with a lawful basis and data minimisation under GDPR.
+    - sector: banking
+      name: Risk data and models
+      text: Governing risk data under BCBS 239 and AI models alongside the model risk function.
+    - sector: insurance
+      name: Regulatory and claims data
+      text: Governing the data behind Solvency II and IFRS 17 and the AI used in claims and underwriting.
+technologies:
+  - Microsoft Purview
+  - Google Cloud Dataplex
+  - Databricks Unity Catalog
+  - AWS Lake Formation
+  - BigQuery
+related:
+  - ai-evaluation-governance
+  - data-engineering-quality
+  - semantic-layer
+faq:
+  - q: When does the AI Act affect us?
+    a: Some obligations, such as the prohibited practices, already apply. The requirements for Annex III high-risk systems, such as credit scoring, come later, and in 2026 the EU agreed to postpone some of them. It pays to have the inventory and classification in place first, because they shape the design.
+  - q: Do we need to buy a governance tool?
+    a: Not necessarily. We start with what your platform offers, such as Microsoft Purview, Dataplex or Unity Catalog, and only recommend another tool if there is a need they do not cover.
+  - q: Do you guarantee regulatory compliance?
+    a: No. Compliance is the responsibility of each organisation and its legal advisers. We design governance and controls so it is easier to demonstrate, working alongside your compliance, risk and data protection teams.
+cta:
+  title: Do you know which AI systems are in use?
+  text: A 2–4 week assessment reviews your current governance and leaves a plan to get critical data and your AI inventory in order.
+  button: Request an assessment

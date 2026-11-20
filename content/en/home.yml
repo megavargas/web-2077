@@ -15,6 +15,10 @@ hero:
   primaryCta: Request an assessment
   secondaryCta: Our services
 
+clients:
+  label: Clients
+  title: Working with companies you already know.
+
 context:
   quote: AI only works in context. We build it from the ground up, layer by layer.
   titleLines:

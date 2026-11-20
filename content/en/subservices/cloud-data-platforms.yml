@@ -1,0 +1,87 @@
+key: cloud-data-platforms
+pillar: data
+order: 1
+slug: cloud-data-platforms
+name: Cloud data platforms
+summary: Architecture, security and costs for your platform on Google Cloud, Azure or AWS, settled at the design stage.
+seo:
+  title: Cloud data platforms on Google Cloud, Azure and AWS
+  description: We design and deploy data platforms on Google Cloud, Azure and AWS with security built in, predictable costs and an exit plan for regulated industries.
+intro: A cloud data platform with security, costs and exit settled at the design stage, so you can build on it without redoing the foundations in two years' time.
+problem:
+  title: The problem
+  text: Many cloud platforms start as a pilot that grew without a design. Permissions are inherited, environments are mixed and nobody can say who the bill belongs to. In banking and insurance, supervisors also ask about provider risk and the exit plan, and the architecture has no answer.
+capabilities:
+  title: What we do
+  items:
+    - name: A considered choice of cloud
+      text: We compare Google Cloud, Azure and AWS against your systems, your teams and total cost, not against the contract.
+    - name: Reference architecture
+      text: We design the platform by layer and domain, with every decision documented and justified.
+    - name: Landing zone as code
+      text: We deploy accounts, projects, networks and environments with infrastructure as code, repeatable and auditable.
+    - name: Security and access
+      text: Identities, encryption, network segmentation and role-based permissions from day one.
+    - name: Costs under control (FinOps)
+      text: Tagging, budgets and alerts so you know what each domain and each use case costs.
+    - name: Resilience and exit plan
+      text: Backups, recovery and data portability designed with DORA in mind, so you are not tied to one provider.
+approach:
+  title: How we do it
+  steps:
+    - name: Assess
+      text: We review systems, contracts, teams and security and regulatory requirements to establish the starting point.
+    - name: Design
+      text: We define the reference architecture and the security and cost models, and validate them with IT and risk.
+    - name: Deploy
+      text: We build the landing zone as code and take the first data domain into production.
+    - name: Hand over or run
+      text: We hand over documentation, procedures and training to your team, or keep running the platform as a managed service.
+deliverables:
+  title: What you get
+  items:
+    - Reference architecture with a decision log
+    - Landing zone deployed as code
+    - Security, identity and access model
+    - 'FinOps model: tagging, budgets and a cost dashboard by domain'
+    - Continuity, exit and data portability plan
+    - Operating procedures and a handover plan for your team
+outcome:
+  title: Outcome
+  text: A secure cloud foundation with predictable costs, which your team understands and can extend, and which stands up to audit and supervisory scrutiny without rework.
+useCases:
+  title: Where we apply it
+  items:
+    - sector: telco
+      name: Network and customer data at scale
+      text: A platform for high volumes of network and usage events, with the cost of every query visible and attributed.
+    - sector: banking
+      name: A platform designed for DORA
+      text: Provider risk, continuity and the exit plan resolved in the architecture, not in an appendix.
+    - sector: insurance
+      name: Personal and health data protected
+      text: Segregated access to policy and claims data, with a record of who looks at what.
+technologies:
+  - Google Cloud
+  - Microsoft Azure
+  - AWS
+  - BigQuery
+  - Microsoft Fabric
+  - Snowflake
+  - Databricks
+  - Terraform
+related:
+  - lakehouse-warehouse
+  - dataops-observability
+  - data-ai-governance
+faq:
+  - q: Which cloud is right for us?
+    a: It depends on your current systems, your team's skills and total cost over several years. We work with Google Cloud, Azure and AWS, compare them using your own data and give you a reasoned recommendation, even if the answer is to combine two.
+  - q: How do we stop the bill from spiralling?
+    a: With FinOps from the design stage. Every resource is tagged by domain, budgets carry alerts and a cost dashboard is reviewed by business and IT together. Data platforms charge by query or by capacity, so we optimise models and queries as well as infrastructure.
+  - q: Is a cloud data platform compatible with DORA?
+    a: Yes. DORA does not prohibit the cloud. It requires you to manage provider risk, test continuity and keep a workable exit plan, and we build that into the architecture (open formats, backups, documentation) so your answer to the supervisor does not rest on a separate document.
+cta:
+  title: Is your platform ready for what comes next?
+  text: In a 2–4 week assessment we review architecture, security and costs, and tell you what to fix first.
+  button: Request an assessment

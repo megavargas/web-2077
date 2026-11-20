@@ -1,0 +1,85 @@
+key: dataops-observability
+pillar: data
+order: 5
+slug: dataops-observabilidad
+name: DataOps y observabilidad
+summary: Despliegue continuo, vigilancia de los datos críticos y niveles de servicio para que el dato llegue a tiempo y bien.
+seo:
+  title: DataOps y observabilidad de datos
+  description: Despliegue continuo, vigilancia de frescura, volumen y calidad, alertas con responsable y niveles de servicio para operar tu plataforma de datos sin sorpresas.
+intro: Operamos tu plataforma de datos como un servicio crítico, con cambios desplegados sin sustos, datos vigilados y fallos detectados antes de que los vea un directivo.
+problem:
+  title: El problema
+  text: Un proceso falla de madrugada y nadie se entera hasta que el comité ve un cuadro de mando vacío o, peor, con las cifras de ayer. Los cambios se suben a mano y las alertas llegan a un buzón que nadie mira. Tampoco hay un acuerdo sobre qué dato tiene que estar listo y cuándo.
+capabilities:
+  title: Qué hacemos
+  items:
+    - name: Despliegue continuo del dato
+      text: Código de datos versionado, entornos separados y despliegues automáticos con pruebas.
+    - name: Vigilancia de datos críticos
+      text: Frescura, volumen, esquema y calidad monitorizados en cada carga.
+    - name: Alertas con responsable
+      text: Cada alerta llega a quien puede actuar, con contexto y un procedimiento claro.
+    - name: Análisis de impacto
+      text: El linaje indica qué informes, modelos o agentes se ven afectados por cada fallo.
+    - name: Niveles de servicio del dato
+      text: Compromisos de disponibilidad y frescura acordados con negocio para cada producto de datos.
+    - name: Coste y rendimiento visibles
+      text: Seguimiento del consumo y del rendimiento de cada proceso para optimizarlo.
+approach:
+  title: Cómo lo hacemos
+  steps:
+    - name: Medir
+      text: Identificamos los productos de datos críticos, quién los consume y qué fallos duelen más hoy.
+    - name: Automatizar
+      text: Implantamos control de versiones, entornos separados y despliegue continuo con pruebas.
+    - name: Vigilar
+      text: Activamos monitorización, alertas y procedimientos de incidencia sobre los datos críticos.
+    - name: Operar y mejorar
+      text: Revisamos cada mes incidencias y niveles de servicio y corregimos las causas de fondo.
+deliverables:
+  title: Qué te llevas
+  items:
+    - Cadena de despliegue continuo para el código de datos
+    - Monitorización y alertas sobre los datos críticos
+    - Niveles de servicio del dato acordados con negocio
+    - Procedimientos de respuesta a incidencias
+    - 'Cuadro de salud de la plataforma: incidencias, frescura y coste'
+    - Informe mensual de operación con plan de mejora
+outcome:
+  title: Resultado
+  text: Menos sorpresas en cuadros de mando y modelos, incidencias resueltas antes y una plataforma que el negocio puede tratar como un servicio fiable.
+useCases:
+  title: Dónde lo aplicamos
+  items:
+    - sector: telco
+      name: Datos de red y consumo vigilados
+      text: Frescura y volumen de los datos de red y consumo que alimentan los cuadros diarios y los modelos.
+    - sector: banking
+      name: Incidencias de datos trazadas
+      text: Registro y gestión de incidencias en los procesos de datos, como apoyo a la resiliencia operativa que pide DORA.
+    - sector: insurance
+      name: Cierres sin sobresaltos
+      text: Vigilancia de las cargas de pólizas, siniestros y reaseguro antes de los cierres trimestrales y regulatorios.
+technologies:
+  - dbt
+  - Airflow
+  - Cloud Composer
+  - Azure DevOps
+  - GitHub Actions
+  - Grafana
+related:
+  - data-engineering-quality
+  - mlops-llmops
+  - cloud-data-platforms
+faq:
+  - q: ¿Necesitamos comprar una herramienta de observabilidad?
+    a: No para empezar. Las plataformas cloud, el orquestador y dbt ya permiten vigilar la frescura, el volumen y la calidad de los datos críticos. Si el volumen lo justifica, comparamos herramientas especializadas con tus casos reales.
+  - q: ¿Podéis operar la plataforma por nosotros?
+    a: Sí. Podemos operar la plataforma, los procesos y los cuadros de mando como servicio gestionado, con niveles de servicio acordados, o dejar a tu equipo preparado para hacerlo.
+  - q: ¿Qué tiene que ver esto con la IA?
+    a: Mucho. Un modelo o un agente que trabaja con datos atrasados o incompletos se equivoca con total seguridad. Vigilar el dato que consume la IA es la primera parte de operarla bien, y enlaza con MLOps y LLMOps.
+cta:
+  title: ¿Te enteras de los fallos antes que tu comité?
+  text: En un diagnóstico de 2–4 semanas revisamos cómo despliegas y vigilas tus datos y priorizamos qué automatizar primero.
+  button: Solicita un diagnóstico

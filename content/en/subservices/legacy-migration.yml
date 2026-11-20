@@ -1,0 +1,87 @@
+key: legacy-migration
+pillar: data
+order: 3
+slug: legacy-bi-etl-migration
+name: Legacy BI and ETL migration
+summary: From Cognos, MicroStrategy, PowerCenter or Teradata to a modern stack, without interrupting reporting.
+seo:
+  title: Legacy BI and ETL migration to the cloud
+  description: We migrate Cognos, MicroStrategy, PowerCenter and Teradata to Google Cloud, Azure or AWS, with inventory, conversion, reconciled figures and legacy shutdown.
+intro: We move you off Cognos, MicroStrategy, PowerCenter or Teradata without interrupting reporting, with figures reconciled and the old system switched off at the end, not left running for ever.
+problem:
+  title: The problem
+  text: Legacy BI and ETL platforms cost more every year in licences, support and scarce skills. Migrating them is daunting because nobody knows which reports are used or what business logic they hide. Many migrations end with two systems being paid for at once.
+capabilities:
+  title: What we do
+  items:
+    - name: Inventory based on real usage
+      text: We catalogue reports, jobs and dependencies, and measure what is used, by whom and how often.
+    - name: Rationalise before migrating
+      text: We retire what is duplicated or unused, so only what adds value is migrated.
+    - name: Assisted conversion
+      text: We use the vendors' own conversion tools and review the business logic by hand.
+    - name: Reconciled figures
+      text: We compare source and target report by report until the numbers match.
+    - name: Parallel running without outages
+      text: We migrate domain by domain and keep critical reports running in parallel until they are signed off.
+    - name: Legacy shutdown
+      text: We plan the retirement of licences, servers and contracts so the savings are real.
+approach:
+  title: How we do it
+  steps:
+    - name: Inventory
+      text: We analyse the current system, the usage of every report and job, and the total cost of the legacy estate.
+    - name: Rationalise and plan
+      text: We decide what is migrated, what is redesigned and what is retired, and sequence it by domain.
+    - name: Convert and reconcile
+      text: We migrate jobs, models and reports and validate the figures against the source system.
+    - name: Switch off
+      text: We decommission the old system as soon as users are working in the new one.
+deliverables:
+  title: What you get
+  items:
+    - Inventory of reports and jobs with usage, owners and dependencies
+    - Migration plan by domain with sequencing, effort and cost
+    - Jobs, models and reports migrated to the new stack
+    - Source-to-target reconciliation reports
+    - Decommissioning plan for licences, servers and contracts
+    - Training and guides for users of the new environment
+outcome:
+  title: Outcome
+  text: Lower fixed costs for licences and support, reports that give the same figures as before and a modern foundation for analytics and AI.
+useCases:
+  title: Where we apply it
+  items:
+    - sector: telco
+      name: Commercial and network KPIs
+      text: Migrating daily sales, churn and network reporting without losing the historical series.
+    - sector: banking
+      name: Regulatory and risk reporting
+      text: Reports migrated with figure-by-figure reconciliation before the old system is retired.
+    - sector: insurance
+      name: Actuarial and claims reporting
+      text: Moving from legacy tools to a modern stack without disrupting the closing calendar.
+technologies:
+  - BigQuery
+  - Snowflake
+  - Databricks
+  - Microsoft Fabric
+  - Power BI
+  - Looker
+  - dbt
+  - Airflow
+related:
+  - lakehouse-warehouse
+  - semantic-layer
+  - data-engineering-quality
+faq:
+  - q: How much can be converted automatically?
+    a: The vendors' tools translate SQL, schemas and a good share of ETL jobs well. Hidden business logic, heavily formatted reports and exceptions need expert review. We measure this during the inventory, before committing to timelines.
+  - q: Will we be paying for two platforms at once?
+    a: For a while, yes, and that is what most needs containing. We plan by domain and set legacy retirement dates from the outset, so parallel running is short and the licence savings materialise.
+  - q: Where do we start?
+    a: With the domain that combines the highest licence cost or support risk with well-understood usage. The initial assessment includes a first inventory and compares the cost of migrating with the cost of staying put.
+cta:
+  title: What is staying on legacy costing you?
+  text: In a 2–4 week assessment we inventory your BI and ETL estate and tell you what to migrate, in what order and at what cost.
+  button: Request an assessment

@@ -11,6 +11,29 @@ type Locale = (typeof locales)[number]
 
 export const pillarKeys = ['strategy', 'data', 'intelligence', 'ai'] as const
 export const sectorKeys = ['telco', 'banking', 'insurance'] as const
+/** Subservicios, en orden de pilar (01→04) y de posición dentro del pilar. */
+export const subserviceKeys = [
+  'data-ai-strategy',
+  'maturity-assessment',
+  'use-case-portfolio',
+  'operating-model',
+  'data-ai-governance',
+  'cloud-data-platforms',
+  'lakehouse-warehouse',
+  'legacy-migration',
+  'data-engineering-quality',
+  'dataops-observability',
+  'semantic-layer',
+  'advanced-analytics',
+  'predictive-models',
+  'decision-intelligence',
+  'self-service-analytics',
+  'ai-agents',
+  'knowledge-assistants',
+  'process-automation',
+  'mlops-llmops',
+  'ai-evaluation-governance',
+] as const
 
 const seo = z.object({ title: z.string(), description: z.string() })
 const header = z.object({ eyebrow: z.string(), title: z.string(), intro: z.string() })
@@ -32,6 +55,8 @@ const schemas = {
       primaryCta: z.string(),
       secondaryCta: z.string(),
     }),
+    // Muro de logos de clientes (los logos y nombres están en app/assets/data/clients.json).
+    clients: z.object({ label: z.string(), title: z.string() }),
     // Pila de contexto: capas numeradas de arriba (IA) a la base (sector).
     context: z.object({
       quote: z.string(),
@@ -74,9 +99,39 @@ const schemas = {
     summary: z.string(),
     seo,
     problem: z.object({ title: z.string(), text: z.string() }),
-    includes: titled(z.array(named)),
+    // Los elementos son los subservicios del pilar (colección subservices), con su landing.
+    includes: z.object({ title: z.string() }),
     outcome: z.object({ title: z.string(), text: z.string() }),
     technologies: z.array(z.string()).default([]),
+    faq,
+    cta,
+  }),
+
+  // Landing de cada subservicio de un pilar (/servicios/<pilar>/<subservicio>).
+  subservices: z.object({
+    key: z.enum(subserviceKeys),
+    pillar: z.enum(pillarKeys),
+    // Posición dentro del pilar (1–5): numeración «04.1»
+    order: z.number(),
+    slug: z.string(),
+    name: z.string(),
+    // Una frase: tarjeta en la página del pilar y en listados
+    summary: z.string(),
+    seo,
+    // Entradilla bajo el h1 (el h1 es el nombre)
+    intro: z.string(),
+    problem: z.object({ title: z.string(), text: z.string() }),
+    capabilities: titled(z.array(named)),
+    approach: z.object({ title: z.string(), steps: z.array(named) }),
+    deliverables: titled(z.array(z.string())),
+    outcome: z.object({ title: z.string(), text: z.string() }),
+    useCases: z.object({
+      title: z.string(),
+      items: z.array(z.object({ sector: z.enum(sectorKeys), name: z.string(), text: z.string() })),
+    }),
+    technologies: z.array(z.string()).default([]),
+    // Subservicios relacionados (de este u otros pilares)
+    related: z.array(z.enum(subserviceKeys)).default([]),
     faq,
     cta,
   }),
@@ -220,6 +275,7 @@ type Name = keyof typeof schemas
 const sources: Record<Name, string> = {
   home: 'home.yml',
   pillars: 'pillars/*.yml',
+  subservices: 'subservices/*.yml',
   sectors: 'sectors/*.yml',
   services: 'services.yml',
   diagnostic: 'diagnostic.yml',

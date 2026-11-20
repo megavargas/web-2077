@@ -1,0 +1,84 @@
+key: decision-intelligence
+pillar: intelligence
+order: 4
+slug: decision-intelligence
+name: Decision intelligence
+summary: Cuadros de mando que recomiendan la siguiente acción, con supervisión humana, y miden qué resultado dio.
+seo:
+  title: 'Decision intelligence: del dato a la acción'
+  description: Decision intelligence para Telco, Banca y Seguros. Recomendaciones en el punto de decisión, con supervisión humana, registro auditable y resultado medido.
+intro: Diseñamos cómo se toma cada decisión recurrente (a quién retener, qué alerta revisar, qué oferta presentar) y llevamos la recomendación al momento y a la herramienta en que se decide.
+problem:
+  title: El problema
+  text: Los modelos y los cuadros de mando existen, pero la decisión sigue tomándose por intuición o por costumbre. Nadie ha escrito qué opciones hay, qué restricciones aplican ni quién aprueba qué. Y como no se registra qué se recomendó y qué se hizo, es imposible saber si la analítica mejora algo.
+capabilities:
+  title: Qué hacemos
+  items:
+    - name: Modelado de decisiones
+      text: Documentamos cada decisión recurrente con su objetivo, opciones, restricciones, datos y responsables.
+    - name: Motor de recomendación
+      text: Combinamos reglas de negocio, predicciones y optimización para proponer la siguiente acción en cada caso.
+    - name: Recomendación donde se trabaja
+      text: Llevamos la propuesta al CRM, a la herramienta del gestor o al cuadro de mando que el equipo ya usa.
+    - name: Niveles de autonomía
+      text: Acordamos qué se automatiza, qué se recomienda y qué requiere aprobación de una persona.
+    - name: Registro de decisiones
+      text: Guardamos qué se recomendó, qué se decidió y por qué, para poder auditar y aprender.
+    - name: Medición del resultado
+      text: Comparamos las decisiones guiadas con un grupo de control y ajustamos reglas y modelos.
+approach:
+  title: Cómo lo hacemos
+  steps:
+    - name: Elegir la decisión
+      text: Priorizamos decisiones frecuentes, medibles y con un impacto económico claro.
+    - name: Modelar la decisión
+      text: Mapeamos con quienes la toman hoy las opciones, las reglas, los datos y los riesgos.
+    - name: Recomendar
+      text: Construimos el motor y lo integramos en el flujo de trabajo, empezando en modo sugerencia.
+    - name: Medir y ajustar
+      text: Comparamos con un grupo de control y ampliamos la autonomía solo donde los resultados lo justifican.
+deliverables:
+  title: Qué te llevas
+  items:
+    - Mapa de la decisión con opciones, reglas, datos y responsables
+    - Motor de recomendación integrado en la herramienta de trabajo
+    - Matriz de autonomía con lo que se automatiza, se recomienda o se aprueba
+    - Registro de decisiones auditable
+    - Panel de resultados frente a un grupo de control
+outcome:
+  title: Resultado
+  text: Decisiones recurrentes más rápidas y coherentes, con constancia de qué se recomendó, qué se hizo y qué resultado dio.
+useCases:
+  title: Dónde lo aplicamos
+  items:
+    - sector: telco
+      name: Next-best-offer y retención
+      text: Recomendar a cada agente qué oferta o acción de retención presentar, según el riesgo de baja, el valor y el margen.
+    - sector: banking
+      name: Priorización de alertas de fraude
+      text: Ordenar por riesgo las alertas de fraude y de prevención del blanqueo (AML) y proponer al analista el siguiente paso.
+    - sector: insurance
+      name: Triaje de siniestros
+      text: Proponer qué siniestros se liquidan por vía rápida, cuáles se peritan y cuáles se revisan por posible fraude.
+technologies:
+  - BigQuery
+  - Vertex AI
+  - Microsoft Fabric
+  - Power BI
+  - Looker
+  - Python
+related:
+  - predictive-models
+  - ai-agents
+  - use-case-portfolio
+faq:
+  - q: ¿Qué diferencia hay con un cuadro de mando?
+    a: Un cuadro de mando muestra la situación y deja la conclusión al usuario. Un sistema de decision intelligence propone la acción concreta, explica por qué y registra lo que se hizo para medir el resultado.
+  - q: ¿Las decisiones se automatizan por completo?
+    a: Solo las que se acuerden. Empezamos en modo sugerencia, con una persona que acepta, modifica o rechaza la propuesta, y ampliamos la autonomía cuando los resultados lo justifican. Las decisiones que afectan a los derechos de las personas mantienen supervisión humana.
+  - q: ¿Hace falta comprar una plataforma específica?
+    a: No necesariamente. Muchas decisiones se resuelven con la plataforma de datos y BI que ya tienes, más reglas y modelos. Si el volumen o la complejidad lo justifican, comparamos las plataformas del mercado con criterios explícitos.
+cta:
+  title: ¿Qué decisión se repite cada día en tu empresa?
+  text: En un diagnóstico de 2–4 semanas elegimos la decisión con más retorno, la modelamos y te decimos qué datos y qué cambios hacen falta.
+  button: Solicita un diagnóstico

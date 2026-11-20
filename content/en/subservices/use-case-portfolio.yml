@@ -1,0 +1,85 @@
+key: use-case-portfolio
+pillar: strategy
+order: 3
+slug: use-case-portfolio
+name: Use-case portfolio
+summary: Data and AI use cases prioritised by value, feasibility and risk, with a business case and clear go or stop criteria.
+seo:
+  title: AI use-case prioritisation with a business case
+  description: We identify and prioritise data and AI use cases by value, feasibility, data and regulatory risk, with a business case and measurable success criteria.
+intro: We decide with you which data and AI use cases deserve investment, with a credible business case and an agreed way of measuring whether they work.
+problem:
+  title: The problem
+  text: The list of AI ideas grows faster than the capacity to deliver them. Ideas get prioritised on enthusiasm or on who sponsors them, without checking whether the data exists, what regulatory risk they carry or how the return will be measured. That is why so many pilots never reach production.
+capabilities:
+  title: What we do
+  items:
+    - name: Process-led discovery
+      text: We start from business processes and decisions, not from technology, to find where data and AI can help.
+    - name: Prioritisation criteria
+      text: Value, technical feasibility, data availability, regulatory risk and dependencies, weighted with leadership.
+    - name: Business case per use case
+      text: Baseline, expected benefit, cost to build and run, and explicit assumptions that can be revisited.
+    - name: Risk classification
+      text: We place each use case against the AI Act and sector rules to know which controls it needs from the design stage.
+    - name: Success and stop criteria
+      text: We define what each pilot must prove to move into production, and when it is better to stop.
+    - name: Ongoing portfolio management
+      text: We set up an intake and regular review process so the portfolio does not freeze.
+approach:
+  title: How we do it
+  steps:
+    - name: Discover
+      text: We gather problems, decisions and candidate processes in workshops with business areas.
+    - name: Assess
+      text: We score each use case against the agreed criteria and test its feasibility with real data.
+    - name: Quantify
+      text: We build the business case for the most promising use cases and validate the assumptions with their owners.
+    - name: Sequence
+      text: We arrange the portfolio into a roadmap with dependencies, team and first pilots.
+deliverables:
+  title: What you get
+  items:
+    - Use-case inventory with a one-page profile per use case
+    - Prioritisation matrix with documented criteria and weights
+    - Business cases for the priority use cases
+    - AI Act risk classification for each use case
+    - Success and stop criteria for every pilot
+    - Portfolio roadmap and quarterly review process
+outcome:
+  title: Outcome
+  text: A use-case portfolio that leadership understands and can defend, where every investment has a reason and every pilot knows what it must prove to reach production.
+useCases:
+  title: Where we apply it
+  items:
+    - sector: telco
+      name: Retention, offers and network
+      text: Prioritising churn, next-best-offer, predictive maintenance and customer service assistants by value and data availability.
+    - sector: banking
+      name: Risk, fraud and customer
+      text: A portfolio that separates high-risk use cases under the AI Act, such as credit scoring, from those that can move faster.
+    - sector: insurance
+      name: Claims, pricing and retention
+      text: Business cases for claims automation, pricing and portfolio retention, built on assumptions that can be revisited.
+technologies:
+  - Vertex AI
+  - Gemini
+  - Azure OpenAI
+  - Amazon Bedrock
+  - BigQuery
+  - Power BI
+related:
+  - data-ai-strategy
+  - ai-agents
+  - predictive-models
+faq:
+  - q: How do you build a business case before there is any data?
+    a: From a baseline of the current process and explicit assumptions validated by the people who own it. The pilot exists precisely to confirm or correct those assumptions before investing at scale.
+  - q: What do we do with use cases that are high risk under the AI Act?
+    a: They are not ruled out. They are identified early and designed with the risk management, documentation and human oversight they require, so the timeline and cost reflect them from the start.
+  - q: How many use cases should we take on at once?
+    a: A few, well chosen. Getting two or three into production with measured value beats opening ten pilots in parallel.
+cta:
+  title: Which use case should go first?
+  text: A 2–4 week assessment leaves you with prioritised use cases, an initial business case for each and a roadmap.
+  button: Request an assessment

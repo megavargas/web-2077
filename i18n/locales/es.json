@@ -41,7 +41,12 @@
     "previous": "Anterior",
     "next": "Siguiente",
     "services": "Servicios",
-    "readMore": "Ver más"
+    "readMore": "Ver más",
+    "breadcrumb": "Ruta de navegación",
+    "inPillar": "Más en {pillar}",
+    "related": "Servicios relacionados",
+    "pillarOverview": "Visión general de {pillar}",
+    "sectorLabel": "Sector: {sector}"
   },
   "form": {
     "name": "Nombre y apellidos",
@@ -89,5 +94,10 @@
     },
     "unavailable": "Ahora mismo no podemos recibir el formulario. Escríbenos a {email} y te responderemos igualmente.",
     "error": "No se ha podido enviar el mensaje. Inténtalo de nuevo o escríbenos a {email}."
+  },
+  "clients": {
+    "pause": "Pausar",
+    "play": "Reanudar",
+    "list": "Clientes"
   }
 }

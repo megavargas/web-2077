@@ -14,17 +14,6 @@ problem:
   text: Pilotos de IA que no escalan, plataformas a medio construir y una lista de iniciativas que compiten por el mismo presupuesto. Falta un criterio común para decidir qué hacer primero y cómo medirlo.
 includes:
   title: Qué incluye
-  items:
-    - name: Estrategia de datos e IA
-      text: Visión, objetivos y principios alineados con la estrategia de negocio.
-    - name: Diagnóstico de madurez
-      text: Dónde estás hoy en datos, analítica, IA y organización, frente a lo que necesitas.
-    - name: Casos de uso priorizados
-      text: Inventario y priorización de casos de uso con business case, riesgos y dependencias.
-    - name: Modelo operativo y centro de excelencia
-      text: Roles, procesos y equipo para que los datos y la IA escalen más allá del primer proyecto.
-    - name: Gobierno del dato y de la IA
-      text: Políticas, responsabilidades y controles, incluida la preparación para el AI Act.
 outcome:
   title: Resultado
   text: Una hoja de ruta priorizada, con business case por iniciativa y un modelo de gobierno que el comité puede aprobar.

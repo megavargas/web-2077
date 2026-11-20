@@ -1,0 +1,85 @@
+key: use-case-portfolio
+pillar: strategy
+order: 3
+slug: casos-de-uso
+name: Cartera de casos de uso
+summary: Casos de uso de datos e IA priorizados por valor, viabilidad y riesgo, con business case y criterio para seguir o parar.
+seo:
+  title: Priorización de casos de uso de IA con business case
+  description: Identificamos y priorizamos casos de uso de datos e IA por valor, viabilidad, datos y riesgo regulatorio, con business case y criterios de éxito medibles.
+intro: Decidimos contigo qué casos de uso de datos e IA merecen inversión, con un business case creíble y una forma acordada de medir si funcionan.
+problem:
+  title: El problema
+  text: La lista de ideas de IA crece más rápido que la capacidad de ejecutarlas. Se priorizan por entusiasmo o por quién las patrocina, sin mirar si hay datos, qué riesgo regulatorio tienen ni cómo se medirá el retorno. Por eso tantos pilotos no llegan a producción.
+capabilities:
+  title: Qué hacemos
+  items:
+    - name: Descubrimiento por procesos
+      text: Partimos de los procesos y las decisiones de negocio, no de la tecnología, para encontrar dónde ayudan los datos y la IA.
+    - name: Criterios de priorización
+      text: Valor, viabilidad técnica, datos disponibles, riesgo regulatorio y dependencias, con pesos acordados con la dirección.
+    - name: Business case por caso
+      text: Línea base, beneficio esperado, coste de construir y de operar, y supuestos explícitos que se pueden revisar.
+    - name: Clasificación de riesgo
+      text: Situamos cada caso frente al AI Act y la normativa sectorial para saber qué controles necesita desde el diseño.
+    - name: Criterios de éxito y parada
+      text: Definimos qué tiene que demostrar cada piloto para pasar a producción y cuándo conviene pararlo.
+    - name: Gestión continua de la cartera
+      text: Dejamos un proceso de entrada y de revisión periódica para que la cartera no se quede congelada.
+approach:
+  title: Cómo lo hacemos
+  steps:
+    - name: Descubrir
+      text: Recogemos en talleres con las áreas de negocio problemas, decisiones y procesos candidatos.
+    - name: Evaluar
+      text: Puntuamos cada caso con los criterios acordados y comprobamos su viabilidad con datos reales.
+    - name: Cuantificar
+      text: Construimos el business case de los casos con más potencial y validamos los supuestos con sus responsables.
+    - name: Secuenciar
+      text: Ordenamos la cartera en una hoja de ruta con dependencias, equipo y primeros pilotos.
+deliverables:
+  title: Qué te llevas
+  items:
+    - Inventario de casos de uso con una ficha por caso
+    - Matriz de priorización con criterios y pesos documentados
+    - Business case de los casos prioritarios
+    - Clasificación de riesgo de cada caso frente al AI Act
+    - Criterios de éxito y de parada para cada piloto
+    - Hoja de ruta de la cartera y proceso de revisión trimestral
+outcome:
+  title: Resultado
+  text: Una cartera de casos de uso que la dirección entiende y defiende, en la que cada inversión tiene un motivo y cada piloto sabe qué tiene que demostrar para llegar a producción.
+useCases:
+  title: Dónde lo aplicamos
+  items:
+    - sector: telco
+      name: Retención, oferta y red
+      text: Priorización entre churn, next-best-offer, mantenimiento predictivo y asistentes de atención según su valor y los datos disponibles.
+    - sector: banking
+      name: Riesgo, fraude y cliente
+      text: Una cartera que separa los casos de alto riesgo según el AI Act, como el scoring de crédito, de los que pueden avanzar antes.
+    - sector: insurance
+      name: Siniestros, pricing y retención
+      text: Business case de la automatización de siniestros, la tarificación y la retención de cartera, con supuestos que se pueden revisar.
+technologies:
+  - Vertex AI
+  - Gemini
+  - Azure OpenAI
+  - Amazon Bedrock
+  - BigQuery
+  - Power BI
+related:
+  - data-ai-strategy
+  - ai-agents
+  - predictive-models
+faq:
+  - q: ¿Cómo se calcula un business case si aún no hay datos?
+    a: Con una línea base del proceso actual y supuestos explícitos que validan sus responsables. El piloto sirve precisamente para confirmar o corregir esos supuestos antes de invertir en escala.
+  - q: ¿Qué hacemos con los casos de alto riesgo según el AI Act?
+    a: No se descartan. Se identifican pronto y se diseñan con la gestión de riesgos, la documentación y la supervisión humana que exigen, para que el calendario y el coste los reflejen desde el principio.
+  - q: ¿Cuántos casos conviene abordar a la vez?
+    a: Pocos y bien elegidos. Es mejor llevar dos o tres casos a producción con su valor medido que abrir diez pilotos en paralelo.
+cta:
+  title: ¿Qué caso de uso debería ir primero?
+  text: En un diagnóstico de 2–4 semanas sales con los casos de uso priorizados, su business case inicial y una hoja de ruta.
+  button: Solicita un diagnóstico

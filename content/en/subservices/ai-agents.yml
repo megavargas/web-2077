@@ -1,0 +1,86 @@
+key: ai-agents
+pillar: ai
+order: 1
+slug: ai-agents
+name: AI agents
+summary: Agents that carry out steps of a real process on your systems, with people making the calls that matter.
+seo:
+  title: AI agents in production for real business processes
+  description: We design and deploy generative AI agents that carry out tasks on your systems, with clear limits, human oversight and business metrics from day one.
+intro: Agents that look up, prepare and complete steps of a process on your systems. We start with the process and the metric you want to move, not with the tool.
+problem:
+  title: The problem
+  text: Many agents never get past the demo because they are bolted onto a process nobody has redesigned. It is unclear what the agent may do on its own, what a person decides and how success is measured. Without those answers, risk and the business will not sign off on production.
+capabilities:
+  title: What we do
+  items:
+    - name: Process selection
+      text: We pick processes with volume, known rules and a clear metric, and rule out those that do not need an agent.
+    - name: Workflow redesign
+      text: We define which steps the agent handles, which a person reviews and where the case is handed over.
+    - name: Systems integration
+      text: We connect the agent to CRM, core and document systems through APIs with least-privilege access.
+    - name: Multi-agent orchestration
+      text: We split the work across specialised agents when a single agent is not enough.
+    - name: Human oversight
+      text: We add approval points and review queues to the decisions that need them.
+    - name: Measurement in production
+      text: We track quality, time, cost per task and impact on the business metric.
+approach:
+  title: How we do it
+  steps:
+    - name: Select and baseline
+      text: We fix the process, its starting metric and the limits of what the agent is allowed to do.
+    - name: Redesign
+      text: We map the new workflow with the tools, permissions and hand-offs to people at each step.
+    - name: Build and evaluate
+      text: We build the agent and test it against real cases from the process before it touches production systems.
+    - name: Roll out in stages
+      text: We move from shadow mode to supervised mode to bounded autonomy as the results justify it.
+deliverables:
+  title: What you get
+  items:
+    - Redesigned process map showing where the agent stops and people take over
+    - Agent in production, integrated with your systems
+    - Catalogue of tools and permissions for each agent
+    - Evaluation case set and test results
+    - Dashboard tracking quality, cost and impact
+    - Operating manual and plan for extending to new tasks
+outcome:
+  title: Outcome
+  text: A process that is resolved faster and with less manual work, with people deciding where it matters and a known cost per task.
+useCases:
+  title: Where we apply it
+  items:
+    - sector: telco
+      name: Customer issue resolution
+      text: An agent that checks billing and service status, proposes a fix and opens the case, handing over to a person when needed.
+    - sector: banking
+      name: AML alert preparation
+      text: An agent that gathers the context behind each anti-money laundering alert and drafts the analysis so the analyst can decide.
+    - sector: insurance
+      name: Handling simple claims
+      text: An agent that checks cover, requests missing documents and proposes the next step to the claims handler.
+technologies:
+  - Gemini
+  - Vertex AI
+  - Agent Development Kit
+  - Azure OpenAI
+  - Microsoft Foundry
+  - Amazon Bedrock
+  - Model Context Protocol
+related:
+  - process-automation
+  - ai-evaluation-governance
+  - use-case-portfolio
+faq:
+  - q: Which processes are a good fit for an agent?
+    a: Those with volume, repeatable steps that need some judgement and a metric you can measure. If a rule or conventional automation will do, we say so and do not build an agent.
+  - q: What happens if the agent gets it wrong?
+    a: Each agent has limited permissions and human approval points for actions with real impact. Everything is logged, so any decision can be reviewed and reversed if needed.
+  - q: How long does it take to get an agent into production?
+    a: It depends on the process and the integrations. A 2–4 week assessment sets the scope and the plan; we then roll out in stages, starting in shadow mode so we can measure before granting autonomy.
+cta:
+  title: Which process would you hand to an agent?
+  text: Start with a 2–4 week assessment and come away with the chosen process, its business case and a plan to take it into production.
+  button: Request an assessment

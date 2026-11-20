@@ -1,0 +1,86 @@
+key: mlops-llmops
+pillar: ai
+order: 4
+slug: mlops-llmops
+name: MLOps y LLMOps
+summary: Despliegue, versionado, monitorización y control de costes de modelos predictivos y generativos en producción.
+seo:
+  title: MLOps y LLMOps para modelos e IA generativa
+  description: 'Llevamos modelos predictivos y de IA generativa a producción y los operamos: despliegue automatizado, versionado, monitorización de calidad y coste por caso.'
+intro: Una sola forma de desplegar, vigilar y mantener modelos predictivos y generativos. Sabréis qué modelo decide qué, con qué versión y cuánto cuesta.
+problem:
+  title: El problema
+  text: Cada modelo se pone en producción de una manera distinta, a mano y sin registro de versiones. Nadie se entera cuando un modelo pierde acierto, el gasto en IA generativa crece sin saber qué caso lo genera y, cuando auditoría pregunta, cuesta reconstruir qué versión estaba activa.
+capabilities:
+  title: Qué hacemos
+  items:
+    - name: Inventario y registro de modelos
+      text: Un catálogo único de modelos, prompts y versiones con su dueño, su estado y sus aprobaciones.
+    - name: Despliegue automatizado
+      text: Integración y despliegue continuos con pruebas y evaluación antes de cada cambio en producción.
+    - name: Monitorización de calidad
+      text: Alertas por deriva de datos, pérdida de acierto o empeoramiento de las respuestas generativas.
+    - name: Trazas de IA generativa
+      text: Registro de cada llamada, recuperación y uso de herramientas para depurar y auditar.
+    - name: Coste por caso de uso
+      text: Gasto en cómputo y en modelos generativos repartido por caso, equipo y unidad de negocio.
+    - name: Reentrenamiento y marcha atrás
+      text: Ciclos de reentrenamiento programados y vuelta rápida a la versión anterior si algo falla.
+approach:
+  title: Cómo lo hacemos
+  steps:
+    - name: Evaluar el punto de partida
+      text: Inventariamos modelos y aplicaciones de IA, cómo se despliegan hoy y dónde están los riesgos.
+    - name: Diseñar la plataforma
+      text: Definimos registro, entornos, flujos de despliegue, permisos y métricas a vigilar.
+    - name: Industrializar los primeros casos
+      text: Llevamos uno o dos modelos reales a la plataforma y dejamos el patrón listo para el resto.
+    - name: Operar y optimizar
+      text: Vigilamos calidad y coste, reentrenamos y optimizamos, con servicio gestionado o con tu equipo.
+deliverables:
+  title: Qué te llevas
+  items:
+    - Inventario de modelos y aplicaciones de IA con su estado y su dueño
+    - Plataforma MLOps y LLMOps desplegada en tu cloud
+    - Flujos de despliegue con pruebas y evaluación automáticas
+    - Cuadro de monitorización de calidad, deriva y coste
+    - Procedimientos de operación, incidencias y marcha atrás
+    - Servicio gestionado o traspaso a tu equipo
+outcome:
+  title: Resultado
+  text: Modelos que llegan antes a producción y se mantienen fiables, con costes conocidos y la trazabilidad que piden riesgos y auditoría.
+useCases:
+  title: Dónde lo aplicamos
+  items:
+    - sector: telco
+      name: Modelos de churn y red
+      text: Reentrenamiento y vigilancia de deriva de los modelos de abandono y de mantenimiento predictivo, que cambian con cada campaña.
+    - sector: banking
+      name: Evidencias para validación interna
+      text: Versiones, datos de entrenamiento y resultados registrados para que validación y auditoría puedan revisar cada modelo.
+    - sector: insurance
+      name: Pricing y procesos documentales
+      text: Modelos de tarificación con versiones aprobadas y marcha atrás, y coste por siniestro de los procesos con IA generativa.
+technologies:
+  - Vertex AI
+  - MLflow
+  - Databricks
+  - Azure Machine Learning
+  - Microsoft Foundry
+  - Amazon SageMaker
+  - Langfuse
+related:
+  - ai-evaluation-governance
+  - dataops-observability
+  - cloud-data-platforms
+faq:
+  - q: ¿Necesitamos MLOps si solo tenemos unos pocos modelos?
+    a: Con pocos modelos basta con lo esencial, como registro de versiones, despliegue reproducible y alertas básicas. Lo dimensionamos para que crezca contigo sin montar una plataforma sobredimensionada.
+  - q: ¿Cómo controlamos el coste de la IA generativa?
+    a: Medimos el coste de cada llamada y lo repartimos por caso de uso. Con eso se ajusta el modelo, la caché o el tamaño del contexto donde más gasta, sin perder calidad.
+  - q: ¿Lo operáis vosotros o nuestro equipo?
+    a: Las dos opciones son posibles. Podemos operarlo como servicio gestionado o formar a tu equipo y traspasarle la plataforma con la documentación y los procedimientos.
+cta:
+  title: ¿Sabes cuántos modelos tienes en producción y cuánto cuestan?
+  text: Empieza por un diagnóstico de 2–4 semanas y sal con el inventario, los riesgos principales y el plan para industrializar tus modelos.
+  button: Solicita un diagnóstico

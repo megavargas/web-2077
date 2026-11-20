@@ -1,0 +1,84 @@
+key: self-service-analytics
+pillar: intelligence
+order: 5
+slug: analitica-autoservicio
+name: Analítica de autoservicio
+summary: Cada área responde sus propias preguntas con datos certificados, formación y reglas de uso claras.
+seo:
+  title: Analítica de autoservicio con datos certificados
+  description: Analítica de autoservicio para Telco, Banca y Seguros. Datos certificados, reglas de uso, formación por perfiles y preguntas en lenguaje natural con control.
+intro: Hacemos que el autoservicio funcione de verdad, con datos certificados, reglas claras, formación por perfiles y acompañamiento, también cuando las preguntas se hacen en lenguaje natural.
+problem:
+  title: El problema
+  text: Se compran licencias de BI, pero la mayoría de usuarios sigue pidiendo extracciones a TI o exportando a Excel. Quienes sí se lanzan crean cientos de informes con cifras propias, sin dueño ni revisión. Y ahora que las herramientas permiten preguntar en lenguaje natural, crece el riesgo de obtener respuestas distintas a la misma pregunta.
+capabilities:
+  title: Qué hacemos
+  items:
+    - name: Modelo de autoservicio
+      text: Definimos qué construye cada área, qué certifica el equipo central y qué se queda en el entorno personal.
+    - name: Datos certificados
+      text: Publicamos conjuntos de datos y modelos semánticos aprobados como punto de partida de cualquier análisis.
+    - name: Formación por perfiles
+      text: Diseñamos itinerarios distintos para quien consulta informes, quien los crea y quien hace análisis avanzados.
+    - name: Comunidad y soporte
+      text: Ponemos en marcha una comunidad de práctica, referentes en cada área y un canal de ayuda.
+    - name: Preguntas en lenguaje natural
+      text: Configuramos Copilot en Power BI, Gemini en Looker u otros asistentes sobre datos certificados y con permisos.
+    - name: Seguimiento de la adopción
+      text: Medimos uso, contenido duplicado y calidad para decidir qué promover y qué retirar.
+approach:
+  title: Cómo lo hacemos
+  steps:
+    - name: Evaluar el uso
+      text: Medimos cómo se usan hoy las herramientas, qué perfiles hay y qué contenido existe.
+    - name: Fijar las reglas
+      text: Acordamos el modelo de propiedad, los niveles de certificación y los permisos.
+    - name: Habilitar
+      text: Publicamos los datos certificados y formamos a los primeros equipos con casos reales de su área.
+    - name: Escalar
+      text: Extendemos el modelo a más áreas con la comunidad de práctica y revisamos el contenido periódicamente.
+deliverables:
+  title: Qué te llevas
+  items:
+    - Diagnóstico de uso y madurez del autoservicio
+    - Modelo de gobierno del autoservicio con roles, certificación y permisos
+    - Catálogo de conjuntos de datos y modelos certificados
+    - Itinerarios de formación por perfil, con material basado en tus datos
+    - Panel de adopción con uso, duplicados y contenido certificado
+outcome:
+  title: Resultado
+  text: Menos peticiones a TI, menos informes duplicados y más equipos que responden sus propias preguntas con las cifras oficiales.
+useCases:
+  title: Dónde lo aplicamos
+  items:
+    - sector: telco
+      name: Autoservicio para equipos comerciales
+      text: Responsables de canal y de producto que analizan ventas y bajas sobre datos certificados, sin pedir extracciones.
+    - sector: banking
+      name: Analítica para la red de oficinas
+      text: Directores de zona y de oficina que consultan su cartera y sus objetivos con los permisos que les corresponden.
+    - sector: insurance
+      name: Autoservicio en suscripción y siniestros
+      text: Equipos técnicos que exploran carteras y siniestros con indicadores comunes y trazables.
+technologies:
+  - Power BI
+  - Microsoft Fabric
+  - Looker
+  - Looker Studio
+  - BigQuery
+  - Gemini
+related:
+  - semantic-layer
+  - operating-model
+  - data-ai-governance
+faq:
+  - q: ¿El autoservicio no acaba generando caos?
+    a: Sin reglas, sí. Por eso separamos el contenido personal, el de equipo y el certificado, y cada nivel tiene dueño y criterios de revisión. El objetivo es dar libertad sobre una base común, no prohibir.
+  - q: ¿Podemos dejar que la gente pregunte a los datos en lenguaje natural?
+    a: Sí, siempre que el asistente trabaje sobre datos certificados y una capa semántica con definiciones y permisos. Sin esa base, cada pregunta puede devolver una cifra distinta. Lo activamos por áreas y revisamos la calidad de las respuestas.
+  - q: ¿Cuánta formación hace falta?
+    a: Depende del perfil. Quien consulta necesita aprender a encontrar e interpretar sus informes; quien crea, un itinerario práctico con sus propios datos. Lo que mejor funciona es el acompañamiento continuado de la comunidad, no un curso aislado.
+cta:
+  title: ¿Cuántos informes tienes y cuántos se usan?
+  text: En un diagnóstico de 2–4 semanas medimos el uso real de tu BI y te proponemos un modelo de autoservicio con reglas y prioridades.
+  button: Solicita un diagnóstico

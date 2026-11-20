@@ -70,9 +70,10 @@ Menciona la regulación como contexto que entendemos, **no** como certificacione
 Base: `docs/reports/Benchmark competitivo web Contextual.md` (benchmark de 29 competidores, nov. 2026).
 
 ```
-/                                Home: hero · contexto en 3 capas · pilares 01→04 · método · sectores · banda · ecosistema · CTA
+/                                Home: hero · clientes (muro de logos) · contexto en 3 capas · pilares 01→04 · método · sectores · banda · ecosistema · CTA
 /servicios                       Recorrido 01→04 · método con entregables · formas de trabajar (proyecto, gestionado, capacidad flexible) · FAQ
-/servicios/{estrategia,datos,inteligencia,ia}    Problema · qué incluye · resultado · dónde lo aplicamos (por sector) · tecnologías · FAQ · anterior/siguiente
+/servicios/{estrategia,datos,inteligencia,ia}    Problema · qué incluye (tarjetas a sus 5 subservicios) · resultado · dónde lo aplicamos (por sector) · tecnologías · FAQ · anterior/siguiente
+/servicios/<pilar>/<subservicio>   20 landings (5 por pilar, numeradas 01.1–04.5): migas · problema · qué hacemos · cómo (4 pasos) · resultado y entregables · un caso de uso por sector · tecnologías · FAQ · resto del pilar y relacionados · anterior/siguiente (recorrido 01.1→04.5) · CTA
 /servicios/diagnostico           Landing de la oferta de entrada + formulario (motivo fijo)
 /sectores · /sectores/{telco,banca,seguros}      Retos · casos de uso por área de negocio con pilares · regulación · FAQ · CTA con sector
 /ecosistema                      Partners · licencias y facturación · tecnologías
@@ -83,11 +84,14 @@ Idioma por defecto: **inglés** en la raíz (`/services`, `/industries/banking`�
 
 Reservado y **sin enlazar** hasta que haya decisión o contenido: `/casos` (casos de cliente), `/insights` (sin artículos aún), `/autodiagnostico` (fase 2).
 
-Contenido: cada página tiene su YAML en `content/{es,en}/` (esquemas en `content.config.ts`). Pilares y sectores son la única fuente de verdad: la home, los listados, el pie y los enlaces cruzados los leen de ahí.
+Subservicios: un YAML por idioma en `content/{es,en}/subservices/<key>.yml` (claves en `subserviceKeys` de `content.config.ts`); son la fuente de la lista «Qué incluye» del pilar y de la tarjeta de pilares. Investigación de competencia de cada landing en `docs/research_notes/Landings de subservicios/` (20/11/2026). Trato al lector: **tú** (no «vosotros»).
+
+Contenido: cada página tiene su YAML en `content/{es,en}/` (esquemas en `content.config.ts`). Pilares, subservicios y sectores son la única fuente de verdad: la home, los listados, el pie y los enlaces cruzados los leen de ahí.
 
 ## 5b. Decisiones pendientes del cliente
 
-- **Casos de cliente:** decidido el 17/11/2026 **no reutilizar** las 17 historias de la web antigua por ahora. No publicar nombres de clientes, logos ni cifras de esos casos; `/casos` sigue reservada y sin enlazar.
+- **Casos de cliente:** decidido el 17/11/2026 **no reutilizar** las 17 historias de la web antigua por ahora. No publicar cifras ni historias de esos casos; `/casos` sigue reservada y sin enlazar.
+- **Logos de clientes (decisión del cliente, 20/11/2026):** sí se publican, en la home, en un muro de logos rotatorio (`SectionClients`) bajo el claim «Colaboramos con empresas que ya conoces». Son 18: 17 de los 19 que lista contextual.team (/companiesLogos) — KeepCoding y Detexian quedan fuera por decisión del cliente — más Hey!Broadband (de su SVG oficial). Rejilla de 3 filas sin líneas (6×3 en escritorio, 4×3 en tablet, 2×3 en móvil); si caben todos, no rota. Planos en una tinta (blanco en oscuro, marino en claro) en `app/assets/data/clients.json`. Solo logo y nombre: sin casos, cifras ni frases de cliente. Para añadir o quitar uno, edita la lista y regenera el JSON (trazado con potrace, como `logo.json`). Al pasar a una tinta, Securitas Direct pierde los tres círculos rojos (se funden con el recuadro negro): se añaden a mano como huecos circulares tras el trazado.
 - **Nombre del método/diagnóstico** (el benchmark recomienda darle marca). No inventarlo.
 - **Expertos por sector** (campo `expert` en el YAML del sector; solo se muestra si existe).
 - **Google Marketing Platform:** si aparece o no en Ecosistema.

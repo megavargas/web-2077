@@ -1,0 +1,85 @@
+key: ai-evaluation-governance
+pillar: ai
+order: 5
+slug: evaluacion-gobierno-ia
+name: Evaluación y control de agentes
+summary: Pruebas de calidad y seguridad, límites de actuación y registro completo de lo que hacen agentes y modelos.
+seo:
+  title: Evaluación, seguridad y control de agentes de IA
+  description: Evaluamos la calidad y la seguridad de agentes y modelos de IA, fijamos qué pueden hacer y quién aprueba, y registramos cada acción para riesgos y auditoría.
+intro: Medimos si la IA hace bien su trabajo, fijamos qué puede hacer sin permiso y dejamos registro de cada acción. Control técnico que convence a riesgos, seguridad y auditoría.
+problem:
+  title: El problema
+  text: Un agente que solo responde puede equivocarse; uno que actúa sobre sistemas puede equivocarse con consecuencias. La mayoría se evalúa con unas cuantas pruebas manuales, sin límites de actuación escritos ni un registro que permita explicar después qué hizo y por qué.
+capabilities:
+  title: Qué hacemos
+  items:
+    - name: Mapa de riesgos por caso
+      text: Qué puede salir mal en cada caso de uso, con qué impacto y cómo encaja en el AI Act.
+    - name: Conjuntos de evaluación
+      text: Casos reales y criterios de calidad acordados con negocio para medir cada versión antes de salir.
+    - name: Pruebas adversarias
+      text: Intentos controlados de inyección de instrucciones, fuga de datos y uso indebido de herramientas.
+    - name: Guardarraíles y filtros
+      text: Filtros de entrada y salida y validaciones antes de que el agente ejecute una acción.
+    - name: Límites de actuación
+      text: Qué puede hacer cada agente, con qué permisos, hasta qué importe y cuándo necesita aprobación humana.
+    - name: Trazabilidad y registro
+      text: Registro de cada consulta, decisión y acción, listo para revisión interna y auditoría.
+approach:
+  title: Cómo lo hacemos
+  steps:
+    - name: Mapear riesgos
+      text: Analizamos cada caso de uso, su clasificación de riesgo y lo que el agente puede llegar a tocar.
+    - name: Fijar criterios y límites
+      text: Acordamos umbrales de calidad, acciones permitidas y aprobaciones humanas con negocio, riesgos y seguridad.
+    - name: Probar antes de salir
+      text: Ejecutamos las evaluaciones y las pruebas adversarias y solo pasa a producción lo que cumple los umbrales.
+    - name: Vigilar en producción
+      text: Evaluamos de forma continua, revisamos alertas y registros y ajustamos límites cuando cambia el caso.
+deliverables:
+  title: Qué te llevas
+  items:
+    - Mapa de riesgos y clasificación de cada caso de uso
+    - Conjuntos de evaluación y criterios de aceptación por caso
+    - Informe de pruebas adversarias con las medidas aplicadas
+    - Matriz de límites de actuación y aprobaciones humanas
+    - Registro y trazas de agentes y modelos en producción
+    - Documentación técnica para riesgos, cumplimiento y auditoría
+outcome:
+  title: Resultado
+  text: IA en producción con calidad medida, límites conocidos y evidencias para explicar cualquier decisión a riesgos, auditoría o el supervisor.
+useCases:
+  title: Dónde lo aplicamos
+  items:
+    - sector: telco
+      name: Asistentes de cliente con guardarraíles
+      text: Pruebas contra respuestas fuera de tema, compromisos comerciales no autorizados y exposición de datos personales.
+    - sector: banking
+      name: Evidencias para riesgos y auditoría
+      text: Evaluaciones, límites y registros de los agentes de operaciones documentados para la segunda y la tercera línea de defensa.
+    - sector: insurance
+      name: Límites de actuación en siniestros
+      text: Qué puede resolver un agente por sí solo, hasta qué importe y cuándo firma un tramitador.
+technologies:
+  - Vertex AI
+  - Model Armor
+  - Microsoft Foundry
+  - Azure AI Content Safety
+  - Amazon Bedrock Guardrails
+  - MLflow
+related:
+  - data-ai-governance
+  - mlops-llmops
+  - ai-agents
+faq:
+  - q: ¿En qué se diferencia del gobierno del dato y de la IA?
+    a: 'El gobierno de la IA fija políticas, roles y responsabilidades para toda la organización. Aquí bajamos a cada agente y cada modelo: cómo se prueba, qué puede hacer, quién aprueba y qué queda registrado.'
+  - q: ¿Qué implica el AI Act para nuestros agentes?
+    a: Depende del caso. Algunos usos, como evaluar la solvencia de personas o tarificar seguros de vida y salud, son de alto riesgo, y en 2026 la UE ha acordado aplazar parte de sus obligaciones. Lo analizamos caso a caso con tu equipo de cumplimiento.
+  - q: ¿Esto frena los proyectos?
+    a: Al contrario. Con criterios de aceptación y límites claros desde el diseño, riesgos y seguridad aprueban antes y el paso a producción deja de ser una negociación caso a caso.
+cta:
+  title: ¿Podrías explicar mañana qué hizo tu IA y por qué?
+  text: En un diagnóstico de 2–4 semanas revisamos tus casos de IA, sus riesgos y sus controles, y te llevas el plan para cerrar los huecos.
+  button: Solicita un diagnóstico

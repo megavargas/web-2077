@@ -1,0 +1,87 @@
+key: legacy-migration
+pillar: data
+order: 3
+slug: migracion-bi-etl
+name: Migración de BI y ETL legacy
+summary: De Cognos, MicroStrategy, PowerCenter o Teradata a un stack moderno, sin cortar el reporting.
+seo:
+  title: Migración de BI y ETL legacy a la nube
+  description: Migramos Cognos, MicroStrategy, PowerCenter y Teradata a Google Cloud, Azure o AWS, con inventario, conversión, conciliación de cifras y apagado del legacy.
+intro: Salimos de Cognos, MicroStrategy, PowerCenter o Teradata sin cortar el reporting, con las cifras conciliadas y el sistema antiguo apagado al final, no en paralelo para siempre.
+problem:
+  title: El problema
+  text: Las plataformas de BI y ETL heredadas cuestan cada año más en licencias, soporte y perfiles escasos. Migrarlas da miedo porque nadie sabe qué informes se usan ni qué lógica de negocio esconden. Muchas migraciones acaban con dos sistemas pagándose a la vez.
+capabilities:
+  title: Qué hacemos
+  items:
+    - name: Inventario con uso real
+      text: Catalogamos informes, procesos y dependencias, y medimos qué se usa, quién lo usa y con qué frecuencia.
+    - name: Racionalizar antes de migrar
+      text: Retiramos lo duplicado o sin uso para migrar solo lo que aporta.
+    - name: Conversión asistida
+      text: Usamos las herramientas de conversión de los fabricantes y revisamos a mano la lógica de negocio.
+    - name: Conciliación de cifras
+      text: Comparamos origen y destino informe a informe hasta que las cifras coinciden.
+    - name: Convivencia sin cortes
+      text: Migramos por dominios y mantenemos en paralelo los informes críticos hasta validarlos.
+    - name: Apagado del legacy
+      text: Planificamos la baja de licencias, servidores y contratos para que el ahorro sea real.
+approach:
+  title: Cómo lo hacemos
+  steps:
+    - name: Inventariar
+      text: Analizamos el sistema actual, el uso de cada informe y proceso y el coste total del legacy.
+    - name: Racionalizar y planificar
+      text: Decidimos qué se migra, qué se rediseña y qué se retira, y lo ordenamos por dominios.
+    - name: Convertir y conciliar
+      text: Migramos procesos, modelos e informes y validamos las cifras contra el sistema de origen.
+    - name: Apagar
+      text: Damos de baja el sistema antiguo en cuanto los usuarios trabajan ya en el nuevo.
+deliverables:
+  title: Qué te llevas
+  items:
+    - Inventario de informes y procesos con uso, responsables y dependencias
+    - Plan de migración por dominios con secuencia, esfuerzo y coste
+    - Procesos, modelos e informes migrados al nuevo stack
+    - Informes de conciliación entre origen y destino
+    - Plan de baja de licencias, servidores y contratos
+    - Formación y guías para los usuarios del nuevo entorno
+outcome:
+  title: Resultado
+  text: Menos coste fijo en licencias y soporte, informes que dan las mismas cifras que antes y una base moderna sobre la que construir analítica e IA.
+useCases:
+  title: Dónde lo aplicamos
+  items:
+    - sector: telco
+      name: Indicadores comerciales y de red
+      text: Migración del reporting diario de ventas, bajas y red sin perder la serie histórica.
+    - sector: banking
+      name: Reporting regulatorio y de riesgos
+      text: Informes migrados con conciliación cifra a cifra antes de dejar de usar el sistema antiguo.
+    - sector: insurance
+      name: Reporting actuarial y de siniestros
+      text: Paso de herramientas heredadas a un stack moderno sin tocar el calendario de cierres.
+technologies:
+  - BigQuery
+  - Snowflake
+  - Databricks
+  - Microsoft Fabric
+  - Power BI
+  - Looker
+  - dbt
+  - Airflow
+related:
+  - lakehouse-warehouse
+  - semantic-layer
+  - data-engineering-quality
+faq:
+  - q: ¿Cuánto se puede convertir automáticamente?
+    a: Las herramientas de los fabricantes traducen bien SQL, esquemas y buena parte de los procesos ETL. La lógica de negocio escondida, los informes muy formateados y las excepciones necesitan revisión experta. Lo medimos en el inventario, antes de comprometer plazos.
+  - q: ¿Pagaremos dos plataformas a la vez?
+    a: Durante un tiempo sí, y es lo que más hay que acotar. Planificamos por dominios y fijamos desde el principio las fechas de baja del legacy, para que la convivencia sea corta y el ahorro en licencias llegue.
+  - q: ¿Por dónde empezamos?
+    a: Por el dominio que combina más coste de licencia o riesgo de soporte con un uso bien conocido. El diagnóstico de entrada incluye un primer inventario y compara el coste de migrar con el de quedarse.
+cta:
+  title: ¿Cuánto te cuesta seguir en el legacy?
+  text: En un diagnóstico de 2–4 semanas inventariamos tu BI y tu ETL y te decimos qué migrar, en qué orden y con qué coste.
+  button: Solicita un diagnóstico

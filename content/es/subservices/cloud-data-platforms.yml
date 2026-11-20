@@ -1,0 +1,87 @@
+key: cloud-data-platforms
+pillar: data
+order: 1
+slug: plataformas-datos-cloud
+name: Plataformas de datos cloud
+summary: Arquitectura, seguridad y costes de tu plataforma en Google Cloud, Azure o AWS, resueltos desde el diseño.
+seo:
+  title: Plataformas de datos cloud en Google Cloud, Azure y AWS
+  description: Diseñamos y desplegamos plataformas de datos en Google Cloud, Azure y AWS con seguridad, costes previsibles y plan de salida para sectores regulados.
+intro: Una plataforma de datos en la nube con la seguridad, los costes y la salida resueltos desde el diseño, para construir encima sin rehacer la base dentro de dos años.
+problem:
+  title: El problema
+  text: Muchas plataformas cloud nacen de un piloto que creció sin diseño. Hay permisos heredados, entornos mezclados y una factura que nadie sabe atribuir. En banca y seguros, además, el supervisor pregunta por el riesgo del proveedor y el plan de salida, y la arquitectura no tiene la respuesta.
+capabilities:
+  title: Qué hacemos
+  items:
+    - name: Elección de nube con criterio
+      text: Comparamos Google Cloud, Azure y AWS según tus sistemas, tus equipos y el coste total, no según el contrato.
+    - name: Arquitectura de referencia
+      text: Diseñamos la plataforma por capas y dominios, con cada decisión documentada y justificada.
+    - name: Landing zone como código
+      text: Desplegamos cuentas, proyectos, redes y entornos con infraestructura como código, repetible y auditable.
+    - name: Seguridad y accesos
+      text: Identidades, cifrado, segmentación de red y permisos por rol desde el primer día.
+    - name: Costes bajo control (FinOps)
+      text: Etiquetado, presupuestos y alertas para saber cuánto cuesta cada dominio y cada caso de uso.
+    - name: Resiliencia y plan de salida
+      text: Copias, recuperación y portabilidad del dato pensadas para DORA y para no quedar atados a un proveedor.
+approach:
+  title: Cómo lo hacemos
+  steps:
+    - name: Evaluar
+      text: Revisamos sistemas, contratos, equipos y requisitos de seguridad y regulación para fijar el punto de partida.
+    - name: Diseñar
+      text: Definimos la arquitectura de referencia, el modelo de seguridad y el de costes, y los validamos con tecnología y riesgos.
+    - name: Desplegar
+      text: Construimos la landing zone como código y llevamos a producción el primer dominio de datos.
+    - name: Traspasar u operar
+      text: Entregamos documentación, procedimientos y formación a tu equipo, o seguimos operando la plataforma como servicio gestionado.
+deliverables:
+  title: Qué te llevas
+  items:
+    - Arquitectura de referencia con registro de decisiones
+    - Landing zone desplegada como código
+    - Modelo de seguridad, identidades y accesos
+    - 'Modelo FinOps: etiquetado, presupuestos y cuadro de costes por dominio'
+    - Plan de continuidad, salida y portabilidad del dato
+    - Procedimientos de operación y plan de traspaso al equipo
+outcome:
+  title: Resultado
+  text: Una base cloud segura y con costes previsibles, que tu equipo entiende y puede ampliar, y que responde a auditoría y supervisión sin rehacer nada.
+useCases:
+  title: Dónde lo aplicamos
+  items:
+    - sector: telco
+      name: Datos de red y cliente a escala
+      text: Plataforma para grandes volúmenes de eventos de red y uso, con el coste de cada consulta visible y atribuido.
+    - sector: banking
+      name: Plataforma diseñada para DORA
+      text: Riesgo de proveedor, continuidad y plan de salida resueltos en la arquitectura, no en un anexo.
+    - sector: insurance
+      name: Datos personales y de salud protegidos
+      text: Segregación de accesos sobre pólizas y siniestros, con trazabilidad de quién consulta cada dato.
+technologies:
+  - Google Cloud
+  - Microsoft Azure
+  - AWS
+  - BigQuery
+  - Microsoft Fabric
+  - Snowflake
+  - Databricks
+  - Terraform
+related:
+  - lakehouse-warehouse
+  - dataops-observability
+  - data-ai-governance
+faq:
+  - q: ¿Qué nube nos conviene?
+    a: Depende de tus sistemas actuales, de lo que sabe hacer tu equipo y del coste total a varios años. Trabajamos con Google Cloud, Azure y AWS, comparamos con tus datos y te damos una recomendación argumentada, también si la respuesta es combinar dos.
+  - q: ¿Cómo evitamos que la factura se dispare?
+    a: Con FinOps desde el diseño. Cada recurso va etiquetado por dominio, hay presupuestos con alertas y un cuadro de costes que revisan negocio y tecnología. Las plataformas de datos cobran por consulta o por capacidad, así que también optimizamos modelos y consultas, no solo infraestructura.
+  - q: ¿Es compatible una plataforma cloud con DORA?
+    a: Sí. DORA no prohíbe el cloud. Pide gestionar el riesgo del proveedor, probar la continuidad y tener un plan de salida viable, y lo incorporamos a la arquitectura (formatos abiertos, copias, documentación) para que la respuesta al supervisor no dependa de un documento aparte.
+cta:
+  title: ¿Tu plataforma aguanta lo que viene?
+  text: En un diagnóstico de 2–4 semanas revisamos arquitectura, seguridad y costes, y te decimos qué corregir primero.
+  button: Solicita un diagnóstico

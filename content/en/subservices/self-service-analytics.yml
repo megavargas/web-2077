@@ -1,0 +1,84 @@
+key: self-service-analytics
+pillar: intelligence
+order: 5
+slug: self-service-analytics
+name: Self-service analytics
+summary: Every team answers its own questions with certified data, training and clear rules of use.
+seo:
+  title: Self-service analytics on certified data
+  description: Self-service analytics for telecoms, banking and insurance. Certified data, usage rules, role-based training and natural-language questions kept under control.
+intro: We make self-service work in practice, with certified data, clear rules, role-based training and ongoing support, including when questions are asked in natural language.
+problem:
+  title: The problem
+  text: BI licences get bought, yet most users still ask IT for extracts or export to Excel. Those who do take the plunge create hundreds of reports with their own figures, with no owner and no review. And now that tools accept questions in natural language, the risk of getting different answers to the same question is growing.
+capabilities:
+  title: What we do
+  items:
+    - name: Self-service model
+      text: We define what each team builds, what the central team certifies and what stays in personal workspaces.
+    - name: Certified data
+      text: We publish approved datasets and semantic models as the starting point for any analysis.
+    - name: Role-based training
+      text: We design separate learning paths for report consumers, report creators and advanced analysts.
+    - name: Community and support
+      text: We set up a community of practice, champions in each team and a help channel.
+    - name: Natural-language questions
+      text: We configure Copilot in Power BI, Gemini in Looker or other assistants on certified data, with permissions in place.
+    - name: Adoption tracking
+      text: We measure usage, duplicate content and quality to decide what to promote and what to retire.
+approach:
+  title: How we do it
+  steps:
+    - name: Assess usage
+      text: We measure how the tools are used today, which user profiles exist and what content is out there.
+    - name: Set the rules
+      text: We agree the ownership model, certification levels and permissions.
+    - name: Enable
+      text: We publish the certified data and train the first teams using real cases from their own area.
+    - name: Scale
+      text: We extend the model to more teams through the community of practice and review content regularly.
+deliverables:
+  title: What you get
+  items:
+    - Self-service usage and maturity assessment
+    - Self-service governance model with roles, certification and permissions
+    - Catalogue of certified datasets and semantic models
+    - Role-based learning paths, with material built on your own data
+    - Adoption dashboard tracking usage, duplicates and certified content
+outcome:
+  title: Outcome
+  text: Fewer requests to IT, fewer duplicate reports and more teams answering their own questions with the official figures.
+useCases:
+  title: Where we apply it
+  items:
+    - sector: telco
+      name: Self-service for commercial teams
+      text: Channel and product managers analysing sales and churn on certified data, without requesting extracts.
+    - sector: banking
+      name: Analytics for the branch network
+      text: Regional and branch managers reviewing their portfolio and targets with the permissions that apply to them.
+    - sector: insurance
+      name: Self-service in underwriting and claims
+      text: Technical teams exploring portfolios and claims with shared, traceable indicators.
+technologies:
+  - Power BI
+  - Microsoft Fabric
+  - Looker
+  - Looker Studio
+  - BigQuery
+  - Gemini
+related:
+  - semantic-layer
+  - operating-model
+  - data-ai-governance
+faq:
+  - q: Doesn't self-service end up in chaos?
+    a: Without rules, yes. That is why we separate personal, team and certified content, and give each level an owner and review criteria. The aim is freedom on a common foundation, not prohibition.
+  - q: Can we let people ask questions of the data in natural language?
+    a: Yes, as long as the assistant works on certified data and a semantic layer with definitions and permissions. Without that foundation, each question can return a different figure. We switch it on team by team and review the quality of the answers.
+  - q: How much training is needed?
+    a: It depends on the role. Report consumers need to learn to find and interpret their reports; creators need a hands-on learning path using their own data. What works best is ongoing support from the community, not a one-off course.
+cta:
+  title: How many reports do you have, and how many are used?
+  text: In a two-to-four-week assessment we measure how your BI is really used and propose a self-service model with rules and priorities.
+  button: Request an assessment

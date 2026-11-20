@@ -1,0 +1,84 @@
+key: process-automation
+pillar: ai
+order: 3
+slug: process-automation
+name: Process automation
+summary: Document reading, classification and validation built into the workflow, with exceptions handled by a person.
+seo:
+  title: AI-powered process and document automation
+  description: 'We automate document-heavy processes end to end: AI reading, classification, extraction and validation, integrated with your systems and with human review.'
+intro: We automate document-heavy processes end to end. AI reads, classifies and validates; a person reviews only what needs reviewing.
+problem:
+  title: The problem
+  text: Onboarding, lending and claims still depend on people reading documents and retyping data into another system. Template-based automation breaks as soon as a format changes, and without integration into core systems the savings never leave the demo.
+capabilities:
+  title: What we do
+  items:
+    - name: Process measurement
+      text: We measure volumes, document types, handling times and exceptions before deciding what to automate.
+    - name: Classification and extraction
+      text: Models that recognise each document and extract its data even when format or quality varies.
+    - name: Validation against systems
+      text: We check extracted data against the policy, contract or customer record and flag any mismatch.
+    - name: Confidence thresholds
+      text: We decide, by field and document type, what goes straight through and what goes to review.
+    - name: Exception queue
+      text: Doubtful items reach a person with the document and the field highlighted, without holding up the rest.
+    - name: Core systems integration
+      text: Validated data flows into your systems without being keyed in again.
+approach:
+  title: How we do it
+  steps:
+    - name: Measure
+      text: We take a real sample of documents and measure where time goes today and where errors arise.
+    - name: Design
+      text: We define the workflow, review thresholds and validations with the team that does the work today.
+    - name: Build
+      text: We build classification, extraction and validation and test them on real documents.
+    - name: Integrate and run
+      text: We connect to your systems, launch the exception queue and track the metrics.
+deliverables:
+  title: What you get
+  items:
+    - Baseline of the current process with volumes, times and exceptions
+    - Automated workflow in production, integrated with your systems
+    - Documented validation rules and review thresholds
+    - Human review queue for exceptions
+    - Dashboard of volume, straight-through rate, handling time and errors
+outcome:
+  title: Outcome
+  text: Processes completed faster and with fewer keying errors, with your team focused on the cases that genuinely need judgement.
+useCases:
+  title: Where we apply it
+  items:
+    - sector: telco
+      name: Sign-ups, number porting and complaints
+      text: Reading and validating contracts, requests and complaints so they reach the commercial systems complete.
+    - sector: banking
+      name: Lending and customer onboarding
+      text: Extracting and checking payslips, deeds and identity documents, with mismatches sent for review.
+    - sector: insurance
+      name: Claims opening and settlement
+      text: Reading claim forms, loss adjuster reports and invoices to open the claim and prepare its settlement.
+technologies:
+  - Document AI
+  - Gemini
+  - Azure AI Document Intelligence
+  - Azure OpenAI
+  - Amazon Textract
+  - Amazon Bedrock
+related:
+  - ai-agents
+  - mlops-llmops
+  - use-case-portfolio
+faq:
+  - q: How is this different from robotic process automation (RPA)?
+    a: RPA replays clicks on screens and breaks when something changes. Here the AI understands the document even when its format changes, and integration runs through APIs with validation and human review where needed.
+  - q: What happens to documents the AI cannot read well?
+    a: They do not go straight through. Confidence thresholds send them to a person with the doubtful field highlighted, and those corrections help improve the model.
+  - q: How do you estimate the return before starting?
+    a: We measure the current process on a real sample of documents and estimate how much can go straight through and how much time it frees up. That estimate is part of the assessment.
+cta:
+  title: Which process eats up most of your team's hours?
+  text: In a 2–4 week assessment we measure the process, estimate the return and hand you the plan to automate it.
+  button: Request an assessment

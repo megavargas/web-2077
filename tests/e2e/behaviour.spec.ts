@@ -26,6 +26,32 @@ test('el cambio de idioma conserva la página y traduce el slug', async ({ page 
   await expect(page).toHaveURL(/\/es\/sectores\/banca$/)
 })
 
+test('el cambio de idioma en un subservicio traduce pilar y subservicio', async ({ page }) => {
+  await page.goto('/es/servicios/ia/agentes-ia')
+  await waitForHydration(page)
+  await page
+    .getByRole('navigation', { name: 'Idioma' })
+    .getByRole('link', { name: 'English' })
+    .click()
+  await expect(page).toHaveURL(/\/services\/ai\/ai-agents$/)
+})
+
+test('el pilar enlaza sus cinco subservicios y cada landing vuelve al pilar', async ({ page }) => {
+  await page.goto('/services/data')
+  const cards = page.locator('section[aria-labelledby="includes-title"] li h3 a')
+  await expect(cards).toHaveCount(5)
+  await cards.first().click()
+  await expect(page).toHaveURL(/\/services\/data\/cloud-data-platforms$/)
+  const crumbs = page.getByRole('navigation', { name: 'Breadcrumb' })
+  await expect(crumbs.getByRole('link')).toHaveText(['Services', '02 · Data'])
+  const current = page.locator('section[aria-labelledby="more-title"] a[aria-current="page"]')
+  await expect(current).toHaveText(/Cloud data platforms/)
+})
+
+test('una URL de subservicio con el pilar equivocado da 404', async ({ request }) => {
+  expect((await request.get('/services/strategy/ai-agents')).status()).toBe(404)
+})
+
 test('la navegación marca la sección activa', async ({ page }) => {
   await page.setViewportSize({ width: 1440, height: 900 })
   await page.goto('/es/servicios/ia')

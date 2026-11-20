@@ -1,0 +1,83 @@
+key: data-ai-strategy
+pillar: strategy
+order: 1
+slug: estrategia-datos-ia
+name: Estrategia de datos e IA
+summary: Qué hacer con los datos y la IA, en qué orden y con qué retorno, en un plan que el comité puede aprobar.
+seo:
+  title: Estrategia de datos e IA con hoja de ruta y business case
+  description: Definimos tu estrategia de datos e IA, dónde está el valor, qué capacidades faltan y una hoja de ruta con business case por iniciativa y regulación incluida.
+intro: Convertimos la ambición en un plan de inversión. Dónde aporta valor la IA en tu negocio, qué datos y capacidades necesita y en qué orden abordarlo.
+problem:
+  title: El problema
+  text: Muchas estrategias de datos son un documento de principios que nadie usa para decidir. Los pilotos de IA se aprueban uno a uno, sin una visión común de plataforma, gobierno ni retorno, y el presupuesto se reparte entre iniciativas que compiten entre sí.
+capabilities:
+  title: Qué hacemos
+  items:
+    - name: Tesis de valor
+      text: Identificamos los objetivos de negocio en los que los datos y la IA pueden mover resultados, y cómo se va a medir.
+    - name: Visión y principios
+      text: Fijamos qué datos son estratégicos, qué se construye y qué se compra, y con qué criterios se decide.
+    - name: Arquitectura objetivo
+      text: Describimos la plataforma de datos e IA que necesitas en Google Cloud, Azure o AWS, partiendo de lo que ya tienes.
+    - name: Hoja de ruta de inversión
+      text: Ordenamos las iniciativas por valor, dependencias y riesgo, con presupuesto y equipo por fase.
+    - name: Regulación desde el diseño
+      text: Incorporamos el AI Act, DORA y la normativa de tu sector como requisitos del plan, no como una revisión al final.
+approach:
+  title: Cómo lo hacemos
+  steps:
+    - name: Escuchar al negocio
+      text: Entrevistamos a la dirección y a las áreas clave para fijar objetivos, restricciones y apetito de riesgo.
+    - name: Contrastar con la realidad
+      text: Revisamos datos, plataforma, equipos e iniciativas en curso para saber desde dónde se parte.
+    - name: Plantear opciones
+      text: Presentamos escenarios de ambición e inversión con sus implicaciones, para que la dirección elija con criterio.
+    - name: Comprometer el plan
+      text: Cerramos la hoja de ruta, el business case y los indicadores, y los presentamos al comité de dirección.
+deliverables:
+  title: Qué te llevas
+  items:
+    - Documento de estrategia con visión, principios y objetivos medibles
+    - Mapa de iniciativas priorizadas con business case
+    - Arquitectura objetivo de datos e IA y decisiones de construir o comprar
+    - Hoja de ruta a 12–24 meses con hitos, equipo y presupuesto estimado
+    - Cuadro de indicadores para seguir el valor y el avance
+    - Presentación ejecutiva para el comité de dirección o el consejo
+outcome:
+  title: Resultado
+  text: Una dirección que sabe en qué invertir en datos e IA, por qué y en qué orden, con un plan que se puede ejecutar y medir.
+useCases:
+  title: Dónde lo aplicamos
+  items:
+    - sector: telco
+      name: Cliente y red con dato común
+      text: Una estrategia que conecta retención, next-best-offer y analítica de red sobre una plataforma y un gobierno comunes.
+    - sector: banking
+      name: IA con BCBS 239 y DORA
+      text: Una hoja de ruta que equilibra casos de riesgo, fraude y cliente con los requisitos de agregación de datos y de resiliencia.
+    - sector: insurance
+      name: Siniestros y pricing con trazabilidad
+      text: Un plan que prioriza la automatización de siniestros y la tarificación sin perder la trazabilidad que piden Solvencia II e IFRS 17.
+technologies:
+  - Google Cloud
+  - Microsoft Azure
+  - AWS
+  - Vertex AI
+  - Azure OpenAI
+  - Amazon Bedrock
+related:
+  - maturity-assessment
+  - use-case-portfolio
+  - cloud-data-platforms
+faq:
+  - q: ¿Cuánto se tarda en tener una estrategia de datos e IA?
+    a: Depende del alcance y del número de áreas implicadas. Lo habitual es empezar por un diagnóstico de 2–4 semanas, que ya deja una hoja de ruta inicial, y profundizar después donde haga falta.
+  - q: ¿Qué pasa con las iniciativas que ya tenemos en marcha?
+    a: Entran en el análisis. La estrategia decide cuáles siguen, cuáles se reorientan y cuáles se paran, con criterios explícitos que el comité puede revisar.
+  - q: ¿La estrategia nos ata a un proveedor cloud?
+    a: No. Trabajamos con Google Cloud, Microsoft Azure y AWS. La arquitectura objetivo parte de lo que ya tienes y de lo que pide cada caso de uso, y deja documentado por qué se elige cada proveedor.
+cta:
+  title: ¿Por dónde empieza tu estrategia de datos e IA?
+  text: Un diagnóstico de 2–4 semanas te da la foto de partida, los primeros casos de uso priorizados y una hoja de ruta inicial.
+  button: Solicita un diagnóstico

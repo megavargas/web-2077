@@ -31,6 +31,9 @@ export default defineNuxtConfig({
     name: 'Contextual Intelligence Partners',
   },
 
+  // Páginas con slug traducido (pilares, subservicios, sectores): server/api/__sitemap__/urls.ts
+  sitemap: { sources: ['/api/__sitemap__/urls'] },
+
   runtimeConfig: {
     // URL a la que el formulario de contacto reenvía las solicitudes (NUXT_CONTACT_WEBHOOK_URL).
     // Sin ella, /api/contact responde 503 y la web ofrece el email como alternativa.

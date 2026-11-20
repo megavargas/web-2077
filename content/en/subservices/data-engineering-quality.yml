@@ -1,0 +1,84 @@
+key: data-engineering-quality
+pillar: data
+order: 4
+slug: data-engineering-quality
+name: Data engineering and quality
+summary: Automated pipelines with tests, contracts and measurable quality rules, with issues fixed at source.
+seo:
+  title: 'Data engineering and quality: pipelines and measurable rules'
+  description: Data pipelines with automated tests, contracts with source systems and quality rules with clear owners, for the data your business and regulators rely on.
+intro: We build the pipelines that move your data and measure its quality with rules, tests and owners, so errors are fixed at source rather than in the report.
+problem:
+  title: The problem
+  text: Data quality is usually a complaint, not a metric. Errors are patched by hand in the final report, and a change in a source system breaks jobs without warning. When audit or the supervisor asks where a figure comes from, nobody can prove it.
+capabilities:
+  title: What we do
+  items:
+    - name: Robust data pipelines
+      text: Batch or near-real-time ingestion and transformation, version-controlled and documented.
+    - name: Data contracts
+      text: Agreements with source systems on the schema, meaning, freshness and owner of each dataset.
+    - name: Automated testing
+      text: Every transformation is tested before it reaches production, just like application code.
+    - name: Measurable quality rules
+      text: Completeness, accuracy and consistency tracked against thresholds, with owners and trends over time.
+    - name: End-to-end lineage
+      text: Every figure traceable from the source system to the report or model.
+approach:
+  title: How we do it
+  steps:
+    - name: Prioritise critical data
+      text: We identify the data that feeds decisions, models and regulatory reporting.
+    - name: Define rules and contracts
+      text: We agree with the business and source system owners what correct data looks like.
+    - name: Build and test
+      text: We develop the pipelines with automated tests and quality rules built in.
+    - name: Measure and fix at source
+      text: We publish quality by domain and route every issue to the person who can fix it.
+deliverables:
+  title: What you get
+  items:
+    - Pipelines in production, version-controlled and documented
+    - Catalogue of quality rules with thresholds and owners
+    - Data contracts with source systems
+    - Automated test suite built into development
+    - Data quality dashboard by domain
+    - Source-to-report lineage for critical data
+outcome:
+  title: Outcome
+  text: Data that the business, audit and the supervisor can trust, with errors caught before they reach a decision and fixed where they originate.
+useCases:
+  title: Where we apply it
+  items:
+    - sector: telco
+      name: Customer data for models
+      text: Measured quality for the usage, billing and contact data that feeds churn models.
+    - sector: banking
+      name: Traceable risk data
+      text: Quality controls and lineage on risk data, aligned with the BCBS 239 principles.
+    - sector: insurance
+      name: Reliable policy and claims data
+      text: Quality rules on policy and claims data ahead of Solvency II and IFRS 17 closes.
+technologies:
+  - dbt
+  - Airflow
+  - Cloud Composer
+  - BigQuery
+  - Databricks
+  - Snowflake
+  - Azure Data Factory
+related:
+  - dataops-observability
+  - lakehouse-warehouse
+  - data-ai-governance
+faq:
+  - q: Where should we start with data quality?
+    a: With a small set of critical data, the data behind a major decision, a model or a regulatory report. Measuring twenty or so key data elements properly is worth more than a quality programme across the whole estate.
+  - q: Who fixes the errors?
+    a: The data owner at source, with the issue already pinpointed. Our job is to make sure errors are caught early, reach the right person and stop being patched in the report.
+  - q: Does this help with BCBS 239 or the supervisor?
+    a: It helps you demonstrate it. Documented rules, lineage and quality metrics are the evidence a review asks for. Compliance also depends on roles, policies and processes, which are covered by data governance.
+cta:
+  title: Can you prove where every figure comes from?
+  text: A 2–4 week assessment identifies your critical data, measures its current quality and proposes the first rules.
+  button: Request an assessment

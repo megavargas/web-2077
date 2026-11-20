@@ -1,0 +1,84 @@
+key: advanced-analytics
+pillar: intelligence
+order: 2
+slug: analitica-avanzada
+name: Analítica avanzada
+summary: Análisis de causas, segmentación y atribución para saber qué está pasando, por qué y qué palanca mover.
+seo:
+  title: 'Analítica avanzada: causas, segmentación y atribución'
+  description: Analítica avanzada para Telco, Banca y Seguros. Análisis de causas, segmentación, atribución y experimentos para medir qué funciona y por qué, no solo qué pasó.
+intro: Respondemos con rigor a las preguntas que el cuadro de mando plantea pero no contesta. Por qué cae una métrica, qué clientes se parecen y qué acción tuvo efecto de verdad.
+problem:
+  title: El problema
+  text: Los cuadros de mando dicen qué ha pasado, pero no por qué. Las explicaciones se construyen a mano en hojas de cálculo, cada una con sus supuestos, y llegan tarde. Y muchas inversiones se dan por buenas porque coincidieron con una subida, sin medir si la causaron.
+capabilities:
+  title: Qué hacemos
+  items:
+    - name: Análisis de causas
+      text: Descomponemos la variación de un indicador por segmento, canal o producto para encontrar qué la explica.
+    - name: Segmentación de clientes
+      text: Agrupamos clientes por comportamiento y valor, en segmentos que el negocio entiende y puede activar.
+    - name: Atribución y medición de impacto
+      text: Medimos qué parte del resultado se debe a cada canal o acción, combinando modelos estadísticos y experimentos.
+    - name: Diseño de experimentos
+      text: Planteamos pruebas A/B y grupos de control para comprobar una hipótesis antes de escalarla.
+    - name: Análisis de procesos y recorridos
+      text: Identificamos en qué paso de un proceso se pierden clientes, operaciones o tiempo.
+    - name: Análisis recurrentes automatizados
+      text: Convertimos los análisis que funcionan en procesos reproducibles, versionados y programados.
+approach:
+  title: Cómo lo hacemos
+  steps:
+    - name: Formular la pregunta
+      text: Traducimos la duda de negocio en una hipótesis medible y en la decisión que depende de ella.
+    - name: Preparar los datos
+      text: Reunimos y validamos los datos necesarios sobre la plataforma existente, sin extracciones paralelas.
+    - name: Analizar y contrastar
+      text: Aplicamos el método adecuado y comprobamos los resultados con experimentos o con datos que el análisis no ha usado.
+    - name: Llevar a la operación
+      text: Presentamos las conclusiones con su grado de incertidumbre y automatizamos lo que deba repetirse.
+deliverables:
+  title: Qué te llevas
+  items:
+    - Informe de hallazgos con causas, tamaño del efecto y nivel de confianza
+    - Segmentación de clientes documentada y disponible en la plataforma de datos
+    - Modelo de atribución o de marketing mix calibrado con experimentos
+    - Plan de experimentos con hipótesis, grupos de control y criterio de éxito
+    - Notebooks y consultas versionados para repetir el análisis
+outcome:
+  title: Resultado
+  text: Decisiones de inversión y de operación respaldadas por causas medidas, no por coincidencias, y análisis que se repiten sin depender de una sola persona.
+useCases:
+  title: Dónde lo aplicamos
+  items:
+    - sector: telco
+      name: Causas de bajas y reclamaciones
+      text: Relacionar bajas y llamadas al servicio de atención con incidencias de red, errores de facturación o cambios de tarifa.
+    - sector: banking
+      name: Segmentación por momento financiero
+      text: Agrupar clientes por uso de productos y canales para orientar la oferta comercial y el modelo de servicio.
+    - sector: insurance
+      name: Desviaciones de siniestralidad
+      text: Explicar por ramo, canal o zona por qué la siniestralidad se aparta de lo previsto.
+technologies:
+  - BigQuery
+  - Python
+  - Databricks
+  - Snowflake
+  - Power BI
+  - Looker
+related:
+  - predictive-models
+  - decision-intelligence
+  - data-engineering-quality
+faq:
+  - q: ¿En qué se diferencia de un cuadro de mando?
+    a: El cuadro de mando muestra qué ha pasado. La analítica avanzada explica por qué y estima qué habría pasado sin una acción concreta. Se complementan, y lo que el análisis descubre suele acabar como indicador en el cuadro.
+  - q: ¿Hace falta tener un equipo de científicos de datos?
+    a: No para empezar. Hacemos el análisis con tu equipo y dejamos el método documentado y automatizado. Si debe repetirse, lo transferimos a tu equipo o lo operamos nosotros.
+  - q: ¿Podemos analizar datos de clientes respetando el GDPR?
+    a: Sí, con una base legal clara, minimización de datos y seudonimización cuando el análisis no necesita identificar a nadie. Lo diseñamos con tu delegado de protección de datos desde el principio, no al final.
+cta:
+  title: ¿Qué métrica te gustaría poder explicar?
+  text: En un diagnóstico de 2–4 semanas elegimos las preguntas de negocio con más impacto y comprobamos si tus datos pueden responderlas.
+  button: Solicita un diagnóstico

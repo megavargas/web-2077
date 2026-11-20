@@ -14,17 +14,6 @@ problem:
   text: AI pilots that do not scale, half-built platforms and a list of initiatives competing for the same budget. What is missing is a shared way to decide what to do first and how to measure it.
 includes:
   title: What it includes
-  items:
-    - name: Data and AI strategy
-      text: Vision, objectives and principles aligned with the business strategy.
-    - name: Maturity assessment
-      text: Where you stand today in data, analytics, AI and organisation, compared with what you need.
-    - name: Prioritised use cases
-      text: An inventory of use cases, prioritised with business case, risks and dependencies.
-    - name: Operating model and centre of excellence
-      text: Roles, processes and teams so that data and AI scale beyond the first project.
-    - name: Data and AI governance
-      text: Policies, responsibilities and controls, including readiness for the AI Act.
 outcome:
   title: Outcome
   text: A prioritised roadmap, with a business case per initiative and a governance model the board can approve.

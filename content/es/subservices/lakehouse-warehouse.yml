@@ -1,0 +1,83 @@
+key: lakehouse-warehouse
+pillar: data
+order: 2
+slug: lakehouse-data-warehouse
+name: Lakehouse y data warehouse
+summary: Modelos de datos por dominio y capas claras, para que todas las áreas trabajen con la misma cifra.
+seo:
+  title: 'Lakehouse y data warehouse: modelo de datos por dominio'
+  description: Diseñamos lakehouse y data warehouse en BigQuery, Snowflake, Databricks o Fabric, con modelos por dominio, capas claras y productos de datos con dueño.
+intro: Modelamos tus datos a partir de las decisiones y los informes que importan, para que finanzas, riesgos y negocio trabajen con la misma cifra.
+problem:
+  title: El problema
+  text: El dato ya está en la nube, pero cada área lo modela a su manera y las cifras siguen sin cuadrar. Las tablas se copian para cada informe y nadie sabe cuál es la buena. El primer caso de IA tropieza con lo mismo que el último cuadro de mando.
+capabilities:
+  title: Qué hacemos
+  items:
+    - name: Modelo de datos por dominio
+      text: Cliente, contrato, riesgo, póliza o siniestro definidos una sola vez, con significado de negocio y responsable.
+    - name: Capas bien separadas
+      text: Dato bruto, depurado y listo para consumo, cada capa con sus reglas y su uso.
+    - name: Lakehouse o warehouse, con criterio
+      text: Elegimos el patrón según tus tipos de dato, tus casos de uso y tu equipo, no según la moda.
+    - name: Formatos abiertos
+      text: Apache Iceberg o Delta Lake cuando importan la portabilidad y el acceso desde varios motores.
+    - name: Productos de datos
+      text: Conjuntos publicados con dueño, documentación y nivel de servicio, listos para BI, modelos e IA.
+approach:
+  title: Cómo lo hacemos
+  steps:
+    - name: Partir de las decisiones
+      text: Identificamos los informes, indicadores y casos de uso que el modelo debe soportar, incluido el reporting regulatorio.
+    - name: Modelar los dominios
+      text: Diseñamos el modelo conceptual y lógico de cada dominio y acordamos las definiciones con negocio.
+    - name: Construir las capas
+      text: Implantamos las capas bruta, depurada y de consumo en la plataforma elegida, empezando por un dominio.
+    - name: Publicar y ampliar
+      text: Ponemos en producción el primer producto de datos y extendemos el patrón al resto de dominios.
+deliverables:
+  title: Qué te llevas
+  items:
+    - Modelo de datos conceptual y lógico por dominio
+    - Diseño de capas y estándares de modelado y nomenclatura
+    - Catálogo de productos de datos con responsable y nivel de servicio
+    - Primer dominio en producción en lakehouse o warehouse
+    - Documentación técnica y linaje del origen al consumo
+outcome:
+  title: Resultado
+  text: Una sola versión de cada cifra, reutilizable por informes, modelos y agentes, y un patrón que permite añadir dominios sin empezar de cero.
+useCases:
+  title: Dónde lo aplicamos
+  items:
+    - sector: telco
+      name: Visión única de cliente
+      text: Facturación, uso, red y atención unidos en un modelo que sirve a marketing, retención y operaciones.
+    - sector: banking
+      name: Modelo de datos de riesgo
+      text: Datos de riesgo agregados y conciliados hasta el origen, en línea con los principios de BCBS 239.
+    - sector: insurance
+      name: Pólizas y siniestros en común
+      text: Un modelo compartido por actuarial, finanzas y negocio, base del reporting de IFRS 17 y Solvencia II.
+technologies:
+  - BigQuery
+  - Snowflake
+  - Databricks
+  - Microsoft Fabric
+  - dbt
+  - Apache Iceberg
+  - Delta Lake
+related:
+  - cloud-data-platforms
+  - data-engineering-quality
+  - semantic-layer
+faq:
+  - q: ¿Necesitamos un lakehouse o nos basta con un data warehouse?
+    a: Si casi todo tu dato es estructurado y el uso principal es el reporting, un warehouse bien modelado suele bastar. El lakehouse compensa cuando conviven datos semiestructurados, grandes volúmenes y casos de ciencia de datos o IA sobre el mismo dato. Lo decidimos con tus casos de uso delante.
+  - q: ¿Cuándo tendremos datos útiles?
+    a: Trabajamos por dominios y elegimos el primero para que llegue pronto a producción con un uso concreto. El plazo depende de las fuentes y de su calidad, y lo fijamos en el diagnóstico, no a ciegas.
+  - q: ¿Nos ata esto a un fabricante?
+    a: Menos que antes. Con formatos abiertos como Apache Iceberg o Delta Lake, el mismo dato puede leerse desde varios motores. Además, el modelo y la lógica quedan en código versionado, no encerrados en una herramienta.
+cta:
+  title: ¿Cuántas versiones de la misma cifra circulan en tu empresa?
+  text: Un diagnóstico de 2–4 semanas identifica los dominios prioritarios y el modelo de datos que necesitan.
+  button: Solicita un diagnóstico

@@ -14,17 +14,6 @@ problem:
   text: Datos repartidos en sistemas heredados, cifras que no cuadran entre áreas y plataformas que cuestan más de lo que aportan. Sin una base fiable, cualquier iniciativa de analítica o IA hereda el problema.
 includes:
   title: Qué incluye
-  items:
-    - name: Plataformas cloud de datos
-      text: Arquitectura y despliegue en Google Cloud, Azure o AWS, con seguridad y costes bajo control desde el diseño.
-    - name: Lakehouse y data warehouse
-      text: Modelos de datos pensados para el negocio, con una sola versión de la verdad.
-    - name: Migración de BI y ETL heredados
-      text: De Cognos, MicroStrategy, PowerCenter o Teradata a un stack moderno, sin interrumpir el reporting.
-    - name: Ingeniería y calidad del dato
-      text: Pipelines automatizados, pruebas y reglas de calidad medibles.
-    - name: DataOps y observabilidad
-      text: Despliegue continuo, monitorización y alertas para detectar los fallos antes que el usuario.
 outcome:
   title: Resultado
   text: Una plataforma gobernada, con costes previsibles y datos en los que el negocio confía.

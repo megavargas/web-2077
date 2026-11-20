@@ -1,0 +1,84 @@
+key: decision-intelligence
+pillar: intelligence
+order: 4
+slug: decision-intelligence
+name: Decision intelligence
+summary: Dashboards that recommend the next action, with human oversight, and measure the result it delivered.
+seo:
+  title: 'Decision intelligence: from data to action'
+  description: Decision intelligence for telecoms, banking and insurance. Recommendations at the point of decision, with human oversight, an audit trail and measured results.
+intro: We design how each recurring decision is made (who to retain, which alert to review, which offer to make) and bring the recommendation to the moment and the tool where the decision happens.
+problem:
+  title: The problem
+  text: The models and dashboards exist, but decisions are still made on instinct or habit. Nobody has written down the options, the constraints or who signs off what. And because nobody records what was recommended and what was done, there is no way to know whether analytics is improving anything.
+capabilities:
+  title: What we do
+  items:
+    - name: Decision modelling
+      text: We document each recurring decision with its objective, options, constraints, data and owners.
+    - name: Recommendation engine
+      text: We combine business rules, predictions and optimisation to propose the next action in each case.
+    - name: Recommendations where work happens
+      text: We deliver the proposal in the CRM, the relationship manager's tool or the dashboard the team already uses.
+    - name: Levels of autonomy
+      text: We agree what is automated, what is recommended and what needs a person's approval.
+    - name: Decision log
+      text: We record what was recommended, what was decided and why, so it can be audited and learnt from.
+    - name: Outcome measurement
+      text: We compare guided decisions against a control group and refine the rules and models.
+approach:
+  title: How we do it
+  steps:
+    - name: Choose the decision
+      text: We prioritise decisions that are frequent, measurable and have a clear financial impact.
+    - name: Model the decision
+      text: Together with the people who make it today, we map the options, rules, data and risks.
+    - name: Recommend
+      text: We build the engine and embed it in the workflow, starting in suggestion mode.
+    - name: Measure and adjust
+      text: We compare against a control group and extend autonomy only where results justify it.
+deliverables:
+  title: What you get
+  items:
+    - Decision map with options, rules, data and owners
+    - Recommendation engine embedded in the working tool
+    - Autonomy matrix setting out what is automated, recommended or approved
+    - Auditable decision log
+    - Results dashboard against a control group
+outcome:
+  title: Outcome
+  text: Faster, more consistent recurring decisions, with a record of what was recommended, what was done and what it achieved.
+useCases:
+  title: Where we apply it
+  items:
+    - sector: telco
+      name: Next best offer and retention
+      text: Recommending to each agent which offer or retention action to present, based on churn risk, value and margin.
+    - sector: banking
+      name: Fraud alert prioritisation
+      text: Ranking fraud and anti-money laundering (AML) alerts by risk and proposing the next step to the analyst.
+    - sector: insurance
+      name: Claims triage
+      text: Proposing which claims to settle on a fast track, which to send to an adjuster and which to review for possible fraud.
+technologies:
+  - BigQuery
+  - Vertex AI
+  - Microsoft Fabric
+  - Power BI
+  - Looker
+  - Python
+related:
+  - predictive-models
+  - ai-agents
+  - use-case-portfolio
+faq:
+  - q: How is this different from a dashboard?
+    a: A dashboard shows the situation and leaves the conclusion to the user. A decision intelligence system proposes a specific action, explains why and records what was done so the result can be measured.
+  - q: Are decisions fully automated?
+    a: Only those you agree to automate. We start in suggestion mode, with a person who accepts, amends or rejects each proposal, and extend autonomy when the results justify it. Decisions that affect people's rights keep human oversight.
+  - q: Do we need to buy a dedicated platform?
+    a: Not necessarily. Many decisions can be handled with your existing data and BI platform plus rules and models. If volume or complexity calls for it, we compare the platforms on the market against explicit criteria.
+cta:
+  title: Which decision does your organisation make every day?
+  text: In a two-to-four-week assessment we choose the decision with the highest return, model it and tell you what data and changes it needs.
+  button: Request an assessment

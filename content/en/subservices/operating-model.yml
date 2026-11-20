@@ -1,0 +1,84 @@
+key: operating-model
+pillar: strategy
+order: 4
+slug: operating-model
+name: Operating model and CoE
+summary: Roles, processes and a centre of excellence (CoE) so that data and AI scale beyond the first project.
+seo:
+  title: Data and AI operating model and centre of excellence
+  description: We design your data and AI operating model, with a centre of excellence, roles, funding, a demand process and risk alignment, so you can scale beyond the pilot.
+intro: We design who decides, who builds and who runs data and AI, with a centre of excellence (CoE) that speeds the business up rather than slowing it down.
+problem:
+  title: The problem
+  text: The first use case gets delivered thanks to a motivated team. The fifth runs into unclear ownership, queues at the central team, project-by-project budgets and risk functions that arrive at the end. Without an operating model, AI never gets past the pilot.
+capabilities:
+  title: What we do
+  items:
+    - name: Organisation design
+      text: We choose between a centralised, federated or hybrid model based on your size, maturity and regulation.
+    - name: Centre of excellence
+      text: We define its mission, services and team, and how it moves from delivering projects to enabling the business.
+    - name: Roles and responsibilities
+      text: Product and data owners, engineering, analytics and risk, with an unambiguous RACI matrix.
+    - name: Demand and funding
+      text: An intake, prioritisation and funding process for initiatives that does not depend on each project.
+    - name: Risk and control alignment
+      text: We build compliance, model risk and security into the delivery cycle rather than adding them at the end.
+    - name: Capabilities and handover
+      text: A plan for roles, training and knowledge transfer so that expertise stays in your team.
+approach:
+  title: How we do it
+  steps:
+    - name: Analyse
+      text: We map current teams, decisions, workflows and bottlenecks.
+    - name: Design
+      text: We propose the target model with alternatives, costs and implications for each business area.
+    - name: Pilot
+      text: We test the model on one or two real use cases before rolling it out.
+    - name: Roll out
+      text: We extend the model in phases, with adoption KPIs and regular adjustments.
+deliverables:
+  title: What you get
+  items:
+    - Target operating model with structure and organisation chart
+    - Centre of excellence charter covering mission, services and team
+    - RACI matrix for data and AI roles
+    - Demand, prioritisation and release-to-production processes
+    - Capability, training and hiring plan
+    - KPIs for adoption, lead times and value
+outcome:
+  title: Outcome
+  text: Business areas that request, prioritise and adopt data and AI use cases under clear rules, with each new use case building on what already exists instead of starting from scratch.
+useCases:
+  title: Where we apply it
+  items:
+    - sector: telco
+      name: One CoE for business and network
+      text: A centre of excellence serving marketing, customer care and network operations with a shared platform and common standards.
+    - sector: banking
+      name: AI across three lines of defence
+      text: A model that aligns AI delivery with model risk, compliance and internal audit from the design stage.
+    - sector: insurance
+      name: Actuarial, claims and technology
+      text: A model that coordinates actuarial, claims and technology teams around the same governed data.
+technologies:
+  - Google Cloud
+  - Microsoft Azure
+  - AWS
+  - Databricks
+  - Microsoft Fabric
+related:
+  - data-ai-governance
+  - mlops-llmops
+  - self-service-analytics
+faq:
+  - q: Do we need a centre of excellence?
+    a: Almost always at the start, to concentrate expertise and set standards. As maturity grows, the CoE shifts from building to enabling, and business and platform teams take on more of the delivery.
+  - q: How long does it take to get up and running?
+    a: The design takes weeks; adoption takes months. That is why we test it on real use cases first and roll it out in phases.
+  - q: Can we do this without adding headcount?
+    a: Partly. Many responsibilities can be reassigned within existing teams, and the capability plan shows which roles to hire, train or cover with a partner.
+cta:
+  title: Does your AI depend on four people?
+  text: A 2–4 week assessment reviews your current organisation and proposes the operating model your roadmap needs.
+  button: Request an assessment

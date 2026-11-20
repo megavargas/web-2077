@@ -1,0 +1,83 @@
+key: predictive-models
+pillar: intelligence
+order: 3
+slug: modelos-predictivos
+name: Modelos predictivos
+summary: Previsión de demanda, abandono, riesgo o fraude con modelos explicables que se usan en el proceso diario.
+seo:
+  title: Modelos predictivos explicables y en producción
+  description: Modelos predictivos para Telco, Banca y Seguros. Previsión, abandono, riesgo y fraude con explicabilidad, documentación para validación y vigilancia continua.
+intro: Construimos modelos de previsión y puntuación que llegan al proceso donde se decide, con explicaciones que entiende el negocio y documentación lista para validación.
+problem:
+  title: El problema
+  text: Muchos modelos se quedan en un notebook. Funcionan en la prueba, pero nadie los integra en el CRM, en el motor de riesgos o en la planificación. Los que llegan a producción se degradan sin que nadie lo note, y en banca y seguros un modelo que no se puede explicar ni documentar no supera la validación.
+capabilities:
+  title: Qué hacemos
+  items:
+    - name: Previsión de series temporales
+      text: Demanda, volumen de llamadas, tráfico o cartera, con intervalos de confianza y no solo una cifra.
+    - name: Modelos de propensión y abandono
+      text: Puntuamos la probabilidad de baja, compra o impago de cada cliente para priorizar la acción.
+    - name: Detección de fraude y anomalías
+      text: Identificamos operaciones y patrones inusuales, equilibrando detección y falsos positivos.
+    - name: Predicciones explicables
+      text: Cada puntuación llega con los factores que la explican, para quien la usa y para quien la valida.
+    - name: Integración en el proceso
+      text: Servimos las predicciones por lotes o en tiempo casi real al sistema donde se toma la decisión.
+    - name: Monitorización y reentrenamiento
+      text: Vigilamos la deriva de los datos y el rendimiento, y reentrenamos con criterios acordados.
+approach:
+  title: Cómo lo hacemos
+  steps:
+    - name: Definir la decisión
+      text: Fijamos qué se va a predecir, para qué acción y con qué métrica de negocio se medirá el éxito.
+    - name: Construir y validar
+      text: Entrenamos, comparamos con una línea base sencilla y validamos con datos que el modelo no ha visto.
+    - name: Documentar
+      text: Redactamos la ficha del modelo con datos, supuestos, limitaciones y explicabilidad, lista para revisión interna.
+    - name: Desplegar y vigilar
+      text: Integramos el modelo en el proceso, medimos su efecto real y lo mantenemos bajo control.
+deliverables:
+  title: Qué te llevas
+  items:
+    - Modelo entrenado y desplegado, integrado en el sistema de destino
+    - Ficha del modelo con datos, supuestos, limitaciones y métricas de validación
+    - Informe de explicabilidad global y por predicción
+    - Panel de seguimiento de rendimiento y deriva
+    - Procedimiento de reentrenamiento y de retirada del modelo
+outcome:
+  title: Resultado
+  text: Predicciones que cambian lo que hace el equipo cada día, con un rendimiento vigilado y una documentación que resiste la revisión de riesgos y de auditoría.
+useCases:
+  title: Dónde lo aplicamos
+  items:
+    - sector: telco
+      name: Predicción de bajas
+      text: Puntuar el riesgo de abandono de cada cliente y priorizar las acciones de retención con más efecto esperado.
+    - sector: banking
+      name: Scoring de crédito explicable
+      text: Modelos de solvencia documentados y explicables, preparados para la validación interna y para los requisitos del AI Act.
+    - sector: insurance
+      name: Tarificación y fraude en siniestros
+      text: Estimar el riesgo para tarificar con el equipo actuarial y señalar siniestros con indicios de fraude para revisión humana.
+technologies:
+  - Vertex AI
+  - BigQuery ML
+  - Azure Machine Learning
+  - Databricks
+  - Python
+related:
+  - mlops-llmops
+  - decision-intelligence
+  - advanced-analytics
+faq:
+  - q: ¿Nuestro modelo es de alto riesgo según el AI Act?
+    a: Depende del uso. La evaluación de la solvencia de personas físicas y la tarificación de seguros de vida y salud son usos de alto riesgo; la detección de fraude financiero queda fuera de ese supuesto. Lo analizamos caso por caso con tus equipos legal y de cumplimiento normativo.
+  - q: ¿Machine learning o modelos estadísticos clásicos?
+    a: El que funcione mejor con la explicabilidad que exige el caso. Siempre comparamos con una línea base sencilla, y si un modelo más complejo no la mejora con claridad, no compensa su coste de validación y mantenimiento.
+  - q: ¿Cuándo se nota el efecto en el negocio?
+    a: Cuando el modelo está integrado en el proceso, no antes. Por eso planteamos desde el principio una prueba controlada que compara la acción guiada por el modelo con la forma actual de trabajar.
+cta:
+  title: ¿Qué decisión mejoraría si pudieras anticiparla?
+  text: En un diagnóstico de 2–4 semanas evaluamos tus casos candidatos, los datos disponibles y el requisito regulatorio de cada uno, y elegimos el primero.
+  button: Solicita un diagnóstico

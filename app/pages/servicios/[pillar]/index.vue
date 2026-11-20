@@ -28,6 +28,7 @@ const index = computed(
 )
 const prev = computed(() => (index.value > 0 ? site.value?.pillars[index.value - 1] : undefined))
 const next = computed(() => site.value?.pillars[index.value + 1])
+const subservices = computed(() => site.value?.pillars[index.value]?.subservices ?? [])
 
 /** Casos de uso de cada sector en los que interviene este pilar. */
 const applications = computed(() =>
@@ -69,14 +70,31 @@ const applications = computed(() =>
         <UiSectionHeader id="includes-title" :title="pillar.includes.title" />
         <ul class="grid gap-10 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
           <li
-            v-for="item in pillar.includes.items"
-            :key="item.name"
-            class="flex flex-col gap-3 border-t border-graphite-border pt-6"
+            v-for="s in subservices"
+            :key="s.key"
+            class="group relative flex flex-col gap-3 border-t border-graphite-border pt-6 hover:border-bone-white"
           >
+            <span aria-hidden="true" class="font-mono text-caption text-fog-light">
+              {{ pillar.number }}.{{ s.order }}
+            </span>
             <h3 class="font-display text-heading-sm font-normal text-bone-white">
-              {{ item.name }}
+              <NuxtLinkLocale
+                :to="{
+                  name: 'servicios-pillar-service',
+                  params: { pillar: pillar.slug, service: s.slug },
+                }"
+                class="group-hover:text-accent after:absolute after:inset-0"
+              >
+                {{ s.name }}
+              </NuxtLinkLocale>
             </h3>
-            <p class="font-body text-body text-pretty text-fog-light">{{ item.text }}</p>
+            <p class="font-body text-body text-pretty text-fog-light">{{ s.summary }}</p>
+            <p
+              class="mt-auto flex items-center gap-2 pt-2 font-mono text-caption text-accent uppercase"
+            >
+              {{ t('labels.readMore') }}
+              <Icon name="lucide:arrow-right" class="size-4" aria-hidden="true" />
+            </p>
           </li>
         </ul>
       </UiContainer>

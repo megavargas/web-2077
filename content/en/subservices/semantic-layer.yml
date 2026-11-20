@@ -1,0 +1,84 @@
+key: semantic-layer
+pillar: intelligence
+order: 1
+slug: bi-semantic-layer
+name: BI and semantic layer
+summary: Each metric is defined once and returns the same figure in every report, tool and AI assistant.
+seo:
+  title: 'BI and semantic layer: one governed set of metrics'
+  description: Semantic layer and BI for telecoms, banking and insurance. Metrics defined once, traceable to source and ready for dashboards and AI assistants alike.
+intro: We define your business metrics once, with an owner, a formula and lineage, so that dashboards, spreadsheets and AI assistants all return the same figure.
+problem:
+  title: The problem
+  text: Every department calculates ‘active customer’, ‘margin’ or ‘loss ratio’ its own way, and the first half hour of every committee goes on reconciling numbers. The logic is scattered across hundreds of reports and extracts that nobody dares to touch. Connect an AI assistant to that and the contradictory answers multiply.
+capabilities:
+  title: What we do
+  items:
+    - name: Report inventory and rationalisation
+      text: We map existing reports and metrics, find duplicates and decide what to keep, merge or retire.
+    - name: Metric dictionary
+      text: We agree with each department the definition, formula, owner and level of detail of every critical indicator.
+    - name: Governed semantic model
+      text: We build the metrics into a reusable layer (Power BI semantic model, LookML or dbt) with tests and version control.
+    - name: Row and column security
+      text: We apply permissions in the semantic layer so each user sees only what they should, whichever tool they use.
+    - name: Context for AI
+      text: We expose metrics and their descriptions to assistants and agents, so they query agreed definitions rather than raw tables.
+    - name: Executive dashboards
+      text: We redesign the key dashboards on the new layer, with fewer pages and a sharper focus on decisions.
+approach:
+  title: How we do it
+  steps:
+    - name: Inventory
+      text: We analyse actual report usage and existing logic to find which metrics matter and where they diverge.
+    - name: Agree
+      text: We settle definitions with business owners and record them in a single glossary.
+    - name: Model
+      text: We build the semantic layer with automated tests, version control and permissions.
+    - name: Migrate and retire
+      text: We move priority reports onto the new layer and retire duplicates in an orderly way.
+deliverables:
+  title: What you get
+  items:
+    - Report and metric inventory, with a keep, merge or retire recommendation for each
+    - Metric glossary with definition, formula, owner and lineage
+    - Version-controlled semantic layer with tests and row-level security
+    - Executive dashboards redesigned on the new layer
+    - Guide for proposing, approving and publishing metric changes
+outcome:
+  title: Outcome
+  text: One figure per indicator across committees, reports and AI assistants, and less time spent reconciling data, leaving more time to decide.
+useCases:
+  title: Where we apply it
+  items:
+    - sector: telco
+      name: Unified commercial and network KPIs
+      text: Gross adds, churn, ARPU and network availability defined the same way in marketing, finance and operations.
+    - sector: banking
+      name: Traceable risk metrics
+      text: Risk and business indicators with lineage back to source, in line with the BCBS 239 principles.
+    - sector: insurance
+      name: Shared technical indicators
+      text: Premiums, loss ratio and combined ratio defined identically for the business, actuarial and finance teams.
+technologies:
+  - Power BI
+  - Microsoft Fabric
+  - Looker
+  - BigQuery
+  - dbt
+  - Snowflake
+related:
+  - lakehouse-warehouse
+  - self-service-analytics
+  - ai-agents
+faq:
+  - q: Do we need a new tool to have a semantic layer?
+    a: Usually not. Power BI, Looker and dbt already include a semantic layer; the work lies in agreeing the definitions and putting them in order. Where several tools coexist, we assess whether a layer shared by all of them is worth it.
+  - q: Where do we start?
+    a: With the metrics debated at the executive committee or in one specific department. That first block goes into production in the first build cycle, and the rest follows in waves, retiring duplicate reports along the way.
+  - q: Why does a semantic layer matter for AI?
+    a: An assistant querying raw tables has to guess what ‘revenue’ or ‘active customer’ means. Querying a semantic layer, it uses the agreed definition and respects each user's permissions. It is the most direct way to make AI answer with the official figures.
+cta:
+  title: How many versions of the same metric do you have?
+  text: In a two-to-four-week assessment we review your critical reports, show you where the figures diverge and where to start.
+  button: Request an assessment

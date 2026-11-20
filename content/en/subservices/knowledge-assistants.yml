@@ -1,0 +1,84 @@
+key: knowledge-assistants
+pillar: ai
+order: 2
+slug: knowledge-assistants
+name: Internal knowledge assistants
+summary: Answers grounded in your own documentation, with the source cited and access rights respected.
+seo:
+  title: AI assistants over internal knowledge (RAG)
+  description: Generative AI assistants that answer from your own documentation, cite their sources and respect permissions. For service, operations, risk and compliance.
+intro: Assistants that answer from your internal documentation, cite where each piece of information comes from and only show people what they are allowed to see.
+problem:
+  title: The problem
+  text: Giving people a generic chat tool does not change how they work. When an assistant relies on documents that are out of date, contradictory or unowned, it gives confident answers that are wrong, and in banking or insurance that is not acceptable.
+capabilities:
+  title: What we do
+  items:
+    - name: Source inventory
+      text: We identify which documents count, who owns them, which version is current and who may see them.
+    - name: Knowledge preparation
+      text: We clean, structure and tag the documentation so the right passage is retrieved.
+    - name: Answers with sources
+      text: Every answer links to the document and section it comes from, and says when it does not know.
+    - name: Access control
+      text: The assistant inherits the permissions of your systems and never shows anyone what they cannot see.
+    - name: Built into daily tools
+      text: We put it where people already work, such as Teams, the CRM or the intranet.
+    - name: Quality measurement
+      text: We measure accuracy and usage with real questions validated by the people who know the answers.
+approach:
+  title: How we do it
+  steps:
+    - name: Inventory
+      text: We collect the questions people ask today and the sources that answer them, with owner and currency.
+    - name: Prepare
+      text: We organise, version and tag the knowledge and agree how it will be kept up to date.
+    - name: Build and measure
+      text: We build retrieval and generation and measure quality against a question set validated by experts.
+    - name: Deploy and improve
+      text: We launch it in people's daily tools and use their feedback to fix sources and answers.
+deliverables:
+  title: What you get
+  items:
+    - Source inventory with owner, currency and permissions
+    - Prepared knowledge base and a process to keep it current
+    - Assistant in production, built into your tools
+    - Evaluation question set and quality results
+    - Dashboard of usage, quality and unanswered questions
+outcome:
+  title: Outcome
+  text: Teams that find the right answer in seconds, with the source to hand, and fewer queries escalated to experts.
+useCases:
+  title: Where we apply it
+  items:
+    - sector: telco
+      name: Support for contact centre agents
+      text: Answers on tariffs, offers and procedures during the call, with the source document one click away.
+    - sector: banking
+      name: Policy and product queries
+      text: An assistant for relationship managers and compliance over internal policies, circulars and product sheets, with role-based access.
+    - sector: insurance
+      name: Policy wordings and underwriting guides
+      text: Answers for claims handlers and underwriters on cover, exclusions and acceptance criteria, citing the clause.
+technologies:
+  - Gemini Enterprise
+  - Vertex AI Search
+  - Gemini
+  - Azure AI Search
+  - Azure OpenAI
+  - Amazon Bedrock
+related:
+  - data-engineering-quality
+  - ai-evaluation-governance
+  - ai-agents
+faq:
+  - q: How do you stop the assistant from making things up?
+    a: Answers are based only on your sources, cite the original document, and the assistant says when it does not have enough information. We measure quality with real questions before go-live and again in production.
+  - q: What about confidential information?
+    a: The assistant respects the permissions of the source systems, data stays in your cloud environment and every query is logged. We design for security and data protection from the outset.
+  - q: Where should we start?
+    a: With an area that gets many repeated questions and has reasonably well-kept documentation, such as customer service or an operations team. The assessment identifies which one and what needs tidying first.
+cta:
+  title: Which questions keep coming up in your organisation?
+  text: In a 2–4 week assessment we identify the area with the highest return, the state of its sources and the plan to take the assistant into production.
+  button: Request an assessment

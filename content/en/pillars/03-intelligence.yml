@@ -14,17 +14,6 @@ problem:
   text: Dashboards nobody looks at, metrics each department defines its own way, and analysis that arrives after the decision has been made.
 includes:
   title: What it includes
-  items:
-    - name: BI and semantic layer
-      text: Single metric definitions, reusable across every report and tool.
-    - name: Advanced analytics
-      text: Segmentation, attribution and root-cause analysis to understand what is happening and why.
-    - name: Predictive models
-      text: Forecasting demand, churn, risk or fraud, built into business processes.
-    - name: Decision intelligence
-      text: Dashboards that recommend the next action, rather than just showing the data.
-    - name: Self-service analytics
-      text: Tools and training so that each team can answer its own questions with reliable data.
 outcome:
   title: Outcome
   text: Shared metrics, timely analysis and models that are used in day-to-day operations.

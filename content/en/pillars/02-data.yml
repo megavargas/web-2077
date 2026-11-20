@@ -14,17 +14,6 @@ problem:
   text: Data scattered across legacy systems, figures that do not reconcile between departments and platforms that cost more than they deliver. Without a reliable foundation, every analytics or AI initiative inherits the problem.
 includes:
   title: What it includes
-  items:
-    - name: Cloud data platforms
-      text: Architecture and deployment on Google Cloud, Azure or AWS, with security and costs under control by design.
-    - name: Lakehouse and data warehouse
-      text: Data models designed for the business, with a single version of the truth.
-    - name: Legacy BI and ETL migration
-      text: From Cognos, MicroStrategy, PowerCenter or Teradata to a modern stack, without interrupting reporting.
-    - name: Data engineering and quality
-      text: Automated pipelines, testing and measurable quality rules.
-    - name: DataOps and observability
-      text: Continuous deployment, monitoring and alerting to catch failures before users do.
 outcome:
   title: Outcome
   text: A governed platform with predictable costs and data the business trusts.

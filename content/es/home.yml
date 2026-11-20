@@ -15,6 +15,10 @@ hero:
   primaryCta: Solicita un diagnóstico
   secondaryCta: Ver servicios
 
+clients:
+  label: Clientes
+  title: Colaboramos con empresas que ya conoces.
+
 context:
   quote: La IA solo funciona con contexto. Lo construimos de abajo arriba, capa a capa.
   titleLines:

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Pillar } from '~/types/content'
+import type { PillarWithSubservices } from '~/types/content'
 
 const {
   id = 'services',
@@ -11,7 +11,7 @@ const {
   id?: string
   title: string
   intro?: string
-  pillars: Pillar[]
+  pillars: PillarWithSubservices[]
   /** light: sección clara (mist); accent: banda azul (accent-strong) con texto blanco */
   tone?: 'dark' | 'light' | 'accent'
 }>()
@@ -84,13 +84,18 @@ const c = computed(() =>
           </p>
           <p class="font-body text-body text-pretty" :class="c.muted">{{ pillar.summary }}</p>
           <ul class="border-t font-body text-caption" :class="[c.line, c.strong]">
-            <li
-              v-for="item in pillar.includes.items"
-              :key="item.name"
-              class="border-b py-2.5"
-              :class="c.line"
-            >
-              {{ item.name }}
+            <!-- Enlaces a cada subservicio por encima del enlace de la tarjeta (z-10) -->
+            <li v-for="s in pillar.subservices" :key="s.key" class="border-b" :class="c.line">
+              <NuxtLinkLocale
+                :to="{
+                  name: 'servicios-pillar-service',
+                  params: { pillar: pillar.slug, service: s.slug },
+                }"
+                class="relative z-10 block py-2.5 underline-offset-4 hover:underline"
+                :class="c.focus"
+              >
+                {{ s.name }}
+              </NuxtLinkLocale>
             </li>
           </ul>
           <p

@@ -1,0 +1,84 @@
+key: operating-model
+pillar: strategy
+order: 4
+slug: modelo-operativo
+name: Modelo operativo y CoE
+summary: Roles, procesos y un centro de excelencia (CoE) para que los datos y la IA escalen más allá del primer proyecto.
+seo:
+  title: Modelo operativo y centro de excelencia de datos e IA
+  description: Diseñamos el modelo operativo de datos e IA, con centro de excelencia, roles, financiación, demanda y encaje con riesgos, para escalar más allá del piloto.
+intro: Diseñamos quién decide, quién construye y quién opera los datos y la IA, con un centro de excelencia (CoE) que acelera a las áreas de negocio en lugar de frenarlas.
+problem:
+  title: El problema
+  text: El primer caso de uso sale gracias a un equipo motivado. El quinto choca con falta de responsables, colas en el equipo central, presupuestos por proyecto y áreas de riesgo que llegan al final. Sin un modelo operativo, la IA no pasa de piloto.
+capabilities:
+  title: Qué hacemos
+  items:
+    - name: Diseño organizativo
+      text: Elegimos entre un modelo centralizado, federado o mixto según tu tamaño, tu madurez y tu regulación.
+    - name: Centro de excelencia
+      text: Definimos su misión, servicios y equipo, y cómo pasa de ejecutar proyectos a habilitar a las áreas.
+    - name: Roles y responsabilidades
+      text: Propietarios de producto y de datos, ingeniería, analítica y riesgos, con una matriz RACI sin ambigüedades.
+    - name: Demanda y financiación
+      text: Un proceso de entrada, priorización y financiación de iniciativas que no dependa de cada proyecto.
+    - name: Encaje con riesgos y control
+      text: Integramos cumplimiento, riesgo de modelos y seguridad en el ciclo de entrega, no como paso final.
+    - name: Capacidades y transferencia
+      text: Un plan de perfiles, formación y transferencia para que el conocimiento se quede en tu equipo.
+approach:
+  title: Cómo lo hacemos
+  steps:
+    - name: Analizar
+      text: Mapeamos equipos, decisiones, flujos de trabajo y cuellos de botella actuales.
+    - name: Diseñar
+      text: Proponemos el modelo objetivo con alternativas, costes e implicaciones para cada área.
+    - name: Pilotar
+      text: Probamos el modelo con uno o dos casos de uso reales antes de extenderlo.
+    - name: Desplegar
+      text: Extendemos el modelo por fases, con indicadores de adopción y ajustes periódicos.
+deliverables:
+  title: Qué te llevas
+  items:
+    - Modelo operativo objetivo con estructura y organigrama
+    - Carta del centro de excelencia con misión, servicios y equipo
+    - Matriz RACI de roles en datos e IA
+    - Procesos de demanda, priorización y paso a producción
+    - Plan de capacidades, formación y contratación
+    - Indicadores de adopción, plazos y valor del modelo
+outcome:
+  title: Resultado
+  text: Áreas de negocio que piden, priorizan y adoptan casos de datos e IA con reglas claras, y nuevos casos que se apoyan en lo ya construido en lugar de empezar de cero.
+useCases:
+  title: Dónde lo aplicamos
+  items:
+    - sector: telco
+      name: Un CoE para negocio y red
+      text: Un centro de excelencia que da servicio a marketing, atención al cliente y operaciones de red con una plataforma y unos criterios comunes.
+    - sector: banking
+      name: IA con tres líneas de defensa
+      text: Un modelo que encaja el desarrollo de IA con riesgo de modelos, cumplimiento y auditoría interna desde el diseño.
+    - sector: insurance
+      name: Actuarial, siniestros y tecnología
+      text: Un modelo que coordina a los equipos actuariales, de siniestros y de tecnología sobre un mismo dato gobernado.
+technologies:
+  - Google Cloud
+  - Microsoft Azure
+  - AWS
+  - Databricks
+  - Microsoft Fabric
+related:
+  - data-ai-governance
+  - mlops-llmops
+  - self-service-analytics
+faq:
+  - q: ¿Necesitamos un centro de excelencia?
+    a: Casi siempre al principio, para concentrar conocimiento y fijar estándares. Con la madurez, el CoE pasa de construir a habilitar, y los equipos de negocio y de plataforma asumen más entrega.
+  - q: ¿Cuánto tarda en estar en marcha?
+    a: El diseño se cierra en semanas; la adopción lleva meses. Por eso lo probamos primero con casos reales y lo extendemos por fases.
+  - q: ¿Podemos hacerlo sin aumentar plantilla?
+    a: En parte sí. Muchas funciones se reasignan dentro de los equipos existentes, y el plan de capacidades indica qué perfiles conviene incorporar, formar o cubrir con un socio.
+cta:
+  title: ¿Tu IA depende de cuatro personas?
+  text: Un diagnóstico de 2–4 semanas revisa tu organización actual y propone el modelo operativo que necesita tu hoja de ruta.
+  button: Solicita un diagnóstico
