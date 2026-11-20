@@ -2,6 +2,7 @@ import type {
   HomeEsCollectionItem,
   PillarsEsCollectionItem,
   SectorsEsCollectionItem,
+  SectorsPageEsCollectionItem,
   ServicesEsCollectionItem,
   SubservicesEsCollectionItem,
 } from '@nuxt/content'
@@ -10,6 +11,7 @@ import type {
 export type HomeContent = HomeEsCollectionItem
 export type Pillar = PillarsEsCollectionItem
 export type Sector = SectorsEsCollectionItem
+export type SectorsPageContent = SectorsPageEsCollectionItem
 export type Subservice = SubservicesEsCollectionItem
 /** Pilar con sus subservicios ordenados (useSiteData). */
 export type PillarWithSubservices = Pillar & { subservices: Subservice[] }

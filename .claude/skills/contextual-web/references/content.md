@@ -65,6 +65,8 @@ Foco: **Telco, Banca y Seguros** (`/sectores/telco`, `/sectores/banca`, `/sector
 
 Menciona la regulación como contexto que entendemos, **no** como certificaciones ni cumplimiento garantizado.
 
+**Otros sectores (decisión del cliente, 20/11/2026):** solo Telco, Banca y Seguros tienen página (el benchmark muestra que tener los tres es ya diferencial). En `/sectores` hay un bloque «También trabajamos en» (`sectors.yml` → `others`, logos con `UiClientLogo`) con sectores fuera del foco **solo si hay un cliente real** de la lista de logos: Deporte y medios, Seguridad y servicios al hogar, Servicios profesionales, Tecnología y cloud, Medio ambiente y economía circular, Agroalimentación. Los textos describen el sector, no proyectos. Energía y utilities sería el cuarto sector natural (el más repetido entre competidores), pero no se añade sin clientes o experiencia real.
+
 ## 5. Mapa del sitio (implementado)
 
 Base: `docs/reports/Benchmark competitivo web Contextual.md` (benchmark de 29 competidores, nov. 2026).
@@ -75,7 +77,7 @@ Base: `docs/reports/Benchmark competitivo web Contextual.md` (benchmark de 29 co
 /servicios/{estrategia,datos,inteligencia,ia}    Problema · qué incluye (tarjetas a sus 5 subservicios) · resultado · dónde lo aplicamos (por sector) · tecnologías · FAQ · anterior/siguiente
 /servicios/<pilar>/<subservicio>   20 landings (5 por pilar, numeradas 01.1–04.5): migas · problema · qué hacemos · cómo (4 pasos) · resultado y entregables · un caso de uso por sector · tecnologías · FAQ · resto del pilar y relacionados · anterior/siguiente (recorrido 01.1→04.5) · CTA
 /servicios/diagnostico           Landing de la oferta de entrada + formulario (motivo fijo)
-/sectores · /sectores/{telco,banca,seguros}      Retos · casos de uso por área de negocio con pilares · regulación · FAQ · CTA con sector
+/sectores (con bloque «También trabajamos en», sin páginas propias) · /sectores/{telco,banca,seguros}      Retos · casos de uso por área de negocio con pilares · regulación · FAQ · CTA con sector
 /ecosistema                      Partners · licencias y facturación · tecnologías
 /nosotros · /talento · /contacto (formulario con motivo y sector, ?sector=&reason=)
 /legal/{aviso-legal,privacidad,cookies}          Borradores pendientes de revisión legal (noindex)
@@ -91,7 +93,7 @@ Contenido: cada página tiene su YAML en `content/{es,en}/` (esquemas en `conten
 ## 5b. Decisiones pendientes del cliente
 
 - **Casos de cliente:** decidido el 17/11/2026 **no reutilizar** las 17 historias de la web antigua por ahora. No publicar cifras ni historias de esos casos; `/casos` sigue reservada y sin enlazar.
-- **Logos de clientes (decisión del cliente, 20/11/2026):** sí se publican, en la home, en un muro de logos rotatorio (`SectionClients`) bajo el claim «Colaboramos con empresas que ya conoces». Son 18: 17 de los 19 que lista contextual.team (/companiesLogos) — KeepCoding y Detexian quedan fuera por decisión del cliente — más Hey!Broadband (de su SVG oficial). Rejilla de 3 filas sin líneas (6×3 en escritorio, 4×3 en tablet, 2×3 en móvil); si caben todos, no rota. Planos en una tinta (blanco en oscuro, marino en claro) en `app/assets/data/clients.json`. Solo logo y nombre: sin casos, cifras ni frases de cliente. Para añadir o quitar uno, edita la lista y regenera el JSON (trazado con potrace, como `logo.json`). Al pasar a una tinta, Securitas Direct pierde los tres círculos rojos (se funden con el recuadro negro): se añaden a mano como huecos circulares tras el trazado.
+- **Logos de clientes (decisión del cliente, 20/11/2026):** sí se publican, en la home, en un muro de logos rotatorio (`SectionClients`) bajo el claim «Colaboramos con empresas que ya conoces». Son 18: 17 de los 19 que lista contextual.team (/companiesLogos) — KeepCoding y Detexian quedan fuera por decisión del cliente — más Hey!Broadband (de su SVG oficial). El 20/11/2026 sale Jazztel y entra Mapfre (logo oficial 2026 de Wikimedia Commons, ya vectorial en una tinta: trazados copiados tal cual). Rejilla de 3 filas sin líneas (6×3 en escritorio, 4×3 en tablet, 2×3 en móvil); si caben todos, no rota. Planos en una tinta (blanco en oscuro, marino en claro) en `app/assets/data/clients.json`. Solo logo y nombre: sin casos, cifras ni frases de cliente. Para añadir o quitar uno, edita la lista y regenera el JSON (trazado con potrace, como `logo.json`). Al pasar a una tinta, Securitas Direct pierde los tres círculos rojos (se funden con el recuadro negro): se añaden a mano como huecos circulares tras el trazado.
 - **Nombre del método/diagnóstico** (el benchmark recomienda darle marca). No inventarlo.
 - **Expertos por sector** (campo `expert` en el YAML del sector; solo se muestra si existe).
 - **Google Marketing Platform:** si aparece o no en Ecosistema.

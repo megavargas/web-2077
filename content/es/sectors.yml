@@ -5,3 +5,27 @@ header:
   eyebrow: Sectores
   title: Telco, Banca y Seguros
   intro: Sectores con mucho dato y poco margen de error. Conocemos su regulación, su vocabulario y sus prioridades.
+
+others:
+  title: También trabajamos en otros sectores
+  intro: Nuestro foco son Telco, Banca y Seguros. El método es el mismo allí donde hay mucho dato y decisiones que pesan.
+  items:
+    - name: Deporte y medios
+      text: Competiciones y medios con grandes audiencias y datos de partidos, contenidos y aficionados.
+      clients: [laliga]
+    - name: Seguridad y servicios al hogar
+      text: Servicios por suscripción con mucha operación de campo, atención al cliente y retención.
+      clients: [securitas-direct, segurma]
+    - name: Servicios profesionales
+      text: Firmas que trabajan con grandes volúmenes de expedientes, documentos y valoraciones.
+      clients: [legalitas, gloval]
+    - name: Tecnología y cloud
+      text: Fabricantes y proveedores cloud que necesitan unir datos de cliente, uso y facturación.
+      clients: [hp, gigas]
+    - name: Medio ambiente y economía circular
+      text: Gestión de residuos con datos de recogida, reciclaje y trazabilidad a lo largo de la cadena.
+      clients: [ecoembes]
+    - name: Agroalimentación
+      text: Producción animal y alimentaria, con datos de explotación, calidad y cadena de suministro.
+      clients: [proan]
+  link: ¿Tu sector no está? Cuéntanos tu caso

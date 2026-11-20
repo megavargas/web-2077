@@ -204,7 +204,19 @@ const schemas = {
     form: z.object({ title: z.string(), text: z.string() }),
   }),
 
-  sectorsPage: z.object({ seo, header }),
+  sectorsPage: z.object({
+    seo,
+    header,
+    // «También trabajamos en»: sectores fuera del foco con clientes reales (claves de clients.json)
+    others: z.object({
+      title: z.string(),
+      intro: z.string(),
+      items: z.array(
+        z.object({ name: z.string(), text: z.string(), clients: z.array(z.string()) }),
+      ),
+      link: z.string(),
+    }),
+  }),
 
   ecosystem: z.object({
     seo,

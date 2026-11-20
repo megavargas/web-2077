@@ -5,3 +5,27 @@ header:
   eyebrow: Industries
   title: Telco, Banking and Insurance
   intro: Industries with plenty of data and little room for error. We know their regulation, their vocabulary and their priorities.
+
+others:
+  title: We also work in other industries
+  intro: Our focus is Telco, Banking and Insurance. The method is the same wherever there is a lot of data and decisions that carry weight.
+  items:
+    - name: Sport and media
+      text: Competitions and media with large audiences and data on matches, content and fans.
+      clients: [laliga]
+    - name: Security and home services
+      text: Subscription services with heavy field operations, customer care and retention.
+      clients: [securitas-direct, segurma]
+    - name: Professional services
+      text: Firms that handle large volumes of case files, documents and valuations.
+      clients: [legalitas, gloval]
+    - name: Technology and cloud
+      text: Manufacturers and cloud providers that need customer, usage and billing data in one place.
+      clients: [hp, gigas]
+    - name: Environment and circular economy
+      text: Waste management with data on collection, recycling and traceability across the chain.
+      clients: [ecoembes]
+    - name: Agrifood
+      text: Livestock and food production, with data on farms, quality and the supply chain.
+      clients: [proan]
+  link: Industry not listed? Tell us about your case

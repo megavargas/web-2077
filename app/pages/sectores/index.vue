@@ -26,6 +26,7 @@ usePageSeo(() => data.value?.page?.seo)
       <template #visual><BlueprintField class="h-full w-full" /></template>
     </UiPageHeader>
     <SectionSectors :sectors="site.sectors" />
+    <SectionOtherSectors :others="data.page.others" />
     <SectionStatement :statement="data.home.statement" />
     <SectionCta :cta="data.home.cta" />
   </div>
