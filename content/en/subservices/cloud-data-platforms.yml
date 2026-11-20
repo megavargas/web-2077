@@ -31,12 +31,16 @@ approach:
   title: How we do it
   steps:
     - name: Assess
+      icon: 'lucide:search'
       text: We review systems, contracts, teams and security and regulatory requirements to establish the starting point.
     - name: Design
+      icon: 'lucide:pencil-ruler'
       text: We define the reference architecture and the security and cost models, and validate them with IT and risk.
     - name: Deploy
+      icon: 'lucide:rocket'
       text: We build the landing zone as code and take the first data domain into production.
     - name: Hand over or run
+      icon: 'lucide:handshake'
       text: We hand over documentation, procedures and training to your team, or keep running the platform as a managed service.
 deliverables:
   title: What you get

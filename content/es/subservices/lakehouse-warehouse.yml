@@ -29,12 +29,16 @@ approach:
   title: Cómo lo hacemos
   steps:
     - name: Partir de las decisiones
+      icon: 'lucide:target'
       text: Identificamos los informes, indicadores y casos de uso que el modelo debe soportar, incluido el reporting regulatorio.
     - name: Modelar los dominios
+      icon: 'lucide:boxes'
       text: Diseñamos el modelo conceptual y lógico de cada dominio y acordamos las definiciones con negocio.
     - name: Construir las capas
+      icon: 'lucide:layers'
       text: Implantamos las capas bruta, depurada y de consumo en la plataforma elegida, empezando por un dominio.
     - name: Publicar y ampliar
+      icon: 'lucide:share-2'
       text: Ponemos en producción el primer producto de datos y extendemos el patrón al resto de dominios.
 deliverables:
   title: Qué te llevas

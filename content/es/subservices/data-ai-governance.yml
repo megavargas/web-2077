@@ -31,12 +31,16 @@ approach:
   title: Cómo lo hacemos
   steps:
     - name: Evaluar
+      icon: 'lucide:search'
       text: Revisamos políticas, roles, herramientas y sistemas de IA existentes frente a tus obligaciones.
     - name: Diseñar
+      icon: 'lucide:pencil-ruler'
       text: Definimos el modelo de gobierno, sus órganos y el inventario de datos críticos y de sistemas de IA.
     - name: Implantar
+      icon: 'lucide:wrench'
       text: Configuramos catálogo, linaje y controles en la plataforma, empezando por un dominio de datos prioritario.
     - name: Extender
+      icon: 'lucide:expand'
       text: Ampliamos el modelo por dominios, con indicadores de calidad, cobertura y cumplimiento de las políticas.
 deliverables:
   title: Qué te llevas

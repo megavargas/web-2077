@@ -31,12 +31,16 @@ approach:
   title: How we do it
   steps:
     - name: Choose the decision
+      icon: 'lucide:target'
       text: We prioritise decisions that are frequent, measurable and have a clear financial impact.
     - name: Model the decision
+      icon: 'lucide:git-fork'
       text: Together with the people who make it today, we map the options, rules, data and risks.
     - name: Recommend
+      icon: 'lucide:lightbulb'
       text: We build the engine and embed it in the workflow, starting in suggestion mode.
     - name: Measure and adjust
+      icon: 'lucide:sliders-horizontal'
       text: We compare against a control group and extend autonomy only where results justify it.
 deliverables:
   title: What you get

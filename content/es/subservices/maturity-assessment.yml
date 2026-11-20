@@ -29,12 +29,16 @@ approach:
   title: Cómo lo hacemos
   steps:
     - name: Acotar
+      icon: 'lucide:scan'
       text: Fijamos el alcance, las dimensiones y las áreas a evaluar, y quién aporta cada evidencia.
     - name: Recoger evidencias
+      icon: 'lucide:clipboard-list'
       text: Combinamos entrevistas y cuestionarios dirigidos con una revisión técnica de plataforma, datos y procesos.
     - name: Puntuar y validar
+      icon: 'lucide:chart-bar'
       text: Puntuamos cada dimensión con criterios explícitos y validamos los resultados con sus responsables.
     - name: Priorizar brechas
+      icon: 'lucide:list-ordered'
       text: Convertimos las brechas en acciones ordenadas por su impacto en los objetivos de negocio.
 deliverables:
   title: Qué te llevas

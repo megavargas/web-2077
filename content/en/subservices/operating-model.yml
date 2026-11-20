@@ -31,12 +31,16 @@ approach:
   title: How we do it
   steps:
     - name: Analyse
+      icon: 'lucide:search'
       text: We map current teams, decisions, workflows and bottlenecks.
     - name: Design
+      icon: 'lucide:pencil-ruler'
       text: We propose the target model with alternatives, costs and implications for each business area.
     - name: Pilot
+      icon: 'lucide:flask-conical'
       text: We test the model on one or two real use cases before rolling it out.
     - name: Roll out
+      icon: 'lucide:rocket'
       text: We extend the model in phases, with adoption KPIs and regular adjustments.
 deliverables:
   title: What you get

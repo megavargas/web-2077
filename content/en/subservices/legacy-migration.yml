@@ -31,12 +31,16 @@ approach:
   title: How we do it
   steps:
     - name: Inventory
+      icon: 'lucide:folder-search'
       text: We analyse the current system, the usage of every report and job, and the total cost of the legacy estate.
     - name: Rationalise and plan
+      icon: 'lucide:list-filter'
       text: We decide what is migrated, what is redesigned and what is retired, and sequence it by domain.
     - name: Convert and reconcile
+      icon: 'lucide:arrow-right-left'
       text: We migrate jobs, models and reports and validate the figures against the source system.
     - name: Switch off
+      icon: 'lucide:power'
       text: We decommission the old system as soon as users are working in the new one.
 deliverables:
   title: What you get

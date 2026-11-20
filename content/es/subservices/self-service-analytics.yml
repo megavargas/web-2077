@@ -31,12 +31,16 @@ approach:
   title: Cómo lo hacemos
   steps:
     - name: Evaluar el uso
+      icon: 'lucide:search'
       text: Medimos cómo se usan hoy las herramientas, qué perfiles hay y qué contenido existe.
     - name: Fijar las reglas
+      icon: 'lucide:scale'
       text: Acordamos el modelo de propiedad, los niveles de certificación y los permisos.
     - name: Habilitar
+      icon: 'lucide:graduation-cap'
       text: Publicamos los datos certificados y formamos a los primeros equipos con casos reales de su área.
     - name: Escalar
+      icon: 'lucide:trending-up'
       text: Extendemos el modelo a más áreas con la comunidad de práctica y revisamos el contenido periódicamente.
 deliverables:
   title: Qué te llevas

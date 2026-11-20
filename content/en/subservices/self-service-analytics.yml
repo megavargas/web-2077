@@ -31,12 +31,16 @@ approach:
   title: How we do it
   steps:
     - name: Assess usage
+      icon: 'lucide:search'
       text: We measure how the tools are used today, which user profiles exist and what content is out there.
     - name: Set the rules
+      icon: 'lucide:scale'
       text: We agree the ownership model, certification levels and permissions.
     - name: Enable
+      icon: 'lucide:graduation-cap'
       text: We publish the certified data and train the first teams using real cases from their own area.
     - name: Scale
+      icon: 'lucide:trending-up'
       text: We extend the model to more teams through the community of practice and review content regularly.
 deliverables:
   title: What you get

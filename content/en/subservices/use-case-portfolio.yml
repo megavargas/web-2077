@@ -31,12 +31,16 @@ approach:
   title: How we do it
   steps:
     - name: Discover
+      icon: 'lucide:lightbulb'
       text: We gather problems, decisions and candidate processes in workshops with business areas.
     - name: Assess
+      icon: 'lucide:search'
       text: We score each use case against the agreed criteria and test its feasibility with real data.
     - name: Quantify
+      icon: 'lucide:calculator'
       text: We build the business case for the most promising use cases and validate the assumptions with their owners.
     - name: Sequence
+      icon: 'lucide:list-ordered'
       text: We arrange the portfolio into a roadmap with dependencies, team and first pilots.
 deliverables:
   title: What you get

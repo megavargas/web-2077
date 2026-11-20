@@ -31,12 +31,16 @@ approach:
   title: How we do it
   steps:
     - name: Measure
+      icon: 'lucide:gauge'
       text: We take a real sample of documents and measure where time goes today and where errors arise.
     - name: Design
+      icon: 'lucide:pencil-ruler'
       text: We define the workflow, review thresholds and validations with the team that does the work today.
     - name: Build
+      icon: 'lucide:hammer'
       text: We build classification, extraction and validation and test them on real documents.
     - name: Integrate and run
+      icon: 'lucide:plug'
       text: We connect to your systems, launch the exception queue and track the metrics.
 deliverables:
   title: What you get

@@ -31,12 +31,16 @@ approach:
   title: Cómo lo hacemos
   steps:
     - name: Medir
+      icon: 'lucide:gauge'
       text: Tomamos una muestra real de documentos y medimos dónde se va hoy el tiempo y dónde se producen los errores.
     - name: Diseñar
+      icon: 'lucide:pencil-ruler'
       text: Definimos el flujo, los umbrales de revisión y las validaciones con el equipo que hoy hace el trabajo.
     - name: Construir
+      icon: 'lucide:hammer'
       text: Construimos la clasificación, la extracción y las validaciones y las probamos con documentos reales.
     - name: Integrar y operar
+      icon: 'lucide:plug'
       text: Conectamos con los sistemas, ponemos en marcha la bandeja de excepciones y seguimos los indicadores.
 deliverables:
   title: Qué te llevas

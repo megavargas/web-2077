@@ -29,12 +29,16 @@ approach:
   title: Cómo lo hacemos
   steps:
     - name: Priorizar los datos críticos
+      icon: 'lucide:list-ordered'
       text: Identificamos los datos que alimentan decisiones, modelos y reporting regulatorio.
     - name: Definir reglas y contratos
+      icon: 'lucide:file-check'
       text: Acordamos con negocio y con los dueños de los sistemas origen qué es un dato correcto.
     - name: Construir y probar
+      icon: 'lucide:hammer'
       text: Desarrollamos los pipelines con pruebas automáticas y reglas de calidad integradas.
     - name: Medir y corregir en origen
+      icon: 'lucide:wrench'
       text: Publicamos la calidad por dominio y llevamos cada incidencia a quien puede arreglarla.
 deliverables:
   title: Qué te llevas

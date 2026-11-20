@@ -31,12 +31,16 @@ approach:
   title: Cómo lo hacemos
   steps:
     - name: Elegir y medir
+      icon: 'lucide:target'
       text: Fijamos el proceso, su indicador de partida y el límite de lo que el agente puede hacer.
     - name: Rediseñar
+      icon: 'lucide:pencil-ruler'
       text: Dibujamos el flujo nuevo con las herramientas, permisos y traspasos a persona de cada paso.
     - name: Construir y evaluar
+      icon: 'lucide:hammer'
       text: Construimos el agente y lo probamos con casos reales del proceso antes de tocar sistemas productivos.
     - name: Desplegar por fases
+      icon: 'lucide:rocket'
       text: Pasamos de modo sombra a supervisado y a autonomía acotada a medida que los resultados lo justifican.
 deliverables:
   title: Qué te llevas

@@ -29,12 +29,16 @@ approach:
   title: Cómo lo hacemos
   steps:
     - name: Escuchar al negocio
+      icon: 'lucide:ear'
       text: Entrevistamos a la dirección y a las áreas clave para fijar objetivos, restricciones y apetito de riesgo.
     - name: Contrastar con la realidad
+      icon: 'lucide:scan-search'
       text: Revisamos datos, plataforma, equipos e iniciativas en curso para saber desde dónde se parte.
     - name: Plantear opciones
+      icon: 'lucide:git-fork'
       text: Presentamos escenarios de ambición e inversión con sus implicaciones, para que la dirección elija con criterio.
     - name: Comprometer el plan
+      icon: 'lucide:flag'
       text: Cerramos la hoja de ruta, el business case y los indicadores, y los presentamos al comité de dirección.
 deliverables:
   title: Qué te llevas

@@ -29,12 +29,16 @@ approach:
   title: How we do it
   steps:
     - name: Listen to the business
+      icon: 'lucide:ear'
       text: We interview leadership and key functions to pin down objectives, constraints and risk appetite.
     - name: Check against reality
+      icon: 'lucide:scan-search'
       text: We review data, platform, teams and work in progress to establish the true starting point.
     - name: Set out the options
+      icon: 'lucide:git-fork'
       text: We present scenarios of ambition and investment with their implications, so leadership can choose on clear grounds.
     - name: Commit to the plan
+      icon: 'lucide:flag'
       text: We finalise the roadmap, business case and KPIs, and present them to the executive committee.
 deliverables:
   title: What you get

@@ -31,12 +31,16 @@ approach:
   title: How we do it
   steps:
     - name: Define the decision
+      icon: 'lucide:target'
       text: We set what is being predicted, for which action, and which business metric will measure success.
     - name: Build and validate
+      icon: 'lucide:hammer'
       text: We train, compare against a simple baseline and validate on data the model has not seen.
     - name: Document
+      icon: 'lucide:file-text'
       text: We write the model card covering data, assumptions, limitations and explainability, ready for internal review.
     - name: Deploy and monitor
+      icon: 'lucide:activity'
       text: We embed the model in the process, measure its real effect and keep it under control.
 deliverables:
   title: What you get

@@ -31,12 +31,16 @@ approach:
   title: How we do it
   steps:
     - name: Select and baseline
+      icon: 'lucide:target'
       text: We fix the process, its starting metric and the limits of what the agent is allowed to do.
     - name: Redesign
+      icon: 'lucide:pencil-ruler'
       text: We map the new workflow with the tools, permissions and hand-offs to people at each step.
     - name: Build and evaluate
+      icon: 'lucide:hammer'
       text: We build the agent and test it against real cases from the process before it touches production systems.
     - name: Roll out in stages
+      icon: 'lucide:rocket'
       text: We move from shadow mode to supervised mode to bounded autonomy as the results justify it.
 deliverables:
   title: What you get

@@ -31,12 +31,16 @@ approach:
   title: Cómo lo hacemos
   steps:
     - name: Inventariar
+      icon: 'lucide:folder-search'
       text: Recogemos las preguntas que hoy se hacen y las fuentes que las responden, con su dueño y su vigencia.
     - name: Preparar
+      icon: 'lucide:file-check'
       text: Ordenamos, versionamos y etiquetamos el conocimiento y fijamos cómo se mantiene al día.
     - name: Construir y medir
+      icon: 'lucide:hammer'
       text: Construimos la recuperación y la generación y medimos la calidad contra un conjunto de preguntas validado por expertos.
     - name: Desplegar y mejorar
+      icon: 'lucide:rocket'
       text: Lo lanzamos en el puesto de trabajo y usamos la valoración de los usuarios para corregir fuentes y respuestas.
 deliverables:
   title: Qué te llevas

@@ -31,12 +31,16 @@ approach:
   title: How we do it
   steps:
     - name: Assess
+      icon: 'lucide:search'
       text: We review existing policies, roles, tools and AI systems against your obligations.
     - name: Design
+      icon: 'lucide:pencil-ruler'
       text: We define the governance model, its decision bodies and the inventory of critical data and AI systems.
     - name: Implement
+      icon: 'lucide:wrench'
       text: We configure catalogue, lineage and controls in the platform, starting with one priority data domain.
     - name: Extend
+      icon: 'lucide:expand'
       text: We roll the model out domain by domain, with KPIs for quality, coverage and policy adherence.
 deliverables:
   title: What you get

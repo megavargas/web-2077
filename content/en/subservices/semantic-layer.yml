@@ -31,12 +31,16 @@ approach:
   title: How we do it
   steps:
     - name: Inventory
+      icon: 'lucide:folder-search'
       text: We analyse actual report usage and existing logic to find which metrics matter and where they diverge.
     - name: Agree
+      icon: 'lucide:handshake'
       text: We settle definitions with business owners and record them in a single glossary.
     - name: Model
+      icon: 'lucide:boxes'
       text: We build the semantic layer with automated tests, version control and permissions.
     - name: Migrate and retire
+      icon: 'lucide:arrow-right-left'
       text: We move priority reports onto the new layer and retire duplicates in an orderly way.
 deliverables:
   title: What you get

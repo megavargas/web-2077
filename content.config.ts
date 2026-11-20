@@ -123,7 +123,11 @@ const schemas = {
     intro: z.string(),
     problem: z.object({ title: z.string(), text: z.string() }),
     capabilities: titled(z.array(named)),
-    approach: z.object({ title: z.string(), steps: z.array(named) }),
+    // Cuatro pasos, cada uno con su icono de trazo fino (lucide)
+    approach: z.object({
+      title: z.string(),
+      steps: z.array(z.object({ name: z.string(), icon: z.string(), text: z.string() })),
+    }),
     deliverables: titled(z.array(z.string())),
     outcome: z.object({ title: z.string(), text: z.string() }),
     useCases: z.object({

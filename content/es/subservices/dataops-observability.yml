@@ -31,12 +31,16 @@ approach:
   title: Cómo lo hacemos
   steps:
     - name: Medir
+      icon: 'lucide:gauge'
       text: Identificamos los productos de datos críticos, quién los consume y qué fallos duelen más hoy.
     - name: Automatizar
+      icon: 'lucide:workflow'
       text: Implantamos control de versiones, entornos separados y despliegue continuo con pruebas.
     - name: Vigilar
+      icon: 'lucide:radar'
       text: Activamos monitorización, alertas y procedimientos de incidencia sobre los datos críticos.
     - name: Operar y mejorar
+      icon: 'lucide:refresh-cw'
       text: Revisamos cada mes incidencias y niveles de servicio y corregimos las causas de fondo.
 deliverables:
   title: Qué te llevas

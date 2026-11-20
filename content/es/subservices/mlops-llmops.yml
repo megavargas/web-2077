@@ -31,12 +31,16 @@ approach:
   title: Cómo lo hacemos
   steps:
     - name: Evaluar el punto de partida
+      icon: 'lucide:search'
       text: Inventariamos modelos y aplicaciones de IA, cómo se despliegan hoy y dónde están los riesgos.
     - name: Diseñar la plataforma
+      icon: 'lucide:pencil-ruler'
       text: Definimos registro, entornos, flujos de despliegue, permisos y métricas a vigilar.
     - name: Industrializar los primeros casos
+      icon: 'lucide:factory'
       text: Llevamos uno o dos modelos reales a la plataforma y dejamos el patrón listo para el resto.
     - name: Operar y optimizar
+      icon: 'lucide:refresh-cw'
       text: Vigilamos calidad y coste, reentrenamos y optimizamos, con servicio gestionado o con tu equipo.
 deliverables:
   title: Qué te llevas

@@ -31,12 +31,16 @@ approach:
   title: Cómo lo hacemos
   steps:
     - name: Inventariar
+      icon: 'lucide:folder-search'
       text: Analizamos el sistema actual, el uso de cada informe y proceso y el coste total del legacy.
     - name: Racionalizar y planificar
+      icon: 'lucide:list-filter'
       text: Decidimos qué se migra, qué se rediseña y qué se retira, y lo ordenamos por dominios.
     - name: Convertir y conciliar
+      icon: 'lucide:arrow-right-left'
       text: Migramos procesos, modelos e informes y validamos las cifras contra el sistema de origen.
     - name: Apagar
+      icon: 'lucide:power'
       text: Damos de baja el sistema antiguo en cuanto los usuarios trabajan ya en el nuevo.
 deliverables:
   title: Qué te llevas

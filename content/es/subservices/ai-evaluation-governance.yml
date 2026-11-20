@@ -31,12 +31,16 @@ approach:
   title: Cómo lo hacemos
   steps:
     - name: Mapear riesgos
+      icon: 'lucide:map'
       text: Analizamos cada caso de uso, su clasificación de riesgo y lo que el agente puede llegar a tocar.
     - name: Fijar criterios y límites
+      icon: 'lucide:sliders-horizontal'
       text: Acordamos umbrales de calidad, acciones permitidas y aprobaciones humanas con negocio, riesgos y seguridad.
     - name: Probar antes de salir
+      icon: 'lucide:flask-conical'
       text: Ejecutamos las evaluaciones y las pruebas adversarias y solo pasa a producción lo que cumple los umbrales.
     - name: Vigilar en producción
+      icon: 'lucide:activity'
       text: Evaluamos de forma continua, revisamos alertas y registros y ajustamos límites cuando cambia el caso.
 deliverables:
   title: Qué te llevas

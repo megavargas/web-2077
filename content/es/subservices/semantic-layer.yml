@@ -31,12 +31,16 @@ approach:
   title: Cómo lo hacemos
   steps:
     - name: Inventariar
+      icon: 'lucide:folder-search'
       text: Analizamos el uso real de los informes y la lógica existente para saber qué métricas importan y dónde divergen.
     - name: Acordar
+      icon: 'lucide:handshake'
       text: Cerramos las definiciones con los dueños de negocio y las documentamos en un glosario único.
     - name: Modelar
+      icon: 'lucide:boxes'
       text: Construimos la capa semántica con pruebas automáticas, control de versiones y permisos.
     - name: Migrar y retirar
+      icon: 'lucide:arrow-right-left'
       text: Llevamos los informes prioritarios a la nueva capa y retiramos los duplicados de forma ordenada.
 deliverables:
   title: Qué te llevas

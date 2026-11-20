@@ -29,12 +29,16 @@ approach:
   title: How we do it
   steps:
     - name: Prioritise critical data
+      icon: 'lucide:list-ordered'
       text: We identify the data that feeds decisions, models and regulatory reporting.
     - name: Define rules and contracts
+      icon: 'lucide:file-check'
       text: We agree with the business and source system owners what correct data looks like.
     - name: Build and test
+      icon: 'lucide:hammer'
       text: We develop the pipelines with automated tests and quality rules built in.
     - name: Measure and fix at source
+      icon: 'lucide:wrench'
       text: We publish quality by domain and route every issue to the person who can fix it.
 deliverables:
   title: What you get

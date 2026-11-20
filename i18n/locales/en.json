@@ -46,7 +46,9 @@
     "inPillar": "More in {pillar}",
     "related": "Related services",
     "pillarOverview": "{pillar} overview",
-    "sectorLabel": "Industry: {sector}"
+    "step": "Step {n}",
+    "seeSector": "See {sector}",
+    "regulation": "Regulation"
   },
   "form": {
     "name": "Full name",

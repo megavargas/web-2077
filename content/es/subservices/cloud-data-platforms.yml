@@ -31,12 +31,16 @@ approach:
   title: Cómo lo hacemos
   steps:
     - name: Evaluar
+      icon: 'lucide:search'
       text: Revisamos sistemas, contratos, equipos y requisitos de seguridad y regulación para fijar el punto de partida.
     - name: Diseñar
+      icon: 'lucide:pencil-ruler'
       text: Definimos la arquitectura de referencia, el modelo de seguridad y el de costes, y los validamos con tecnología y riesgos.
     - name: Desplegar
+      icon: 'lucide:rocket'
       text: Construimos la landing zone como código y llevamos a producción el primer dominio de datos.
     - name: Traspasar u operar
+      icon: 'lucide:handshake'
       text: Entregamos documentación, procedimientos y formación a tu equipo, o seguimos operando la plataforma como servicio gestionado.
 deliverables:
   title: Qué te llevas

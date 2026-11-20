@@ -31,12 +31,16 @@ approach:
   title: Cómo lo hacemos
   steps:
     - name: Formular la pregunta
+      icon: 'lucide:message-circle-question'
       text: Traducimos la duda de negocio en una hipótesis medible y en la decisión que depende de ella.
     - name: Preparar los datos
+      icon: 'lucide:database'
       text: Reunimos y validamos los datos necesarios sobre la plataforma existente, sin extracciones paralelas.
     - name: Analizar y contrastar
+      icon: 'lucide:flask-conical'
       text: Aplicamos el método adecuado y comprobamos los resultados con experimentos o con datos que el análisis no ha usado.
     - name: Llevar a la operación
+      icon: 'lucide:rocket'
       text: Presentamos las conclusiones con su grado de incertidumbre y automatizamos lo que deba repetirse.
 deliverables:
   title: Qué te llevas

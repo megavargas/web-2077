@@ -29,12 +29,16 @@ approach:
   title: How we do it
   steps:
     - name: Start from the decisions
+      icon: 'lucide:target'
       text: We identify the reports, metrics and use cases the model must support, including regulatory reporting.
     - name: Model the domains
+      icon: 'lucide:boxes'
       text: We design the conceptual and logical model for each domain and agree the definitions with the business.
     - name: Build the layers
+      icon: 'lucide:layers'
       text: We implement the raw, cleansed and consumption layers on the chosen platform, starting with one domain.
     - name: Publish and extend
+      icon: 'lucide:share-2'
       text: We put the first data product into production and roll the pattern out to the other domains.
 deliverables:
   title: What you get

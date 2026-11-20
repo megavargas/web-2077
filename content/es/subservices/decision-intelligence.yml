@@ -31,12 +31,16 @@ approach:
   title: Cómo lo hacemos
   steps:
     - name: Elegir la decisión
+      icon: 'lucide:target'
       text: Priorizamos decisiones frecuentes, medibles y con un impacto económico claro.
     - name: Modelar la decisión
+      icon: 'lucide:git-fork'
       text: Mapeamos con quienes la toman hoy las opciones, las reglas, los datos y los riesgos.
     - name: Recomendar
+      icon: 'lucide:lightbulb'
       text: Construimos el motor y lo integramos en el flujo de trabajo, empezando en modo sugerencia.
     - name: Medir y ajustar
+      icon: 'lucide:sliders-horizontal'
       text: Comparamos con un grupo de control y ampliamos la autonomía solo donde los resultados lo justifican.
 deliverables:
   title: Qué te llevas

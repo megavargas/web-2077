@@ -31,12 +31,16 @@ approach:
   title: How we do it
   steps:
     - name: Frame the question
+      icon: 'lucide:message-circle-question'
       text: We turn the business question into a measurable hypothesis and the decision that depends on it.
     - name: Prepare the data
+      icon: 'lucide:database'
       text: We gather and validate the data required on your existing platform, without parallel extracts.
     - name: Analyse and test
+      icon: 'lucide:flask-conical'
       text: We apply the right method and check the results against experiments or data the analysis has not used.
     - name: Put it to work
+      icon: 'lucide:rocket'
       text: We present findings with their degree of uncertainty and automate whatever needs repeating.
 deliverables:
   title: What you get

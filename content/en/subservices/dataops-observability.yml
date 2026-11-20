@@ -31,12 +31,16 @@ approach:
   title: How we do it
   steps:
     - name: Measure
+      icon: 'lucide:gauge'
       text: We identify the critical data products, who consumes them and which failures hurt most today.
     - name: Automate
+      icon: 'lucide:workflow'
       text: We put version control, separate environments and continuous deployment with tests in place.
     - name: Monitor
+      icon: 'lucide:radar'
       text: We switch on monitoring, alerts and incident procedures for critical data.
     - name: Run and improve
+      icon: 'lucide:refresh-cw'
       text: We review incidents and service levels every month and fix the root causes.
 deliverables:
   title: What you get

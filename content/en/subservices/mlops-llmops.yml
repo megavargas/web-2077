@@ -31,12 +31,16 @@ approach:
   title: How we do it
   steps:
     - name: Assess the starting point
+      icon: 'lucide:search'
       text: We inventory your models and AI applications, how they are deployed today and where the risks lie.
     - name: Design the platform
+      icon: 'lucide:pencil-ruler'
       text: We define the registry, environments, deployment pipelines, permissions and metrics to monitor.
     - name: Industrialise the first cases
+      icon: 'lucide:factory'
       text: We move one or two real models onto the platform and leave the pattern ready for the rest.
     - name: Run and optimise
+      icon: 'lucide:refresh-cw'
       text: We monitor quality and cost, retrain and optimise, as a managed service or alongside your team.
 deliverables:
   title: What you get

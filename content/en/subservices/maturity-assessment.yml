@@ -29,12 +29,16 @@ approach:
   title: How we do it
   steps:
     - name: Scope
+      icon: 'lucide:scan'
       text: We agree the scope, dimensions and areas to assess, and who provides each piece of evidence.
     - name: Gather evidence
+      icon: 'lucide:clipboard-list'
       text: We combine interviews and targeted questionnaires with a technical review of platform, data and processes.
     - name: Score and validate
+      icon: 'lucide:chart-bar'
       text: We score each dimension against explicit criteria and validate the results with the people accountable.
     - name: Prioritise the gaps
+      icon: 'lucide:list-ordered'
       text: We turn the gaps into actions ranked by their impact on business objectives.
 deliverables:
   title: What you get

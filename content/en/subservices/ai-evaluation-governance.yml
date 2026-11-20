@@ -31,12 +31,16 @@ approach:
   title: How we do it
   steps:
     - name: Map the risks
+      icon: 'lucide:map'
       text: We analyse each use case, its risk classification and everything the agent could touch.
     - name: Set criteria and limits
+      icon: 'lucide:sliders-horizontal'
       text: We agree quality thresholds, permitted actions and human approvals with the business, risk and security.
     - name: Test before release
+      icon: 'lucide:flask-conical'
       text: We run the evaluations and adversarial tests, and only what meets the thresholds goes live.
     - name: Monitor in production
+      icon: 'lucide:activity'
       text: We evaluate continuously, review alerts and logs, and adjust limits as the use case changes.
 deliverables:
   title: What you get

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Subservice } from '~/types/content'
+import type { SubserviceSummary } from '~/types/content'
 
 /**
  * Landing de un subservicio (/servicios/<pilar>/<subservicio>). Misma gramática que la del
@@ -34,11 +34,11 @@ if (!service.value || pillar.value?.slug !== String(route.params.pillar))
 setI18nParams(useLocaleParamsState().value?.params ?? {})
 usePageSeo(() => service.value?.seo)
 
-const linkTo = (s: Subservice) => {
+const linkTo = (s: SubserviceSummary) => {
   const p = site.value?.pillars.find((x) => x.key === s.pillar)
   return { name: 'servicios-pillar-service', params: { pillar: p?.slug, service: s.slug } }
 }
-const numberOf = (s: Subservice) =>
+const numberOf = (s: SubserviceSummary) =>
   `${site.value?.pillars.find((x) => x.key === s.pillar)?.number}.${s.order}`
 
 /** Recorrido global 01.1 → 04.5: anterior y siguiente cruzan de un pilar al siguiente. */
@@ -50,10 +50,27 @@ const next = computed(() => all.value[index.value + 1])
 const related = computed(() =>
   (service.value?.related ?? [])
     .map((key) => all.value.find((s) => s.key === key))
-    .filter((s): s is Subservice => !!s),
+    .filter((s): s is SubserviceSummary => !!s),
 )
 
-const sectorOf = (key: string) => site.value?.sectors.find((s) => s.key === key)
+/** Casos de uso con su sector (icono, nombre, enlace) y la regulación que aplica en él. */
+const useCases = computed(() =>
+  (service.value?.useCases.items ?? []).flatMap((u) => {
+    const sector = site.value?.sectors.find((s) => s.key === u.sector)
+    if (!sector) return []
+    const regulation = sector.regulation.items.map((r) => r.name)
+    return [{ ...u, sector, regulation }]
+  }),
+)
+
+/** El problema en dos tiempos: la primera frase como titular y el resto como consecuencias. */
+const problem = computed(() => {
+  const [lead = '', ...rest] = (service.value?.problem.text ?? '')
+    .split(/(?<=[.?!])\s+(?=[¿¡A-ZÁÉÍÓÚÑ])/)
+    .map((x) => x.trim())
+    .filter(Boolean)
+  return { lead, rest }
+})
 
 const crumbs = computed(() => [
   { label: t('labels.services'), to: { name: 'servicios' } },
@@ -116,14 +133,45 @@ useHead({
       <UiButton :to="{ name: 'servicios-diagnostico' }">{{ service.cta.button }}</UiButton>
     </UiPageHeader>
 
+    <!-- El problema: la primera frase como titular y el resto como consecuencias -->
     <section class="py-12 md:py-20" aria-labelledby="problem-title">
-      <UiContainer class="grid gap-10 border-t border-graphite-border pt-12 lg:grid-cols-3">
-        <h2 id="problem-title" class="font-display text-heading font-light text-bone-white">
-          {{ service.problem.title }}
-        </h2>
-        <p class="font-body text-subheading text-pretty text-fog-light lg:col-span-2">
-          {{ service.problem.text }}
-        </p>
+      <UiContainer class="grid gap-10 border-t border-graphite-border pt-12 lg:grid-cols-12">
+        <div class="flex flex-col gap-6 lg:col-span-4">
+          <span
+            aria-hidden="true"
+            class="flex size-14 items-center justify-center border border-graphite-border text-bone-white"
+          >
+            <Icon name="lucide:triangle-alert" class="size-7" />
+          </span>
+          <h2 id="problem-title" class="font-display text-heading font-light text-bone-white">
+            {{ service.problem.title }}
+          </h2>
+        </div>
+        <div class="flex flex-col gap-8 lg:col-span-8">
+          <p
+            class="font-display text-heading-sm font-light text-balance text-bone-white md:text-heading"
+          >
+            {{ problem.lead }}
+          </p>
+          <ul
+            v-if="problem.rest.length"
+            class="grid gap-6"
+            :class="problem.rest.length > 1 && 'md:grid-cols-2'"
+          >
+            <li
+              v-for="sentence in problem.rest"
+              :key="sentence"
+              class="flex gap-4 border-t border-graphite-border pt-5"
+            >
+              <Icon
+                name="lucide:corner-down-right"
+                class="mt-0.5 size-5 shrink-0 text-fog-light"
+                aria-hidden="true"
+              />
+              <p class="font-body text-subheading text-pretty text-fog-light">{{ sentence }}</p>
+            </li>
+          </ul>
+        </div>
       </UiContainer>
     </section>
 
@@ -145,24 +193,40 @@ useHead({
       </UiContainer>
     </section>
 
-    <!-- Cómo lo hacemos: línea de pasos (sin números, para no chocar con la numeración del pilar) -->
-    <section class="py-12 md:py-20" aria-labelledby="approach-title">
+    <!-- Cómo lo hacemos: banda azul con texto blanco (la única banda de color de la página) -->
+    <section class="bg-accent-strong py-16 md:py-24" aria-labelledby="approach-title">
       <UiContainer>
-        <UiSectionHeader id="approach-title" :title="service.approach.title" />
-        <ol class="grid gap-10 md:grid-cols-2 lg:grid-cols-4 lg:gap-0">
+        <UiSectionHeader id="approach-title" :title="service.approach.title" tone="accent" />
+        <ol class="grid gap-12 md:grid-cols-2 lg:grid-cols-4 lg:gap-8">
           <li
-            v-for="step in service.approach.steps"
+            v-for="(step, i) in service.approach.steps"
             :key="step.name"
-            class="relative flex flex-col gap-3 border-l border-graphite-border pl-6 lg:border-t lg:border-l-0 lg:pt-8 lg:pr-8 lg:pl-0"
+            class="flex flex-col gap-4"
           >
-            <span
-              aria-hidden="true"
-              class="absolute top-0 -left-1 size-2 bg-bone-white lg:-top-1 lg:left-0"
-            />
-            <h3 class="font-display text-heading-sm font-normal text-bone-white">
+            <div class="flex items-center gap-4">
+              <span
+                aria-hidden="true"
+                class="flex size-14 shrink-0 items-center justify-center border border-bone-white/40 text-paper"
+              >
+                <Icon :name="step.icon" class="size-7" />
+              </span>
+              <!-- Conector hasta el paso siguiente (solo en una fila de cuatro) -->
+              <span
+                v-if="i < service.approach.steps.length - 1"
+                aria-hidden="true"
+                class="hidden flex-1 items-center lg:flex"
+              >
+                <span class="h-px flex-1 bg-bone-white/40" />
+                <Icon name="lucide:chevron-right" class="-ml-1.5 size-4 text-bone-white" />
+              </span>
+            </div>
+            <p class="font-mono text-caption text-bone-white uppercase">
+              {{ t('labels.step', { n: i + 1 }) }}
+            </p>
+            <h3 class="font-display text-heading-sm font-normal text-paper">
               {{ step.name }}
             </h3>
-            <p class="font-body text-body text-pretty text-fog-light">{{ step.text }}</p>
+            <p class="font-body text-body text-pretty text-bone-white">{{ step.text }}</p>
           </li>
         </ol>
       </UiContainer>
@@ -199,28 +263,61 @@ useHead({
       </UiContainer>
     </section>
 
-    <!-- Dónde lo aplicamos: sección blanca -->
+    <!-- Dónde lo aplicamos: sección blanca, una tarjeta por sector que enlaza a su página -->
     <section
       class="bg-paper py-16 md:py-24 [&_:focus-visible]:outline-void-black"
       aria-labelledby="usecases-title"
     >
       <UiContainer>
         <UiSectionHeader id="usecases-title" :title="service.useCases.title" tone="light" />
-        <ul class="grid gap-12 lg:grid-cols-3 lg:gap-8">
+        <ul class="grid gap-px border border-mist-border bg-mist-border lg:grid-cols-3">
           <li
-            v-for="u in service.useCases.items"
-            :key="u.sector"
-            class="flex flex-col gap-3 border-t border-mist-border pt-6"
+            v-for="u in useCases"
+            :key="u.sector.key"
+            class="group relative flex flex-col gap-5 bg-paper p-6 transition-colors duration-150 hover:bg-mist md:p-8"
           >
-            <NuxtLinkLocale
-              v-if="sectorOf(u.sector)"
-              :to="{ name: 'sectores-sector', params: { sector: sectorOf(u.sector)!.slug } }"
-              class="font-mono text-caption text-ink-mid uppercase underline-offset-4 hover:text-accent-deep hover:underline"
-            >
-              {{ t('labels.sectorLabel', { sector: sectorOf(u.sector)!.name }) }}
-            </NuxtLinkLocale>
-            <h3 class="font-display text-heading-sm font-normal text-void-black">{{ u.name }}</h3>
+            <div class="flex items-center justify-between gap-4">
+              <span
+                aria-hidden="true"
+                class="flex size-12 items-center justify-center border border-mist-border text-void-black transition-colors duration-150 group-hover:bg-void-black group-hover:text-paper"
+              >
+                <Icon :name="u.sector.icon" class="size-6" />
+              </span>
+              <span class="font-mono text-caption text-ink-mid uppercase">
+                {{ u.sector.name }}
+              </span>
+            </div>
+            <h3 class="font-display text-heading-sm font-normal text-balance text-void-black">
+              {{ u.name }}
+            </h3>
             <p class="font-body text-body text-pretty text-ink-mid">{{ u.text }}</p>
+            <div class="mt-auto flex flex-col gap-4 border-t border-mist-border pt-4">
+              <div v-if="u.regulation.length" class="flex flex-col gap-2">
+                <p class="font-mono text-caption text-ink-mid uppercase">
+                  {{ t('labels.regulation') }}
+                </p>
+                <ul class="flex flex-wrap gap-2">
+                  <li
+                    v-for="r in u.regulation"
+                    :key="r"
+                    class="border border-mist-border px-2 py-0.5 font-mono text-caption text-void-black"
+                  >
+                    {{ r }}
+                  </li>
+                </ul>
+              </div>
+              <NuxtLinkLocale
+                :to="{ name: 'sectores-sector', params: { sector: u.sector.slug } }"
+                class="inline-flex items-center gap-2 font-mono text-caption text-accent-deep uppercase underline-offset-4 group-hover:underline after:absolute after:inset-0"
+              >
+                {{ t('labels.seeSector', { sector: u.sector.name }) }}
+                <Icon
+                  name="lucide:arrow-right"
+                  class="size-4 transition-transform duration-150 group-hover:translate-x-1"
+                  aria-hidden="true"
+                />
+              </NuxtLinkLocale>
+            </div>
           </li>
         </ul>
       </UiContainer>

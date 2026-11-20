@@ -78,6 +78,7 @@ Base: `docs/reports/Benchmark competitivo web Contextual.md` (benchmark de 29 co
 /servicios                       Recorrido 01→04 · método con entregables · formas de trabajar (proyecto, gestionado, capacidad flexible) · FAQ
 /servicios/{estrategia,datos,inteligencia,ia}    Problema · qué incluye (tarjetas a sus 5 subservicios) · resultado · dónde lo aplicamos (por sector) · tecnologías · FAQ · anterior/siguiente
 /servicios/<pilar>/<subservicio>   20 landings (5 por pilar, numeradas 01.1–04.5): migas · problema · qué hacemos · cómo (4 pasos) · resultado y entregables · un caso de uso por sector · tecnologías · FAQ · resto del pilar y relacionados · anterior/siguiente (recorrido 01.1→04.5) · CTA
+                                 En la landing: «El problema» muestra la primera frase de `problem.text` como titular y el resto como consecuencias (escríbelo en 2–3 frases); «Cómo lo hacemos» es la banda azul de la página (`bg-accent-strong`), con 4 pasos y un icono lucide por paso (`approach.steps[].icon`).
 /servicios/diagnostico           Landing de la oferta de entrada + formulario (motivo fijo)
 /sectores (con bloque «También trabajamos en», sin páginas propias) · /sectores/{telco,banca,seguros}      Retos · casos de uso por área de negocio con pilares · regulación · FAQ · CTA con sector
 /ecosistema                      Partners · licencias y facturación · tecnologías
