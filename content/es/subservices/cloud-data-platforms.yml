@@ -3,6 +3,7 @@ pillar: data
 order: 1
 slug: plataformas-datos-cloud
 name: Plataformas de datos cloud
+icon: 'lucide:cloud'
 summary: Arquitectura, seguridad y costes de tu plataforma en Google Cloud, Azure o AWS, resueltos desde el diseño.
 seo:
   title: Plataformas de datos cloud en Google Cloud, Azure y AWS

@@ -3,6 +3,7 @@ pillar: ai
 order: 3
 slug: automatizacion-procesos
 name: Automatización de procesos
+icon: 'lucide:workflow'
 summary: Lectura, clasificación y validación de documentos integradas en el flujo, con las excepciones en manos de una persona.
 seo:
   title: Automatización de procesos y documentos con IA

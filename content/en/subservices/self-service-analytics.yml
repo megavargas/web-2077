@@ -3,6 +3,7 @@ pillar: intelligence
 order: 5
 slug: self-service-analytics
 name: Self-service analytics
+icon: 'lucide:layout-dashboard'
 summary: Every team answers its own questions with certified data, training and clear rules of use.
 seo:
   title: Self-service analytics on certified data

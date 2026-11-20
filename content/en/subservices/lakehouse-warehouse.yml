@@ -3,6 +3,7 @@ pillar: data
 order: 2
 slug: lakehouse-data-warehouse
 name: Lakehouse and data warehouse
+icon: 'lucide:database'
 summary: Domain data models and clear layers, so every department works from the same number.
 seo:
   title: 'Lakehouse and data warehouse: domain data modelling'

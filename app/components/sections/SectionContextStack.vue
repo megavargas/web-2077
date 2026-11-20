@@ -1,32 +1,12 @@
 <script setup lang="ts">
-import type { HomeContent, Pillar, Sector } from '~/types/content'
+import type { HomeContent } from '~/types/content'
 
 /**
- * Pila de contexto: capas numeradas de arriba (IA) a la base (sector), cada una con
- * tarjetas que enlazan al pilar o sector correspondiente.
+ * Pila de contexto: ilustración de la tesis («la IA funciona sobre tres capas de contexto»),
+ * capas numeradas de arriba (IA) a la base (sector). Teselas sin enlace: es un diagrama, no un
+ * catálogo; los servicios se navegan desde los pilares, justo debajo.
  */
-const { context, pillars, sectors } = defineProps<{
-  context: HomeContent['context']
-  pillars: Pillar[]
-  sectors: Sector[]
-}>()
-
-type Tile = HomeContent['context']['layers'][number]['tiles'][number]
-
-// resolveComponent solo funciona en setup (no dentro de la plantilla)
-const NuxtLinkLocale = resolveComponent('NuxtLinkLocale')
-
-function tileTo(tile: Tile) {
-  if (tile.pillar) {
-    const p = pillars.find((x) => x.key === tile.pillar)
-    return p ? { name: 'servicios-pillar', params: { pillar: p.slug } } : undefined
-  }
-  if (tile.sector) {
-    const s = sectors.find((x) => x.key === tile.sector)
-    return s ? { name: 'sectores-sector', params: { sector: s.slug } } : undefined
-  }
-  return undefined
-}
+const { context } = defineProps<{ context: HomeContent['context'] }>()
 </script>
 
 <template>
@@ -69,33 +49,15 @@ function tileTo(tile: Tile) {
             class="grid grid-cols-2 gap-px self-start border border-graphite-border bg-graphite-border sm:grid-cols-4 lg:col-span-7"
           >
             <li v-for="tile in layer.tiles" :key="tile.label" class="bg-void-black">
-              <component
-                :is="tileTo(tile) ? NuxtLinkLocale : 'div'"
-                :to="tileTo(tile)"
-                class="group flex h-full min-h-36 flex-col justify-between gap-6 p-5 transition-colors duration-150"
-                :class="tileTo(tile) && 'hover:bg-bone-white'"
-              >
-                <Icon
-                  :name="tile.icon"
-                  class="size-6 text-bone-white"
-                  :class="tileTo(tile) && 'group-hover:text-void-black'"
-                  aria-hidden="true"
-                />
+              <div class="flex h-full min-h-36 flex-col justify-between gap-6 p-5">
+                <Icon :name="tile.icon" class="size-6 text-bone-white" aria-hidden="true" />
                 <span class="flex flex-col gap-1">
-                  <span
-                    class="font-body text-body text-bone-white"
-                    :class="tileTo(tile) && 'group-hover:text-void-black'"
-                  >
-                    {{ tile.label }}
-                  </span>
-                  <span
-                    class="font-mono text-caption text-fog-light uppercase"
-                    :class="tileTo(tile) && 'group-hover:text-void-black'"
-                  >
+                  <span class="font-body text-body text-bone-white">{{ tile.label }}</span>
+                  <span class="font-mono text-caption text-fog-light uppercase">
                     {{ tile.sub }}
                   </span>
                 </span>
-              </component>
+              </div>
             </li>
           </ul>
         </li>

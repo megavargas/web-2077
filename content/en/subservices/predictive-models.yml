@@ -3,6 +3,7 @@ pillar: intelligence
 order: 3
 slug: predictive-models
 name: Predictive models
+icon: 'lucide:trending-up'
 summary: Forecasting demand, churn, risk or fraud with explainable models that are used in day-to-day operations.
 seo:
   title: Explainable predictive models in production

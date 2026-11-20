@@ -3,6 +3,7 @@ pillar: strategy
 order: 2
 slug: evaluacion-madurez
 name: Evaluación de madurez
+icon: 'lucide:activity'
 summary: Una medición de tu madurez en datos, analítica e IA basada en evidencias, con una línea base para medir el avance.
 seo:
   title: Evaluación de madurez en datos e IA

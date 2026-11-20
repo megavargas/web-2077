@@ -3,6 +3,7 @@ pillar: intelligence
 order: 1
 slug: bi-capa-semantica
 name: BI y capa semántica
+icon: 'lucide:layers'
 summary: Cada métrica se define una vez y da la misma cifra en todos los informes, herramientas y asistentes de IA.
 seo:
   title: 'BI y capa semántica: métricas únicas y gobernadas'

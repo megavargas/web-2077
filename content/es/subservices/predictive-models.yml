@@ -3,6 +3,7 @@ pillar: intelligence
 order: 3
 slug: modelos-predictivos
 name: Modelos predictivos
+icon: 'lucide:trending-up'
 summary: Previsión de demanda, abandono, riesgo o fraude con modelos explicables que se usan en el proceso diario.
 seo:
   title: Modelos predictivos explicables y en producción

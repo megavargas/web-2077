@@ -3,6 +3,7 @@ pillar: ai
 order: 1
 slug: agentes-ia
 name: Agentes de IA
+icon: 'lucide:bot'
 summary: Agentes que ejecutan pasos de un proceso real sobre tus sistemas, con la persona decidiendo donde importa.
 seo:
   title: Agentes de IA en producción para procesos reales

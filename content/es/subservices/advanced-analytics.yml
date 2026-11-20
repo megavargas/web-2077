@@ -3,6 +3,7 @@ pillar: intelligence
 order: 2
 slug: analitica-avanzada
 name: Analítica avanzada
+icon: 'lucide:chart-scatter'
 summary: Análisis de causas, segmentación y atribución para saber qué está pasando, por qué y qué palanca mover.
 seo:
   title: 'Analítica avanzada: causas, segmentación y atribución'

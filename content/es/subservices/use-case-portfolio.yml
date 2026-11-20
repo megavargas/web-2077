@@ -3,6 +3,7 @@ pillar: strategy
 order: 3
 slug: casos-de-uso
 name: Cartera de casos de uso
+icon: 'lucide:list-checks'
 summary: Casos de uso de datos e IA priorizados por valor, viabilidad y riesgo, con business case y criterio para seguir o parar.
 seo:
   title: Priorización de casos de uso de IA con business case

@@ -3,6 +3,7 @@ pillar: ai
 order: 2
 slug: knowledge-assistants
 name: Internal knowledge assistants
+icon: 'lucide:message-square-text'
 summary: Answers grounded in your own documentation, with the source cited and access rights respected.
 seo:
   title: AI assistants over internal knowledge (RAG)

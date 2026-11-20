@@ -3,6 +3,7 @@ pillar: ai
 order: 4
 slug: mlops-llmops
 name: MLOps and LLMOps
+icon: 'lucide:server-cog'
 summary: Deployment, versioning, monitoring and cost control for predictive and generative models in production.
 seo:
   title: MLOps and LLMOps for models and generative AI

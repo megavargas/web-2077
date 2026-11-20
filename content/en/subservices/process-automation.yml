@@ -3,6 +3,7 @@ pillar: ai
 order: 3
 slug: process-automation
 name: Process automation
+icon: 'lucide:workflow'
 summary: Document reading, classification and validation built into the workflow, with exceptions handled by a person.
 seo:
   title: AI-powered process and document automation

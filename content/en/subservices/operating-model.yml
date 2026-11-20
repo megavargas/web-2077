@@ -3,6 +3,7 @@ pillar: strategy
 order: 4
 slug: operating-model
 name: Operating model and CoE
+icon: 'lucide:network'
 summary: Roles, processes and a centre of excellence (CoE) so that data and AI scale beyond the first project.
 seo:
   title: Data and AI operating model and centre of excellence

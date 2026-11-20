@@ -3,6 +3,7 @@ pillar: data
 order: 3
 slug: legacy-bi-etl-migration
 name: Legacy BI and ETL migration
+icon: 'lucide:arrow-right-left'
 summary: From Cognos, MicroStrategy, PowerCenter or Teradata to a modern stack, without interrupting reporting.
 seo:
   title: Legacy BI and ETL migration to the cloud

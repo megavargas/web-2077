@@ -30,71 +30,36 @@ context:
       tagline: What you see
       text: Agents, assistants and models in production. They work when the three layers beneath them are in place.
       tiles:
-        - { label: Agents, sub: 'Generative AI', icon: 'lucide:bot', pillar: ai }
-        - {
-            label: Assistants,
-            sub: 'Over your knowledge',
-            icon: 'lucide:message-square-text',
-            pillar: ai,
-          }
-        - {
-            label: Predictive models,
-            sub: 'Risk, churn, fraud',
-            icon: 'lucide:trending-up',
-            pillar: ai,
-          }
-        - { label: Automation, sub: 'Documents and processes', icon: 'lucide:workflow', pillar: ai }
+        - { label: Agents, sub: 'Generative AI', icon: 'lucide:bot' }
+        - { label: Assistants, sub: 'Over your knowledge', icon: 'lucide:message-square-text' }
+        - { label: Predictive models, sub: 'Risk, churn, fraud', icon: 'lucide:trending-up' }
+        - { label: Automation, sub: 'Documents and processes', icon: 'lucide:workflow' }
     - number: '03'
       name: Business
       tagline: What matters
       text: Strategy, prioritised use cases and measurable decisions. Without this layer, AI solves problems nobody had.
       tiles:
-        - { label: Strategy, sub: 'Data and AI', icon: 'lucide:compass', pillar: strategy }
-        - {
-            label: Use cases,
-            sub: 'With a business case',
-            icon: 'lucide:list-checks',
-            pillar: strategy,
-          }
-        - { label: Governance, sub: 'Including the AI Act', icon: 'lucide:scale', pillar: strategy }
-        - {
-            label: Decision intelligence,
-            sub: 'BI and analytics',
-            icon: 'lucide:gauge',
-            pillar: intelligence,
-          }
+        - { label: Strategy, sub: 'Data and AI', icon: 'lucide:compass' }
+        - { label: Use cases, sub: 'With a business case', icon: 'lucide:list-checks' }
+        - { label: Governance, sub: 'Including the AI Act', icon: 'lucide:scale' }
+        - { label: Decision intelligence, sub: 'BI and analytics', icon: 'lucide:gauge' }
     - number: '02'
       name: Data
       tagline: What you know
       text: Governed, high-quality data with shared definitions. The memory AI reasons over.
       tiles:
-        - {
-            label: Cloud platform,
-            sub: 'Google Cloud, Azure, AWS',
-            icon: 'lucide:cloud',
-            pillar: data,
-          }
-        - { label: Lakehouse, sub: 'And data warehouse', icon: 'lucide:database', pillar: data }
-        - { label: Quality, sub: 'And observability', icon: 'lucide:shield-check', pillar: data }
-        - {
-            label: Semantic layer,
-            sub: 'Shared metrics',
-            icon: 'lucide:layers',
-            pillar: intelligence,
-          }
+        - { label: Cloud platform, sub: 'Google Cloud, Azure, AWS', icon: 'lucide:cloud' }
+        - { label: Lakehouse, sub: 'And data warehouse', icon: 'lucide:database' }
+        - { label: Quality, sub: 'And observability', icon: 'lucide:shield-check' }
+        - { label: Semantic layer, sub: 'Shared metrics', icon: 'lucide:layers' }
     - number: '01'
       name: Industry
       tagline: What is non-negotiable
       text: The regulation, vocabulary and processes of Telco, Banking and Insurance. What turns a generic solution into one that gets through audit.
       tiles:
-        - { label: Telco, sub: 'Customers and network', icon: 'lucide:radio-tower', sector: telco }
-        - { label: Banking, sub: 'Risk and fraud', icon: 'lucide:landmark', sector: banking }
-        - {
-            label: Insurance,
-            sub: 'Pricing and claims',
-            icon: 'lucide:umbrella',
-            sector: insurance,
-          }
+        - { label: Telco, sub: 'Customers and network', icon: 'lucide:radio-tower' }
+        - { label: Banking, sub: 'Risk and fraud', icon: 'lucide:landmark' }
+        - { label: Insurance, sub: 'Pricing and claims', icon: 'lucide:umbrella' }
         - { label: Regulation, sub: 'AI Act, DORA, Solvency II', icon: 'lucide:file-check' }
 
 pillars:

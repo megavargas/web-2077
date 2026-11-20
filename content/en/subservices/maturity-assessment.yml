@@ -3,6 +3,7 @@ pillar: strategy
 order: 2
 slug: maturity-assessment
 name: Maturity assessment
+icon: 'lucide:activity'
 summary: An evidence-based measure of your data, analytics and AI maturity, with a baseline to track progress over time.
 seo:
   title: Data and AI maturity assessment

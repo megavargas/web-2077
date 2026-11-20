@@ -3,6 +3,7 @@ pillar: ai
 order: 5
 slug: evaluacion-gobierno-ia
 name: Evaluación y control de agentes
+icon: 'lucide:scan-search'
 summary: Pruebas de calidad y seguridad, límites de actuación y registro completo de lo que hacen agentes y modelos.
 seo:
   title: Evaluación, seguridad y control de agentes de IA

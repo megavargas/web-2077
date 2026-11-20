@@ -3,6 +3,7 @@ pillar: strategy
 order: 1
 slug: estrategia-datos-ia
 name: Estrategia de datos e IA
+icon: 'lucide:compass'
 summary: Qué hacer con los datos y la IA, en qué orden y con qué retorno, en un plan que el comité puede aprobar.
 seo:
   title: Estrategia de datos e IA con hoja de ruta y business case

@@ -3,6 +3,7 @@ pillar: intelligence
 order: 2
 slug: advanced-analytics
 name: Advanced analytics
+icon: 'lucide:chart-scatter'
 summary: Root-cause analysis, segmentation and attribution to understand what is happening, why, and which lever to pull.
 seo:
   title: 'Advanced analytics: root cause, segments, attribution'

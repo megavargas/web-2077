@@ -51,6 +51,8 @@ Cuatro fases (sección propia en la home y en Servicios):
 
 No confundir esta numeración con la de pilares en la misma vista: si aparecen juntas, usa números para pilares y nombres de fase sin número (o al revés).
 
+**Home: pila de contexto y pilares (decisión del cliente, 20/11/2026):** la pila de contexto es un **diagrama de la tesis sin enlaces** (sus teselas no llevan a ningún sitio, para no competir con el catálogo). La navegación a los servicios está en las tarjetas de pilar (`SectionPillars`, home y `/servicios`): cada subservicio es una fila con su icono (campo `icon` del YAML del subservicio, lucide) en una caja con hairline, nombre y flecha; al pasar el ratón la caja se rellena, el nombre se subraya y la flecha avanza. Se probaron y descartaron: sustituir los pilares de la home por la pila con los 20 subservicios, y enlazar cada tesela de la pila a su subservicio.
+
 ## 4. Sectores
 
 Foco: **Telco, Banca y Seguros** (`/sectores/telco`, `/sectores/banca`, `/sectores/seguros`). Son sectores regulados y con muchísimo dato: el discurso pone por delante gobierno, seguridad y trazabilidad.

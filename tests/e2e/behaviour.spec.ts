@@ -191,12 +191,21 @@ test.describe('cabecera fija', () => {
   })
 })
 
-test('la pila de contexto enlaza cada tarjeta a su pilar o sector', async ({ page }) => {
+test('la pila de contexto es un diagrama sin enlaces', async ({ page }) => {
   await page.goto('/es')
   const layers = page.locator('#context ol > li')
   await expect(layers).toHaveCount(4)
   await expect(layers.locator('h3')).toHaveText(['IA aplicada', 'Negocio', 'Datos', 'Sector'])
-  await expect(page.locator('#context ol a[href]')).toHaveCount(15)
-  await expect(page.locator('#context a[href="/es/sectores/banca"]')).toContainText('Banca')
-  await expect(page.locator('#context a[href="/es/servicios/ia"]').first()).toContainText('Agentes')
+  await expect(page.locator('#context a')).toHaveCount(0)
+})
+
+test('las tarjetas de pilar de la home enlazan los 20 subservicios con icono', async ({ page }) => {
+  await page.goto('/es')
+  const links = page.locator('#services ol ul a')
+  await expect(links).toHaveCount(20)
+  await expect(links.locator('svg').first()).toBeVisible()
+  const quality = page.locator('#services a[href="/es/servicios/datos/ingenieria-calidad-datos"]')
+  await expect(quality).toHaveText(/Ingeniería y calidad del dato/)
+  await quality.click()
+  await expect(page).toHaveURL(/\/es\/servicios\/datos\/ingenieria-calidad-datos$/)
 })

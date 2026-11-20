@@ -3,6 +3,7 @@ pillar: intelligence
 order: 1
 slug: bi-semantic-layer
 name: BI and semantic layer
+icon: 'lucide:layers'
 summary: Each metric is defined once and returns the same figure in every report, tool and AI assistant.
 seo:
   title: 'BI and semantic layer: one governed set of metrics'

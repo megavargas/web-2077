@@ -3,6 +3,7 @@ pillar: strategy
 order: 3
 slug: use-case-portfolio
 name: Use-case portfolio
+icon: 'lucide:list-checks'
 summary: Data and AI use cases prioritised by value, feasibility and risk, with a business case and clear go or stop criteria.
 seo:
   title: AI use-case prioritisation with a business case

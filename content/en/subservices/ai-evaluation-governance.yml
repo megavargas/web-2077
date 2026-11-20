@@ -3,6 +3,7 @@ pillar: ai
 order: 5
 slug: ai-evaluation-governance
 name: Agent evaluation and control
+icon: 'lucide:scan-search'
 summary: Quality and security testing, action limits and a full record of what agents and models do.
 seo:
   title: AI agent evaluation, security and control

@@ -3,6 +3,7 @@ pillar: data
 order: 2
 slug: lakehouse-data-warehouse
 name: Lakehouse y data warehouse
+icon: 'lucide:database'
 summary: Modelos de datos por dominio y capas claras, para que todas las áreas trabajen con la misma cifra.
 seo:
   title: 'Lakehouse y data warehouse: modelo de datos por dominio'

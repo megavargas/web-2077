@@ -3,6 +3,7 @@ pillar: data
 order: 5
 slug: dataops-observabilidad
 name: DataOps y observabilidad
+icon: 'lucide:radar'
 summary: Despliegue continuo, vigilancia de los datos críticos y niveles de servicio para que el dato llegue a tiempo y bien.
 seo:
   title: DataOps y observabilidad de datos

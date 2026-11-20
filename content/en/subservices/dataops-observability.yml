@@ -3,6 +3,7 @@ pillar: data
 order: 5
 slug: dataops-observability
 name: DataOps and observability
+icon: 'lucide:radar'
 summary: Continuous deployment, monitoring of critical data and service levels, so data arrives on time and correct.
 seo:
   title: DataOps and data observability

@@ -57,7 +57,8 @@ const schemas = {
     }),
     // Muro de logos de clientes (los logos y nombres están en app/assets/data/clients.json).
     clients: z.object({ label: z.string(), title: z.string() }),
-    // Pila de contexto: capas numeradas de arriba (IA) a la base (sector).
+    // Pila de contexto: ilustración de la tesis, capas de arriba (IA) a la base (sector).
+    // Teselas sin enlace: los servicios se navegan desde los pilares (sección siguiente).
     context: z.object({
       quote: z.string(),
       titleLines: z.array(z.string()),
@@ -72,8 +73,6 @@ const schemas = {
               label: z.string(),
               sub: z.string(),
               icon: z.string(),
-              pillar: z.enum(pillarKeys).optional(),
-              sector: z.enum(sectorKeys).optional(),
             }),
           ),
         }),
@@ -115,6 +114,8 @@ const schemas = {
     order: z.number(),
     slug: z.string(),
     name: z.string(),
+    // Icono de trazo fino (lucide): lista de subservicios en las tarjetas de pilar
+    icon: z.string(),
     // Una frase: tarjeta en la página del pilar y en listados
     summary: z.string(),
     seo,

@@ -3,6 +3,7 @@ pillar: strategy
 order: 4
 slug: modelo-operativo
 name: Modelo operativo y CoE
+icon: 'lucide:network'
 summary: Roles, procesos y un centro de excelencia (CoE) para que los datos y la IA escalen más allá del primer proyecto.
 seo:
   title: Modelo operativo y centro de excelencia de datos e IA

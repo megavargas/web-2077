@@ -3,6 +3,7 @@ pillar: strategy
 order: 5
 slug: gobierno-datos-ia
 name: Gobierno de datos e IA
+icon: 'lucide:scale'
 summary: Políticas, roles y controles de datos e IA que se aplican en la plataforma y preparan a la organización para el AI Act.
 seo:
   title: Gobierno del dato y de la IA, con el AI Act en mente

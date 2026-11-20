@@ -3,6 +3,7 @@ pillar: data
 order: 4
 slug: ingenieria-calidad-datos
 name: Ingeniería y calidad del dato
+icon: 'lucide:shield-check'
 summary: Pipelines automatizados con pruebas, contratos y reglas de calidad medibles, corregidas en origen.
 seo:
   title: 'Ingeniería y calidad del dato: pipelines y reglas medibles'

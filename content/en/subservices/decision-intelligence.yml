@@ -3,6 +3,7 @@ pillar: intelligence
 order: 4
 slug: decision-intelligence
 name: Decision intelligence
+icon: 'lucide:gauge'
 summary: Dashboards that recommend the next action, with human oversight, and measure the result it delivered.
 seo:
   title: 'Decision intelligence: from data to action'

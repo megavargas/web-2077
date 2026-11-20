@@ -3,6 +3,7 @@ pillar: strategy
 order: 5
 slug: data-ai-governance
 name: Data and AI governance
+icon: 'lucide:scale'
 summary: Policies, roles and controls for data and AI, enforced in the platform, that prepare the organisation for the AI Act.
 seo:
   title: Data and AI governance, with the AI Act in mind

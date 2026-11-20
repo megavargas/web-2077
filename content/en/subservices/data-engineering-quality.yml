@@ -3,6 +3,7 @@ pillar: data
 order: 4
 slug: data-engineering-quality
 name: Data engineering and quality
+icon: 'lucide:shield-check'
 summary: Automated pipelines with tests, contracts and measurable quality rules, with issues fixed at source.
 seo:
   title: 'Data engineering and quality: pipelines and measurable rules'

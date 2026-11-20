@@ -3,6 +3,7 @@ pillar: ai
 order: 1
 slug: ai-agents
 name: AI agents
+icon: 'lucide:bot'
 summary: Agents that carry out steps of a real process on your systems, with people making the calls that matter.
 seo:
   title: AI agents in production for real business processes

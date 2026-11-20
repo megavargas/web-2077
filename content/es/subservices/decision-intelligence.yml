@@ -3,6 +3,7 @@ pillar: intelligence
 order: 4
 slug: decision-intelligence
 name: Decision intelligence
+icon: 'lucide:gauge'
 summary: Cuadros de mando que recomiendan la siguiente acción, con supervisión humana, y miden qué resultado dio.
 seo:
   title: 'Decision intelligence: del dato a la acción'

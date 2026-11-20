@@ -3,6 +3,7 @@ pillar: intelligence
 order: 5
 slug: analitica-autoservicio
 name: Analítica de autoservicio
+icon: 'lucide:layout-dashboard'
 summary: Cada área responde sus propias preguntas con datos certificados, formación y reglas de uso claras.
 seo:
   title: Analítica de autoservicio con datos certificados

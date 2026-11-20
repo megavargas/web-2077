@@ -3,6 +3,7 @@ pillar: data
 order: 1
 slug: cloud-data-platforms
 name: Cloud data platforms
+icon: 'lucide:cloud'
 summary: Architecture, security and costs for your platform on Google Cloud, Azure or AWS, settled at the design stage.
 seo:
   title: Cloud data platforms on Google Cloud, Azure and AWS

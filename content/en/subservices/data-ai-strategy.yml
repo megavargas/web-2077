@@ -3,6 +3,7 @@ pillar: strategy
 order: 1
 slug: data-ai-strategy
 name: Data and AI strategy
+icon: 'lucide:compass'
 summary: What to do with data and AI, in what order and for what return, in a plan the board can sign off.
 seo:
   title: Data and AI strategy with a roadmap and business case

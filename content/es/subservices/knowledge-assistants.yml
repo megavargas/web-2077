@@ -3,6 +3,7 @@ pillar: ai
 order: 2
 slug: asistentes-conocimiento
 name: Asistentes sobre conocimiento interno
+icon: 'lucide:message-square-text'
 summary: Respuestas basadas en tu documentación, con la fuente citada y respetando quién puede ver qué.
 seo:
   title: Asistentes de IA sobre conocimiento interno (RAG)
