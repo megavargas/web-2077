@@ -1,9 +1,7 @@
 <script setup lang="ts">
-import logo from '~/assets/data/logo.json'
-
 /**
  * Pie: contacto destacado (email grande, sede y LinkedIn), navegación con iconos de trazo fino,
- * partners cloud y el logotipo como marca de agua muy tenue detrás de todo.
+ * partners cloud y, de fondo, líneas onduladas a todo el ancho (`WaveLines`).
  */
 const { t } = useI18n()
 const { contact } = useAppConfig()
@@ -75,17 +73,8 @@ const columns = computed(() => [
   <footer
     class="relative isolate overflow-hidden border-t border-graphite-border bg-void-black pt-16 md:pt-24"
   >
-    <!-- Marca de agua: el logotipo, muy tenue, detrás del contenido del pie -->
-    <svg
-      :viewBox="logo.viewBox"
-      class="pointer-events-none absolute -right-[6%] -bottom-[12%] -z-10 h-auto w-[110%] fill-current text-bone-white opacity-4 md:w-[80%]"
-      fill-rule="evenodd"
-      aria-hidden="true"
-      focusable="false"
-    >
-      <path :d="logo.mark" />
-      <path :d="logo.text" />
-    </svg>
+    <!-- Fondo: líneas onduladas a todo el ancho, con una en acento que sube (decorativo) -->
+    <WaveLines class="absolute inset-x-0 bottom-0 -z-10 h-56 w-full md:h-3/4" />
     <UiContainer class="flex flex-col gap-16 md:gap-20">
       <!-- Contacto -->
       <div class="grid gap-10 lg:grid-cols-12 lg:items-end">

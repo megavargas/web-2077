@@ -47,6 +47,13 @@ const c = computed(() =>
           boxHover: 'group-hover/item:bg-bone-white group-hover/item:text-void-black',
         },
 )
+
+/**
+ * Filas compartidas por las tarjetas (subgrid): número, título, subtítulo, resumen, un subservicio
+ * por fila y la frase final. Así cada bloque queda alineado con el de las otras columnas.
+ */
+const maxSubservices = computed(() => Math.max(1, ...pillars.map((p) => p.subservices.length)))
+const cardRows = computed(() => 5 + maxSubservices.value)
 </script>
 
 <template>
@@ -60,12 +67,13 @@ const c = computed(() =>
       >
         {{ intro }}
       </p>
-      <ol class="grid gap-12 md:grid-cols-2 xl:grid-cols-4 xl:gap-8">
+      <ol class="grid gap-x-8 gap-y-12 md:grid-cols-2 xl:grid-cols-4">
         <li
           v-for="pillar in pillars"
           :key="pillar.key"
-          class="flex flex-col gap-4 border-t pt-6"
+          class="grid grid-rows-subgrid gap-y-4 border-t pt-6"
           :class="c.line"
+          :style="{ gridRow: `span ${cardRows}` }"
         >
           <span aria-hidden="true" class="font-mono text-caption" :class="c.muted">
             {{ pillar.number }}
@@ -83,14 +91,18 @@ const c = computed(() =>
           </p>
           <p class="font-body text-body text-pretty" :class="c.muted">{{ pillar.summary }}</p>
           <!-- Subservicios: el contenido principal de la tarjeta, cada uno con icono y enlace -->
-          <ul class="border-t" :class="c.line">
+          <ul
+            class="grid grid-rows-subgrid gap-y-0 border-t"
+            :class="c.line"
+            :style="{ gridRow: `span ${maxSubservices}` }"
+          >
             <li v-for="s in pillar.subservices" :key="s.key" class="border-b" :class="c.line">
               <NuxtLinkLocale
                 :to="{
                   name: 'servicios-pillar-service',
                   params: { pillar: pillar.slug, service: s.slug },
                 }"
-                class="group/item flex items-center gap-3 py-3 font-body text-body"
+                class="group/item flex h-full items-center gap-3 py-3 font-body text-body"
                 :class="[c.strong, c.focus]"
               >
                 <span
@@ -110,7 +122,7 @@ const c = computed(() =>
               </NuxtLinkLocale>
             </li>
           </ul>
-          <p class="mt-auto pt-2 font-body text-body text-pretty" :class="c.strong">
+          <p class="pt-2 font-body text-body text-pretty" :class="c.strong">
             {{ pillar.benefit }}
           </p>
         </li>
