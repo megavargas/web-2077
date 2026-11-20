@@ -24,43 +24,43 @@ challenges:
       text: Millions of contacts a year, under pressure on both cost and satisfaction.
 domains:
   title: Use cases by business area
-  intro: Each use case shows which service pillars are involved.
+  intro: Each use case shows the services involved. Open any of them to see how we work.
   items:
     - name: Customer
       useCases:
         - name: Churn prediction and retention
           text: Spot in time which customers are about to leave, and which action will keep them.
-          pillars: [intelligence, ai]
+          services: [predictive-models, decision-intelligence]
         - name: Next-best-offer
           text: The right offer for each customer in every channel.
-          pillars: [intelligence, ai]
+          services: [decision-intelligence]
         - name: Single multi-brand customer view
           text: One customer, even across several brands and systems.
-          pillars: [data]
+          services: [lakehouse-warehouse, data-engineering-quality]
     - name: Network
       useCases:
         - name: Network analytics and customer experience
           text: Combining network performance with each customer's actual experience.
-          pillars: [data, intelligence]
+          services: [advanced-analytics, cloud-data-platforms]
         - name: Predictive maintenance
           text: Anticipating incidents before they affect the service.
-          pillars: [intelligence, ai]
+          services: [predictive-models, mlops-llmops]
     - name: Customer care
       useCases:
         - name: AI assistants for agents and customers
           text: Answers grounded in internal knowledge, with sources and controls.
-          pillars: [ai]
+          services: [knowledge-assistants, ai-agents]
         - name: Interaction analytics
           text: Contact reasons, sentiment and opportunities from calls and chats.
-          pillars: [intelligence, ai]
+          services: [advanced-analytics]
     - name: Revenue
       useCases:
         - name: Revenue assurance
           text: Detecting revenue leakage between network, billing and contracts.
-          pillars: [data, intelligence]
+          services: [data-engineering-quality, advanced-analytics]
         - name: Fraud detection
           text: Subscription and usage fraud patterns in near real time.
-          pillars: [intelligence, ai]
+          services: [predictive-models]
 regulation:
   title: Regulatory context
   intro: We design with regulation in mind from the start, not as an afterthought.

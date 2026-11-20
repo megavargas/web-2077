@@ -24,40 +24,40 @@ challenges:
       text: Document-heavy and back-office processes that are still largely manual.
 domains:
   title: Use cases by business area
-  intro: Each use case shows which service pillars are involved.
+  intro: Each use case shows the services involved. Open any of them to see how we work.
   items:
     - name: Risk and regulatory
       useCases:
         - name: Credit risk and scoring
           text: Explainable, documented models ready for internal validation.
-          pillars: [intelligence, ai]
+          services: [predictive-models, ai-evaluation-governance]
         - name: Risk data aggregation and reporting
           text: Governed, reconciled and traceable risk data for regulatory reporting.
-          pillars: [strategy, data]
+          services: [data-engineering-quality, data-ai-governance]
     - name: Fraud and AML
       useCases:
         - name: Transaction fraud detection
           text: Near real-time transaction scoring, with fewer false positives.
-          pillars: [intelligence, ai]
+          services: [predictive-models, mlops-llmops]
         - name: Anti-money laundering (AML)
           text: Customer and transaction monitoring with alert prioritisation.
-          pillars: [data, ai]
+          services: [ai-agents, data-engineering-quality]
     - name: Customer
       useCases:
         - name: Hyper-personalisation
           text: Offers and messages tailored to each customer's life and financial moment.
-          pillars: [intelligence, ai]
+          services: [decision-intelligence, predictive-models]
         - name: Churn prediction
           text: Spotting declining engagement in time.
-          pillars: [intelligence]
+          services: [predictive-models]
     - name: Operations
       useCases:
         - name: Copilots for relationship managers and back office
           text: Assistants that prepare, summarise and document, with human oversight.
-          pillars: [ai]
+          services: [knowledge-assistants, ai-agents]
         - name: Document automation
           text: Reading and validating documents in onboarding, lending and complaints.
-          pillars: [ai]
+          services: [process-automation]
 regulation:
   title: Regulatory context
   intro: We design with regulation in mind from the start, not as an afterthought.

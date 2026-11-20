@@ -24,36 +24,36 @@ challenges:
       text: Solvency II and IFRS 17 require granular, reconciled and auditable data.
 domains:
   title: Use cases by business area
-  intro: Each use case shows which service pillars are involved.
+  intro: Each use case shows the services involved. Open any of them to see how we work.
   items:
     - name: Pricing
       useCases:
         - name: Pricing and rating
           text: Risk and demand models built together with the actuarial team.
-          pillars: [intelligence, ai]
+          services: [predictive-models, advanced-analytics]
     - name: Claims
       useCases:
         - name: Claims automation
           text: Document reading and extraction to speed up claim opening and settlement.
-          pillars: [ai]
+          services: [process-automation, ai-agents]
         - name: Triage and cost estimation
           text: Prioritising claims and anticipating their cost from first notification.
-          pillars: [intelligence, ai]
+          services: [predictive-models, decision-intelligence]
     - name: Fraud
       useCases:
         - name: Claims fraud detection
           text: Red flags and relationship networks across claims, policyholders and suppliers.
-          pillars: [intelligence, ai]
+          services: [predictive-models, advanced-analytics]
     - name: Portfolio
       useCases:
         - name: Retention and cross-selling
           text: Anticipating lapses and spotting coverage needs.
-          pillars: [intelligence]
+          services: [decision-intelligence, predictive-models]
     - name: Regulatory
       useCases:
         - name: Data for Solvency II and IFRS 17
           text: Governed, traceable data from policy to report.
-          pillars: [strategy, data]
+          services: [data-engineering-quality, data-ai-governance]
 regulation:
   title: Regulatory context
   intro: We design with regulation in mind from the start, not as an afterthought.

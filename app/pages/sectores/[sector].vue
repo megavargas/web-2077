@@ -23,7 +23,18 @@ setI18nParams(useLocaleParamsState().value?.params ?? {})
 
 usePageSeo(() => sector.value?.seo)
 
-const pillarByKey = computed(() => new Map((site.value?.pillars ?? []).map((p) => [p.key, p])))
+/** Subservicio de una solución: código («03.3»), nombre, icono y enlace a su landing. */
+const serviceTags = computed(() => {
+  const pillars = site.value?.pillars ?? []
+  return new Map(
+    (site.value?.subservices ?? []).flatMap((s) => {
+      const p = pillars.find((x) => x.key === s.pillar)
+      if (!p) return []
+      const to = { name: 'servicios-pillar-service', params: { pillar: p.slug, service: s.slug } }
+      return [[s.key, { code: `${p.number}.${s.order}`, name: s.name, icon: s.icon, to }] as const]
+    }),
+  )
+})
 const otherSectors = computed(() =>
   (site.value?.sectors ?? []).filter((s) => s.key !== sector.value?.key),
 )
@@ -81,18 +92,22 @@ const contactTo = computed(() => ({
                   {{ u.name }}
                 </h4>
                 <p class="font-body text-body text-pretty text-bone-white">{{ u.text }}</p>
-                <p class="sr-only">{{ t('labels.pillars') }}:</p>
+                <p class="sr-only">{{ t('labels.services') }}:</p>
                 <ul class="flex flex-wrap gap-2">
-                  <li v-for="key in u.pillars" :key="key">
+                  <li v-for="key in u.services" :key="key">
                     <NuxtLinkLocale
-                      v-if="pillarByKey.get(key)"
-                      :to="{
-                        name: 'servicios-pillar',
-                        params: { pillar: pillarByKey.get(key)!.slug },
-                      }"
-                      class="inline-block border border-bone-white/40 px-2 py-1 font-mono text-caption text-paper uppercase hover:border-paper hover:bg-paper hover:text-accent-strong"
+                      v-if="serviceTags.get(key)"
+                      :to="serviceTags.get(key)!.to"
+                      class="group inline-flex items-center gap-2 border border-bone-white/40 px-3 py-2 font-body text-caption text-paper transition-colors duration-150 hover:border-paper hover:bg-paper hover:text-accent-strong"
                     >
-                      {{ pillarByKey.get(key)!.number }} {{ pillarByKey.get(key)!.name }}
+                      <Icon :name="serviceTags.get(key)!.icon" class="size-4" aria-hidden="true" />
+                      <span class="font-mono">{{ serviceTags.get(key)!.code }}</span>
+                      {{ serviceTags.get(key)!.name }}
+                      <Icon
+                        name="lucide:arrow-right"
+                        class="size-3.5 transition-transform duration-150 group-hover:translate-x-0.5"
+                        aria-hidden="true"
+                      />
                     </NuxtLinkLocale>
                   </li>
                 </ul>

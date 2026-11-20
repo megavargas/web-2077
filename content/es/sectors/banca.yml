@@ -24,40 +24,40 @@ challenges:
       text: Procesos documentales y de back-office todavía muy manuales.
 domains:
   title: Casos de uso por área de negocio
-  intro: Cada caso de uso indica qué pilares de servicio intervienen.
+  intro: Cada caso de uso indica qué servicios intervienen. Entra en cada uno para ver cómo lo hacemos.
   items:
     - name: Riesgo y regulatorio
       useCases:
         - name: Riesgo de crédito y scoring
           text: Modelos explicables y documentados, listos para validación interna.
-          pillars: [intelligence, ai]
+          services: [predictive-models, ai-evaluation-governance]
         - name: Agregación de datos de riesgo y reporting
           text: Datos de riesgo gobernados, conciliados y trazables para el reporting regulatorio.
-          pillars: [strategy, data]
+          services: [data-engineering-quality, data-ai-governance]
     - name: Fraude y AML
       useCases:
         - name: Detección de fraude en transacciones
           text: Puntuación de operaciones en tiempo casi real, con menos falsos positivos.
-          pillars: [intelligence, ai]
+          services: [predictive-models, mlops-llmops]
         - name: Prevención del blanqueo (AML)
           text: Monitorización de clientes y operaciones con priorización de alertas.
-          pillars: [data, ai]
+          services: [ai-agents, data-engineering-quality]
     - name: Cliente
       useCases:
         - name: Hiperpersonalización
           text: Ofertas y mensajes según el momento vital y financiero de cada cliente.
-          pillars: [intelligence, ai]
+          services: [decision-intelligence, predictive-models]
         - name: Predicción de abandono
           text: Detectar a tiempo la pérdida de vinculación.
-          pillars: [intelligence]
+          services: [predictive-models]
     - name: Operaciones
       useCases:
         - name: Copilotos para gestores y back-office
           text: Asistentes que preparan, resumen y documentan, con supervisión humana.
-          pillars: [ai]
+          services: [knowledge-assistants, ai-agents]
         - name: Automatización documental
           text: Lectura y validación de documentación en altas, préstamos y reclamaciones.
-          pillars: [ai]
+          services: [process-automation]
 regulation:
   title: Contexto regulatorio
   intro: Diseñamos con la regulación en mente desde el principio, no como un añadido final.

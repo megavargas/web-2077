@@ -37,7 +37,13 @@ const applications = computed(() =>
       sector: s,
       useCases: s.domains.items
         .flatMap((d) => d.useCases)
-        .filter((u) => pillar.value && u.pillars.includes(pillar.value.key)),
+        // El pilar de cada solución se deduce de sus subservicios
+        .filter((u) =>
+          u.services.some(
+            (key) =>
+              site.value?.subservices.find((x) => x.key === key)?.pillar === pillar.value?.key,
+          ),
+        ),
     }))
     .filter((a) => a.useCases.length),
 )

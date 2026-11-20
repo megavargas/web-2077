@@ -24,36 +24,36 @@ challenges:
       text: Solvencia II e IFRS 17 exigen datos granulares, conciliados y auditables.
 domains:
   title: Casos de uso por área de negocio
-  intro: Cada caso de uso indica qué pilares de servicio intervienen.
+  intro: Cada caso de uso indica qué servicios intervienen. Entra en cada uno para ver cómo lo hacemos.
   items:
     - name: Tarificación
       useCases:
         - name: Pricing y tarificación
           text: Modelos de riesgo y de demanda construidos junto al equipo actuarial.
-          pillars: [intelligence, ai]
+          services: [predictive-models, advanced-analytics]
     - name: Siniestros
       useCases:
         - name: Automatización de siniestros
           text: Lectura y extracción de documentos para acelerar la apertura y la liquidación.
-          pillars: [ai]
+          services: [process-automation, ai-agents]
         - name: Triaje y estimación de costes
           text: Priorizar los expedientes y anticipar su coste desde el primer aviso.
-          pillars: [intelligence, ai]
+          services: [predictive-models, decision-intelligence]
     - name: Fraude
       useCases:
         - name: Detección de fraude en siniestros
           text: Señales de alerta y redes de relación entre siniestros, asegurados y proveedores.
-          pillars: [intelligence, ai]
+          services: [predictive-models, advanced-analytics]
     - name: Cartera
       useCases:
         - name: Retención y venta cruzada
           text: Anticipar las bajas y detectar necesidades de cobertura.
-          pillars: [intelligence]
+          services: [decision-intelligence, predictive-models]
     - name: Regulatorio
       useCases:
         - name: Datos para Solvencia II e IFRS 17
           text: Un dato gobernado y trazable desde la póliza hasta el informe.
-          pillars: [strategy, data]
+          services: [data-engineering-quality, data-ai-governance]
 regulation:
   title: Contexto regulatorio
   intro: Diseñamos con la regulación en mente desde el principio, no como un añadido final.

@@ -67,6 +67,8 @@ Foco: **Telco, Banca y Seguros** (`/sectores/telco`, `/sectores/banca`, `/sector
 
 Menciona la regulación como contexto que entendemos, **no** como certificaciones ni cumplimiento garantizado.
 
+En el YAML de cada sector, cada caso de uso lleva `services: [...]` con 1–2 subservicios (claves de `subserviceKeys`): la página del sector muestra una etiqueta por subservicio (icono, código «03.3», nombre) que enlaza a su landing, y la página de cada pilar deduce de ahí en qué casos interviene. Los subservicios transversales (estrategia, madurez, cartera de casos, modelo operativo, migración, autoservicio, DataOps) no se asignan a casos de sector.
+
 **Otros sectores (decisión del cliente, 20/11/2026):** solo Telco, Banca y Seguros tienen página (el benchmark muestra que tener los tres es ya diferencial). En `/sectores` hay un bloque «También trabajamos en» (`sectors.yml` → `others`, logos con `UiClientLogo`) con sectores fuera del foco **solo si hay un cliente real** de la lista de logos: Deporte y medios, Seguridad y servicios al hogar, Servicios profesionales, Tecnología y cloud, Medio ambiente y economía circular, Agroalimentación. Los textos describen el sector, no proyectos. Energía y utilities sería el cuarto sector natural (el más repetido entre competidores), pero no se añade sin clientes o experiencia real.
 
 ## 5. Mapa del sitio (implementado)

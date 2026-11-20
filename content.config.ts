@@ -159,7 +159,12 @@ const schemas = {
         z.object({
           name: z.string(),
           useCases: z.array(
-            z.object({ name: z.string(), text: z.string(), pillars: z.array(z.enum(pillarKeys)) }),
+            // Subservicios que intervienen (1–2): enlazan a su landing; el pilar se deduce de ellos
+            z.object({
+              name: z.string(),
+              text: z.string(),
+              services: z.array(z.enum(subserviceKeys)).min(1),
+            }),
           ),
         }),
       ),

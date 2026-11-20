@@ -209,3 +209,21 @@ test('las tarjetas de pilar de la home enlazan los 20 subservicios con icono', a
   await quality.click()
   await expect(page).toHaveURL(/\/es\/servicios\/datos\/ingenieria-calidad-datos$/)
 })
+
+test('las soluciones de cada sector enlazan a las landings de sus subservicios', async ({
+  page,
+}) => {
+  await page.goto('/es/sectores/banca')
+  const domains = page.locator('section[aria-labelledby="domains-title"]')
+  // Ninguna etiqueta lleva ya a la página general de un pilar
+  await expect(domains.locator('a[href^="/es/servicios/"]')).not.toHaveCount(0)
+  for (const href of await domains
+    .locator('a')
+    .evaluateAll((as) => as.map((a) => a.getAttribute('href')))) {
+    expect(href).toMatch(/^\/es\/servicios\/[^/]+\/[^/]+$/)
+  }
+  const aml = domains.locator('a[href="/es/servicios/ia/agentes-ia"]')
+  await expect(aml.first()).toContainText('04.1')
+  await aml.first().click()
+  await expect(page).toHaveURL(/\/es\/servicios\/ia\/agentes-ia$/)
+})
