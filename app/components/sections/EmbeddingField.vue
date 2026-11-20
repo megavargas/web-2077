@@ -3,6 +3,9 @@
 export type Cluster = { x: number; y: number; s: number; n: number; z: number; accent?: boolean }
 
 const heroClusters: Cluster[] = [
+  // A la izquierda, más dispersos: el campo ocupa todo el hero y el titular va encima
+  { x: 110, y: 230, s: 60, n: 80, z: 0.3 },
+  { x: 160, y: 470, s: 70, n: 100, z: 0.35 },
   { x: 380, y: 300, s: 70, n: 150, z: 0.5 },
   { x: 640, y: 210, s: 55, n: 110, z: 0.3 },
   { x: 900, y: 330, s: 85, n: 170, z: 0.7 },
@@ -24,7 +27,7 @@ const {
   seed = 7,
   width = 1200,
   height = 900,
-  noise = 260,
+  noise = 340,
   grid = true,
   tilt = true,
   highlight = true,
@@ -89,47 +92,87 @@ for (let i = 0; i < noise; i++) {
 points.sort((a, b) => Number(a.accent) - Number(b.accent))
 
 const target = highlight ? clusters.find((c) => c.accent) : undefined
+
+/*
+ * Perspectiva calculada sobre las coordenadas (giro de 14° alrededor del borde izquierdo, como
+ * hacía antes un transform 3D de CSS). Al no deformar el SVG como imagen, los puntos y las líneas
+ * siguen siendo vectores nítidos y redondos a cualquier tamaño. Se reescala para llenar el ancho.
+ */
+const THETA = (14 * Math.PI) / 180
+const DEPTH = 1600
+const CY = H / 2
+function rawProject(x: number, y: number) {
+  const k = DEPTH / (DEPTH + x * Math.sin(THETA))
+  return { x: x * Math.cos(THETA) * k, y: CY + (y - CY) * k, k }
+}
+const X_SCALE = W / rawProject(W, CY).x
+function project(x: number, y: number) {
+  if (!tilt) return { x, y, k: 1 }
+  const p = rawProject(x, y)
+  return { x: r1(p.x * X_SCALE), y: r1(p.y), k: p.k }
+}
+
+const drawn = points.map((pt) => {
+  const p = project(pt.x, pt.y)
+  return { ...pt, x: p.x, y: p.y, r: r1(pt.r * p.k) }
+})
+
+/** Retícula de referencia, también en perspectiva (las horizontales convergen a la derecha). */
+const gridLines = [
+  ...Array.from({ length: 7 }, (_, i) => [project((i + 1) * 150, 0), project((i + 1) * 150, H)]),
+  ...Array.from({ length: 5 }, (_, i) => [project(0, (i + 1) * 150), project(W, (i + 1) * 150)]),
+].map(([a, b]) => ({ x1: a!.x, y1: a!.y, x2: b!.x, y2: b!.y }))
+
+/** Esquinas del cuadro de selección: cada brazo de 24 unidades, proyectado. */
+const brackets = target
+  ? [
+      [-1, -1],
+      [1, -1],
+      [-1, 1],
+      [1, 1],
+    ].map(([sx, sy]) => {
+      const cx = target.x + sx! * 140
+      const cy = target.y + sy! * 95
+      const c = project(cx, cy)
+      const h = project(cx - sx! * 24, cy)
+      const v = project(cx, cy - sy! * 24)
+      return `M${h.x},${h.y}L${c.x},${c.y}L${v.x},${v.y}`
+    })
+  : []
 </script>
 
 <template>
   <div class="pointer-events-none select-none" aria-hidden="true">
-    <div
-      class="h-full w-full origin-left"
-      :class="tilt && '[transform:perspective(1600px)_rotateY(-14deg)]'"
-    >
-      <svg :viewBox="`0 0 ${W} ${H}`" preserveAspectRatio="xMidYMid slice" class="h-full w-full">
-        <!-- Retícula de referencia -->
-        <g v-if="grid" class="stroke-graphite-border" stroke-width="1" opacity="0.5">
-          <line v-for="x in 7" :key="`v${x}`" :x1="x * 150" y1="0" :x2="x * 150" :y2="H" />
-          <line v-for="y in 5" :key="`h${y}`" x1="0" :y1="y * 150" :x2="W" :y2="y * 150" />
-        </g>
-        <circle
-          v-for="(p, i) in points"
+    <svg :viewBox="`0 0 ${W} ${H}`" preserveAspectRatio="xMidYMid slice" class="h-full w-full">
+      <!-- Retícula de referencia -->
+      <g v-if="grid" class="stroke-graphite-border" stroke-width="1" opacity="0.5">
+        <line
+          v-for="(l, i) in gridLines"
           :key="i"
-          :cx="p.x"
-          :cy="p.y"
-          :r="p.r"
-          :opacity="p.accent ? 1 : p.o"
-          :class="[
-            p.accent ? 'fill-accent' : 'fill-fog-light',
-            p.blink && 'motion-safe:animate-blink',
-          ]"
-          :style="p.blink ? { animationDelay: `${p.delay}ms` } : undefined"
+          :x1="l.x1"
+          :y1="l.y1"
+          :x2="l.x2"
+          :y2="l.y2"
+          vector-effect="non-scaling-stroke"
         />
-        <!-- Marca de "tu contexto": cuadro de selección con esquinas, estilo lectura de sistema -->
-        <g v-if="target" class="stroke-accent" stroke-width="1.5" fill="none">
-          <path
-            v-for="(d, i) in [
-              `M${target.x - 140},${target.y - 95}h24M${target.x - 140},${target.y - 95}v24`,
-              `M${target.x + 140},${target.y - 95}h-24M${target.x + 140},${target.y - 95}v24`,
-              `M${target.x - 140},${target.y + 95}h24M${target.x - 140},${target.y + 95}v-24`,
-              `M${target.x + 140},${target.y + 95}h-24M${target.x + 140},${target.y + 95}v-24`,
-            ]"
-            :key="i"
-            :d="d"
-          />
-        </g>
-      </svg>
-    </div>
+      </g>
+      <circle
+        v-for="(p, i) in drawn"
+        :key="i"
+        :cx="p.x"
+        :cy="p.y"
+        :r="p.r"
+        :opacity="p.accent ? 1 : p.o"
+        :class="[
+          p.accent ? 'fill-accent' : 'fill-fog-light',
+          p.blink && 'motion-safe:animate-blink',
+        ]"
+        :style="p.blink ? { animationDelay: `${p.delay}ms` } : undefined"
+      />
+      <!-- Marca de "tu contexto": cuadro de selección con esquinas, estilo lectura de sistema -->
+      <g v-if="target" class="stroke-accent" stroke-width="1.5" fill="none">
+        <path v-for="(d, i) in brackets" :key="i" :d="d" vector-effect="non-scaling-stroke" />
+      </g>
+    </svg>
   </div>
 </template>

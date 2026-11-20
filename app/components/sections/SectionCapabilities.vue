@@ -1,6 +1,6 @@
 <script setup lang="ts">
 /**
- * «Qué hacemos» de cada subservicio. Columna izquierda fija (icono del servicio, título, resumen y
+ * «Qué hacemos» de cada subservicio. Columna izquierda (icono del servicio, título, resumen y
  * recuento) y, a la derecha, una rejilla de módulos con hairlines. Cada capacidad lleva su
  * «firma»: un glifo de 5×5 celdas generado a partir de su nombre (simétrico, como una marca de
  * plano), siempre el mismo en servidor y cliente. Al pasar el ratón el glifo se enciende en acento.
@@ -56,7 +56,7 @@ const box = SIZE * CELL + (SIZE - 1) * GAP
   <section class="py-12 md:py-20" aria-labelledby="capabilities-title">
     <UiContainer class="grid gap-10 lg:grid-cols-12 lg:gap-12">
       <div class="lg:col-span-4">
-        <div class="flex flex-col gap-6 lg:sticky lg:top-28">
+        <div class="flex flex-col gap-6">
           <span
             aria-hidden="true"
             class="flex size-16 items-center justify-center border border-graphite-border text-accent"

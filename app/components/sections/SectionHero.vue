@@ -19,14 +19,13 @@ function parts(text: string) {
     class="relative isolate overflow-hidden bg-void-black pt-20 md:pt-40"
     aria-labelledby="hero-title"
   >
-    <!-- Espacio de embeddings con fundido a negro (izquierda, arriba y abajo) -->
-    <div
-      class="absolute inset-x-0 bottom-0 -z-10 h-3/5 opacity-50 lg:inset-y-0 lg:right-0 lg:left-auto lg:h-full lg:w-3/5 lg:opacity-100"
-    >
+    <!-- Espacio de embeddings a todo el hero, con fundido arriba y abajo y un velo suave a la
+         izquierda para que el titular se lea sobre los puntos -->
+    <div class="absolute inset-0 -z-10 opacity-50 lg:opacity-100">
       <EmbeddingField class="h-full w-full" />
       <div class="absolute inset-0 bg-linear-to-b from-void-black via-transparent to-void-black" />
       <div
-        class="absolute inset-0 hidden bg-linear-to-r from-void-black via-void-black/40 to-transparent lg:block"
+        class="absolute inset-0 hidden bg-linear-to-r from-void-black/70 via-void-black/20 to-transparent lg:block"
       />
     </div>
     <UiContainer class="flex flex-col gap-10">
